@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,8 +11,21 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>SITE</h1>
+        <h1>Creche</h1>
+        <Link href="/">Creche</Link>
+        <Link href="/acreche">A Creche</Link>
       </main>
+
+      <style jsx>{`
+        h1 {
+          color: #555;
+        }
+      `}</style>
+      <style jsx global>{`
+        .bg {
+          background: red !important;
+        }
+      `}</style>
     </>
   );
 }

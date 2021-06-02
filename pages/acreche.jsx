@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Acreche() {
   return (
@@ -11,7 +12,16 @@ export default function Acreche() {
 
       <main>
         <h1>SITE</h1>
+        <Link href="/">Creche</Link>
+        <Link href="/acreche">A Nossa Creche</Link>
       </main>
+
+      <style jsx>{``}</style>
+      <style jsx global>{`
+        .bg {
+          background: blue !important;
+        }
+      `}</style>
     </>
   );
 }
