@@ -19,7 +19,15 @@ export default function Acreche() {
       <style jsx>{``}</style>
       <style jsx global>{`
         .bg {
-          background: #aaa !important;
+          background: radial-gradient(
+            84.49% 84.49% at 50% 57.14%,
+            #144bb8 0%,
+            #550077 100%
+          ) !important;
+        }
+
+        .hills {
+          filter: brightness(0.5) hue-rotate(50deg) !important;
         }
       `}</style>
     </>

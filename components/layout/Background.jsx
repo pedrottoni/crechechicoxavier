@@ -31,7 +31,7 @@ export default function Background(props) {
           z-index: -1;
           width: 100vw;
           height: 100vh;
-          background: #fff;
+          background: #1ab2e5;
         }
 
         .bg .sky {
@@ -47,6 +47,8 @@ export default function Background(props) {
           width: 100vw;
           height: 15vw;
           transform: scale(1.01);
+          filter: brightness(1) hue-rotate(0deg);
+          transition: 0.5s;
         }
       `}</style>
     </>
