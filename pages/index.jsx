@@ -11,9 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Creche</h1>
-        <Link href="/">Creche</Link>
-        <Link href="/acreche">A Creche</Link>
+        <h1>Creche Chico Xavier</h1>
+        <Link href="/">Creche Link</Link>
+        <Link href="/acreche">A Nossa Creche</Link>
       </main>
 
       <style jsx>{`
@@ -23,7 +23,7 @@ export default function Home() {
       `}</style>
       <style jsx global>{`
         .bg {
-          background: red !important;
+          background: #eee !important;
         }
       `}</style>
     </>

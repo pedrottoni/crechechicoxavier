@@ -11,15 +11,15 @@ export default function Acreche() {
       </Head>
 
       <main>
-        <h1>SITE</h1>
-        <Link href="/">Creche</Link>
+        <h1>A Nossa Creche</h1>
+        <Link href="/">Creche Link</Link>
         <Link href="/acreche">A Nossa Creche</Link>
       </main>
 
       <style jsx>{``}</style>
       <style jsx global>{`
         .bg {
-          background: blue !important;
+          background: #aaa !important;
         }
       `}</style>
     </>
