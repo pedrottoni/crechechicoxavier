@@ -3,9 +3,10 @@ import Background from "../components/layout/Background";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Background>
+    <>
       <Component {...pageProps} />
-    </Background>
+      <Background />
+    </>
   );
 }
 
