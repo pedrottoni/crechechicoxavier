@@ -21,11 +21,6 @@ export default function Home() {
           color: #555;
         }
       `}</style>
-      <style jsx global>{`
-        .bg {
-          background: #eee !important;
-        }
-      `}</style>
     </>
   );
 }
