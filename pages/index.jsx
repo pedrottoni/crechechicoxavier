@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
+import Centralized from "../components/layout/Centralized";
+import Menu from "../components/sets/Menu";
 
 export default function Home() {
   return (
@@ -10,11 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Creche Chico Xavier</h1>
-        <Link href="/">Creche Link</Link>
-        <Link href="/acreche">A Nossa Creche</Link>
-      </main>
+      <Centralized
+        title="Creche Chico Xavier"
+        subtitle="Texto do subtítulo"
+        menu={<Menu />}
+      />
 
       <style jsx>{`
         h1 {

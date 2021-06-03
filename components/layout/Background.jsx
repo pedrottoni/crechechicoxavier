@@ -5,24 +5,12 @@ export default function Background(props) {
     <>
       <div className="bg">
         <div className="sky">
-          <Image
-            className="sky"
-            src="/images/sky.svg"
-            alt="Picture of the author"
-            layout="fill"
-            objectFit="fill"
-          />
+          <Image src="/images/sky.svg" layout="fill" objectFit="fill" />
         </div>
         <div className="hills">
-          <Image
-            src="/images/hills.svg"
-            alt="Picture of the author"
-            layout="fill"
-            objectFit="fill"
-          />
+          <Image src="/images/hills.svg" layout="fill" objectFit="fill" />
         </div>
       </div>
-
       <style jsx>{`
         .bg {
           position: fixed;
@@ -32,6 +20,7 @@ export default function Background(props) {
           width: 100vw;
           height: 100vh;
           background: #1ab2e5;
+          transition: 1s;
         }
 
         .bg .sky {
@@ -39,6 +28,7 @@ export default function Background(props) {
           top: 0;
           width: 100vw;
           height: 18vw;
+          transition: 0.5s;
         }
 
         .bg .hills {
