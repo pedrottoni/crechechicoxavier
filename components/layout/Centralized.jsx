@@ -17,8 +17,13 @@ export default function Centralized(props) {
       <footer>SOCIAL</footer>
 
       <style jsx global>{`
-        h1 {
-          color: #555;
+        #__next {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.7fr;
+          place-content: baseline;
+          place-items: center;
+          height: 100vh;
         }
       `}</style>
     </>
