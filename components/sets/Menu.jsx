@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Buttom from "../items/Buttom";
 
-export default function Menu() {
+export default function Menu(props) {
   return (
     <>
-      <Image src="/images/logo.svg" width="300" height="300" />
+      <Buttom link={props.link} text={props.text} image={props.image} />
     </>
   );
 }

@@ -7,8 +7,8 @@ export default function Centralized(props) {
         <Image
           src="/images/logo.svg"
           alt="Picture of the author"
-          width="500"
-          height="500"
+          width="300"
+          height="138"
         />
         <h1>{props.title}</h1>
         <p>{props.subtitle}</p>
@@ -21,9 +21,19 @@ export default function Centralized(props) {
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: 0.7fr;
-          place-content: baseline;
           place-items: center;
           height: 100vh;
+          text-align: center;
+        }
+
+        header {
+          max-width: 500px;
+        }
+
+        nav {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
         }
       `}</style>
     </>

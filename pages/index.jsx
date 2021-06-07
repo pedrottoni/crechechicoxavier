@@ -3,6 +3,11 @@ import Centralized from "../components/layout/Centralized";
 import Menu from "../components/sets/Menu";
 
 export default function Home() {
+  const menu = {
+    aCreche: { id: 1, link: "acreche", text: "A Creche" },
+    diferencial: { id: 2, link: "diferencial", text: "Diferencial" }
+  };
+
   return (
     <>
       <Head>
@@ -12,9 +17,11 @@ export default function Home() {
       </Head>
 
       <Centralized
-        title="Creche Chico Xavier"
-        subtitle="Texto do subtítulo"
-        menu={<Menu />}
+        title="Multiplicamos o amor Através da educação"
+        subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+        menu={menu.map((map) => (
+          <Menu key={map.id} link={map.link} text="A Creche" image={true} />
+        ))}
       />
 
       <style jsx>{`

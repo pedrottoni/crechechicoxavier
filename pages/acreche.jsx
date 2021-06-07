@@ -20,9 +20,9 @@ export default function Acreche() {
       <style jsx global>{`
         .bg {
           background: radial-gradient(
-            84.49% 84.49% at 50% 57.14%,
-            #144bb8 0%,
-            #550077 100%
+            85% 85% at 50% 58%,
+            hsl(220deg 80% 40%) 0%,
+            hsl(283deg 100% 23%) 100%
           ) !important;
         }
 
