@@ -3,10 +3,13 @@ import Centralized from "../components/layout/Centralized";
 import Menu from "../components/sets/Menu";
 
 export default function Home() {
-  const menu = {
-    aCreche: { id: 1, link: "acreche", text: "A Creche" },
-    diferencial: { id: 2, link: "diferencial", text: "Diferencial" }
-  };
+  const menu = [
+    { id: 1, link: "acreche", text: "A Creche" },
+    { id: 2, link: "diferencial", text: "Diferencial" },
+    { id: 3, link: "transparencia", text: "Transparência" },
+    { id: 4, link: "nossosonho", text: "Nosso Sonho" },
+    { id: 5, link: "contato", text: "Contato" },
+  ];
 
   return (
     <>
@@ -20,7 +23,7 @@ export default function Home() {
         title="Multiplicamos o amor Através da educação"
         subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
         menu={menu.map((map) => (
-          <Menu key={map.id} link={map.link} text="A Creche" image={true} />
+          <Menu key={map.id} link={map.link} text={map.text} image={true} />
         ))}
       />
 
