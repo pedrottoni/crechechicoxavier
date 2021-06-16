@@ -1,6 +1,16 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Centralized(props) {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
   return (
     <>
       <header>
@@ -10,10 +20,13 @@ export default function Centralized(props) {
           width="300"
           height="138"
         />
-        <h1>{props.title}</h1>
+        <h1 className="title">{props.title}</h1>
+        {props.span ? <h1 className="title span">{props.span}</h1> : null}
         <p>{props.subtitle}</p>
       </header>
-      <nav>{props.menu}</nav>
+      <motion.nav variants={container} initial="hidden" animate="show">
+        {props.children}
+      </motion.nav>
       <footer>SOCIAL</footer>
 
       <style jsx global>{`
@@ -27,13 +40,23 @@ export default function Centralized(props) {
         }
 
         header {
-          max-width: 500px;
+          max-width: 40rem;
         }
 
         nav {
           display: flex;
           flex-direction: row;
-          gap: 2rem;
+          gap: 3rem;
+        }
+
+        .title {
+          color: #fff;
+          text-shadow: 2px 3px 0px #5e2458, 0px 2px 7px #5e2458,
+            0px 1px 0px #5e2458;
+        }
+
+        .span {
+          color: #ffc420;
         }
       `}</style>
     </>

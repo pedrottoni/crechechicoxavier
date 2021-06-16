@@ -5,10 +5,10 @@ import Menu from "../components/sets/Menu";
 export default function Home() {
   const menu = [
     { id: 1, link: "acreche", text: "A Creche" },
-    { id: 2, link: "diferencial", text: "Diferencial" },
+    { id: 2, link: "projetos", text: "Projetos" },
     { id: 3, link: "transparencia", text: "Transparência" },
     { id: 4, link: "nossosonho", text: "Nosso Sonho" },
-    { id: 5, link: "contato", text: "Contato" },
+    { id: 5, link: "contato", text: "Contato" }
   ];
 
   return (
@@ -20,13 +20,14 @@ export default function Home() {
       </Head>
 
       <Centralized
-        title="Multiplicamos o amor Através da educação"
+        title="Multiplicamos o amor"
+        span="Através da educação"
         subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
-        menu={menu.map((map) => (
+      >
+        {menu.map((map) => (
           <Menu key={map.id} link={map.link} text={map.text} image={true} />
         ))}
-      />
-
+      </Centralized>
       <style jsx>{`
         h1 {
           color: #555;
