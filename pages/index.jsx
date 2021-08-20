@@ -1,16 +1,9 @@
 import Head from "next/head";
 import Centralized from "../components/layout/Centralized";
 import Menu from "../components/sets/Menu";
+import menu from "../data/menu";
 
 export default function Home() {
-  const menu = [
-    { id: 1, link: "acreche", text: "A Creche" },
-    { id: 2, link: "projetos", text: "Projetos" },
-    { id: 3, link: "transparencia", text: "Transparência" },
-    { id: 4, link: "nossosonho", text: "Nosso Sonho" },
-    { id: 5, link: "contato", text: "Contato" }
-  ];
-
   return (
     <>
       <Head>
@@ -19,14 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Centralized
-        title="Multiplicamos o amor"
-        span="Através da educação"
-        subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
-      >
-        {menu.map((map) => (
-          <Menu key={map.id} link={map.link} text={map.text} image={true} />
-        ))}
+      <Centralized title="Multiplicamos o amor" span="Através da educação" subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.">
+        <Menu menu={menu} />
       </Centralized>
       <style jsx>{`
         h1 {

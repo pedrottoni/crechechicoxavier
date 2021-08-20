@@ -1,32 +1,15 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Centralized(props) {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
   return (
     <>
       <header>
-        <Image
-          src="/images/logo.svg"
-          alt="Picture of the author"
-          width="300"
-          height="138"
-        />
+        <Image src="/images/logo.svg" alt="Picture of the author" width="300" height="138" />
         <h1 className="title">{props.title}</h1>
         {props.span ? <h1 className="title span">{props.span}</h1> : null}
         <p>{props.subtitle}</p>
       </header>
-      <motion.nav variants={container} initial="hidden" animate="show">
-        {props.children}
-      </motion.nav>
+      {props.children}
       <footer>SOCIAL</footer>
 
       <style jsx global>{`
@@ -51,8 +34,7 @@ export default function Centralized(props) {
 
         .title {
           color: #fff;
-          text-shadow: 2px 3px 0px #5e2458, 0px 2px 7px #5e2458,
-            0px 1px 0px #5e2458;
+          text-shadow: 2px 3px 0px #5e2458, 0px 2px 7px #5e2458, 0px 1px 0px #5e2458;
         }
 
         .span {
