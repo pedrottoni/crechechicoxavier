@@ -7,7 +7,7 @@ export default function Buttom(props) {
     <>
       <Link href={`/${props.link}`}>
         <a>
-          {props.image ? <Image src={`/images/${props.link}.svg`} width="60" height="60" /> : null}
+          <div>{props.image ? <Image src={`/images/${props.link}.svg`} layout="fill" /> : null}</div>
           {props.text}
         </a>
       </Link>
@@ -16,6 +16,17 @@ export default function Buttom(props) {
           display: flex;
           flex-direction: ${props.vert ? " row" : " column"};
           place-items: center;
+          font-size: 3rem;
+          font-weight: 900;
+          color: #fff;
+          text-transform: uppercase;
+        }
+
+        a div {
+        position: relative;
+        width: 16rem;
+        height: 12rem;
+        margin-bottom: 2rem;
         }
       `}</style>
     </>

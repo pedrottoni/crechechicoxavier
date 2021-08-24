@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@600;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Paytone One", sans-serif;
+  font-family: "Spartan", serif;
 }
 
 a {
@@ -27,31 +27,56 @@ p {
   line-height: 1.2;
 }
 
+p {
+  font-size: 1rem;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 1rem;
+@media (min-width: 2560px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 2560px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 5px;
+  }
 }

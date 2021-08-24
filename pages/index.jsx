@@ -15,11 +15,12 @@ export default function Home() {
       <Centralized title="Multiplicamos o amor" span="Através da educação" subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.">
         <Menu menu={menu} />
       </Centralized>
-      <style jsx>{`
-        h1 {
-          color: #555;
-        }
-      `}</style>
+      <style jsx global>{`
+      h2 {
+          font-size: 2.8rem;
+          color: #fff;
+          font-weight: 600;
+        }`}</style>
     </>
   );
 }
