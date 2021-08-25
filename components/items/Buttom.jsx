@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Buttom(props) {
   return (
@@ -16,7 +15,7 @@ export default function Buttom(props) {
           display: flex;
           flex-direction: ${props.vert ? " row" : " column"};
           place-items: center;
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: 900;
           color: #fff;
           text-transform: uppercase;

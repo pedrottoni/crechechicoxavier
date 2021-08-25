@@ -16,11 +16,11 @@ export default function Home() {
         <Menu menu={menu} />
       </Centralized>
       <style jsx global>{`
-      h2 {
-          font-size: 2.8rem;
+        h2 {
           color: #fff;
           font-weight: 600;
-        }`}</style>
+        }
+      `}</style>
     </>
   );
 }

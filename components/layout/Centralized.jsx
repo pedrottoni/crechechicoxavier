@@ -4,13 +4,13 @@ export default function Centralized(props) {
   return (
     <>
       <header>
-        <Image src="/images/logo.svg" alt="Picture of the author" layout="responsive" width="650" height="138" />
-        <div className="title">
-          <h1>
-            {props.title} {props.span ? <spam className="span">{props.span}</spam> : null}
-          </h1>
+        <div className="logo">
+          <Image src="/images/logo.svg" alt="Picture of the author" layout="fill" />
         </div>
-        <h2>{props.subtitle}</h2>
+        <h1 className="title">
+          {props.title} {props.span ? <spam className="span">{props.span}</spam> : null}
+        </h1>
+        <h2 className="subTitle">{props.subtitle}</h2>
       </header>
       {props.children}
       <footer>SOCIAL</footer>
@@ -27,7 +27,9 @@ export default function Centralized(props) {
         }
 
         header {
-          max-width: 84rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           margin: 0 0 8rem;
         }
 
@@ -35,22 +37,34 @@ export default function Centralized(props) {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          gap: 8rem;
+          gap: 6rem;
           place-content: center;
+        }
+
+        .logo {
+          position: relative;
+          width: 33rem;
+          height: 15rem;
         }
 
         .title {
           color: #fff;
           text-transform: uppercase;
           margin: 6rem 0 2rem;
+          max-width: 65rem;
         }
-
+        
         .span {
           color: #ffc420;
         }
 
+        .subTitle {
+          max-width: 90rem;
+        }
+        
         footer {
-          margin: 12rem 0 0
+          margin: 12rem 0 0;
+        }
       `}</style>
     </>
   );
