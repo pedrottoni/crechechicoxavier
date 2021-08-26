@@ -6,7 +6,12 @@ export default function Buttom(props) {
     <>
       <Link href={`/${props.link}`}>
         <a>
-          <div>{props.image ? <Image src={`/images/${props.link}.svg`} layout="fill" /> : null}</div>
+          {props.image ? (
+            <div>
+              {" "}
+              <Image src={`/images/${props.link}.svg`} layout="fill" />{" "}
+            </div>
+          ) : null}
           {props.text}
         </a>
       </Link>
@@ -22,10 +27,10 @@ export default function Buttom(props) {
         }
 
         a div {
-        position: relative;
-        width: 16rem;
-        height: 12rem;
-        margin-bottom: 2rem;
+          position: relative;
+          width: 16rem;
+          height: 12rem;
+          margin-bottom: 2rem;
         }
       `}</style>
     </>

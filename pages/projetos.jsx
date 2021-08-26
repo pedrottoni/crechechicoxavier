@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Diferencial() {
+export default function Projetos() {
   return (
     <>
       <Head>
@@ -9,9 +9,8 @@ export default function Diferencial() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>SITE</h1>
-      </main>
+      <main></main>
+      <style jsx global>{``}</style>
     </>
   );
 }

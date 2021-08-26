@@ -1,23 +1,17 @@
-import Image from "next/image";
 import Menu from "../sets/Menu";
 import menu from "../../data/menu";
+import Logo from "../../public/images/Logo";
 
 export default function Columns(props) {
   return (
     <>
       <header>
         <div className="logo">
-          <Image src="/images/logo.svg" alt="Picture of the author" layout="fill" />
+          <Logo />
         </div>
-          <Menu menu={menu} />
+        <Menu menu={menu} image={false} />
       </header>
-      <main>
-        <h1 className="title">
-          {props.title} {props.span ? <spam className="span">{props.span}</spam> : null}
-        </h1>
-        <h2 className="subTitle">{props.subtitle}</h2>
-        {props.children}
-      </main>
+      <main>{props.children}</main>
       <footer>SOCIAL</footer>
       <style jsx global>{`
         #__next {
@@ -30,7 +24,7 @@ export default function Columns(props) {
             "main main footer"
             "main main footer";
           height: 100vh;
-          text-shadow: 2px 3px 0px #5e2458, 0px 2px 7px #5e2458, 0px 1px 0px #5e2458;
+          text-shadow: 0px 3px 3px hsl(306deg 45% 25%), 0px 12px 20px hsl(306deg 45% 25% / 40%);
         }
 
         header {
@@ -40,36 +34,43 @@ export default function Columns(props) {
           margin: 0 0 8rem;
         }
 
-        nav {
-          display: flex;
-          justify-content: flex-end;
-          gap: 6rem;
-          width: 100%
+        header nav {
+          place-content: end;
+        }
+
+        header nav a {
+          font-size: 2rem !important;
         }
 
         .logo {
           position: relative;
-          width: 33rem;
+          width: 20rem;
           height: 15rem;
         }
 
         main {
           grid-area: main;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
         }
 
-        .title {
+        main .title {
           color: #fff;
           text-transform: uppercase;
           margin: 6rem 0 2rem;
           max-width: 65rem;
         }
 
-        .span {
+        main .span {
           color: #ffc420;
         }
 
-        .subTitle {
+        main .subTitle {
           max-width: 90rem;
+        }
+
+        main nav {
+          place-content: start;
         }
 
         footer {

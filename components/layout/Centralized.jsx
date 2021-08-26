@@ -1,17 +1,6 @@
-import Image from "next/image";
-
 export default function Centralized(props) {
   return (
     <>
-      <header>
-        <div className="logo">
-          <Image src="/images/logo.svg" alt="Picture of the author" layout="fill" />
-        </div>
-        <h1 className="title">
-          {props.title} {props.span ? <spam className="span">{props.span}</spam> : null}
-        </h1>
-        <h2 className="subTitle">{props.subtitle}</h2>
-      </header>
       {props.children}
       <footer>SOCIAL</footer>
 
@@ -23,7 +12,7 @@ export default function Centralized(props) {
           justify-content: center;
           text-align: center;
           height: 100vh;
-          text-shadow: 2px 3px 0px #5e2458, 0px 2px 7px #5e2458, 0px 1px 0px #5e2458;
+          text-shadow: 0.2rem 0.2rem 0px hsl(196deg 74% 32%), 0 0.2rem 0 hsl(196deg 74% 32%);
         }
 
         header {
@@ -33,35 +22,13 @@ export default function Centralized(props) {
           margin: 0 0 8rem;
         }
 
-        nav {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 6rem;
-          place-content: center;
-        }
-
         .logo {
-          position: relative;
-          width: 33rem;
-          height: 15rem;
+          width: 50rem;
+          height: 24rem;
+          filter: drop-shadow(0px 6px 5px hsl(306deg 45% 25% / 20%));
+          display: flex;
         }
 
-        .title {
-          color: #fff;
-          text-transform: uppercase;
-          margin: 6rem 0 2rem;
-          max-width: 65rem;
-        }
-        
-        .span {
-          color: #ffc420;
-        }
-
-        .subTitle {
-          max-width: 90rem;
-        }
-        
         footer {
           margin: 12rem 0 0;
         }

@@ -10,12 +10,24 @@ export default function Menu(props) {
   };
 
   return (
-    <motion.nav initial="initial" animate="animate" exit="exit" variants={list}>
+    <motion.nav className={props.class} initial="initial" animate="animate" exit="exit" variants={list} place={props.place}>
       {props.menu.map((menuItem) => (
-        <motion.div variants={animationMenu}>
-          <Buttom key={menuItem.id} link={menuItem.link} text={menuItem.text} image={true} />
+        <motion.div key={menuItem.id} variants={animationMenu}>
+          <Buttom link={menuItem.link} text={menuItem.text} image={props.image} vert={props.vert} />
         </motion.div>
       ))}
+      
+      <style jsx global>{`
+        nav {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 6rem;
+          place-content: center;
+          width: 100%;
+          filter: drop-shadow(2px 2px 2px black);
+        }
+      `}</style>
     </motion.nav>
   );
 }
