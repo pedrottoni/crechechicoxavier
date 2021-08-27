@@ -27,27 +27,27 @@ export default function Logo() {
         </g>
       </g>
       <defs>
-        <linearGradient id="paint0_linear" x1="164.21" x2="164.21" y1="2.61" y2="55.52" class="paint0_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint0_linear" x1="164.21" x2="164.21" y1="2.61" y2="55.52"  gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
-        <linearGradient id="paint1_linear" x1="127.41" x2="127.41" y1="16.7" y2="56.1" class="paint1_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint1_linear" x1="127.41" x2="127.41" y1="16.7" y2="56.1"  gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
-        <linearGradient id="paint2_linear" x1="88.61" x2="88.61" y1="16.7" y2="56.1" class="paint2_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint2_linear" x1="88.61" x2="88.61" y1="16.7" y2="56.1" gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
-        <linearGradient id="paint3_linear" x1="56.54" x2="56.54" y1="16.7" y2="55.52" class="paint3_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint3_linear" x1="56.54" x2="56.54" y1="16.7" y2="55.52"  gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
-        <linearGradient id="paint4_linear" x1="20.26" x2="20.26" y1="4.48" y2="56.1" class="paint4_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint4_linear" x1="20.26" x2="20.26" y1="4.48" y2="56.1"  gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
-        <linearGradient id="paint5_linear" x1="204.44" x2="204.44" y1="16.7" y2="56.1" class="paint5_linear" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint5_linear" x1="204.44" x2="204.44" y1="16.7" y2="56.1"  gradientUnits="userSpaceOnUse">
           <stop offset=".48" stop-color="#FFC41A" />
           <stop offset="1" stop-color="#FF961A" />
         </linearGradient>
