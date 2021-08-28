@@ -1,4 +1,4 @@
-export default function Centralized(props) {
+export default function Home(props) {
 	return (
 		<>
 			{props.children}
@@ -23,7 +23,7 @@ export default function Centralized(props) {
 					margin: 0 0 8rem;
 				}
 
-				.logo {
+				header svg {
 					width: 50rem;
 					height: 24rem;
 					filter: drop-shadow(0px 6px 5px hsl(306deg 45% 25% / 20%));
