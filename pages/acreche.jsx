@@ -3,20 +3,60 @@ import Head from "next/head";
 import Columns from "../components/layout/Columns";
 import Buttoms from "../components/sets/Buttoms";
 import Title from "../components/items/Title";
+import Image from "next/image";
 
 export default function Acreche() {
-	const [modalBook1, setModalBook1Open] = useState(true);
+	const [nossaCreche, setNossaCreche] = useState(true);
+	const [missao, setMissao] = useState(false);
+	const [sobre, setSobre] = useState(false);
+	const [equipe, setEquipe] = useState(false);
 
 	const stateBtn = [
+		{
+			link: "sobre",
+			text: "Sobre",
+			span: "a Creche",
+			onClick: () => {
+				setNossaCreche(false);
+				setSobre(true);
+				setMissao(false);
+				setEquipe(false);
+				if (sobre) {
+					setNossaCreche(true);
+					setSobre(false);
+				}
+			}
+		},
 		{
 			link: "missão",
 			text: "Nossa",
 			span: "Missão",
-			onClick:
-				"{() => (modalBook1 ? setModalBook1Open(false) : setModalBook1Open(true))}"
+			onClick: () => {
+				setNossaCreche(false);
+				setSobre(false);
+				setMissao(true);
+				setEquipe(false);
+				if (missao) {
+					setNossaCreche(true);
+					setMissao(false);
+				}
+			}
 		},
-		{ link: "sobre", text: "Sobre", span: "a Creche" },
-		{ link: "equipe", text: "Nossa", span: "Equipe" }
+		{
+			link: "equipe",
+			text: "Nossa",
+			span: "Equipe",
+			onClick: () => {
+				setNossaCreche(false);
+				setSobre(false);
+				setMissao(false);
+				setEquipe(true);
+				if (equipe) {
+					setNossaCreche(true);
+					setEquipe(false);
+				}
+			}
+		}
 	];
 
 	return (
@@ -41,7 +81,20 @@ export default function Acreche() {
 						/>
 					</Title>
 				</div>
-				<div className="right">LALALA</div>
+				<div className="right">
+					{nossaCreche ? (
+						<Image src={`/images/acreche.svg`} layout="fill" />
+					) : null}
+					<div className="card">
+						{sobre ? (
+							<Image src={`/images/projetos.svg`} layout="fill" />
+						) : null}
+						{missao ? (
+							<Image src={`/images/transparencia.svg`} layout="fill" />
+						) : null}
+						{equipe ? <Image src={`/images/equipe.svg`} layout="fill" /> : null}
+					</div>
+				</div>
 			</Columns>
 
 			<style jsx>{``}</style>
@@ -72,6 +125,18 @@ export default function Acreche() {
 				.left nav.stateBtn {
 					gap: 4rem;
 					text-shadow: none;
+				}
+
+				.right {
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+				}
+
+				.right .card {
 				}
 			`}</style>
 		</>

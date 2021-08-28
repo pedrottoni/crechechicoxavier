@@ -29,6 +29,7 @@ export default function Buttoms(props) {
 					vert={props.vert}
 					span={menuItem.span}
 					variants={animationMenu}
+					onCLick={menuItem.onClick}
 				/>
 			))}
 
