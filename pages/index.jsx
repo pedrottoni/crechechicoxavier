@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Centralized from "../components/layout/Centralized";
-import Header from "../components/sets/Header";
-import Menu from "../components/sets/Menu";
+import Home from "../components/layout/Home";
+import Title from "../components/items/Title";
+import Links from "../components/sets/Links";
 import menu from "../data/menu";
 import Logo from "../public/images/Logo";
 
-export default function Home() {
+export default function Index() {
 	return (
 		<>
 			<Head>
@@ -14,17 +14,17 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Centralized>
-				<div className="logo">
+			<Home>
+				<header>
 					<Logo />
-				</div>
-				<Header
-					title="Multiplicamos o amor"
-					span="Através da educação"
-					subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
-				/>
-				<Menu menu={menu} image={true} />
-			</Centralized>
+					<Title
+						title="Multiplicamos o amor"
+						span="Através da educação"
+						subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+					/>
+				</header>
+				<Links menu={menu} image={true} />
+			</Home>
 			<style jsx global>{``}</style>
 		</>
 	);

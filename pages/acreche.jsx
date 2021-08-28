@@ -1,15 +1,22 @@
+import { useState } from "react";
 import Head from "next/head";
 import Columns from "../components/layout/Columns";
-import Menu from "../components/sets/Menu";
-import Header from "../components/sets/Header";
+import Buttoms from "../components/sets/Buttoms";
+import Title from "../components/items/Title";
 
 export default function Acreche() {
+	const [modalBook1, setModalBook1Open] = useState(true);
+
 	const stateBtn = [
-		{ id: 1, link: "acreche", text: "A Creche" },
-		{ id: 2, link: "projetos", text: "Projetos" },
-		{ id: 3, link: "transparencia", text: "Transparência" },
-		{ id: 4, link: "nossosonho", text: "Nosso Sonho" },
-		{ id: 5, link: "contato", text: "Contato" }
+		{
+			link: "missão",
+			text: "Nossa",
+			span: "Missão",
+			onClick:
+				"{() => (modalBook1 ? setModalBook1Open(false) : setModalBook1Open(true))}"
+		},
+		{ link: "sobre", text: "Sobre", span: "a Creche" },
+		{ link: "equipe", text: "Nossa", span: "Equipe" }
 	];
 
 	return (
@@ -20,30 +27,51 @@ export default function Acreche() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Columns>
-				<Header
-					title="A nossa ceche"
-					span="Chico Xavier"
-					subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral.">
-					<Menu
-						menu={stateBtn}
-						image={true}
-						vert={true}
-						place="start"
-						class="stateBtn"
-					/>
-				</Header>
-				<div>LALALA</div>
+				<div className="left">
+					<Title
+						title="A nossa ceche"
+						span="Chico Xavier"
+						subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral.">
+						<Buttoms
+							menu={stateBtn}
+							image={true}
+							vert={true}
+							place="start"
+							class="stateBtn"
+						/>
+					</Title>
+				</div>
+				<div className="right">LALALA</div>
 			</Columns>
 
 			<style jsx>{``}</style>
 
 			<style jsx global>{`
 				.background .color {
-					filter: brightness(0.4) hue-rotate(64deg) contrast(1.4) saturate(1.4);
+					//filter: brightness(0.4) hue-rotate(64deg) contrast(1.4) saturate(1.4);
 				}
 
 				.background .hills {
-					filter: brightness(0.5) hue-rotate(50deg) !important;
+					//filter: brightness(0.5) hue-rotate(50deg) !important;
+				}
+
+				.left {
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.title {
+					max-width: 58rem !important;
+				}
+
+				.left nav {
+					margin-top: 6rem;
+				}
+
+				.left nav.stateBtn {
+					gap: 4rem;
+					text-shadow: none;
 				}
 			`}</style>
 		</>
