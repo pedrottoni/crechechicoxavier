@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Head from "next/head";
-import Columns from "../components/layout/Columns";
-import Buttoms from "../components/sets/Buttoms";
-import Title from "../components/items/Title";
 import Image from "next/image";
+import Columns from "../components/layout/Columns";
+import Title from "../components/items/Title";
+import Buttoms from "../components/sets/Buttoms";
+import Card from "../components/sets/Card";
 
 export default function Acreche() {
 	const [nossaCreche, setNossaCreche] = useState(true);
@@ -85,15 +86,22 @@ export default function Acreche() {
 					{nossaCreche ? (
 						<Image src={`/images/acreche.svg`} layout="fill" />
 					) : null}
-					<div className="card">
-						{sobre ? (
+					{sobre ? (
+						<Card>
 							<Image src={`/images/projetos.svg`} layout="fill" />
-						) : null}
-						{missao ? (
+						</Card>
+					) : null}
+					{missao ? (
+						<Card>
 							<Image src={`/images/transparencia.svg`} layout="fill" />
-						) : null}
-						{equipe ? <Image src={`/images/equipe.svg`} layout="fill" /> : null}
-					</div>
+						</Card>
+					) : null}
+					{equipe ? (
+						<Card>
+							{" "}
+							<Image src={`/images/equipe.svg`} layout="fill" />{" "}
+						</Card>
+					) : null}
 				</div>
 			</Columns>
 
@@ -134,9 +142,6 @@ export default function Acreche() {
 					align-items: center;
 					width: 100%;
 					height: 100%;
-				}
-
-				.right .card {
 				}
 			`}</style>
 		</>
