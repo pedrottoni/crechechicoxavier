@@ -5,26 +5,27 @@ import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
 import Buttoms from "../components/sets/Buttoms";
 import Card from "../components/sets/Card";
+import Slider from "../components/sets/Slider";
 
 export default function Acreche() {
 	const [nossaCreche, setNossaCreche] = useState(true);
 	const [missao, setMissao] = useState(false);
-	const [sobre, setSobre] = useState(false);
+	const [historia, sethistoria] = useState(false);
 	const [equipe, setEquipe] = useState(false);
 
 	const stateBtn = [
 		{
-			link: "sobre",
-			text: "Sobre",
-			span: "a Creche",
+			link: "história",
+			text: "Nossa",
+			span: "História",
 			onClick: () => {
 				setNossaCreche(false);
-				setSobre(true);
+				sethistoria(true);
 				setMissao(false);
 				setEquipe(false);
-				if (sobre) {
+				if (historia) {
 					setNossaCreche(true);
-					setSobre(false);
+					sethistoria(false);
 				}
 			}
 		},
@@ -34,7 +35,7 @@ export default function Acreche() {
 			span: "Missão",
 			onClick: () => {
 				setNossaCreche(false);
-				setSobre(false);
+				sethistoria(false);
 				setMissao(true);
 				setEquipe(false);
 				if (missao) {
@@ -49,7 +50,7 @@ export default function Acreche() {
 			span: "Equipe",
 			onClick: () => {
 				setNossaCreche(false);
-				setSobre(false);
+				sethistoria(false);
 				setMissao(false);
 				setEquipe(true);
 				if (equipe) {
@@ -86,20 +87,97 @@ export default function Acreche() {
 					{nossaCreche ? (
 						<Image src={`/images/acreche.svg`} layout="fill" />
 					) : null}
-					{sobre ? (
-						<Card>
-							<Image src={`/images/projetos.svg`} layout="fill" />
+					{historia ? (
+						<Card title="Nossa História" image="história">
+							<p>
+								A Creche Chico Xavier atende 106 crianças e aproximadamente 100
+								famílias em período integral. Para atender os objetivos dos
+								Projetos Pedagógicos e Socioeducativos a que se propõe.
+							</p>
+							<p>
+								Tem como objetivo desenvolver suas atividades pautadas no
+								respeito à heterogeneidade dos arranjos familiares, aos valores,
+								às crenças e às identidades das famílias. Fundamenta-se no
+								fortalecimento da cultura do diálogo, no exercício da cidadania,
+								no combate a todas as formas de violência, de preconceito, de
+								discriminação e de estigmatização.
+							</p>
+							<p>
+								Para fortalecer os vínculos familiares e comunitários e a
+								construção de uma vida autônoma e saudável para a criança e sua
+								família, a nossa creche baseia seu trabalho nas culturas
+								plurais. Para isso, dialogamos com a diversidade das famílias e
+								da comunidade, trabalhando junto dos responsáveis pelas crianças
+								na conscientização de cada um deles sobre seu papel no
+								desenvolvimento sustentável tanto de seu núcleo familiar quanto
+								da própria instituição.
+							</p>
 						</Card>
 					) : null}
 					{missao ? (
-						<Card>
-							<Image src={`/images/transparencia.svg`} layout="fill" />
+						<Card title="Nossa Missão" image="missão">
+							<p>
+								Inaugurada em 1981, a Casa da Criança - Creche Chico Xavier tem
+								por objetivos a promoção da educação, assistência social e
+								cultura, o amparo e proteção da comunidade e o desenvolvimento
+								integral da criança, em seus aspectos físico, psicológico,
+								intelectual e social. É uma associação sem fins lucrativos ou
+								econômicos, político-partidários ou religiosos que tem como
+								missão priorizar e cumprir duas funções complementares: cuidar e
+								educar .
+							</p>
 						</Card>
 					) : null}
 					{equipe ? (
-						<Card>
-							{" "}
-							<Image src={`/images/equipe.svg`} layout="fill" />{" "}
+						<Card
+							title="Nossa Equipe"
+							subtitle="Diretoria Executiva"
+							menuA={true}
+							onCLickLeftA={() => {
+								setNossaCreche(false);
+								sethistoria(false);
+								setMissao(false);
+								setEquipe(true);
+								if (equipe) {
+									setNossaCreche(true);
+									setEquipe(false);
+								}
+							}}
+							onCLickRightA={() => {
+								setNossaCreche(false);
+								sethistoria(false);
+								setMissao(false);
+								setEquipe(true);
+								if (equipe) {
+									setNossaCreche(true);
+									setEquipe(false);
+								}
+							}}
+							image="equipe"
+							legend="diretoria executiva"
+							onCLickRightB={() => {
+								setNossaCreche(false);
+								sethistoria(false);
+								setMissao(false);
+								setEquipe(true);
+								if (equipe) {
+									setNossaCreche(true);
+									setEquipe(false);
+								}
+							}}
+							onCLickLeftB={() => {
+								setNossaCreche(false);
+								sethistoria(false);
+								setMissao(false);
+								setEquipe(true);
+								if (equipe) {
+									setNossaCreche(true);
+									setEquipe(false);
+								}
+							}}>
+							<div className="slider">
+								<Slider />
+							</div>
 						</Card>
 					) : null}
 				</div>
@@ -119,6 +197,7 @@ export default function Acreche() {
 				.left {
 					display: flex;
 					flex-direction: column;
+					justify-content: center;
 					gap: 1rem;
 				}
 
@@ -131,7 +210,7 @@ export default function Acreche() {
 				}
 
 				.left nav.stateBtn {
-					gap: 4rem;
+					gap: 3.8rem;
 					text-shadow: none;
 				}
 
@@ -142,6 +221,17 @@ export default function Acreche() {
 					align-items: center;
 					width: 100%;
 					height: 100%;
+					gap: 2rem;
+				}
+
+				.cardBtn {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+				}
+
+				.slider {
+					display: flex;
 				}
 			`}</style>
 		</>

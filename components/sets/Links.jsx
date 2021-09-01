@@ -36,7 +36,7 @@ export default function Links(props) {
 					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
-					gap: 6rem;
+					gap: 5rem;
 					place-content: center;
 					width: 100%;
 					filter: drop-shadow(2px 2px 2px black);

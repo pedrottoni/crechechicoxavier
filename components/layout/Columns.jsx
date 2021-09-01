@@ -16,7 +16,9 @@ export default function Columns(props) {
 					display: flex;
 					flex-direction: column;
 					place-content: space-between;
+					max-width: 170rem;
 					height: 100vh;
+					margin: 0 auto;
 					padding: 4rem;
 					text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
 						0 0.3rem 0.4rem hsl(195deg 75% 30%);
@@ -44,6 +46,7 @@ export default function Columns(props) {
 				main {
 					display: grid;
 					grid-template-columns: 1fr 0.8fr;
+					gap: 2rem;
 				}
 
 				main nav {
