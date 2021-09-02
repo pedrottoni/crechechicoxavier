@@ -9,33 +9,43 @@ export default function Card(props) {
 				<Image src={`/images/${props.image}.svg`} layout="fill" />
 			</div>
 			<header>
-				{props.menuA ? (
-					<MenuButtom
-						text="<- lalala"
-						vert={true}
-						onCLick={props.onCLickLeftA}
-					/>
-				) : null}
-				<h1>{props.title}</h1>
-				{props.menuA ? (
-					<MenuButtom
-						text="lalala ->"
-						vert={true}
-						onCLick={props.onCLickRightA}
-					/>
-				) : null}
+				{props.onCLickLeftA || props.onCLickRightA ? (
+					<>
+						<MenuButtom
+							text="<- lalala"
+							vert={true}
+							onCLick={props.onCLickLeftA}
+						/>
+						<h1>{props.title}</h1>
+						<MenuButtom
+							text="lalala ->"
+							vert={true}
+							onCLick={props.onCLickRightA}
+						/>
+					</>
+				) : (
+					<h1>{props.title}</h1>
+				)}
 			</header>
 			{props.subtitle ? <h2>{props.subtitle}</h2> : null}
 			<div className="cardContent">{props.children}</div>
-			<div className="cardBtn">
-				<MenuButtom text="<- lalala" vert={true} onCLick={props.onCLickLeftB} />
-				{props.legend ? <h3>{props.legend}</h3> : null}
-				<MenuButtom
-					text="lalala ->"
-					vert={true}
-					onCLick={props.onCLickRightB}
-				/>
-			</div>
+			{props.onCLickLeftB || props.onCLickRightB ? (
+				<div className="cardBtn">
+					<MenuButtom
+						text="<- lalala"
+						vert={true}
+						onCLick={props.onCLickLeftB}
+					/>
+					{props.legend ? <h3>{props.legend}</h3> : null}
+					<MenuButtom
+						text="lalala ->"
+						vert={true}
+						onCLick={props.onCLickRightB}
+					/>
+				</div>
+			) : (
+				<>{props.legend ? <h3>{props.legend}</h3> : null}</>
+			)}
 			<style jsx>{`
 				.card h1 {
 					text-align: center;
@@ -64,7 +74,7 @@ export default function Card(props) {
 					width: 100%;
 					height: 100%;
 					max-height: 38rem;
-					margin: 3rem 0;
+					margin: 3rem 0 1rem;
 					overflow-y: auto;
 					text-shadow: none;
 				}

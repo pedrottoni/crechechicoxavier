@@ -94,6 +94,7 @@ export default function Acreche() {
 								famílias em período integral. Para atender os objetivos dos
 								Projetos Pedagógicos e Socioeducativos a que se propõe.
 							</p>
+							<br />
 							<p>
 								Tem como objetivo desenvolver suas atividades pautadas no
 								respeito à heterogeneidade dos arranjos familiares, aos valores,
@@ -102,6 +103,7 @@ export default function Acreche() {
 								no combate a todas as formas de violência, de preconceito, de
 								discriminação e de estigmatização.
 							</p>
+							<br />
 							<p>
 								Para fortalecer os vínculos familiares e comunitários e a
 								construção de uma vida autônoma e saudável para a criança e sua
@@ -118,13 +120,13 @@ export default function Acreche() {
 						<Card title="Nossa Missão" image="missão">
 							<p>
 								Inaugurada em 1981, a Casa da Criança - Creche Chico Xavier tem
-								por objetivos a promoção da educação, assistência social e
+								como missão a promoção da educação, assistência social e
 								cultura, o amparo e proteção da comunidade e o desenvolvimento
 								integral da criança, em seus aspectos físico, psicológico,
 								intelectual e social. É uma associação sem fins lucrativos ou
-								econômicos, político-partidários ou religiosos que tem como
-								missão priorizar e cumprir duas funções complementares: cuidar e
-								educar .
+								econômicos, político-partidários ou religiosos com o objetivo de
+								priorizar e cumprir duas funções complementares: cuidar e
+								educar.
 							</p>
 						</Card>
 					) : null}
@@ -132,7 +134,6 @@ export default function Acreche() {
 						<Card
 							title="Nossa Equipe"
 							subtitle="Diretoria Executiva"
-							menuA={true}
 							onCLickLeftA={() => {
 								setNossaCreche(false);
 								sethistoria(false);
@@ -153,31 +154,8 @@ export default function Acreche() {
 									setEquipe(false);
 								}
 							}}
-							image="equipe"
-							legend="diretoria executiva"
-							onCLickRightB={() => {
-								setNossaCreche(false);
-								sethistoria(false);
-								setMissao(false);
-								setEquipe(true);
-								if (equipe) {
-									setNossaCreche(true);
-									setEquipe(false);
-								}
-							}}
-							onCLickLeftB={() => {
-								setNossaCreche(false);
-								sethistoria(false);
-								setMissao(false);
-								setEquipe(true);
-								if (equipe) {
-									setNossaCreche(true);
-									setEquipe(false);
-								}
-							}}>
-							<div className="slider">
-								<Slider />
-							</div>
+							image="equipe">
+							<Slider />
 						</Card>
 					) : null}
 				</div>
@@ -228,10 +206,6 @@ export default function Acreche() {
 					display: flex;
 					justify-content: space-between;
 					width: 100%;
-				}
-
-				.slider {
-					display: flex;
 				}
 			`}</style>
 		</>
