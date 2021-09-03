@@ -47,26 +47,16 @@ export default function Slider(props) {
 						<div key={image.id} className="keen-slider__slide">
 							<Image
 								src={image.src}
-								layout="responsive"
-								width="10"
-								height="10"
+								alt={image.legend}
+								layout="fill"
+								objectFit="cover"
 							/>
+							{image.legend ? (
+								<h3 className="sliderLegend">{image.legend}</h3>
+							) : null}
+							{image.spam ? <h4 className="sliderSpam">{image.spam}</h4> : null}
 						</div>
 					))}
-					{/*
-					<div className="keen-slider__slide number-slide1">
-						<Image src={images[0].src} layout="fill" />
-					</div>
-					<div className="keen-slider__slide number-slide2">
-						<Image src={images[1].src} layout="fill" />
-					</div>
-					<div className="keen-slider__slide number-slide3">
-						<Image src={images[2].src} layout="fill" />
-					</div>
-					<div className="keen-slider__slide number-slide4">
-						<Image src={images[3].src} layout="fill" />
-					</div>
-					*/}
 				</div>
 				{slider && (
 					<>
@@ -81,22 +71,11 @@ export default function Slider(props) {
 					</>
 				)}
 			</div>
-			{slider && (
-				<div className="dots">
-					{[...Array(slider.details().size).keys()].map((idx) => {
-						return (
-							<button
-								key={idx}
-								onClick={() => {
-									slider.moveToSlideRelative(idx);
-								}}
-								className={"dot" + (currentSlide === idx ? " active" : "")}
-							/>
-						);
-					})}
-				</div>
-			)}
 			<style jsx global>{`
+				.navigation-wrapper {
+					position: relative;
+				}
+
 				.keen-slider__slide {
 					display: flex;
 					align-items: center;
@@ -104,36 +83,14 @@ export default function Slider(props) {
 					font-size: 50px;
 					color: #fff;
 					font-weight: 500;
-					height: 32rem;
+					height: 34rem;
+					border-radius: 2rem;
 				}
 
-				.navigation-wrapper {
+				.sliderLegend,
+				.sliderSpam {
 					position: relative;
-				}
-
-				.dots {
-					display: flex;
-					padding: 10px 0;
-					justify-content: center;
-				}
-
-				.dot {
-					border: none;
-					width: 10px;
-					height: 10px;
-					background: #c5c5c5;
-					border-radius: 50%;
-					margin: 0 5px;
-					padding: 5px;
-					cursor: pointer;
-				}
-
-				.dot:focus {
-					outline: none;
-				}
-
-				.dot.active {
-					background: #000;
+					bottom: -13rem;
 				}
 
 				.arrow {

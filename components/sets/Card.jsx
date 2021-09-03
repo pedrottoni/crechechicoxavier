@@ -73,7 +73,7 @@ export default function Card(props) {
 					position: relative;
 					width: 100%;
 					height: 100%;
-					max-height: 38rem;
+					max-height: 40rem;
 					margin: 3rem 0 1rem;
 					overflow-y: auto;
 					text-shadow: none;

@@ -172,34 +172,14 @@ export default function Acreche() {
 					//filter: brightness(0.5) hue-rotate(50deg) !important;
 				}
 
-				.left {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					gap: 1rem;
+				.left .title,
+				.right .title {
+					font-size: 5rem;
 				}
 
-				.title {
-					max-width: 58rem !important;
-				}
-
-				.left nav {
-					margin-top: 6rem;
-				}
-
-				.left nav.stateBtn {
-					gap: 3.8rem;
-					text-shadow: none;
-				}
-
-				.right {
-					position: relative;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 100%;
-					height: 100%;
-					gap: 2rem;
+				.left .subTitle,
+				.right .subtitle {
+					max-width: 70rem;
 				}
 
 				.cardBtn {
