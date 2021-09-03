@@ -45,16 +45,22 @@ export default function Slider(props) {
 				<div ref={sliderRef} className="keen-slider">
 					{images.map((image) => (
 						<div key={image.id} className="keen-slider__slide">
-							<Image
-								src={image.src}
-								alt={image.legend}
-								layout="fill"
-								objectFit="cover"
-							/>
+							<div className="sliderImage">
+								<Image
+									src={image.src}
+									alt={image.legend}
+									layout="fill"
+									objectFit="cover"
+								/>
+							</div>
 							{image.legend ? (
-								<h3 className="sliderLegend">{image.legend}</h3>
+								<>
+									<div className="sliderLegend">
+										<h3>{image.legend}</h3>
+										{image.spam ? <h4>{image.spam}</h4> : null}
+									</div>
+								</>
 							) : null}
-							{image.spam ? <h4 className="sliderSpam">{image.spam}</h4> : null}
 						</div>
 					))}
 				</div>
@@ -78,19 +84,31 @@ export default function Slider(props) {
 
 				.keen-slider__slide {
 					display: flex;
+					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-					font-size: 50px;
-					color: #fff;
-					font-weight: 500;
-					height: 34rem;
+					height: 40rem;
 					border-radius: 2rem;
 				}
 
-				.sliderLegend,
-				.sliderSpam {
-					position: relative;
-					bottom: -13rem;
+				.sliderLegend {
+					position: absolute;
+					bottom: 0px;
+					z-index: 10;
+					width: 100%;
+					background: linear-gradient(0deg, hsl(0deg 0% 0% / 70%), transparent);
+					backdrop-filter: blur(1px);
+					padding: 8rem 0 2rem;
+					text-align: center;
+					text-shadow: 0.2rem 0.2rem 0.2rem black;
+				}
+
+				.sliderLegend h3 {
+					color: #fff;
+				}
+
+				.sliderLegend h4 {
+					color: #ffc420;
 				}
 
 				.arrow {
@@ -102,6 +120,7 @@ export default function Slider(props) {
 					-webkit-transform: translateY(-50%);
 					fill: #fff;
 					cursor: pointer;
+					filter: drop-shadow(2px 4px 6px black);
 				}
 
 				.arrow--left {

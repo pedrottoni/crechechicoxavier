@@ -63,8 +63,8 @@ export default function Card(props) {
 
 				.cardIcon {
 					position: absolute;
-					width: 10rem;
-					height: 10rem;
+					width: 12rem;
+					height: 12rem;
 					top: -6.5rem;
 					filter: drop-shadow(2px 2px 2px black);
 				}
