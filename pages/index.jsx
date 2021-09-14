@@ -25,7 +25,11 @@ export default function Index() {
 				</header>
 				<Links menu={menu} image={true} />
 			</Home>
-			<style jsx global>{``}</style>
+			<style jsx global>{`
+				h1 {
+					font-size: 4.5rem;
+				}
+			`}</style>
 		</>
 	);
 }

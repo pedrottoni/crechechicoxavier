@@ -6,12 +6,14 @@ import Title from "../components/items/Title";
 import Buttoms from "../components/sets/Buttoms";
 import Card from "../components/sets/Card";
 import Slider from "../components/sets/Slider";
+import { imagesDiretoria } from "../data/aCreche-image";
 
 export default function Acreche() {
 	const [nossaCreche, setNossaCreche] = useState(true);
 	const [missao, setMissao] = useState(false);
 	const [historia, sethistoria] = useState(false);
 	const [equipe, setEquipe] = useState(false);
+	const [equipeColaboradores, setEquipeColaboradores] = useState(false);
 
 	const stateBtn = [
 		{
@@ -23,6 +25,7 @@ export default function Acreche() {
 				sethistoria(true);
 				setMissao(false);
 				setEquipe(false);
+				setEquipeColaboradores(false);
 				if (historia) {
 					setNossaCreche(true);
 					sethistoria(false);
@@ -38,6 +41,7 @@ export default function Acreche() {
 				sethistoria(false);
 				setMissao(true);
 				setEquipe(false);
+				setEquipeColaboradores(false);
 				if (missao) {
 					setNossaCreche(true);
 					setMissao(false);
@@ -53,6 +57,7 @@ export default function Acreche() {
 				sethistoria(false);
 				setMissao(false);
 				setEquipe(true);
+				setEquipeColaboradores(false);
 				if (equipe) {
 					setNossaCreche(true);
 					setEquipe(false);
@@ -88,7 +93,7 @@ export default function Acreche() {
 						<Image src={`/images/acreche.svg`} layout="fill" />
 					) : null}
 					{historia ? (
-						<Card title="Nossa História" image="história">
+						<Card title="Nossa História" icon="história">
 							<p>
 								A Creche Chico Xavier atende 106 crianças e aproximadamente 100
 								famílias em período integral. Para atender os objetivos dos
@@ -117,7 +122,7 @@ export default function Acreche() {
 						</Card>
 					) : null}
 					{missao ? (
-						<Card title="Nossa Missão" image="missão">
+						<Card title="Nossa Missão" icon="missão">
 							<p>
 								Inaugurada em 1981, a Casa da Criança - Creche Chico Xavier tem
 								como missão a promoção da educação, assistência social e
@@ -135,27 +140,31 @@ export default function Acreche() {
 							title="Nossa Equipe"
 							subtitle="Diretoria Executiva"
 							onCLickLeftA={() => {
-								setNossaCreche(false);
-								sethistoria(false);
-								setMissao(false);
-								setEquipe(true);
-								if (equipe) {
-									setNossaCreche(true);
-									setEquipe(false);
-								}
+								setEquipeColaboradores(true);
+								setEquipe(false);
 							}}
 							onCLickRightA={() => {
-								setNossaCreche(false);
-								sethistoria(false);
-								setMissao(false);
-								setEquipe(true);
-								if (equipe) {
-									setNossaCreche(true);
-									setEquipe(false);
-								}
+								setEquipeColaboradores(true);
+								setEquipe(false);
 							}}
-							image="equipe">
-							<Slider />
+							icon="equipe">
+							<Slider images={imagesDiretoria} />
+						</Card>
+					) : null}
+					{equipeColaboradores ? (
+						<Card
+							title="Nossa Equipe"
+							subtitle="Colaboradores"
+							onCLickLeftA={() => {
+								setEquipeColaboradores(false);
+								setEquipe(true);
+							}}
+							onCLickRightA={() => {
+								setEquipeColaboradores(false);
+								setEquipe(true);
+							}}
+							icon="equipe">
+							<Slider images={imagesDiretoria} />
 						</Card>
 					) : null}
 				</div>
@@ -170,11 +179,6 @@ export default function Acreche() {
 
 				.background .hills {
 					//filter: brightness(0.5) hue-rotate(50deg) !important;
-				}
-
-				.left .title,
-				.right .title {
-					font-size: 5rem;
 				}
 
 				.left .subTitle,
