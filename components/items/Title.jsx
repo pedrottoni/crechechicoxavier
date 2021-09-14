@@ -2,10 +2,11 @@ export default function Title(props) {
 	return (
 		<>
 			<h1 className="title">
-				{props.title}{" "}
+				{props.title}
+				<br />
 				{props.span ? <span className="span">{props.span}</span> : null}
 			</h1>
-			<h2 className="subTitle">{props.subtitle}</h2>
+			{props.subtitle ? <h2 className="subTitle">{props.subtitle}</h2> : null}
 			{props.children}
 			<style jsx>{`
 				.title {

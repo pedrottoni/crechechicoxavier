@@ -11,7 +11,11 @@ export default function MenuLink(props) {
 							<Image src={`/images/${props.link}.svg`} layout="fill" />
 						</div>
 					) : null}
-					<div className="linkText">{props.text}</div>
+					<div className="linkText">
+						{props.text}
+						<br />
+						{props.spam ? <span>{props.spam}</span> : null}
+					</div>
 				</a>
 			</Link>
 			<style jsx>{`
@@ -19,10 +23,14 @@ export default function MenuLink(props) {
 					display: flex;
 					flex-direction: column;
 					place-items: center;
-					font-size: 2.5rem};
+					font-size: 2.5rem;
 					font-weight: 900;
 					color: #fff;
 					text-transform: uppercase;
+				}
+
+				a span {
+					color: #ffc420;
 				}
 
 				a .linkIcon {

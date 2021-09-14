@@ -26,7 +26,9 @@ export default function Columns(props) {
 
 				header {
 					display: flex;
+					width: 100%;
 					align-items: center;
+					justify-content: space-between;
 				}
 
 				header nav {
@@ -45,9 +47,9 @@ export default function Columns(props) {
 
 				main {
 					display: grid;
-					grid-template-columns: 1fr 0.7fr;
-					gap: 3em;
-					margin-bottom: 4rem;
+					grid-template-columns: 1fr 0.8fr;
+					gap: 2.5rem;
+					margin-bottom: 6rem;
 				}
 
 				main nav {

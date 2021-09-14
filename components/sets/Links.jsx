@@ -25,6 +25,7 @@ export default function Links(props) {
 					<MenuLink
 						link={menuItem.link}
 						text={menuItem.text}
+						spam={menuItem.spam}
 						image={props.image}
 						vert={props.vert}
 					/>

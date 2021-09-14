@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-import { images } from "../../data/image-data";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { ArrowLeft, ArrowRight } from "../items/Arrows";
 
 export default function Slider(props) {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,37 +13,11 @@ export default function Slider(props) {
 		}
 	});
 
-	function ArrowLeft(props) {
-		const disabeld = props.disabled ? " arrow--disabled" : "";
-		return (
-			<svg
-				onClick={props.onClick}
-				className={"arrow arrow--left" + disabeld}
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 24 24">
-				<path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-			</svg>
-		);
-	}
-
-	function ArrowRight(props) {
-		const disabeld = props.disabled ? " arrow--disabled" : "";
-		return (
-			<svg
-				onClick={props.onClick}
-				className={"arrow arrow--right" + disabeld}
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 24 24">
-				<path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-			</svg>
-		);
-	}
-
 	return (
 		<>
 			<div className="navigation-wrapper">
 				<div ref={sliderRef} className="keen-slider">
-					{images.map((image) => (
+					{props.images.map((image) => (
 						<div key={image.id} className="keen-slider__slide">
 							<div className="sliderImage">
 								<Image
@@ -111,7 +85,7 @@ export default function Slider(props) {
 					color: #ffc420;
 				}
 
-				.arrow {
+				.navigation-wrapper .arrow {
 					width: 30px;
 					height: 30px;
 					position: absolute;
@@ -123,16 +97,16 @@ export default function Slider(props) {
 					filter: drop-shadow(2px 4px 6px black);
 				}
 
-				.arrow--left {
+				.navigation-wrapper .arrow--left {
 					left: 5px;
 				}
 
-				.arrow--right {
+				.navigation-wrapper .arrow--right {
 					left: auto;
 					right: 5px;
 				}
 
-				.arrow--disabled {
+				.navigation-wrapper .arrow--disabled {
 					fill: rgba(255, 255, 255, 0.5);
 				}
 			`}</style>
