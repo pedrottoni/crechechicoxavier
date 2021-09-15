@@ -10,9 +10,6 @@ import Modal from "../../components/sets/Modal";
 import { leitura } from "../../data/projetos-leitura";
 
 export default function ProjetosDeLeitura() {
-  //KeenSlider
-  //Define o Ref do KeenSlider
-  const [sliderRef] = useKeenSlider({ slidesPerView: 4, spacing: 30 });
   //Modal
   //Define qual modal deve aparecer
   //Ativa ou desativa o modal
@@ -33,7 +30,7 @@ export default function ProjetosDeLeitura() {
             subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
           />
         </header>
-        <nav ref={sliderRef} className="keen-slider">
+        <nav>
           {leitura.map((projeto) => (
             <Card
               key={projeto.key}
