@@ -5,10 +5,10 @@ import Title from "../items/Title";
 export default function Card(props) {
 	return (
 		<>
-			<div className="modal">
+			<div className="modal" ref={props.ref}>
 				<motion.div
 					className="backDrop"
-					onClick={() => props.onClick}
+					onClick={props.onClick}
 					initial={{ opacity: 0 }}
 					animate={{ opacity: [0, 1] }}
 					exit={{ opacity: 0 }}
@@ -25,7 +25,7 @@ export default function Card(props) {
 							span={props.span}
 							subtitle={props.subtitle}
 						/>
-						<button type="button" onClick={() => props.onClick}>
+						<button type="button" onClick={props.onClick}>
 							X
 						</button>
 					</header>

@@ -49,22 +49,24 @@ export default function ProjetosDeLeitura() {
 						/>
 					))}
 				</nav>
-				{open && (
-					<Modal
-						key={formacoes[modal].key}
-						ref={imageSliderRef}
-						title={formacoes[modal].title}
-						subtitle={formacoes[modal].subtitle}
-						onCLick={() => setOpen(false)}>
-						<div ref={imageSliderRef} className="keen-slider">
-							{formacoes[modal].images.map((image) => (
-								<div className="images keen-slider__slide">
-									<Image src={`/images/${image}.svg`} layout="fill" />
-								</div>
-							))}
-						</div>
-					</Modal>
-				)}
+				<AnimatePresence initial={false}>
+					{open && (
+						<Modal
+							key={formacoes[modal].key}
+							onClick={() => setOpen(false)}
+							title={formacoes[modal].title}
+							subtitle={formacoes[modal].subtitle}>
+							<div ref={imageSliderRef} className="keen-slider">
+								{formacoes[modal].images.map((image) => (
+									<div className="images keen-slider__slide">
+										<Image src={`/images/${image}.svg`} layout="fill" />
+										<p>lalala</p>
+									</div>
+								))}
+							</div>
+						</Modal>
+					)}
+				</AnimatePresence>
 			</Center>
 			<style sjx>{`
 			main header {
