@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import Title from "../items/Title";
 
 export default function Card(props) {
+	const [imageSliderRef] = useKeenSlider({ slidesPerView: 2, spacing: 20 });
+
 	return (
 		<>
 			<div className="modal" ref={props.ref}>
@@ -29,7 +33,16 @@ export default function Card(props) {
 							X
 						</button>
 					</header>
-					<div className="modalContent">{props.children}</div>
+					<div className="modalContent">
+						<div ref={imageSliderRef} className="keen-slider">
+							{props.images.map((image) => (
+								<div className="images keen-slider__slide">
+									<Image src={`/images/${image}.svg`} layout="fill" />
+									<p>lalala</p>
+								</div>
+							))}
+						</div>
+					</div>
 				</motion.div>
 			</div>
 			<style jsx global>{`

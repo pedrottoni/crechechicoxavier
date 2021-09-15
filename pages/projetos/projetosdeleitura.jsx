@@ -13,7 +13,6 @@ import Image from "next/image";
 
 export default function ProjetosDeLeitura() {
 	const [sliderRef] = useKeenSlider({ slidesPerView: 4, spacing: 30 });
-	const [imageSliderRef] = useKeenSlider({ slidesPerView: 2, spacing: 20 });
 	const [modal, setModalOpen] = useState(0);
 	const [open, setOpen] = useState(false);
 
@@ -55,16 +54,9 @@ export default function ProjetosDeLeitura() {
 							key={formacoes[modal].key}
 							onClick={() => setOpen(false)}
 							title={formacoes[modal].title}
-							subtitle={formacoes[modal].subtitle}>
-							<div ref={imageSliderRef} className="keen-slider">
-								{formacoes[modal].images.map((image) => (
-									<div className="images keen-slider__slide">
-										<Image src={`/images/${image}.svg`} layout="fill" />
-										<p>lalala</p>
-									</div>
-								))}
-							</div>
-						</Modal>
+							subtitle={formacoes[modal].subtitle}
+							images={formacoes[modal].images}
+						/>
 					)}
 				</AnimatePresence>
 			</Center>
@@ -83,7 +75,7 @@ export default function ProjetosDeLeitura() {
 				width: 100vw;
 				overflow-y: hidden;
 				overflow-x: auto;
-				padding: 4rem 10rem 5rem 0;
+				padding: 4rem 6rem 5rem 2rem;
 				margin-bottom: -5rem;
 				gap: 0;
 			}

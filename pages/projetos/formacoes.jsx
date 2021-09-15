@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -8,8 +9,12 @@ import Card from "../../components/sets/Card";
 import Modal from "../../components/sets/Modal";
 import { formacoes } from "../../data/projetos-formacoes";
 
-export default function Formação() {
+import Image from "next/image";
+
+export default function ProjetosDeLeitura() {
 	const [sliderRef] = useKeenSlider({ slidesPerView: 4, spacing: 30 });
+	const [modal, setModalOpen] = useState(0);
+	const [open, setOpen] = useState(false);
 
 	return (
 		<>
@@ -24,27 +29,36 @@ export default function Formação() {
 						title="Formações"
 						subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
 					/>
+					{modal}
 				</header>
 				<nav ref={sliderRef} className="keen-slider">
-					<AnimatePresence initial={false}>
-						{formacoes.map((formacao) => (
-							<Modal
-								key={formacao.link}
-								title={formacao.title}
-								subtitle={formacao.subtitle}
-								modalOpen={({ setModalOpen }) => (
-									<Card
-										title={formacao.title}
-										subtitle={formacao.subtitle}
-										imageTop={formacao.link}
-										cardOnCLick={() => setModalOpen(true)}
-										className="keen-slider__slide"
-									/>
-								)}
-							/>
-						))}
-					</AnimatePresence>
+					{formacoes.map((formacao) => (
+						<Card
+							key={formacao.key}
+							title={formacao.title}
+							subtitle={formacao.subtitle}
+							imageTop={formacao.link}
+							cardOnCLick={() => (
+								<>
+									{setOpen(true)}
+									{setModalOpen(formacao.key)}
+								</>
+							)}
+							className="keen-slider__slide"
+						/>
+					))}
 				</nav>
+				<AnimatePresence initial={false}>
+					{open && (
+						<Modal
+							key={formacoes[modal].key}
+							onClick={() => setOpen(false)}
+							title={formacoes[modal].title}
+							subtitle={formacoes[modal].subtitle}
+							images={formacoes[modal].images}
+						/>
+					)}
+				</AnimatePresence>
 			</Center>
 			<style sjx>{`
 			main header {
@@ -61,7 +75,7 @@ export default function Formação() {
 				width: 100vw;
 				overflow-y: hidden;
 				overflow-x: auto;
-				padding: 4rem 10rem 5rem 0;
+				padding: 4rem 6rem 5rem 2rem;
 				margin-bottom: -5rem;
 				gap: 0;
 			}
@@ -70,12 +84,18 @@ export default function Formação() {
 				background: #ffc420;
 			}
 
+			.card::after {
+				background: #fff;
+			}
+			
 			.keen-slider {
 				justify-content: flex-start;
 			}
 
-			.card::after {
-				background: #fff;
+			.images {
+				position: relative;
+				width: 40rem;
+				height: 40rem;
 			}
 
 			`}</style>
