@@ -39,7 +39,7 @@ export default function Center(props) {
 
 				header svg {
 					position: relative;
-					width: 20rem;
+					width: 25rem;
 					height: 15rem;
 				}
 

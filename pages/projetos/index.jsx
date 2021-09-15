@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Center from "../../components/layout/Center";
 import Title from "../../components/items/Title";
@@ -6,6 +7,8 @@ import Card from "../../components/sets/Card";
 import { projetos } from "../../data/projetos-links";
 
 export default function Projetos() {
+	const router = useRouter();
+
 	const [nossaCreche, setNossaCreche] = useState(true);
 	const [missao, setMissao] = useState(false);
 	const [historia, sethistoria] = useState(false);
@@ -25,9 +28,9 @@ export default function Projetos() {
 						<Card
 							key={projeto.link}
 							title={projeto.title}
-							subtitle={projeto.subtitle}
+							span={projeto.span}
 							imageTop={projeto.link}
-							cardOnCLick={projeto.link}
+							cardOnCLick={() => router.push(projeto.link)}
 						/>
 					))}
 				</nav>

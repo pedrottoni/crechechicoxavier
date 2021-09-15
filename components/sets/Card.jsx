@@ -1,16 +1,10 @@
-import { useRouter } from "next/router";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import MenuButtom from "../items/MenuButtom";
 import { ArrowLeft, ArrowRight } from "../items/Arrows";
 
 export default function Card(props) {
-	const router = useRouter();
-
 	return (
-		<div
-			className={"card " + props.className}
-			onClick={props.cardOnCLick ? () => router.push(props.cardOnCLick) : null}>
+		<div className={"card " + props.className} onClick={props.cardOnCLick}>
 			{props.icon ? (
 				<div className="cardIcon">
 					<Image src={`/images/${props.icon}.svg`} layout="fill" />
@@ -27,7 +21,7 @@ export default function Card(props) {
 								</div>
 							) : null}
 							<h1>{props.title}</h1>
-							{props.subtitle ? <h2>{props.subtitle}</h2> : null}
+							{props.span ? <h2>{props.span}</h2> : null}
 							{props.imageBottom ? (
 								<div className="cardImage">
 									<Image
@@ -47,7 +41,7 @@ export default function Card(props) {
 							</div>
 						) : null}
 						<h1>{props.title}</h1>
-						{props.subtitle ? <h2>{props.subtitle}</h2> : null}
+						{props.span ? <h2>{props.span}</h2> : null}
 						{props.imageBottom ? (
 							<div className="cardImage">
 								<Image src={`/images/${props.imageBottom}.png`} layout="fill" />
@@ -93,23 +87,6 @@ export default function Card(props) {
 					filter: drop-shadow(2px 2px 2px black);
 				}
 
-				.card header .cardTitle {
-					text-align: center;
-					width: 100%;
-				}
-
-				.card header .cardTitle h1 {
-					text-transform: uppercase;
-					font-size: 2.8rem;
-					color: #db3541;
-				}
-
-				.card header .cardTitle h2 {
-					text-transform: uppercase;
-					font-weight: 900;
-					color: #148fb8;
-				}
-
 				.cardContent {
 					position: relative;
 					width: 100%;
@@ -148,19 +125,21 @@ export default function Card(props) {
 					${props.cardOnCLick ? "cursor: pointer;" : null}
 				}
 
-				.card::after {
-					content: "";
-					position: absolute;
-					width: 101%;
-					height: 102%;
-					background: #ffc420;
-					z-index: -1;
-					border-radius: 2rem;
-					top: 0rem;
-					left: 0.5rem;
-					transform: rotateZ(0.8deg);
-					box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
-						0.1rem 0.2rem 0.5rem #5e2458;
+				.card header .cardTitle {
+					text-align: center;
+					width: 100%;
+				}
+
+				.card header .cardTitle h1 {
+					text-transform: uppercase;
+					font-size: 2.8rem;
+					color: #db3541;
+				}
+
+				.card header .cardTitle h2 {
+					text-transform: uppercase;
+					font-weight: 900;
+					color: #148fb8;
 				}
 
 				.card header .arrow {
@@ -177,6 +156,21 @@ export default function Card(props) {
 				.cardContent p {
 					font-size: 2rem;
 					padding-right: 1rem;
+				}
+
+				.card::after {
+					content: "";
+					position: absolute;
+					width: 101%;
+					height: 102%;
+					background: #ffc420;
+					z-index: -1;
+					border-radius: 2rem;
+					top: 0rem;
+					left: 0.5rem;
+					transform: rotateZ(0.8deg);
+					box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+						0.1rem 0.2rem 0.5rem #5e2458;
 				}
 			`}</style>
 		</div>
