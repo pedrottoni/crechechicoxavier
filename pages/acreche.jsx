@@ -30,7 +30,7 @@ export default function Acreche() {
 					setNossaCreche(true);
 					sethistoria(false);
 				}
-			}
+			},
 		},
 		{
 			link: "missão",
@@ -46,7 +46,7 @@ export default function Acreche() {
 					setNossaCreche(true);
 					setMissao(false);
 				}
-			}
+			},
 		},
 		{
 			link: "equipe",
@@ -62,8 +62,8 @@ export default function Acreche() {
 					setNossaCreche(true);
 					setEquipe(false);
 				}
-			}
-		}
+			},
+		},
 	];
 
 	return (
@@ -138,7 +138,7 @@ export default function Acreche() {
 					{equipe ? (
 						<Card
 							title="Nossa Equipe"
-							subtitle="Diretoria Executiva"
+							span="Diretoria Executiva"
 							onCLickLeftA={() => {
 								setEquipeColaboradores(true);
 								setEquipe(false);
@@ -154,7 +154,7 @@ export default function Acreche() {
 					{equipeColaboradores ? (
 						<Card
 							title="Nossa Equipe"
-							subtitle="Colaboradores"
+							span="Colaboradores"
 							onCLickLeftA={() => {
 								setEquipeColaboradores(false);
 								setEquipe(true);

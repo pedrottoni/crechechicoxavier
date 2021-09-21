@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { ArrowLeft, ArrowRight } from "../items/Arrows";
+import { Arrows } from "../items/Arrows";
 
 export default function Slider(props) {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,7 +10,7 @@ export default function Slider(props) {
 		initial: 0,
 		slideChanged(s) {
 			setCurrentSlide(s.details().relativeSlide);
-		}
+		},
 	});
 
 	return (
@@ -40,13 +40,15 @@ export default function Slider(props) {
 				</div>
 				{slider && (
 					<>
-						<ArrowLeft
-							onClick={(e) => e.stopPropagation() || slider.prev()}
-							disabled={currentSlide === 0}
+						<Arrows
+							left={true}
+							onClickLeft={(e) => e.stopPropagation() || slider.prev()}
+							disabledLeft={currentSlide === 0}
 						/>
-						<ArrowRight
-							onClick={(e) => e.stopPropagation() || slider.next()}
-							disabled={currentSlide === slider.details().size - 1}
+						<Arrows
+							right={true}
+							onClickRight={(e) => e.stopPropagation() || slider.next()}
+							disabledRight={currentSlide === slider.details().size - 1}
 						/>
 					</>
 				)}
@@ -83,31 +85,6 @@ export default function Slider(props) {
 
 				.sliderLegend h4 {
 					color: #ffc420;
-				}
-
-				.navigation-wrapper .arrow {
-					width: 30px;
-					height: 30px;
-					position: absolute;
-					top: 50%;
-					transform: translateY(-50%);
-					-webkit-transform: translateY(-50%);
-					fill: #fff;
-					cursor: pointer;
-					filter: drop-shadow(2px 4px 6px black);
-				}
-
-				.navigation-wrapper .arrow--left {
-					left: 5px;
-				}
-
-				.navigation-wrapper .arrow--right {
-					left: auto;
-					right: 5px;
-				}
-
-				.navigation-wrapper .arrow--disabled {
-					fill: rgba(255, 255, 255, 0.5);
 				}
 			`}</style>
 		</>

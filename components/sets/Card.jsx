@@ -1,39 +1,24 @@
 import Image from "next/image";
 import MenuButtom from "../items/MenuButtom";
-import { ArrowLeft, ArrowRight } from "../items/Arrows";
+import { Arrows } from "../items/Arrows";
 
 export default function Card(props) {
 	return (
+		// Início do card definindo se ele possui onCLick
 		<div className={"card " + props.className} onClick={props.cardOnCLick}>
+			{/* Ícone do card */}
 			{props.icon ? (
 				<div className="cardIcon">
 					<Image src={`/images/${props.icon}.svg`} layout="fill" />
 				</div>
 			) : null}
+			{/* Header do card */}
 			<header>
-				{props.onCLickLeftA || props.onCLickRightA ? (
-					<>
-						<ArrowLeft onClick={props.onCLickLeftA} />
-						<div className="cardTitle">
-							{props.imageTop ? (
-								<div className="cardImage">
-									<Image src={`/images/${props.imageTop}.png`} layout="fill" />
-								</div>
-							) : null}
-							<h1>{props.title}</h1>
-							{props.span ? <h2>{props.span}</h2> : null}
-							{props.imageBottom ? (
-								<div className="cardImage">
-									<Image
-										src={`/images/${props.imageBottom}.png`}
-										layout="fill"
-									/>
-								</div>
-							) : null}
-						</div>
-						<ArrowRight onClick={props.onCLickRightA} />
-					</>
-				) : (
+				<>
+					{/* Setas */}
+					{props.onCLickLeftA && (
+						<Arrows left={true} onClickLeft={props.onCLickLeftA} />
+					)}
 					<div className="cardTitle">
 						{props.imageTop ? (
 							<div className="cardImage">
@@ -48,7 +33,10 @@ export default function Card(props) {
 							</div>
 						) : null}
 					</div>
-				)}
+					{props.onCLickRightA && (
+						<Arrows right={true} onClickRight={props.onCLickRightA} />
+					)}
+				</>
 			</header>
 			{props.children ? (
 				<div className="cardContent">{props.children}</div>
@@ -111,7 +99,7 @@ export default function Card(props) {
 					display: flex;
 					flex-direction: column;
 					place-items: center;
-					place-content: space-between;
+					place-content: center;
 					background: #fff;
 					width: 100%;
 					${props.icon
@@ -143,10 +131,21 @@ export default function Card(props) {
 				}
 
 				.card header .arrow {
+					top: auto;
 					width: 20px;
 					height: 20px;
 					fill: #db3541;
 					cursor: pointer;
+					filter: none;
+				}
+
+				.card header .arrow--left {
+					left: auto;
+				}
+
+				.card header .arrow--right {
+					left: auto;
+					right: 4rem;
 				}
 
 				.card header .arrow--disabled {
