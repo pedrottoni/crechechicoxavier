@@ -17,8 +17,9 @@ export default function Acreche() {
 
 	const stateBtn = [
 		{
+			key: 1,
 			link: "história",
-			text: "Nossa",
+			title: "Nossa",
 			span: "História",
 			onClick: () => {
 				setNossaCreche(false);
@@ -33,8 +34,9 @@ export default function Acreche() {
 			},
 		},
 		{
+			key: 2,
 			link: "missão",
-			text: "Nossa",
+			title: "Nossa",
 			span: "Missão",
 			onClick: () => {
 				setNossaCreche(false);
@@ -49,8 +51,9 @@ export default function Acreche() {
 			},
 		},
 		{
+			key: 3,
 			link: "equipe",
-			text: "Nossa",
+			title: "Nossa",
 			span: "Equipe",
 			onClick: () => {
 				setNossaCreche(false);

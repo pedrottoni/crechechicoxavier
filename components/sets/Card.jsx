@@ -1,96 +1,52 @@
 import Image from "next/image";
-import MenuButtom from "../items/MenuButtom";
-import { Arrows } from "../items/Arrows";
+
+/*
+Props:
+	Card
+		- className
+		- onClick
+		- icon
+	Header
+		- imageTop
+		- title
+		- span
+		- imageBottom
+	Content
+	 - children
+ */
 
 export default function Card(props) {
 	return (
 		// Início do card definindo se ele possui onCLick
 		<div className={"card " + props.className} onClick={props.cardOnCLick}>
 			{/* Ícone do card */}
-			{props.icon ? (
+			{props.icon && (
 				<div className="cardIcon">
 					<Image src={`/images/${props.icon}.svg`} layout="fill" />
 				</div>
-			) : null}
+			)}
 			{/* Header do card */}
 			<header>
 				<>
-					{/* Setas */}
-					{props.onCLickLeftA && (
-						<Arrows left={true} onClickLeft={props.onCLickLeftA} />
-					)}
 					<div className="cardTitle">
-						{props.imageTop ? (
+						{props.imageTop && (
 							<div className="cardImage">
 								<Image src={`/images/${props.imageTop}.png`} layout="fill" />
 							</div>
-						) : null}
+						)}
 						<h1>{props.title}</h1>
-						{props.span ? <h2>{props.span}</h2> : null}
-						{props.imageBottom ? (
+						{props.span && <h2>{props.span}</h2>}
+						{props.imageBottom && (
 							<div className="cardImage">
 								<Image src={`/images/${props.imageBottom}.png`} layout="fill" />
 							</div>
-						) : null}
+						)}
 					</div>
-					{props.onCLickRightA && (
-						<Arrows right={true} onClickRight={props.onCLickRightA} />
-					)}
 				</>
 			</header>
-			{props.children ? (
-				<div className="cardContent">{props.children}</div>
-			) : null}
-			{props.onCLickLeftB || props.onCLickRightB ? (
-				<div className="cardBtn">
-					<MenuButtom
-						text="<- lalala"
-						vert={true}
-						onCLick={props.onCLickLeftB}
-					/>
-					{props.legend ? <h3>{props.legend}</h3> : null}
-					<MenuButtom
-						text="lalala ->"
-						vert={true}
-						onCLick={props.onCLickRightB}
-					/>
-				</div>
-			) : (
-				<>{props.legend ? <h3>{props.legend}</h3> : null}</>
-			)}
-			<style jsx>{`
-				.cardIcon {
-					position: absolute;
-					width: 12rem;
-					height: 12rem;
-					top: -6.5rem;
-					filter: drop-shadow(2px 2px 2px black);
-				}
+			{props.children && <div className="cardContent">{props.children}</div>}
 
-				.cardImage {
-					position: relative;
-					width: 24rem;
-					height: 24rem;
-					margin: 0 0 3rem;
-					filter: drop-shadow(2px 2px 2px black);
-				}
-
-				.cardContent {
-					position: relative;
-					width: 100%;
-					height: 100%;
-					max-height: 40rem;
-					margin: 3rem 0 1rem;
-					overflow-y: auto;
-					text-shadow: none;
-				}
-
-				.cardBtn {
-					display: flex;
-					justify-content: space-between;
-					width: 100%;
-				}
-			`}</style>
+			<style jsx>{``}</style>
 
 			<style jsx global>{`
 				.card {
@@ -110,7 +66,15 @@ export default function Card(props) {
 					box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
 						0.1rem 0.2rem 0.5rem #5e2458;
 					text-shadow: none;
-					${props.cardOnCLick ? "cursor: pointer;" : null}
+					${props.cardOnCLick && "cursor: pointer;"}
+				}
+
+				.cardIcon {
+					position: absolute;
+					width: 12rem;
+					height: 12rem;
+					top: -6.5rem;
+					filter: drop-shadow(2px 2px 2px black);
 				}
 
 				.card header .cardTitle {
@@ -130,29 +94,25 @@ export default function Card(props) {
 					color: #148fb8;
 				}
 
-				.card header .arrow {
-					top: auto;
-					width: 20px;
-					height: 20px;
-					fill: #db3541;
-					cursor: pointer;
-					filter: none;
+				.card header .cardImage {
+					position: relative;
+					width: 24rem;
+					height: 24rem;
+					margin: 0 0 3rem;
+					filter: drop-shadow(2px 2px 2px black);
 				}
 
-				.card header .arrow--left {
-					left: auto;
+				.card .cardContent {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					max-height: 40rem;
+					margin: 3rem 0 1rem;
+					overflow-y: auto;
+					text-shadow: none;
 				}
 
-				.card header .arrow--right {
-					left: auto;
-					right: 4rem;
-				}
-
-				.card header .arrow--disabled {
-					fill: rgba(255, 255, 255, 0.5);
-				}
-
-				.cardContent p {
+				.card .cardContent p {
 					font-size: 2rem;
 					padding-right: 1rem;
 				}

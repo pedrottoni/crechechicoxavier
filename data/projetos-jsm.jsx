@@ -8,8 +8,8 @@ export const vinte = [
 		eventos: [
 			{
 				key: 0,
-				link: "evento01",
-				title: "Evento01",
+				link: "Fevento01",
+				title: "Fevento01",
 				images: [
 					{
 						image: "acreche",
@@ -17,7 +17,7 @@ export const vinte = [
 							"Há quatro décadas acolhemos crianças e suas famílias",
 					},
 					{
-						image: "contato",
+						image: "equipe",
 						imagesSubtitle:
 							"Há quatro décadas acolhemos crianças e suas famílias",
 					},
@@ -45,8 +45,8 @@ export const vinte = [
 			},
 			{
 				key: 1,
-				link: "evento02",
-				title: "evento02",
+				link: "Fevento02",
+				title: "Fevento02",
 				images: [
 					{
 						image: "acreche",
@@ -82,8 +82,8 @@ export const vinte = [
 			},
 			{
 				key: 2,
-				link: "evento03",
-				title: "evento03",
+				link: "Fevento03",
+				title: "Fevento03",
 				images: [
 					{
 						image: "acreche",
@@ -119,8 +119,8 @@ export const vinte = [
 			},
 			{
 				key: 3,
-				link: "evento04",
-				title: "evento04",
+				link: "Fevento04",
+				title: "Fevento04",
 				images: [
 					{
 						image: "acreche",
@@ -156,8 +156,8 @@ export const vinte = [
 			},
 			{
 				key: 4,
-				link: "evento05",
-				title: "evento05",
+				link: "Fevento05",
+				title: "Fevento05",
 				images: [
 					{
 						image: "acreche",
@@ -193,8 +193,8 @@ export const vinte = [
 			},
 			{
 				key: 5,
-				link: "evento06",
-				title: "evento06",
+				link: "Fevento06",
+				title: "Fevento06",
 				images: [
 					{
 						image: "acreche",
@@ -239,8 +239,8 @@ export const vinte = [
 		eventos: [
 			{
 				key: 0,
-				link: "evento01",
-				title: "Evento01",
+				link: "Cevento01",
+				title: "Cevento01",
 				images: [
 					{
 						image: "acreche",
@@ -276,8 +276,8 @@ export const vinte = [
 			},
 			{
 				key: 1,
-				link: "evento02",
-				title: "evento02",
+				link: "Cevento02",
+				title: "Cevento02",
 				images: [
 					{
 						image: "acreche",
@@ -313,8 +313,8 @@ export const vinte = [
 			},
 			{
 				key: 2,
-				link: "evento03",
-				title: "evento03",
+				link: "Cevento03",
+				title: "Cevento03",
 				images: [
 					{
 						image: "acreche",
@@ -350,8 +350,8 @@ export const vinte = [
 			},
 			{
 				key: 3,
-				link: "evento04",
-				title: "evento04",
+				link: "Cevento04",
+				title: "Cevento04",
 				images: [
 					{
 						image: "acreche",
@@ -387,8 +387,8 @@ export const vinte = [
 			},
 			{
 				key: 4,
-				link: "evento05",
-				title: "evento05",
+				link: "Cevento05",
+				title: "Cevento05",
 				images: [
 					{
 						image: "acreche",
@@ -424,8 +424,8 @@ export const vinte = [
 			},
 			{
 				key: 5,
-				link: "evento06",
-				title: "evento06",
+				link: "Cevento06",
+				title: "Cevento06",
 				images: [
 					{
 						image: "acreche",
@@ -713,7 +713,7 @@ export const vinteUm = [
 							"Há quatro décadas acolhemos crianças e suas famílias",
 					},
 					{
-						image: "contato",
+						image: "equipe",
 						imagesSubtitle:
 							"Há quatro décadas acolhemos crianças e suas famílias",
 					},

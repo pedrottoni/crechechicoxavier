@@ -1,9 +1,9 @@
+import { useState } from "react";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import Modal from "./Modal";
 import { Arrows } from "../items/Arrows";
-import { useState } from "react";
+import Modal from "./Modal";
 
 export default function ModalSlide(props) {
 	const [currentSlide, setCurrentSlide] = useState(0);

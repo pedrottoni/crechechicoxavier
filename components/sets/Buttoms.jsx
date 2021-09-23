@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 export default function Buttoms(props) {
 	const list = {
 		animate: { transition: { staggerChildren: 0.05 } },
-		exit: { transition: { staggerChildren: 0.05 } }
+		exit: { transition: { staggerChildren: 0.05 } },
 	};
 	const animationMenu = {
 		initial: { y: 100, opacity: 0 },
 		animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-		exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } }
+		exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
 	};
 
 	return (
@@ -22,14 +22,14 @@ export default function Buttoms(props) {
 			place={props.place}>
 			{props.menu.map((menuItem) => (
 				<MenuButtom
-					key={menuItem.link}
+					key={menuItem.key}
 					link={menuItem.link}
-					text={menuItem.text}
+					title={menuItem.title}
 					image={props.image}
 					vert={props.vert}
 					span={menuItem.span}
 					variants={animationMenu}
-					onCLick={menuItem.onClick}
+					onCLick={menuItem.onClick ? menuItem.onClick : props.onClick}
 				/>
 			))}
 

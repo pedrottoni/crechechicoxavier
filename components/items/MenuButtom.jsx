@@ -13,7 +13,7 @@ export default function MenuButtom(props) {
 				</div>
 			) : null}
 			<div className="btnText">
-				{props.text}
+				{props.title}
 				<br />
 				<b>{props.span ? props.span : null}</b>
 			</div>

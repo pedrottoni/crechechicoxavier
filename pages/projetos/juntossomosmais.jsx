@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Center from "../../components/layout/Center";
 import Title from "../../components/items/Title";
 import { Arrows } from "../../components/items/Arrows";
+import MenuButtom from "../../components/items/MenuButtom";
 import Card from "../../components/sets/Card";
 import ModalSlide from "../../components/sets/ModalSlide";
 import { vinteUm } from "../../data/projetos-jsm";
@@ -30,7 +31,6 @@ export default function JuntosSomosMais() {
 	const [open, setOpen] = useState(false);
 
 	const [projeto, setProjeto] = useState(0);
-	var familia = vinteUm[projeto].eventos;
 
 	return (
 		<>
@@ -43,27 +43,21 @@ export default function JuntosSomosMais() {
 				<header>
 					<Title title="Juntos" span="Somos Mais" />
 					<div className="jsm-projetos">
-						<button type="button" onCLick={() => setProjeto(0)}>
-							Família
-						</button>
-						<button type="button" onCLick={() => setProjeto(1)}>
-							Colaboradores
-						</button>
-						<button
-							type="button"
-							onCLick={() => {
-								setProjeto(2);
-							}}>
-							Comunidade
-						</button>
+						{vinteUm.map((menuItem) => (
+							<MenuButtom
+								key={menuItem.key}
+								link={menuItem.link}
+								title={menuItem.title}
+								image={menuItem.image}
+								vert={menuItem.vert}
+								span={menuItem.span}
+								onCLick={() => setProjeto(menuItem.key)}
+							/>
+						))}
 					</div>
-					<h3>{vinteUm[projeto].eventos.length}</h3>
-					<h3>{vinteUm[0].eventos[0].images.length}</h3>
-					<h3>{familia[projeto].title}</h3>
-					<h3 onCLick={() => setProjeto(2)}>{projeto}</h3>
 				</header>
 				<nav ref={sliderRef} className="keen-slider">
-					{familia.map((jsm) => (
+					{vinteUm[projeto].eventos.map((jsm) => (
 						<Card
 							key={jsm.key}
 							title={jsm.title}
@@ -84,17 +78,17 @@ export default function JuntosSomosMais() {
 						onClickLeft={(e) => e.stopPropagation() || slider.prev()}
 						onClickRight={(e) => e.stopPropagation() || slider.next()}
 						disabledLeft={currentSlide === 0}
-						disabledRight={currentSlide >= vinteUm.length - 4}
+						disabledRight={currentSlide >= vinteUm[projeto].eventos.length - 4}
 					/>
 				</nav>
 				<AnimatePresence initial={false}>
 					{open && (
 						<ModalSlide
-							key={formacoes[modal].key}
+							key={vinteUm[projeto].eventos[modal].key}
 							onClick={() => setOpen(false)}
-							title={formacoes[modal].title}
-							subtitle={formacoes[modal].subtitle}
-							images={formacoes[modal].images}
+							title={vinteUm[projeto].eventos[modal].title}
+							subtitle={vinteUm[projeto].eventos[modal].subtitle}
+							images={vinteUm[projeto].eventos[modal].images}
 						/>
 					)}
 				</AnimatePresence>
