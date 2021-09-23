@@ -1,6 +1,31 @@
+import { useState } from "react";
 import Head from "next/head";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { AnimatePresence } from "framer-motion";
+import Center from "../components/layout/Center";
+import Title from "../components/items/Title";
+import { Arrows } from "../components/items/Arrows";
+import Card from "../components/sets/Card";
+import ModalDataSlide from "../components/sets/ModalDataSlide";
+import { transparencia } from "../data/transparencia-dados";
 
 export default function Nossosonho() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [sliderRef, slider] = useKeenSlider({
+    slidesPerView: 4.3,
+    spacing: 30,
+    initial: 0,
+    slideChanged(s) {
+      setCurrentSlide(s.details().relativeSlide);
+    }
+  });
+  //Modal
+  //Define qual modal deve aparecer
+  //Ativa ou desativa o modal
+  const [modal, setModalOpen] = useState(0);
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -9,9 +34,91 @@ export default function Nossosonho() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>SITE</h1>
-      </main>
+      <Center>
+        <header>
+          <Title
+            title="Transparência"
+            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+          />
+        </header>
+        <nav ref={sliderRef} className="keen-slider">
+          {transparencia.map((projeto) => (
+            <Card
+              key={projeto.key}
+              title={projeto.title}
+              span={projeto.span}
+              subtitle={projeto.subtitle}
+              imageTop={projeto.link}
+              cardOnCLick={() => (
+                <>
+                  {setOpen(true)}
+                  {setModalOpen(projeto.key)}
+                </>
+              )}
+              className="keen-slider__slide"
+            />
+          ))}
+          <Arrows
+            left={true}
+            right={true}
+            onClickLeft={(e) => e.stopPropagation() || slider.prev()}
+            onClickRight={(e) => e.stopPropagation() || slider.next()}
+            disabledLeft={currentSlide === 0}
+            disabledRight={currentSlide >= transparencia.length - 4}
+          />
+        </nav>
+        <AnimatePresence initial={false}>
+          {open && (
+            <ModalDataSlide
+              key={transparencia[modal].key}
+              onClick={() => setOpen(false)}
+              title={transparencia[modal].title}
+              subtitle={transparencia[modal].subtitle}
+              images={transparencia[modal]}
+            />
+          )}
+        </AnimatePresence>
+      </Center>
+
+      <style sjx>{`
+			main header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			main header .title {
+				color: #ffc420 !important;
+			}
+
+			main nav {
+				width: 100vw;
+				overflow-y: hidden;
+				overflow-x: auto;
+				padding: 4rem 2rem 5rem 2rem;
+				margin-bottom: -5rem;
+				gap: 0;
+			}
+
+			main nav .card {
+				background: #ffc420;
+			}
+
+			.card::after {
+				background: #fff;
+			}
+			
+			.keen-slider {
+				justify-content: flex-start;
+			}
+
+			.images {
+				position: relative;
+				width: 40rem;
+				height: 40rem;
+			}
+
+			`}</style>
     </>
   );
 }

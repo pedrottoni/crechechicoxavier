@@ -18,14 +18,15 @@ Props:
  */
 
 export default function CardSlideData(props) {
-	return (
-		<Card
-			className={props.className}
-			icon={props.icon}
-			title={props.title}
-			span={props.span}>
-			<p>SlidesControl</p>
-			<p>Slides</p>
-		</Card>
-	);
+  return (
+    <Card
+      className={props.className}
+      icon={props.icon}
+      title={props.title}
+      span={props.span}
+    >
+      <p>SlidesControl</p>
+      <p>Slides</p>
+    </Card>
+  );
 }
