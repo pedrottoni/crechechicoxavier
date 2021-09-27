@@ -38,7 +38,7 @@ export default function Transparencia() {
 					</Title>
 				</div>
 				<div className="right">
-					{docs === 0 ? (
+					{docs === 1 ? (
 						<CardSlide
 							key={transparencia[docs].key}
 							icon={transparencia[docs].link}
