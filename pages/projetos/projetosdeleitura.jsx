@@ -20,7 +20,7 @@ export default function ProjetosDeLeitura() {
     initial: 0,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide);
-    }
+    },
   });
   //Modal
   //Define qual modal deve aparecer
@@ -37,10 +37,7 @@ export default function ProjetosDeLeitura() {
       </Head>
       <Center>
         <header>
-          <Title
-            title="Projetos de Leitura"
-            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
-          />
+          <Title title="Projetos de Leitura" subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes." />
         </header>
         <nav ref={sliderRef} className="keen-slider">
           {vinteUm.map((projeto) => (
@@ -59,66 +56,43 @@ export default function ProjetosDeLeitura() {
               className="keen-slider__slide"
             />
           ))}
-          <Arrows
-            left={true}
-            right={true}
-            onClickLeft={(e) => e.stopPropagation() || slider.prev()}
-            onClickRight={(e) => e.stopPropagation() || slider.next()}
-            disabledLeft={currentSlide === 0}
-            disabledRight={currentSlide >= vinteUm.length - 4}
-          />
+          <Arrows left={true} right={true} onClickLeft={(e) => e.stopPropagation() || slider.prev()} onClickRight={(e) => e.stopPropagation() || slider.next()} disabledLeft={currentSlide === 0} disabledRight={currentSlide >= vinteUm.length - 4} />
         </nav>
-        <AnimatePresence initial={false}>
-          {open && (
-            <ModalDataSlide
-              key={vinteUm[modal].key}
-              onClick={() => setOpen(false)}
-              title={vinteUm[modal].title}
-              subtitle={vinteUm[modal].subtitle}
-              images={vinteUm[modal]}
-            />
-          )}
-        </AnimatePresence>
+        <AnimatePresence initial={false}>{open && <ModalDataSlide key={vinteUm[modal].key} onClick={() => setOpen(false)} title={vinteUm[modal].title} subtitle={vinteUm[modal].subtitle} images={vinteUm[modal]} />}</AnimatePresence>
       </Center>
-      <style sjx>{`
-			main header {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-			
-			main header .title {
-				color: #ffc420 !important;
-			}
 
-			main nav {
-				width: 100vw;
-				overflow-y: hidden;
-				overflow-x: auto;
-				padding: 4rem 2rem 5rem 2rem;
-				margin-bottom: -5rem;
-				gap: 0;
-			}
+      <style jsx>{`
+        main header .title {
+          color: #ffc420 !important;
+        }
 
-			main nav .card {
-				background: #ffc420;
-			}
+        main nav {
+          width: 100vw;
+          overflow-y: hidden;
+          overflow-x: auto;
+          padding: 4rem 2rem 5rem 2rem;
+          margin-bottom: -5rem;
+          gap: 0;
+        }
 
-			.card::after {
-				background: #fff;
-			}
-			
-			.keen-slider {
-				justify-content: flex-start;
-			}
+        main nav .card {
+          background: #ffc420;
+        }
 
-			.images {
-				position: relative;
-				width: 40rem;
-				height: 40rem;
-			}
+        .card::after {
+          background: #fff;
+        }
 
-			`}</style>
+        .keen-slider {
+          justify-content: flex-start;
+        }
+
+        .images {
+          position: relative;
+          width: 40rem;
+          height: 40rem;
+        }
+      `}</style>
     </>
   );
 }
