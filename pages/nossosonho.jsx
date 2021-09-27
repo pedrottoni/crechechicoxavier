@@ -29,43 +29,23 @@ export default function NossoSonho() {
           </nav>
         </header>
         <Swiper spaceBetween={50} slidesPerView={3} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
-          {docs === 0 || 2 
-            ? transparencia[docs].documentos.map((projeto) => (
-                <SwiperSlide>
-                  <Card
-                    key={projeto.key}
-                    title={projeto.subtitle}
-                    span={projeto.span}
-                    subtitle={projeto.subtitle}
-                    imageTop={projeto.link}
-                    cardOnCLick={() => (
-                      <>
-                        {setOpen(true)}
-                        {setModalOpen(projeto.key)}
-                      </>
-                    )}
-                    className="keen-slider__slide"
-                  />
-                </SwiperSlide>
-              ))
-            : transparencia[docs].categorias.map((projeto) => (
-              <SwiperSlide>
-                <Card
-                  key={projeto.key}
-                  title={projeto.subtitle}
-                  span={projeto.span}
-                  subtitle={projeto.subtitle}
-                  imageTop={projeto.link}
-                  cardOnCLick={() => (
-                    <>
-                      {setOpen(true)}
-                      {setModalOpen(projeto.key)}
-                    </>
-                  )}
-                  className="keen-slider__slide"
-                />
-              </SwiperSlide>
-            ))}
+          {transparencia[docs].documentos.map((projeto) => (
+            <SwiperSlide>
+              <Card
+                key={projeto.link}
+                title={projeto.subtitle}
+                span={projeto.span}
+                subtitle={projeto.subtitle}
+                cardOnCLick={() => (
+                  <>
+                    {setOpen(true)}
+                    {setModalOpen(projeto.key)}
+                  </>
+                )}
+                className="keen-slider__slide"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </Center>
       <style jsx>{`
