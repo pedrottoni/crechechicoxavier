@@ -6,9 +6,6 @@ import MenuButton from "../components/items/MenuButton";
 import Card from "../components/sets/Card";
 import { transparencia } from "../data/transparencia-dados";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
 export default function NossoSonho() {
   const [docs, setDocs] = useState(0);
 
@@ -28,25 +25,7 @@ export default function NossoSonho() {
             ))}
           </nav>
         </header>
-        <Swiper spaceBetween={50} slidesPerView={3} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
-          {transparencia[docs].documentos.map((projeto) => (
-            <SwiperSlide>
-              <Card
-                key={projeto.link}
-                title={projeto.subtitle}
-                span={projeto.span}
-                subtitle={projeto.subtitle}
-                cardOnCLick={() => (
-                  <>
-                    {setOpen(true)}
-                    {setModalOpen(projeto.key)}
-                  </>
-                )}
-                className="keen-slider__slide"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+
       </Center>
       <style jsx>{`
         .jsm-projetos {
