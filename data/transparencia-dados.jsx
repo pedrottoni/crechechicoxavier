@@ -2,6 +2,7 @@ export const transparencia = [
 	{
 		key: 0,
 		link: "fundlegal",
+<<<<<<< HEAD
 		title: "Fundamentação",
 		documentos: [
 			{
@@ -39,6 +40,24 @@ export const transparencia = [
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
 				subtitle: "Proposta Pedagógica: 2019 - 2022",
+=======
+		title: "Fundamentação Legal",
+		documentos: [
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 1",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 2",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 3",
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 			},
 		],
 	},
@@ -184,7 +203,11 @@ export const transparencia = [
 	{
 		key: 2,
 		link: "anteriores",
+<<<<<<< HEAD
 		title: "Anteriores",
+=======
+		title: "Anos Anteriores",
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 		documentos: [
 			{
 				link:
@@ -201,6 +224,7 @@ export const transparencia = [
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
 				subtitle: "Documento 1",
 			},
+<<<<<<< HEAD
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
@@ -216,6 +240,8 @@ export const transparencia = [
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
 				subtitle: "Documento 1",
 			},
+=======
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 		],
 	},
 ];
