@@ -7,10 +7,28 @@ import CardSlideData from "../components/sets/CardSlideData";
 import CardSlide from "../components/sets/CardSlide";
 import { transparencia } from "../data/transparencia-dados";
 
+var meses = [
+	"janeiro",
+	"fevereiro",
+	"março",
+	"abril",
+	"maio",
+	"junho",
+	"julho",
+	"agosto",
+	"setembro",
+	"outubro",
+	"novembro",
+	"dezembro",
+];
+
 export default function Transparencia() {
-  const [docs, setDocs] = useState(0);
+	const [docs, setDocs] = useState(0);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 	return (
 		<>
 			<Head>
@@ -23,6 +41,7 @@ export default function Transparencia() {
 					<Title
 						title="Transparência"
 						subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal e atender o Termo de Colaboração Nº001. Desta forma, a instituição vem através desta página, disponibilizar publicamente o acesso as suas prestações de contas.">
+<<<<<<< HEAD
 						<nav>
 							{transparencia.map((menuItem) => (
 								<MenuButtom
@@ -47,6 +66,28 @@ export default function Transparencia() {
 							subtitle={transparencia[docs].subtitle}
 							slides={transparencia[docs].documentos}
 							slidesPerView={3.5}
+=======
+						{transparencia.map((menuItem) => (
+							<MenuButtom
+								key={menuItem.key}
+								link={menuItem.link}
+								title={menuItem.title}
+								image={menuItem.image}
+								vert={menuItem.vert}
+								span={menuItem.span}
+								onCLick={() => setDocs(menuItem.key)}
+							/>
+						))}
+					</Title>
+				</div>
+				<div className="right">
+					{docs === 0 ? (
+						<CardSlide
+							key={transparencia[docs].key}
+							title={transparencia[docs].title}
+							subtitle={transparencia[docs].subtitle}
+							slides={transparencia[docs].documentos}
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 							className="CardTransp"
 						/>
 					) : (
@@ -60,6 +101,7 @@ export default function Transparencia() {
 				</div>
 			</Columns>
 			<style jsx>{``}</style>
+<<<<<<< HEAD
 =======
   return (
     <>
@@ -112,13 +154,15 @@ export default function Transparencia() {
       </Columns>
       <style jsx>{``}</style>
 >>>>>>> parent of 4ca0624 (Testando o Swiper)
+=======
+>>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 
-      <style jsx global>{`
-        .left .subTitle,
-        .right .subtitle {
-          max-width: 70rem;
-        }
-      `}</style>
-    </>
-  );
+			<style jsx global>{`
+				.left .subTitle,
+				.right .subtitle {
+					max-width: 70rem;
+				}
+			`}</style>
+		</>
+	);
 }

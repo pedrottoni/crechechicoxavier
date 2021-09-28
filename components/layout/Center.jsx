@@ -50,6 +50,7 @@ export default function Center(props) {
           place-items: center;
           text-align: center;
           gap: 2rem;
+          margin-bottom: 10rem;
         }
 
         main header .title {
@@ -78,9 +79,8 @@ export default function Center(props) {
         }
 
         footer {
-          position: relative;
-          bottom: -10px;
           place-self: center;
+          padding-bottom: 2rem;
         }
       `}</style>
     </>
