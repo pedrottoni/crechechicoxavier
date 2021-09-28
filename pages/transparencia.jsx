@@ -7,21 +7,6 @@ import CardSlideData from "../components/sets/CardSlideData";
 import CardSlide from "../components/sets/CardSlide";
 import { transparencia } from "../data/transparencia-dados";
 
-var meses = [
-	"janeiro",
-	"fevereiro",
-	"março",
-	"abril",
-	"maio",
-	"junho",
-	"julho",
-	"agosto",
-	"setembro",
-	"outubro",
-	"novembro",
-	"dezembro",
-];
-
 export default function Transparencia() {
 	const [docs, setDocs] = useState(0);
 
@@ -53,7 +38,7 @@ export default function Transparencia() {
 					</Title>
 				</div>
 				<div className="right">
-					{docs === 0 ? (
+					{docs === 1 ? (
 						<CardSlide
 							key={transparencia[docs].key}
 							icon={transparencia[docs].link}

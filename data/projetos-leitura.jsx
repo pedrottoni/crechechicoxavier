@@ -2,8 +2,8 @@ export const vinte = [
 	{
 		key: 0,
 		link: "multisseriada",
-		title: "MULTISSERIADA",
-		span: "Berçário 1 e 2",
+		title: "Berçário 1 e 2",
+		span: "MULTISSERIADA",
 		subtitle:
 			"Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
 		janeiro: [
@@ -1656,8 +1656,8 @@ export const vinteUm = [
 	{
 		key: 0,
 		link: "multisseriada",
-		title: "MULTISSERIADA",
-		span: "Berçário 1 e 2",
+		title: "Berçário 1 e 2",
+		span: "MULTISSERIADA",
 		subtitle:
 			"Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
 

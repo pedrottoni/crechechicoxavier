@@ -2,22 +2,37 @@ export const transparencia = [
 	{
 		key: 0,
 		link: "fundlegal",
-		title: "Fundamentação Legal",
+		title: "Fundamentação",
 		documentos: [
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Documento 1",
+				subtitle: "Estatuto Social",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Documento 2",
+				subtitle: "Diretoria Executiva",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Documento 3",
+				subtitle: "Termo de Colaboração",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Regimento Escolar",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Termo Aditivo 01: Termo de colaboração",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Proposta Pedagógica: 2019 - 2022",
 			},
 		],
 	},
@@ -163,8 +178,23 @@ export const transparencia = [
 	{
 		key: 2,
 		link: "anteriores",
-		title: "Anos Anteriores",
+		title: "Anteriores",
 		documentos: [
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 1",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 1",
+			},
+			{
+				link:
+					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
+				subtitle: "Documento 1",
+			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
