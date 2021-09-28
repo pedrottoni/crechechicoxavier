@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
-import MenuButtom from "../components/items/MenuButtom";
+import MenuButton from "../components/items/MenuButton";
 import CardSlideData from "../components/sets/CardSlideData";
 import CardSlide from "../components/sets/CardSlide";
 import { transparencia } from "../data/transparencia-dados";
@@ -24,7 +24,7 @@ export default function Transparencia() {
 						subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal e atender o Termo de Colaboração Nº001. Desta forma, a instituição vem através desta página, disponibilizar publicamente o acesso as suas prestações de contas.">
 						<nav>
 							{transparencia.map((menuItem) => (
-								<MenuButtom
+								<MenuButton
 									key={menuItem.key}
 									link={menuItem.link}
 									title={menuItem.title}

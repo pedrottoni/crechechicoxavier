@@ -6,7 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Center from "../../components/layout/Center";
 import Title from "../../components/items/Title";
 import { Arrows } from "../../components/items/Arrows";
-import MenuButtom from "../../components/items/MenuButtom";
+import Menun from "../../components/items/MenuButton";
 import Card from "../../components/sets/Card";
 import ModalSlide from "../../components/sets/ModalSlide";
 import { vinteUm } from "../../data/projetos-jsm";
@@ -44,7 +44,7 @@ export default function JuntosSomosMais() {
 					<Title title="Juntos" span="Somos Mais" />
 					<div className="jsm-projetos">
 						{vinteUm.map((menuItem) => (
-							<MenuButtom
+							<MenuButton
 								key={menuItem.key}
 								link={menuItem.link}
 								title={menuItem.title}

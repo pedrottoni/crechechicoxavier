@@ -1,7 +1,7 @@
-import MenuButtom from "../items/MenuButtom";
+import MenuButton from "../items/MenuButton";
 import { motion } from "framer-motion";
 
-export default function Buttoms(props) {
+export default function Buttons(props) {
 	const list = {
 		animate: { transition: { staggerChildren: 0.05 } },
 		exit: { transition: { staggerChildren: 0.05 } },
@@ -21,7 +21,7 @@ export default function Buttoms(props) {
 			variants={list}
 			place={props.place}>
 			{props.menu.map((menuItem) => (
-				<MenuButtom
+				<MenuButton
 					key={menuItem.key}
 					link={menuItem.link}
 					title={menuItem.title}

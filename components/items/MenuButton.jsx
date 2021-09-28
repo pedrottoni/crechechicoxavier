@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function MenuButtom(props) {
+export default function MenuButton(props) {
 	return (
-		<motion.buttom
+		<motion.button
 			onClick={props.onCLick}
 			variants={props.variants}
 			className="btn">
@@ -41,6 +41,6 @@ export default function MenuButtom(props) {
 					font-size: 2.5rem;
 				}
 			`}</style>
-		</motion.buttom>
+		</motion.button>
 	);
 }
