@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
-import Buttons from "../components/sets/Buttons";
+import Buttoms from "../components/sets/Buttoms";
 import Card from "../components/sets/Card";
 import Slider from "../components/sets/Slider";
 import { imagesDiretoria } from "../data/aCreche-image";
@@ -82,7 +82,7 @@ export default function Acreche() {
 						title="A nossa ceche"
 						span="Chico Xavier"
 						subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral.">
-						<Buttons
+						<Buttoms
 							menu={stateBtn}
 							image={true}
 							vert={true}

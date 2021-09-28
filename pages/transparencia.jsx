@@ -2,25 +2,10 @@ import { useState } from "react";
 import Head from "next/head";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
-import MenuButton from "../components/items/MenuButton";
+import MenuButtom from "../components/items/MenuButtom";
 import CardSlideData from "../components/sets/CardSlideData";
 import CardSlide from "../components/sets/CardSlide";
 import { transparencia } from "../data/transparencia-dados";
-
-var meses = [
-	"janeiro",
-	"fevereiro",
-	"março",
-	"abril",
-	"maio",
-	"junho",
-	"julho",
-	"agosto",
-	"setembro",
-	"outubro",
-	"novembro",
-	"dezembro",
-];
 
 export default function Transparencia() {
 	const [docs, setDocs] = useState(0);
@@ -37,10 +22,9 @@ export default function Transparencia() {
 					<Title
 						title="Transparência"
 						subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal e atender o Termo de Colaboração Nº001. Desta forma, a instituição vem através desta página, disponibilizar publicamente o acesso as suas prestações de contas.">
-<<<<<<< HEAD
 						<nav>
 							{transparencia.map((menuItem) => (
-								<MenuButton
+								<MenuButtom
 									key={menuItem.key}
 									link={menuItem.link}
 									title={menuItem.title}
@@ -62,28 +46,6 @@ export default function Transparencia() {
 							subtitle={transparencia[docs].subtitle}
 							slides={transparencia[docs].documentos}
 							slidesPerView={3.5}
-=======
-						{transparencia.map((menuItem) => (
-							<MenuButtom
-								key={menuItem.key}
-								link={menuItem.link}
-								title={menuItem.title}
-								image={menuItem.image}
-								vert={menuItem.vert}
-								span={menuItem.span}
-								onCLick={() => setDocs(menuItem.key)}
-							/>
-						))}
-					</Title>
-				</div>
-				<div className="right">
-					{docs === 0 ? (
-						<CardSlide
-							key={transparencia[docs].key}
-							title={transparencia[docs].title}
-							subtitle={transparencia[docs].subtitle}
-							slides={transparencia[docs].documentos}
->>>>>>> parent of 8d7b7bd (Alteração do layout Transparência)
 							className="CardTransp"
 						/>
 					) : (

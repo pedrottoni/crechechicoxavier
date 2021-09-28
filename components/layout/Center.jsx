@@ -20,7 +20,8 @@ export default function Center(props) {
           height: 100vh;
           margin: 0 auto;
           padding: 4rem;
-          text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%), 0 0.3rem 0.4rem hsl(195deg 75% 30%);
+          text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
+            0 0.3rem 0.4rem hsl(195deg 75% 30%);
         }
 
         header {
@@ -49,13 +50,6 @@ export default function Center(props) {
           place-items: center;
           text-align: center;
           gap: 2rem;
-          margin-bottom: 10rem;
-        }
-
-        main header {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
         }
 
         main header .title {
@@ -84,8 +78,9 @@ export default function Center(props) {
         }
 
         footer {
+          position: relative;
+          bottom: -10px;
           place-self: center;
-          padding-bottom: 2rem;
         }
       `}</style>
     </>

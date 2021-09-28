@@ -81,6 +81,11 @@ export default function Formacoes() {
 				</AnimatePresence>
 			</Center>
 			<style sjx>{`
+			main header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 			
 			main header .title {
 				color: #ffc420 !important;

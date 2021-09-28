@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function MenuButtom(props) {
 	return (
-		<motion.button
+		<motion.buttom
 			onClick={props.onCLick}
 			variants={props.variants}
 			className="btn">
@@ -41,6 +41,6 @@ export default function MenuButtom(props) {
 					font-size: 2.5rem;
 				}
 			`}</style>
-		</motion.button>
+		</motion.buttom>
 	);
 }
