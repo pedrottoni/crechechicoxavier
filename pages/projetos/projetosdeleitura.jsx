@@ -80,13 +80,7 @@ export default function ProjetosDeLeitura() {
 					)}
 				</AnimatePresence>
 			</Center>
-			<style sjx>{`
-			main header {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-			
+			<style sjx>{`			
 			main header .title {
 				color: #ffc420 !important;
 			}

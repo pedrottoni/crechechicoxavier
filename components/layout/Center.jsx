@@ -52,6 +52,12 @@ export default function Center(props) {
           gap: 2rem;
           margin-bottom: 10rem;
         }
+        
+        main header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
         main header .title {
           margin: 0 0 2rem !important;

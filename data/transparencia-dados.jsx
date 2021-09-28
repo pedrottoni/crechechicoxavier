@@ -7,32 +7,32 @@ export const transparencia = [
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Estatuto Social",
+				title: "Estatuto Social",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Diretoria Executiva",
+				title: "Diretoria Executiva",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Termo de Colaboração",
+				title: "Termo de Colaboração",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Regimento Escolar",
+				title: "Regimento Escolar",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Termo Aditivo 01: Termo de colaboração",
+				title: "Termo Aditivo 01: Termo de colaboração",
 			},
 			{
 				link:
 					"https://drive.google.com/file/d/1j2UBqEJbdYIoJyj5QsTagg1Ipc22N9Aj/view",
-				subtitle: "Proposta Pedagógica: 2019 - 2022",
+				title: "Proposta Pedagógica: 2019 - 2022",
 			},
 		],
 	},
