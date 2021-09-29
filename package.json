@@ -1,20 +1,20 @@
 {
-	"name": "creche-chico-xavier",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start"
-	},
-	"dependencies": {
-		"framer-motion": "^4.1.17",
-		"keen-slider": "^5.5.1",
-		"next": "^11.1.2",
-		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"swiper": "^7.0.6"
-	},
-	"keywords": [],
-	"description": ""
+  "name": "ccx",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^4.1.17",
+    "keen-slider": "^5.5.1",
+    "next": "^11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swiper": "^7.0.6"
+  },
+  "keywords": [],
+  "description": ""
 }

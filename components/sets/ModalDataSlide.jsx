@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Arrows } from "../items/Arrows";
 import Modal from "./Modal";
@@ -37,22 +38,26 @@ export default function ModalDataSlide(props) {
       images={props.images}
     >
       <>
-	  <h2>{props.dados.length}</h2>
+        <h2>{props.dados.length}</h2>
         <div className="month">
           <Arrows
             left={true}
             right={true}
             onClickLeft={() =>
-              dataNumber > 0 ? setdataNumber(dataNumber - 1) : setdataNumber(props.dados.length - 1)
+              dataNumber > 0
+                ? setdataNumber(dataNumber - 1)
+                : setdataNumber(props.dados.length - 1)
             }
             onClickRight={() =>
-              dataNumber < props.dados.length - 1 ? setdataNumber(dataNumber + 1) : setdataNumber(0)
+              dataNumber < props.dados.length - 1
+                ? setdataNumber(dataNumber + 1)
+                : setdataNumber(0)
             }
           />
           <h2>{dados[dataNumber]}</h2>
         </div>
         <Swiper spaceBetween={30} slidesPerView={2.3} navigation={true}>
-          {props.images[dados[dataNumber]].documentos.map((images) =>
+          {props.images[dados[dataNumber]].props.dadosSub.map((images) =>
             props.link ? (
               <SwiperSlide key={images.key}>
                 <Link href={images.link}>

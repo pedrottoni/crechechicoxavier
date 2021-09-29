@@ -29,7 +29,7 @@ var meses = [
   "setembro",
   "outubro",
   "novembro",
-  "dezembro",
+  "dezembro"
 ];
 
 export default function ProjetosDeLeitura() {

@@ -14,12 +14,12 @@ export default function Nossosonho() {
   // Animações dos Cards
   const list = {
     animate: { transition: { staggerChildren: 0.05 } },
-    exit: { transition: { staggerChildren: 0.05 } },
+    exit: { transition: { staggerChildren: 0.05 } }
   };
   const animationMenu = {
     initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
+    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } }
   };
 
   //Modal
@@ -70,8 +70,7 @@ export default function Nossosonho() {
             </motion.div>
           ))}
         </motion.nav>
-        <h2>{dados.length}</h2>
-        <h2>{dados[1]}</h2>
+
         <AnimatePresence initial={false}>
           {open && modal === 0 && (
             <ModalSlide
@@ -89,6 +88,7 @@ export default function Nossosonho() {
               span={transparencia[modal].span}
               images={transparencia[modal].documentos}
               dados={dados}
+              dadosSub="documentos"
               inicial={0}
               link={false}
             />
