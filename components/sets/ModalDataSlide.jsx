@@ -38,8 +38,8 @@ export default function ModalDataSlide(props) {
       images={props.images}
     >
       <>
-        <h2>{props.dados.length}</h2>
         <div className="month">
+          <h2>{props.images[dados[dataNumber]].span}</h2>
           <Arrows
             left={true}
             right={true}
@@ -54,10 +54,9 @@ export default function ModalDataSlide(props) {
                 : setdataNumber(0)
             }
           />
-          <h2>{dados[dataNumber]}</h2>
         </div>
         <Swiper spaceBetween={30} slidesPerView={2.3} navigation={true}>
-          {props.images[dados[dataNumber]].props.dadosSub.map((images) =>
+          {props.images[dados[dataNumber]].dados.map((images) =>
             props.link ? (
               <SwiperSlide key={images.key}>
                 <Link href={images.link}>
@@ -114,11 +113,11 @@ export default function ModalDataSlide(props) {
         }
 
         .modal .modalCard .modalContent .month .arrow--left {
-          left: 40rem;
+          left: 35rem;
         }
 
         .modal .modalCard .modalContent .month .arrow--right {
-          right: 40rem;
+          right: 35rem;
         }
 
         .modal .modalCard .modalContent .swiper {

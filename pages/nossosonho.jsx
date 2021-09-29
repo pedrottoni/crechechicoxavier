@@ -28,7 +28,6 @@ export default function Nossosonho() {
   const [modal, setModal] = useState(0);
   const [open, setOpen] = useState(false);
 
-  const [docs, setDocs] = useState(0);
   var dados = [];
 
   transparencia[1].documentos.map((dado) => dados.push(dado.key));
@@ -88,9 +87,8 @@ export default function Nossosonho() {
               span={transparencia[modal].span}
               images={transparencia[modal].documentos}
               dados={dados}
-              dadosSub="documentos"
               inicial={0}
-              link={false}
+              link={true}
             />
           )}
         </AnimatePresence>
