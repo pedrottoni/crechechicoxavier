@@ -3,11 +3,11 @@ export const projetos = [
   {
     link: "/projetos/projetosdeleitura",
     title: "Projetos",
-    span: "de Leitura"
+    span: "de Leitura",
   },
   {
     link: "/projetos/juntossomosmais",
     title: "Juntos ",
-    span: "Somos Mais"
-  }
+    span: "Somos Mais",
+  },
 ];

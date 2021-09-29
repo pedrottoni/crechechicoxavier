@@ -12,12 +12,12 @@ export default function Projetos() {
   // Animações dos Cards
   const list = {
     animate: { transition: { staggerChildren: 0.05 } },
-    exit: { transition: { staggerChildren: 0.05 } }
+    exit: { transition: { staggerChildren: 0.05 } },
   };
   const animationMenu = {
     initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } }
+    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
   };
 
   return (

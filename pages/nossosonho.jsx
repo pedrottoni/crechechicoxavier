@@ -1,20 +1,37 @@
 import { useState } from "react";
 import Head from "next/head";
+
 import Center from "../components/layout/Center";
 import Title from "../components/items/Title";
-import MenuButton from "../components/items/MenuButton";
+import ModalSlide from "../components/sets/ModalSlide";
+import ModalDataSlide from "../components/sets/ModalDataSlide";
 import Card from "../components/sets/Card";
 import { transparencia } from "../data/transparencia-dados";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-
-SwiperCore.use([Navigation]);
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nossosonho() {
+  // Animações dos Cards
+  const list = {
+    animate: { transition: { staggerChildren: 0.05 } },
+    exit: { transition: { staggerChildren: 0.05 } },
+  };
+  const animationMenu = {
+    initial: { y: 100, opacity: 0 },
+    animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
+    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
+  };
+
+  //Modal
+  //Define qual modal deve aparecer
+  //Ativa ou desativa o modal
+  const [modal, setModal] = useState(0);
+  const [open, setOpen] = useState(false);
+
   const [docs, setDocs] = useState(0);
+  var dados = [];
+
+  transparencia[1].documentos.map((dado) => dados.push(dado.key));
 
   return (
     <>
@@ -26,38 +43,59 @@ export default function Nossosonho() {
 
       <Center>
         <header>
-          <Title title="Transparência" subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal e atender o Termo de Colaboração Nº001. Desta forma, a instituição vem através desta página, disponibilizar publicamente o acesso as suas prestações de contas." />
-          <nav>
-            {transparencia.map((menuItem) => (
-              <MenuButton key={menuItem.key} link={menuItem.link} title={menuItem.title} span={menuItem.span} image={menuItem.image} vert={menuItem.vert} onCLick={() => setDocs(menuItem.key)} />
-            ))}
-          </nav>
+          <Title
+            title="Transparência"
+            subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal."
+          />
         </header>
-        <Swiper spaceBetween={50} slidesPerView={3.5} navigation={true}>
-          {docs === 0
-            ? transparencia[docs].documentos.map((docs) => (
-                <SwiperSlide>
-                  <Card key={docs.key} title={docs.title} subtitle={docs.subtitle} />
-                </SwiperSlide>
-              ))
-            : transparencia[docs].categorias.map((docs) => (
-                <SwiperSlide>
-                  <Card key={docs.key} title={docs.title} subtitle={docs.subtitle} />
-                </SwiperSlide>
-              ))}
-        </Swiper>
+        <motion.nav
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={list}
+        >
+          {transparencia.map((docs) => (
+            <motion.div key={docs.key} variants={animationMenu}>
+              <Card
+                title={docs.title}
+                span={docs.span}
+                imageTop="contato.svg"
+                cardOnCLick={() => (
+                  <>
+                    {setOpen(true)}
+                    {setModal(docs.key)}
+                  </>
+                )}
+              />
+            </motion.div>
+          ))}
+        </motion.nav>
+        <h2>{dados.length}</h2>
+        <h2>{dados[1]}</h2>
+        <AnimatePresence initial={false}>
+          {open && modal === 0 && (
+            <ModalSlide
+              onClick={() => setOpen(false)}
+              title={transparencia[modal].title}
+              span={transparencia[modal].span}
+              images={transparencia[modal].documentos}
+              link={true}
+            />
+          )}
+          {open && modal === 1 && (
+            <ModalDataSlide
+              onClick={() => setOpen(false)}
+              title={transparencia[modal].title}
+              span={transparencia[modal].span}
+              images={transparencia[modal].documentos}
+              dados={dados}
+              inicial={0}
+              link={false}
+            />
+          )}
+        </AnimatePresence>
       </Center>
-      <style jsx global>{`
-        .swiper {
-          width: -webkit-fill-available;
-        }
-
-        .swiper-slide {
-          display: flex;
-          align-items: center;
-          height: 24rem;
-        }
-      `}</style>
+      <style jsx global>{``}</style>
     </>
   );
 }

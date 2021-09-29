@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 104 115">
   <defs/>
   <g id="transparencia">
-    <circle id="Ellipse 18" cx="45" cy="69.1" r="43.5" fill="#03CE6A" stroke="#F1F8F3" stroke-width="3"/>
+    <circle id="Ellipse 18" cx="45" cy="69.1" r="43.5" fill="#03CE6A" stroke="#F1F8F3" stroke-width ="3"/>
     <g id="documento" clip-path="url(#clip0)">
       <path id="Vector" fill="#F4F8F8" d="M14.4 5c-3.6.1-6.5 3.1-6.4 6.7l1.5 84c.1 3.6 3 6.5 6.7 6.4l61.3-1.1c3.6 0 6.5-3 6.4-6.6l-1.3-70.5a5 5 0 00-1.5-3.4l-15.5-15a5 5 0 00-3.5-1.3L14.4 5z"/>
       <path id="Vector_2" fill="#E7ECF1" d="M71 22.1h-.4L72 94.6c.1 3.6-2.8 6.5-6.4 6.6l12-.2c3.6 0 6.5-3 6.4-6.6l-1.3-70.5a5 5 0 00-.5-2l-11 .2z"/>

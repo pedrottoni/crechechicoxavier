@@ -1,134 +1,128 @@
 import { useState } from "react";
 import Image from "next/image";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+
 import { Arrows } from "../items/Arrows";
 import Modal from "./Modal";
 
-var data = new Date();
-var mes = Number(data.getMonth());
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
-var meses = [
-	"janeiro",
-	"fevereiro",
-	"março",
-	"abril",
-	"maio",
-	"junho",
-	"julho",
-	"agosto",
-	"setembro",
-	"outubro",
-	"novembro",
-	"dezembro",
-];
+SwiperCore.use([Navigation]);
+
+/*
+Props:
+	Modal
+	  - title
+	  - span
+	  - subTitle
+      - onClick
+	  - images
+	  - dados
+	  - inicial
+	Content
+	  - children
+ */
 
 export default function ModalDataSlide(props) {
-	const [currentSlide, setCurrentSlide] = useState(0);
-	const [sliderRef, slider] = useKeenSlider({
-		slidesPerView: 2.5,
-		spacing: 10,
-		initial: 0,
-		slideChanged(s) {
-			setCurrentSlide(s.details().relativeSlide);
-		},
-	});
+  const [dataNumber, setdataNumber] = useState(props.inicial);
+  var dados = props.dados;
 
-	const [monthNumber, setMonthNumber] = useState(mes);
+  return (
+    <Modal
+      onClick={props.onClick}
+      title={props.title}
+      subtitle={props.subtitle}
+      images={props.images}
+    >
+      <>
+	  <h2>{props.dados.length}</h2>
+        <div className="month">
+          <Arrows
+            left={true}
+            right={true}
+            onClickLeft={() =>
+              dataNumber > 0 ? setdataNumber(dataNumber - 1) : setdataNumber(props.dados.length - 1)
+            }
+            onClickRight={() =>
+              dataNumber < props.dados.length - 1 ? setdataNumber(dataNumber + 1) : setdataNumber(0)
+            }
+          />
+          <h2>{dados[dataNumber]}</h2>
+        </div>
+        <Swiper spaceBetween={30} slidesPerView={2.3} navigation={true}>
+          {props.images[dados[dataNumber]].documentos.map((images) =>
+            props.link ? (
+              <SwiperSlide key={images.key}>
+                <Link href={images.link}>
+                  <a target="_blank">
+                    <div className="images">
+                      <Image
+                        src={`/images/${images.image}.svg`}
+                        layout="fill"
+                      />
+                    </div>
+                    {images.imagesSubtitle ? (
+                      <p className="images__subtitle">
+                        {images.imagesSubtitle}
+                      </p>
+                    ) : null}
+                    <h1>{images.title}</h1>
+                    <h2>{images.span}</h2>
+                  </a>
+                </Link>
+              </SwiperSlide>
+            ) : (
+              <SwiperSlide key={images.key}>
+                <div className="images">
+                  <Image src={`/images/${images.image}.svg`} layout="fill" />
+                </div>
+                {images.imagesSubtitle ? (
+                  <p className="images__subtitle">{images.imagesSubtitle}</p>
+                ) : null}
+                <h1>{images.title}</h1>
+                <h2>{images.span}</h2>
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
+      </>
+      <style jsx global>{`
+        .modal .modalCard .modalContent {
+          border-radius: 2rem;
+        }
 
-	return (
-		<Modal
-			onClick={props.onClick}
-			title={props.title}
-			subtitle={props.subtitle}
-			images={props.images}>
-			<>
-				<div className="month">
-					<Arrows
-						left={true}
-						right={true}
-						onClickLeft={() =>
-							monthNumber > 0
-								? setMonthNumber(monthNumber - 1)
-								: setMonthNumber(11)
-						}
-						onClickRight={() =>
-							monthNumber < 11
-								? setMonthNumber(monthNumber + 1)
-								: setMonthNumber(0)
-						}
-					/>
-					<h2>{meses[monthNumber]}</h2>
-				</div>
-				<div ref={sliderRef} className="keen-slider">
-					{props.images[meses[monthNumber]].map((images) => (
-						<div className="keen-slider__slide">
-							<div className="images">
-								<Image src={`/images/${images.image}.svg`} layout="fill" />
-							</div>
-							<p className="images__subtitle">{images.imagesSubtitle}</p>
-						</div>
-					))}
-					<Arrows
-						left={true}
-						right={true}
-						onClickLeft={(e) => e.stopPropagation() || slider.prev()}
-						onClickRight={(e) => e.stopPropagation() || slider.next()}
-						disabledLeft={currentSlide === 0}
-						disabledRight={
-							currentSlide >= props.images[meses[monthNumber]].length - 2
-						}
-					/>
-				</div>
-			</>
-			<style jsx global>{`
-				.modal .modalCard .modalContent {
-					border-radius: 2rem;
-				}
+        .modal .modalCard .modalContent .month {
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 2rem;
+        }
 
-				.modal .modalCard .month {
-					position: relative;
-					display: flex;
-					justify-content: space-evenly;
-					margin-bottom: 2rem;
-				}
+        .modal .modalCard .modalContent .month .arrow {
+          width: 20px;
+          height: 20px;
+          fill: #db3541;
+          cursor: pointer;
+          filter: none;
+        }
 
-				.modal .modalCard .month .arrow {
-					width: 20px;
-					height: 20px;
-					fill: #db3541;
-					cursor: pointer;
-					filter: none;
-				}
-				.modal .modalCard .month .arrow--left {
-					left: 40rem;
-				}
-				.modal .modalCard .month .arrow--right {
-					right: 40rem;
-				}
+        .modal .modalCard .modalContent .month .arrow--left {
+          left: 40rem;
+        }
 
-				.modal .modalCard .modalContent .keen-slider .arrow {
-					width: 6rem;
-					height: 100%;
-					padding: 0 1rem;
-				}
+        .modal .modalCard .modalContent .month .arrow--right {
+          right: 40rem;
+        }
 
-				.modal .modalCard .modalContent .keen-slider .arrow--left {
-					left: 0;
-					height: 100%;
-					background: linear-gradient(90deg, hsl(0deg 0% 0% / 5%), transparent);
-				}
-
-				.modal .modalCard .modalContent .keen-slider .arrow--right {
-					right: 0;
-					height: 100%;
-					background: linear-gradient(
-						-90deg,
-						hsl(0deg 0% 0% / 5%),
-						transparent
-					);
-				}
-			`}</style>
-		</Modal>
-	);
+        .modal .modalCard .modalContent .swiper {
+          position: relative;
+          margin: 0;
+          padding: 3rem 5rem 5rem;
+          width: -webkit-fill-available;
+        }
+      `}</style>
+    </Modal>
+  );
 }

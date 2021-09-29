@@ -2,7 +2,7 @@
   <defs/>
   <g id="projetos">
     <g id="Group 13">
-      <circle id="Ellipse 18" cx="45.1" cy="69.1" r="43.5" fill="#FF9737" stroke="#F1F8F3" stroke-width="3"/>
+      <circle id="Ellipse 18" cx="45.1" cy="69.1" r="43.5" fill="#FF9737" stroke="#F1F8F3" stroke-width ="3"/>
     </g>
     <g id="foguete" clip-path="url(#clip0)">
       <path id="Vector" fill="#FF5249" d="M100.4 5.2s-.3 10.5-4.7 22.9L77.6 9.9c12.3-4.3 22.8-4.7 22.8-4.7z"/>

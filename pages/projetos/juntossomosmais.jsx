@@ -1,29 +1,22 @@
 import { useState } from "react";
 import Head from "next/head";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { AnimatePresence } from "framer-motion";
+
 import Center from "../../components/layout/Center";
 import Title from "../../components/items/Title";
-import { Arrows } from "../../components/items/Arrows";
 import MenuButton from "../../components/items/MenuButton";
 import Card from "../../components/sets/Card";
 import ModalSlide from "../../components/sets/ModalSlide";
 import { vinteUm } from "../../data/projetos-jsm";
 
-export default function JuntosSomosMais() {
-  //KeenSlider
-  //Define o Ref do KeenSlider
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [sliderRef, slider] = useKeenSlider({
-    slidesPerView: 4.3,
-    spacing: 30,
-    initial: 0,
-    slideChanged(s) {
-      setCurrentSlide(s.details().relativeSlide);
-    },
-  });
+import { AnimatePresence } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
+SwiperCore.use([Navigation]);
+
+export default function JuntosSomosMais() {
   //Modal
   //Define qual modal deve aparecer
   //Ativa ou desativa o modal
@@ -44,63 +37,89 @@ export default function JuntosSomosMais() {
           <Title title="Juntos" span="Somos Mais" />
           <div className="jsm-projetos">
             {vinteUm.map((menuItem) => (
-              <MenuButton key={menuItem.key} link={menuItem.link} title={menuItem.title} image={menuItem.image} vert={menuItem.vert} span={menuItem.span} onCLick={() => setProjeto(menuItem.key)} />
+              <MenuButton
+                key={menuItem.key}
+                link={menuItem.link}
+                title={menuItem.title}
+                image={menuItem.image}
+                vert={menuItem.vert}
+                span={menuItem.span}
+                onCLick={() => setProjeto(menuItem.key)}
+              />
             ))}
           </div>
         </header>
-        <nav ref={sliderRef} className="keen-slider">
+        <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
           {vinteUm[projeto].eventos.map((jsm) => (
-            <Card
-              key={jsm.key}
-              title={jsm.title}
-              subtitle={jsm.subtitle}
-              imageTop={jsm.link}
-              cardOnCLick={() => (
-                <>
-                  {setOpen(true)}
-                  {setModalOpen(jsm.key)}
-                </>
-              )}
-              className="keen-slider__slide"
-            />
+            <SwiperSlide key={jsm.key}>
+              <Card
+                title={jsm.title}
+                subtitle={jsm.subtitle}
+                imageTop={jsm.link}
+                cardOnCLick={() => (
+                  <>
+                    {setOpen(true)}
+                    {setModalOpen(jsm.key)}
+                  </>
+                )}
+              />
+            </SwiperSlide>
           ))}
-          <Arrows left={true} right={true} onClickLeft={(e) => e.stopPropagation() || slider.prev()} onClickRight={(e) => e.stopPropagation() || slider.next()} disabledLeft={currentSlide === 0} disabledRight={currentSlide >= vinteUm[projeto].eventos.length - 4} />
-        </nav>
-        <AnimatePresence initial={false}>{open && <ModalSlide key={vinteUm[projeto].eventos[modal].key} onClick={() => setOpen(false)} title={vinteUm[projeto].eventos[modal].title} subtitle={vinteUm[projeto].eventos[modal].subtitle} images={vinteUm[projeto].eventos[modal].images} />}</AnimatePresence>
+        </Swiper>
+        <AnimatePresence initial={false}>
+          {open && (
+            <ModalSlide
+              key={vinteUm[projeto].eventos[modal].key}
+              onClick={() => setOpen(false)}
+              title={vinteUm[projeto].eventos[modal].title}
+              subtitle={vinteUm[projeto].eventos[modal].subtitle}
+              images={vinteUm[projeto].eventos[modal].images}
+            />
+          )}
+        </AnimatePresence>
       </Center>
-      <style sjx>{`
-			main nav {
-				width: 100vw;
-				overflow-y: hidden;
-				overflow-x: auto;
-				padding: 4rem 2rem 5rem 2rem;
-				margin-bottom: -5rem;
-				gap: 0;
-			}
 
-			main nav .card {
-				background: #ffc420;
-			}
+      <style jsx>{`
+        main nav {
+          width: 100vw;
+          overflow-y: hidden;
+          overflow-x: auto;
+          padding: 4rem 2rem 5rem 2rem;
+          margin-bottom: -5rem;
+          gap: 0;
+        }
 
-			.card::after {
-				background: #fff;
-			}
-			
-			.keen-slider {
-				justify-content: flex-start;
-			}
+        main nav .card {
+          background: #ffc420;
+        }
 
-			.images {
-				position: relative;
-				width: 40rem;
-				height: 40rem;
-			}
+        .card::after {
+          background: #fff;
+        }
 
-			.jsm-projetos {
-				display: flex;
-				gap: 2rem;
-			}
-			`}</style>
+        .images {
+          position: relative;
+          width: 40rem;
+          height: 40rem;
+        }
+
+        .jsm-projetos {
+          display: flex;
+          gap: 2rem;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        main .swiper {
+          position: relative;
+          width: 100vw;
+          margin: 0;
+          padding: 3rem 5rem 5rem;
+        }
+
+        main .swiper-slide {
+        }
+      `}</style>
     </>
   );
 }

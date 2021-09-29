@@ -1,27 +1,21 @@
 import { useState } from "react";
 import Head from "next/head";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { AnimatePresence } from "framer-motion";
+
 import Center from "../../components/layout/Center";
 import Title from "../../components/items/Title";
-import { Arrows } from "../../components/items/Arrows";
 import Card from "../../components/sets/Card";
 import ModalSlide from "../../components/sets/ModalSlide";
 import { formacoes } from "../../data/projetos-formacoes";
 
+import { AnimatePresence } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+
+SwiperCore.use([Navigation]);
+
 export default function Formacoes() {
-  //KeenSlider
-  //Define o Ref do KeenSlider
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [sliderRef, slider] = useKeenSlider({
-    slidesPerView: 4.3,
-    spacing: 30,
-    initial: 0,
-    slideChanged(s) {
-      setCurrentSlide(s.details().relativeSlide);
-    },
-  });
 
   //Modal
   //Define qual modal deve aparecer
@@ -38,61 +32,71 @@ export default function Formacoes() {
       </Head>
       <Center>
         <header>
-          <Title title="Formações" subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes." />
+          <Title
+            title="Formações"
+            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+          />
         </header>
-        <nav ref={sliderRef} className="keen-slider">
+        <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
           {formacoes.map((formacao) => (
-            <Card
-              key={formacao.key}
-              title={formacao.title}
-              subtitle={formacao.subtitle}
-              imageTop={formacao.link}
-              cardOnCLick={() => (
-                <>
-                  {setOpen(true)}
-                  {setModalOpen(formacao.key)}
-                </>
-              )}
-              className="keen-slider__slide"
-            />
+            <SwiperSlide key={formacao.key}>
+              <Card
+                title={formacao.title}
+                subtitle={formacao.subtitle}
+                imageTop={formacao.link}
+                cardOnCLick={() => (
+                  <>
+                    {setOpen(true)}
+                    {setModalOpen(formacao.key)}
+                  </>
+                )}
+              />
+            </SwiperSlide>
           ))}
-          <Arrows left={true} right={true} onClickLeft={(e) => e.stopPropagation() || slider.prev()} onClickRight={(e) => e.stopPropagation() || slider.next()} disabledLeft={currentSlide === 0} disabledRight={currentSlide >= formacoes.length - 4} />
-        </nav>
-        <AnimatePresence initial={false}>{open && <ModalSlide key={formacoes[modal].key} onClick={() => setOpen(false)} title={formacoes[modal].title} subtitle={formacoes[modal].subtitle} images={formacoes[modal].images} />}</AnimatePresence>
+        </Swiper>
+        <AnimatePresence initial={false}>
+          {open && (
+            <ModalSlide
+              key={formacoes[modal].key}
+              onClick={() => setOpen(false)}
+              title={formacoes[modal].title}
+              subtitle={formacoes[modal].subtitle}
+              images={formacoes[modal].images}
+            />
+          )}
+        </AnimatePresence>
       </Center>
-      <style sjx>{`			
-			main header .title {
-				color: #ffc420 !important;
-			}
+      <style jsx>{`
+        main header .title {
+          color: #ffc420 !important;
+        }
 
-			main nav {
-				width: 100vw;
-				overflow-y: hidden;
-				overflow-x: auto;
-				padding: 4rem 2rem 5rem 2rem;
-				margin-bottom: -5rem;
-				gap: 0;
-			}
+        main nav .card {
+          background: #ffc420;
+        }
 
-			main nav .card {
-				background: #ffc420;
-			}
+        .card::after {
+          background: #fff;
+        }
 
-			.card::after {
-				background: #fff;
-			}
-			
-			.keen-slider {
-				justify-content: flex-start;
-			}
+        .images {
+          position: relative;
+          width: 40rem;
+          height: 40rem;
+        }
+      `}</style>
 
-			.images {
-				position: relative;
-				width: 40rem;
-				height: 40rem;
-			}
+      <style jsx global>{`
+        main .swiper {
+          position: relative;
+          width: 100vw;
+          margin: 0;
+          padding: 3rem 5rem 5rem;
+        }
 
-			`}</style>
+        main .swiper-slide {
+        }
+      `}</style>
     </>
   );
 }

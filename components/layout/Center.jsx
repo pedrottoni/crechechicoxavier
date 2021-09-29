@@ -16,7 +16,6 @@ export default function Center(props) {
           display: flex;
           flex-direction: column;
           place-content: space-between;
-          max-width: 170rem;
           height: 100vh;
           margin: 0 auto;
           padding: 4rem;
