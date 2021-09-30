@@ -18,7 +18,8 @@ Props:
 	  - title
 	  - span
 	  - subTitle
-      - onClick
+    - onClick
+    - slidesPerView
 	  - images
 	  - dados
 	  - inicial
@@ -38,7 +39,7 @@ export default function ModalDataSlide(props) {
       images={props.images}
     >
       <>
-        <div className="month">
+        <div className="dados">
           <h2>{props.images[dados[dataNumber]].span}</h2>
           <Arrows
             left={true}
@@ -55,17 +56,18 @@ export default function ModalDataSlide(props) {
             }
           />
         </div>
-        <Swiper spaceBetween={30} slidesPerView={2.3} navigation={true}>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={props.slidesPerView}
+          navigation={true}
+        >
           {props.images[dados[dataNumber]].dados.map((images) =>
             props.link ? (
               <SwiperSlide key={images.key}>
                 <Link href={images.link}>
                   <a target="_blank">
                     <div className="images">
-                      <Image
-                        src={`/images/${images.image}.svg`}
-                        layout="fill"
-                      />
+                      <Image src={`/images/${images.image}`} layout="fill" />
                     </div>
                     {images.imagesSubtitle ? (
                       <p className="images__subtitle">
@@ -97,14 +99,14 @@ export default function ModalDataSlide(props) {
           border-radius: 2rem;
         }
 
-        .modal .modalCard .modalContent .month {
+        .modal .modalCard .modalContent .dados {
           position: relative;
           display: flex;
           justify-content: space-evenly;
           margin-bottom: 2rem;
         }
 
-        .modal .modalCard .modalContent .month .arrow {
+        .modal .modalCard .modalContent .dados .arrow {
           width: 20px;
           height: 20px;
           fill: #db3541;
@@ -112,11 +114,11 @@ export default function ModalDataSlide(props) {
           filter: none;
         }
 
-        .modal .modalCard .modalContent .month .arrow--left {
+        .modal .modalCard .modalContent .dados .arrow--left {
           left: 35rem;
         }
 
-        .modal .modalCard .modalContent .month .arrow--right {
+        .modal .modalCard .modalContent .dados .arrow--right {
           right: 35rem;
         }
 

@@ -85,6 +85,7 @@ export default function Nossosonho() {
               onClick={() => setOpen(false)}
               title={transparencia[modal].title}
               span={transparencia[modal].span}
+              slidesPerView={3.3}
               images={transparencia[modal].documentos}
               dados={dados}
               inicial={0}

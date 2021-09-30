@@ -59,8 +59,7 @@ export default function Card(props) {
           background: #fff;
           width: 100%;
           min-width: 40rem;
-          height: 100%;
-          ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: 3rem;"}
+          ${props.icon ? "padding: 8rem 3rem 2rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
@@ -109,8 +108,7 @@ export default function Card(props) {
           position: relative;
           width: 100%;
           height: 100%;
-          max-height: 40rem;
-          margin: 3rem 0 1rem;
+          margin: 2rem 0 1rem;
           overflow-y: auto;
           text-shadow: none;
         }

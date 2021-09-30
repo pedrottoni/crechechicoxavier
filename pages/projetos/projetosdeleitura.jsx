@@ -77,6 +77,7 @@ export default function ProjetosDeLeitura() {
               onClick={() => setOpen(false)}
               title={vinteUm[modal].title}
               subtitle={vinteUm[modal].subtitle}
+              slidesPerView={2.3}
               images={vinteUm[modal]}
               dados={meses}
               inicial={mes}

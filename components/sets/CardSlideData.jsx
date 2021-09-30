@@ -1,9 +1,14 @@
 import { useState } from "react";
 import Image from "next/image";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
 import { Arrows } from "../items/Arrows";
 import Card from "./Card";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+
+SwiperCore.use([Navigation]);
 
 /*
 Props:
@@ -18,14 +23,108 @@ Props:
  */
 
 export default function CardSlideData(props) {
-	return (
-		<Card
-			className={props.className}
-			icon={props.icon}
-			title={props.title}
-			span={props.span}>
-			<p>SlidesControl</p>
-			<p>Slides</p>
-		</Card>
-	);
+  const [dataNumber, setdataNumber] = useState(props.inicial);
+  var dados = props.dados;
+
+  return (
+    <Card
+      className={props.className}
+      icon={props.icon}
+      title={props.title}
+      span={props.span}
+    >
+      <>
+        <div className="dados">
+          <h2>{props.images[dados[dataNumber]].span}</h2>
+          <Arrows
+            left={true}
+            right={true}
+            onClickLeft={() =>
+              dataNumber > 0
+                ? setdataNumber(dataNumber - 1)
+                : setdataNumber(props.dados.length - 1)
+            }
+            onClickRight={() =>
+              dataNumber < props.dados.length - 1
+                ? setdataNumber(dataNumber + 1)
+                : setdataNumber(0)
+            }
+          />
+        </div>
+        <Swiper navigation={true}>
+          {props.images[dados[dataNumber]].dados.map((images) => (
+            <SwiperSlide key={images.key}>
+              <div className="images">
+                <Image
+                  src={`/images/${images.src}`}
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="0% 40%"
+                />
+              </div>
+              {images.imagesSubtitle ? (
+                <p className="images__subtitle">{images.imagesSubtitle}</p>
+              ) : null}
+              <h1>{images.title}</h1>
+              <h2>{images.span}</h2>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </>
+      <style jsx global>{`
+        .card {
+          border-radius: 2rem;
+        }
+
+        .card .dados {
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 2rem;
+        }
+
+        .card .dados .arrow {
+          width: 20px;
+          height: 20px;
+          fill: #db3541;
+          cursor: pointer;
+          filter: none;
+        }
+
+        .card .dados .arrow--left {
+          left: 8rem;
+        }
+
+        .card .dados .arrow--right {
+          right: 8rem;
+        }
+
+        .card .swiper {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          width: clamp(40rem, 40vw, 300rem);
+          height: 40rem;
+        }
+
+        .card .swiper .images {
+        }
+
+        .card .swiper h1,
+        .card .swiper h2 {
+          position: absolute;
+          bottom: 3rem;
+          text-align: center;
+          width: 100%;
+        }
+
+        .card .swiper h1 {
+          bottom: 3rem;
+        }
+        .card .swiper h2 {
+          bottom: 1rem;
+        }
+      `}</style>
+    </Card>
+  );
 }

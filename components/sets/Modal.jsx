@@ -113,7 +113,7 @@ export default function Modal(props) {
           position: relative;
           width: 30rem;
           height: 30rem;
-          margin: 0 auto;
+          margin: 0 auto 3rem;
         }
 
         .modalContent .images__subtitle {

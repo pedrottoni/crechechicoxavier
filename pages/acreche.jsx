@@ -5,8 +5,8 @@ import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
 import Buttons from "../components/sets/Buttons";
 import Card from "../components/sets/Card";
-import Slider from "../components/sets/Slider";
-import { imagesDiretoria } from "../data/aCreche-image";
+import CardSlideData from "../components/sets/CardSlideData";
+import { imagens } from "../data/aCreche-image";
 
 export default function Acreche() {
   const [nossaCreche, setNossaCreche] = useState(true);
@@ -14,6 +14,10 @@ export default function Acreche() {
   const [historia, sethistoria] = useState(false);
   const [equipe, setEquipe] = useState(false);
   const [equipeColaboradores, setEquipeColaboradores] = useState(false);
+
+  var dados = [];
+
+  imagens.map((dado) => dados.push(dado.key));
 
   const stateBtn = [
     {
@@ -31,7 +35,7 @@ export default function Acreche() {
           setNossaCreche(true);
           sethistoria(false);
         }
-      },
+      }
     },
     {
       key: 2,
@@ -48,7 +52,7 @@ export default function Acreche() {
           setNossaCreche(true);
           setMissao(false);
         }
-      },
+      }
     },
     {
       key: 3,
@@ -65,8 +69,8 @@ export default function Acreche() {
           setNossaCreche(true);
           setEquipe(false);
         }
-      },
-    },
+      }
+    }
   ];
 
   return (
@@ -140,21 +144,13 @@ export default function Acreche() {
             </Card>
           ) : null}
           {equipe ? (
-            <Card
+            <CardSlideData
               title="Nossa Equipe"
-              span="Diretoria Executiva"
-              onCLickLeftA={() => {
-                setEquipeColaboradores(true);
-                setEquipe(false);
-              }}
-              onCLickRightA={() => {
-                setEquipeColaboradores(true);
-                setEquipe(false);
-              }}
               icon="equipe"
-            >
-              <Slider images={imagesDiretoria} />
-            </Card>
+              images={imagens}
+              dados={dados}
+              inicial={0}
+            />
           ) : null}
           {equipeColaboradores ? (
             <Card
@@ -169,9 +165,7 @@ export default function Acreche() {
                 setEquipe(true);
               }}
               icon="equipe"
-            >
-              <Slider images={imagesDiretoria} />
-            </Card>
+            ></Card>
           ) : null}
         </div>
       </Columns>
