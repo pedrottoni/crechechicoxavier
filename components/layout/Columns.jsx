@@ -79,7 +79,9 @@ export default function Columns(props) {
           display: flex;
           gap: 2rem;
           justify-content: center;
-          max-width: 44vw;
+          max-width: 40vw;
+          margin: 0 auto;
+          height: -webkit-fill-available;
         }
 
         footer {
