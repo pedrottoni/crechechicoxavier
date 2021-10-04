@@ -5,38 +5,38 @@ export const imagens = [
     dados: [
       {
         key: 0,
-        src: "img1.jpg",
-        title: "SCHEILLA DAMASCENO DEL MONACO",
+        src: "Scheilla Damasceno Del Monaco.jpg",
+        title: "Scheilla Del Monaco",
         span: "DIRETORA PRESIDENTE"
       },
       {
         key: 1,
-        src: "img2.jpg",
-        title: "LUÍS AUGUSTO CAVALCA MOREIRA",
+        src: "Luís Augusto Cavalca Moreira.jpg",
+        title: "Luís Augusto Cavalca",
         span: "DIRETOR VICE-PRESIDENTE"
       },
       {
         key: 2,
-        src: "img3.jpg",
-        title: "BENEDITO ERNESTO GALVÃO CARVALHO FILHO",
+        src: "Benedito Ernesto Galvão Carvalho Filho.jpg",
+        title: "Benedito Ernesto Galvão",
         span: "DIRETOR ADMINISTRATIVO"
       },
       {
         key: 3,
-        src: "img3.jpg",
-        title: "SUSANE CARNEIRO BARBOSA DEL MONACO BRAGA ",
+        src: "Susane Carneiro Barbosa Del Monaco Braga.jpg",
+        title: "Susane Carneiro Barbosa",
         span: "VICE-DIRETORA ADMINISTRATIVA"
       },
       {
         key: 4,
-        src: "img3.jpg",
-        title: "DIOGENES JOSÉ ANTUNES CARVALHO",
+        src: "Diogenes José Antunes Carvalho.jpg",
+        title: "Diogenes José Antunes",
         span: "DIRETOR FINANCEIRO"
       },
       {
         key: 5,
-        src: "img3.jpg",
-        title: "REGINA CELI DEL MONACO DE PAULA SANTOS MOREIRA",
+        src: "Regina Celia Del Monaco de Paula Santos Moreira.jpg",
+        title: "Regina Celia Del Monaco",
         span: "VICE-DIRETORA FINANCEIRA"
       }
     ]
@@ -48,7 +48,7 @@ export const imagens = [
       {
         key: 0,
         src: "colaboradores/Márcia Helena Antunes Del Monaco.jpeg",
-        title: "Márcia Helena Antunes Del Monaco",
+        title: "Márcia Del Monaco",
         span: "Coord. Administrativo"
       },
       {
@@ -97,7 +97,7 @@ export const imagens = [
       {
         key: 8,
         src: "colaboradores/Clarice Gregorio de Padua Martins.jpeg",
-        title: "Clarice Gregorio de Padua Martins",
+        title: "Clarice Gregorio de Padua",
         span: "Cozinheira"
       },
       {
@@ -109,7 +109,7 @@ export const imagens = [
       {
         key: 10,
         src: "colaboradores/Andréia Aparecida Palma Pires dos Santo.jpeg",
-        title: "Andréia Aparecida Palma Pires dos Santos",
+        title: "Andréia dos Santos",
         span: "Professora"
       },
       {
@@ -121,13 +121,13 @@ export const imagens = [
       {
         key: 12,
         src: "colaboradores/Ana Fernanda Felipe Eloy Felix Machado.jpeg",
-        title: "Ana Fernanda Felipe Eloy Felix Machad",
+        title: "Ana Fernanda",
         span: "Professora"
       },
       {
         key: 13,
         src: "colaboradores/Anna Laura Correa Cardoso.jpeg",
-        title: "Anna Laura Correa Cardoso",
+        title: "Anna Laura",
         span: "Professora"
       },
       {
@@ -138,14 +138,14 @@ export const imagens = [
       },
       {
         key: 15,
-        src: "colaboradores/Sandra Regina dos Santos Oliveir.jpeg",
-        title: "Sandra Regina dos Santos Oliveira",
+        src: "colaboradores/Sandra Regina dos Santos Oliveira.jpeg",
+        title: "Sandra Regina",
         span: "Professora"
       },
       {
         key: 16,
         src: "colaboradores/Jucilene Aparecida dos Santos Oliveira.jpeg",
-        title: "Jucilene Aparecida dos Santos Oliveira",
+        title: "Jucilene Aparecida",
         span: "Professora"
       },
       {
@@ -163,7 +163,7 @@ export const imagens = [
       {
         key: 19,
         src: "colaboradores/Marcela Dani dos Santos Oliveira.jpeg",
-        title: "Marcela Dani dos Santos Oliveira",
+        title: "Marcela Dani dos Santos",
         span: "Professora"
       }
     ]

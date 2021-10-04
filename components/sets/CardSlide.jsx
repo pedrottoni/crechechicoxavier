@@ -79,6 +79,15 @@ export default function CardSlide(props) {
           text-shadow: none;
           line-height: 2.8rem;
         }
+
+        .card .cardContent .images ::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 60%;
+          background: linear-gradient(0deg, hsl(0deg 0% 0% / 50%), transparent);
+          bottom: 0;
+        }
       `}</style>
     </Card>
   );

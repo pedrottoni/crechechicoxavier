@@ -110,6 +110,15 @@ export default function CardSlideData(props) {
         .card .swiper .images {
         }
 
+        .card .cardContent .images ::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 60%;
+          background: linear-gradient(0deg, hsl(0deg 0% 0% / 50%), transparent);
+          bottom: 0;
+        }
+
         .card .swiper h1,
         .card .swiper h2 {
           position: absolute;
@@ -120,9 +129,15 @@ export default function CardSlideData(props) {
 
         .card .swiper h1 {
           bottom: 3rem;
+          color: #ffffff;
+          font-size: 3.8rem;
+          filter: drop-shadow(2px 2px 2px black);
         }
+
         .card .swiper h2 {
           bottom: 1rem;
+          color: #hsl(356deg 70% 53%);
+          filter: drop-shadow(2px 2px 2px black);
         }
       `}</style>
     </Card>
