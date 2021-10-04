@@ -123,8 +123,10 @@ export default function CardSlideData(props) {
         .card .swiper h2 {
           position: absolute;
           bottom: 3rem;
-          text-align: center;
           width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
         }
 
         .card .swiper h1 {
@@ -136,7 +138,7 @@ export default function CardSlideData(props) {
 
         .card .swiper h2 {
           bottom: 1rem;
-          color: #hsl(356deg 70% 53%);
+          color: hsl(356deg 70% 53%);
           filter: drop-shadow(2px 2px 2px black);
         }
       `}</style>
