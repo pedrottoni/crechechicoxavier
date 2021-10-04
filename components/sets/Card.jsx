@@ -58,7 +58,6 @@ export default function Card(props) {
           place-content: center;
           background: #fff;
           width: 100%;
-          min-width: 40rem;
           ${props.icon ? "padding: 8rem 3rem 2rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;

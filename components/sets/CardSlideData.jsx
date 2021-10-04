@@ -123,7 +123,7 @@ export default function CardSlideData(props) {
         .card .swiper h1,
         .card .swiper h2 {
           position: absolute;
-          bottom: 3rem;
+          bottom: 5rem;
           width: 100%;
           text-align: center;
           text-transform: uppercase;
