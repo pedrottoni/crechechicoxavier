@@ -45,8 +45,7 @@ export default function Columns(props) {
         }
 
         main {
-          display: grid;
-          grid-template-columns: 1fr 0.8fr;
+          display: flex;
           gap: 2.5rem;
           margin-bottom: 6rem;
         }
@@ -71,18 +70,16 @@ export default function Columns(props) {
         }
 
         .left nav.stateBtn {
-          gap: 3.8rem;
+          gap: 3rem;
           text-shadow: none;
         }
 
         .right {
           position: relative;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
           gap: 2rem;
+          justify-content: center;
+          max-width: 44vw;
         }
 
         footer {

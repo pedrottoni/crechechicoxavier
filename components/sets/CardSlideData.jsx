@@ -103,7 +103,7 @@ export default function CardSlideData(props) {
           position: relative;
           margin: 0;
           padding: 0;
-          width: clamp(40rem, 50vw, 65rem);
+          width: 100%;
           height: 43vh;
         }
 
