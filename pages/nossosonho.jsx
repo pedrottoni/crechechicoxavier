@@ -1,37 +1,6 @@
-import { useState } from "react";
 import Head from "next/head";
 
-import Center from "../components/layout/Center";
-import Title from "../components/items/Title";
-import ModalSlide from "../components/sets/ModalSlide";
-import ModalDataSlide from "../components/sets/ModalDataSlide";
-import Card from "../components/sets/Card";
-import { transparencia } from "../data/transparencia-dados";
-
-import { motion, AnimatePresence } from "framer-motion";
-
-export default function Nossosonho() {
-  // Animações dos Cards
-  const list = {
-    animate: { transition: { staggerChildren: 0.05 } },
-    exit: { transition: { staggerChildren: 0.05 } }
-  };
-  const animationMenu = {
-    initial: { y: 100, opacity: 0 },
-    animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } }
-  };
-
-  //Modal
-  //Define qual modal deve aparecer
-  //Ativa ou desativa o modal
-  const [modal, setModal] = useState(0);
-  const [open, setOpen] = useState(false);
-
-  var dados = [];
-
-  transparencia[1].documentos.map((dado) => dados.push(dado.key));
-
+export default function NossoSonho() {
   return (
     <>
       <Head>
@@ -40,61 +9,9 @@ export default function Nossosonho() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Center>
-        <header>
-          <Title
-            title="Transparência"
-            subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal."
-          />
-        </header>
-        <motion.nav
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          variants={list}
-        >
-          {transparencia.map((docs) => (
-            <motion.div key={docs.key} variants={animationMenu}>
-              <Card
-                title={docs.title}
-                span={docs.span}
-                imageTop="contato.svg"
-                cardOnCLick={() => (
-                  <>
-                    {setOpen(true)}
-                    {setModal(docs.key)}
-                  </>
-                )}
-              />
-            </motion.div>
-          ))}
-        </motion.nav>
-
-        <AnimatePresence initial={false}>
-          {open && modal === 0 && (
-            <ModalSlide
-              onClick={() => setOpen(false)}
-              title={transparencia[modal].title}
-              span={transparencia[modal].span}
-              images={transparencia[modal].documentos}
-              link={true}
-            />
-          )}
-          {open && modal === 1 && (
-            <ModalDataSlide
-              onClick={() => setOpen(false)}
-              title={transparencia[modal].title}
-              span={transparencia[modal].span}
-              slidesPerView={3.3}
-              images={transparencia[modal].documentos}
-              dados={dados}
-              inicial={0}
-              link={true}
-            />
-          )}
-        </AnimatePresence>
-      </Center>
-      <style jsx global>{``}</style>
+      <main>
+        <h1>SITE</h1>
+      </main>
     </>
   );
 }

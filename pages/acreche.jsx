@@ -39,7 +39,7 @@ export default function Acreche() {
     },
     {
       key: 2,
-      link: "missão",
+      link: "estrutura",
       title: "Nossa",
       span: "Missão",
       onClick: () => {

@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@600;900&display=swap");
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: "Spartan", serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", serif;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 h1,
@@ -22,92 +22,99 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
-	padding: 0;
-	line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 p {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 h1 {
-	font-size: 6rem;
+  font-size: 6rem;
 }
 
 h2 {
-	font-size: 3rem;
-	font-weight: normal;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 h3 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 h4 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 h5 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 h6 {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 2560px) {
-	html {
-		font-size: 15px;
-	}
+  html {
+    font-size: 15px;
+  }
 }
 @media (max-width: 2560px) {
-	html {
-		font-size: 11px;
-	}
+  html {
+    font-size: 11px;
+  }
 }
 @media (max-width: 1440px) {
-	html {
-		font-size: 7.5px;
-	}
+  html {
+    font-size: 7.5px;
+  }
 }
 @media (max-height: 1000px) {
-	html {
-		font-size: 7.5px;
-	}
+  html {
+    font-size: 7.5px;
+  }
 }
 @media (max-width: 768px) {
-	html {
-		font-size: 6.5px;
-	}
+  html {
+    font-size: 6.5px;
+  }
 }
 @media (max-width: 425px) {
-	html {
-		font-size: 6px;
-	}
+  html {
+    font-size: 6px;
+  }
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
+  background: #db3541;
+  border-radius: 2rem;
+  font-family: unset;
+  text-align: unset;
+  padding: 1rem 1.5rem 0.6rem;
+  border: 0.2rem solid hsl(356deg 70% 40%);
+  outline: 0.3rem solid hsl(0deg 0% 100% / 55%);
 }
 
 ::-webkit-scrollbar {
-	width: 16px;
-	height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 ::-webkit-scrollbar-button {
-	width: 0;
-	height: 0;
-	display: none;
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 ::-webkit-scrollbar-corner {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: rgba(255, 255, 255, 0.4);
-	box-shadow: inset 1px 1px 0px rgb(255 255 255 / 10%),
-		inset 0px -1px 0px rgb(255 255 255 / 7%);
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 1px 1px 0px rgb(255 255 255 / 10%),
+    inset 0px -1px 0px rgb(255 255 255 / 7%);
 }
