@@ -103,8 +103,8 @@ export default function CardSlideData(props) {
           position: relative;
           margin: 0;
           padding: 0;
-          width: clamp(40rem, 40vw, 300rem);
-          height: 40rem;
+          width: clamp(40rem, 50vw, 65rem);
+          height: 43vh;
         }
 
         .card .swiper .images {
@@ -117,6 +117,7 @@ export default function CardSlideData(props) {
           height: 60%;
           background: linear-gradient(0deg, hsl(0deg 0% 0% / 50%), transparent);
           bottom: 0;
+          z-index: 2;
         }
 
         .card .swiper h1,
@@ -127,6 +128,7 @@ export default function CardSlideData(props) {
           text-align: center;
           text-transform: uppercase;
           font-weight: bold;
+          z-index: 3;
         }
 
         .card .swiper h1 {
@@ -138,7 +140,7 @@ export default function CardSlideData(props) {
 
         .card .swiper h2 {
           bottom: 1rem;
-          color: hsl(356deg 70% 53%);
+          color: hsl(44deg 100% 56%);
           filter: drop-shadow(2px 2px 2px black);
         }
       `}</style>

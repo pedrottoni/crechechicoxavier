@@ -54,7 +54,7 @@ export const imagens = [
       {
         key: 1,
         src: "colaboradores/Filomena da Conceição Reis.jpeg",
-        title: "Filomena da Conceição Reis",
+        title: "Filomena da Conceição",
         span: "Coord. Pedagógica"
       },
       {
@@ -73,7 +73,7 @@ export const imagens = [
         key: 4,
         src:
           "colaboradores/Henrique Nicolas Vasconcellos Martins de Castro.jpeg",
-        title: "Henrique Nicolas Vasconcellos Martins de Castro",
+        title: "Henrique Vasconcellos",
         span: "Office Boy"
       },
       {
@@ -97,7 +97,7 @@ export const imagens = [
       {
         key: 8,
         src: "colaboradores/Clarice Gregorio de Padua Martins.jpeg",
-        title: "Clarice Gregorio de Padua",
+        title: "Clarice Gregorio",
         span: "Cozinheira"
       },
       {
