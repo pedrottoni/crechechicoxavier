@@ -6,7 +6,7 @@ export const imagens = [
       {
         key: 0,
         src: "img1.jpg",
-        title: "SCHEILLA DAMASCENO DEL MONACO STAUT",
+        title: "SCHEILLA DAMASCENO DEL MONACO",
         span: "DIRETORA PRESIDENTE"
       },
       {
@@ -36,8 +36,8 @@ export const imagens = [
       {
         key: 5,
         src: "img3.jpg",
-        title: "VICE-DIRETORA FINANCEIRA",
-        span: "REGINA CELI DEL MONACO DE PAULA SANTOS MOREIRA"
+        title: "REGINA CELI DEL MONACO DE PAULA SANTOS MOREIRA",
+        span: "VICE-DIRETORA FINANCEIRA"
       }
     ]
   },
