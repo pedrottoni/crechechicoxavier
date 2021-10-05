@@ -28,7 +28,11 @@ export default function ModalSlide(props) {
       span={props.span}
       subtitle={props.subtitle}
     >
-      <Swiper spaceBetween={30} slidesPerView={2.3} navigation={true}>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={props.slidesPerView}
+        navigation={true}
+      >
         {props.images.map((images) =>
           props.link ? (
             <SwiperSlide key={images.key}>
@@ -62,13 +66,6 @@ export default function ModalSlide(props) {
       <style jsx global>{`
         .modal .modalCard .modalContent {
           border-radius: 2rem;
-        }
-
-        .modal .modalCard .modalContent .swiper {
-          position: relative;
-          margin: 0;
-          padding: 3rem 5rem 5rem;
-          width: -webkit-fill-available;
         }
       `}</style>
     </Modal>

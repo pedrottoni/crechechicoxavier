@@ -81,15 +81,24 @@ export default function Modal(props) {
           border-radius: 2rem;
           background: #fff;
           text-align: center;
+          text-shadow: none;
+          text-transform: uppercase;
         }
 
         .modal header {
           position: relative;
           display: flex;
           justify-content: space-between;
-          margin-bottom: 3rem;
           width: inherit;
           text-align: center;
+        }
+
+        .modal .modalCard header h1 {
+          color: #db3541 !important;
+        }
+
+        .modal .modalCard header h1 span{
+          color: #148fb8 !important;
         }
 
         .modal .subTitle {
@@ -126,14 +135,28 @@ export default function Modal(props) {
 
         .modalContent h1 {
           text-transform: uppercase;
-          font-size: 2.8rem;
+          font-size: 2.3rem;
           color: #db3541;
         }
 
-        .modalContentr h2 {
+        .modalContent h2 {
+          font-size: 2.3rem;
+          font-weight: bold;
+        }
+
+        .modal .modalCard .modalContent .swiper {
+          position: relative;
+          margin: 0;
+          padding: 2rem 2rem 2rem;
+          width: -webkit-fill-available;
+        }
+
+        .swiper-slide {
+          background: #eee;
+          border-radius: 2rem;
+          outline: 0.7rem solid #f5f5f5;
+          padding: 2rem 0;
           text-transform: uppercase;
-          font-weight: 900;
-          color: #148fb8;
         }
       `}</style>
     </>

@@ -88,3 +88,8 @@ button {
   box-shadow: inset 1px 1px 0px rgb(255 255 255 / 10%),
     inset 0px -1px 0px rgb(255 255 255 / 7%);
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-weight: bold;
+}

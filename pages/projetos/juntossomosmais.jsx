@@ -110,6 +110,10 @@ export default function JuntosSomosMais() {
       `}</style>
 
       <style jsx global>{`
+      main header .title {
+          color: #ffc420 !important;
+        }
+        
         main .swiper {
           position: relative;
           width: 100vw;

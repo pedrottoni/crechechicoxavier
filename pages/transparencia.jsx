@@ -14,12 +14,12 @@ export default function Transparência() {
   // Animações dos Cards
   const list = {
     animate: { transition: { staggerChildren: 0.05 } },
-    exit: { transition: { staggerChildren: 0.05 } }
+    exit: { transition: { staggerChildren: 0.05 } },
   };
   const animationMenu = {
     initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } }
+    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
   };
 
   //Modal
@@ -76,6 +76,7 @@ export default function Transparência() {
               onClick={() => setOpen(false)}
               title={transparencia[modal].title}
               span={transparencia[modal].span}
+              slidesPerView={3.3}
               images={transparencia[modal].documentos}
               link={true}
             />
@@ -94,7 +95,19 @@ export default function Transparência() {
           )}
         </AnimatePresence>
       </Center>
-      <style jsx global>{``}</style>
+      <style jsx global>{`
+        main header .title {
+          color: #ffc420 !important;
+        }
+
+        .modalContent .images {
+          position: relative;
+          width: 23rem !important;
+          height: 23rem !important;
+          margin: 0 auto 2rem !important;
+        }
+
+      `}</style>
     </>
   );
 }

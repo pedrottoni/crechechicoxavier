@@ -67,9 +67,6 @@ export default function Formacoes() {
         </AnimatePresence>
       </Center>
       <style jsx>{`
-        main header .title {
-          color: #ffc420 !important;
-        }
 
         main nav .card {
           background: #ffc420;
@@ -87,6 +84,10 @@ export default function Formacoes() {
       `}</style>
 
       <style jsx global>{`
+        main header .title {
+          color: #ffc420 !important;
+        }
+        
         main .swiper {
           position: relative;
           width: 100vw;
