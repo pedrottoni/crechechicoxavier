@@ -38,7 +38,7 @@ export default function Card(props) {
             {props.span && <h2>{props.span}</h2>}
             {props.imageBottom && (
               <div className="cardImage">
-                <Image src={`/images/${props.imageBottom}.png`} layout="fill" />
+                <Image src={`/images/${props.imageBottom}`} layout="fill" />
               </div>
             )}
           </div>
@@ -69,10 +69,19 @@ export default function Card(props) {
 
         .cardIcon {
           position: absolute;
-          width: 12rem;
-          height: 12rem;
-          top: -6.5rem;
-          filter: drop-shadow(2px 2px 2px black);
+          width: 11rem;
+          height: 11rem;
+          top: -5.5rem;
+          background: #db3541;
+          border-radius: 100%;
+          border: 1.5rem solid transparent;
+          outline: 0.6rem solid #fff;
+          transform: rotateZ(-4deg);
+          box-shadow: 0.3rem 1rem 2rem -1rem hsl(356deg 70% 25%);
+        }
+
+        .cardIcon div {
+          filter: drop-shadow(0.2rem 0.2rem 0.2rem hsl(356deg 70% 30%));
         }
 
         .card header .cardTitle {
@@ -97,10 +106,10 @@ export default function Card(props) {
 
         .card header .cardImage {
           position: relative;
-          width: 24rem;
-          height: 24rem;
+          width: clamp(30rem, 16vw, 30rem);
+          height: clamp(10rem, 22vh, 24rem);
           margin: 0 0 3rem;
-          filter: drop-shadow(2px 2px 2px black);
+          filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));
         }
 
         .card .cardContent {

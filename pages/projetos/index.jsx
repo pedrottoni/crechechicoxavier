@@ -29,7 +29,9 @@ export default function Projetos() {
       </Head>
 
       <Center>
-        <Title title="Conheça" span="Nossos projetos" />
+        <header>
+          <Title title="Conheça" span="Nossos projetos" />
+        </header>
 
         <motion.nav
           initial="initial"
@@ -42,7 +44,7 @@ export default function Projetos() {
               <Card
                 title={projeto.title}
                 span={projeto.span}
-                imageTop={projeto.link}
+                imageTop={projeto.image}
                 cardOnCLick={() => router.push(projeto.link)}
               />
             </motion.div>

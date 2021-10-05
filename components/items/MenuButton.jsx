@@ -37,6 +37,7 @@ export default function MenuButton(props) {
           width: 5rem;
           height: 4.5rem;
           margin-bottom: 0.5rem;
+          filter: drop-shadow(0.1rem 0.1rem 0.2rem hsl(356deg 70% 30%));
         }
       `}</style>
     </motion.button>

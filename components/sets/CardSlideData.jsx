@@ -119,6 +119,10 @@ export default function CardSlideData(props) {
           border-radius: 2rem;
         }
 
+        .card .cardContent {
+          margin: 0.8rem 0 1rem !important;
+        }
+
         .card .cardContent .images ::before {
           content: "";
           position: absolute;

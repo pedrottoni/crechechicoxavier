@@ -25,13 +25,12 @@ export default function Columns(props) {
 
         header {
           display: flex;
-          width: 100%;
           align-items: center;
-          justify-content: space-between;
         }
 
         header nav {
           place-content: flex-end;
+          filter: none;
         }
 
         header nav a {
@@ -41,7 +40,7 @@ export default function Columns(props) {
         header svg {
           position: relative;
           width: 25rem;
-          height: 15rem;
+          height: 12rem;
         }
 
         main {
