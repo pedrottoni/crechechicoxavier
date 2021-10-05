@@ -58,7 +58,7 @@ export default function Card(props) {
           place-content: center;
           background: #fff;
           width: 100%;
-          ${props.icon ? "padding: 8rem 3rem 2rem;" : "padding: 3rem;"}
+          ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),

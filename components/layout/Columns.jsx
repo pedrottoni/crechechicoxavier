@@ -18,7 +18,7 @@ export default function Columns(props) {
           place-content: space-between;
           height: 100vh;
           margin: 0 auto;
-          padding: 4rem;
+          padding: 4rem clamp(2rem, 6vw, 20rem);
           text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
             0 0.3rem 0.4rem hsl(195deg 75% 30%);
         }
@@ -48,6 +48,7 @@ export default function Columns(props) {
           display: flex;
           gap: 2.5rem;
           margin-bottom: 6rem;
+          justify-content: space-between;
         }
 
         main nav {
@@ -59,10 +60,6 @@ export default function Columns(props) {
           flex-direction: column;
           justify-content: center;
           gap: 1rem;
-        }
-
-        .title {
-          max-width: 58rem !important;
         }
 
         .left nav {
@@ -80,8 +77,8 @@ export default function Columns(props) {
           gap: 2rem;
           justify-content: center;
           max-width: 40vw;
-          margin: 0 auto;
-          height: -webkit-fill-available;
+          height: max-content;
+          max-height: 62vh;
         }
 
         footer {

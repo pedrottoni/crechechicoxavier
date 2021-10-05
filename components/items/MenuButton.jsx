@@ -35,7 +35,7 @@ export default function MenuButton(props) {
         .btn .btnIcon {
           position: relative;
           width: 5rem;
-          height: 5rem;
+          height: 4.5rem;
           margin-bottom: 0.5rem;
         }
       `}</style>

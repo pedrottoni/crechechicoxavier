@@ -59,7 +59,7 @@ export default function CardSlideData(props) {
                   src={`/images/${images.src}`}
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="0% 40%"
+                  objectPosition="50% 30%"
                 />
               </div>
               {images.imagesSubtitle ? (
@@ -76,6 +76,10 @@ export default function CardSlideData(props) {
           border-radius: 2rem;
         }
 
+        .card .cardContent {
+          overflow-y: hidden !important;
+        }
+
         .card .dados {
           position: relative;
           display: flex;
@@ -83,9 +87,16 @@ export default function CardSlideData(props) {
           margin-bottom: 2rem;
         }
 
+        .card .dados h2 {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 2.5rem;
+          color: #148fb8;
+        }
+
         .card .dados .arrow {
-          width: 20px;
-          height: 20px;
+          width: 2.5rem;
+          height: 2.5rem;
           fill: #db3541;
           cursor: pointer;
           filter: none;
@@ -104,10 +115,8 @@ export default function CardSlideData(props) {
           margin: 0;
           padding: 0;
           width: 100%;
-          height: 43vh;
-        }
-
-        .card .swiper .images {
+          height: calc(50vh - 6vw);
+          border-radius: 2rem;
         }
 
         .card .cardContent .images ::before {
@@ -132,14 +141,15 @@ export default function CardSlideData(props) {
         }
 
         .card .swiper h1 {
-          bottom: 5rem;
+          bottom: 5.2rem;
           color: #ffffff;
-          font-size: 3.8rem;
+          font-size: 3rem;
           filter: drop-shadow(2px 2px 2px black);
         }
 
         .card .swiper h2 {
-          bottom: 1rem;
+          bottom: 1.8rem;
+          font-size: 2.5rem;
           color: hsl(44deg 100% 56%);
           filter: drop-shadow(2px 2px 2px black);
         }

@@ -83,7 +83,7 @@ export default function Acreche() {
       <Columns>
         <div className="left">
           <Title
-            title="A nossa ceche"
+            title="A nossa creche"
             span="Chico Xavier"
             subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
           >
