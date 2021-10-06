@@ -73,6 +73,7 @@ export default function JuntosSomosMais() {
               onClick={() => setOpen(false)}
               title={vinteUm[projeto].eventos[modal].title}
               subtitle={vinteUm[projeto].eventos[modal].subtitle}
+              slidesPerView={2.3}
               images={vinteUm[projeto].eventos[modal].images}
             />
           )}
@@ -110,10 +111,10 @@ export default function JuntosSomosMais() {
       `}</style>
 
       <style jsx global>{`
-      main header .title {
+        main header .title {
           color: #ffc420 !important;
         }
-        
+
         main .swiper {
           position: relative;
           width: 100vw;

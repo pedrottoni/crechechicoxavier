@@ -151,7 +151,7 @@ export default function Modal(props) {
           width: -webkit-fill-available;
         }
 
-        .swiper-slide {
+        .modal .modalCard .modalContent .swiper-slide {
           background: #eee;
           border-radius: 2rem;
           outline: 0.7rem solid #f5f5f5;

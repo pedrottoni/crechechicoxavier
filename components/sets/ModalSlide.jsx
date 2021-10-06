@@ -52,7 +52,7 @@ export default function ModalSlide(props) {
           ) : (
             <SwiperSlide key={images.key}>
               <div className="images">
-                <Image src={`/images/${images.image}.svg`} layout="fill" />
+                <Image src={`/images/${images.image}`} layout="fill" />
               </div>
               {images.imagesSubtitle ? (
                 <p className="images__subtitle">{images.imagesSubtitle}</p>
