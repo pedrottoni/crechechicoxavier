@@ -44,6 +44,8 @@ export default function Formacoes() {
                 title={formacao.title}
                 subtitle={formacao.subtitle}
                 imageTop={formacao.link}
+                objectFit="cover"
+                objectPosition="50% 0%"
                 cardOnCLick={() => (
                   <>
                     {setOpen(true)}

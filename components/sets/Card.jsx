@@ -11,6 +11,8 @@ Props:
 		- title
 		- span
 		- imageBottom
+    - objectFit
+    - objectPosition
 	Content
 	 - children
  */
@@ -34,8 +36,8 @@ export default function Card(props) {
                 <Image
                   src={`/images/${props.imageTop}`}
                   layout="fill"
-                  objectFit="cover"
-                  objectPosition="50% 0%"
+                  objectFit={props.objectFit}
+                  objectPosition={props.objectPosition}
                 />
               </div>
             )}
@@ -67,7 +69,7 @@ export default function Card(props) {
           place-items: center;
           place-content: center;
           background: #fff;
-          width: 100%;
+          width: calc(12vw + 11vh);
           ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
@@ -75,6 +77,10 @@ export default function Card(props) {
             0.1rem 0.2rem 0.5rem #5e2458;
           text-shadow: none;
           ${props.cardOnCLick && "cursor: pointer;"}
+        }
+
+        .swiper .card {
+          width: 100%;
         }
 
         .cardIcon {
@@ -116,7 +122,7 @@ export default function Card(props) {
 
         .card header .cardImage {
           position: relative;
-          width: clamp(30rem, 16vw, 30rem);
+          width: 100%;
           height: clamp(10rem, 22vh, 24rem);
           margin: 0 0 3rem;
           filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));

@@ -130,7 +130,7 @@ export default function Acreche() {
             </Card>
           ) : null}
           {missao ? (
-            <Card title="Nossa Missão" icon="missão">
+            <Card title="Nossa Missão" icon="estrutura">
               <p>
                 Inaugurada em 1981, a Casa da Criança - Creche Chico Xavier tem
                 como missão a promoção da educação, assistência social e

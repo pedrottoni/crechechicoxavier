@@ -1,7 +1,7 @@
 export const transparencia = [
   {
     key: 0,
-    link: "fundlegal",
+    link: "transparência/fundamentação legal.svg",
     title: "Fundamentação",
     span: "Legal",
     documentos: [
@@ -57,7 +57,7 @@ export const transparencia = [
   },
   {
     key: 1,
-    link: "2021",
+    link: "transparência/documentos.svg",
     title: "Documentos",
     span: "de 2021",
     documentos: [
@@ -383,7 +383,7 @@ export const transparencia = [
   },
   {
     key: 2,
-    link: "anteriores",
+    link: "transparência/anos anteriores.svg",
     title: "Anos",
     span: "Anteriores",
     documentos: [

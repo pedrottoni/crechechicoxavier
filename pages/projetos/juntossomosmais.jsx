@@ -57,6 +57,8 @@ export default function JuntosSomosMais() {
                 span={jsm.span}
                 subtitle={jsm.subtitle}
                 imageTop={jsm.link}
+                objectFit="cover"
+                objectPosition="50% 0%"
                 cardOnCLick={() => (
                   <>
                     {setOpen(true)}
@@ -133,10 +135,7 @@ export default function JuntosSomosMais() {
         }
 
         .card header .cardImage {
-          position: relative;
-          width: clamp(30rem, 25vw - 8vh, 40rem);
           filter: none;
-          margin: 0 0 2rem;
         }
 
         .modal .modalContent .images {

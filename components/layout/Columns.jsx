@@ -41,6 +41,7 @@ export default function Columns(props) {
           position: relative;
           width: 25rem;
           height: 12rem;
+          cursor: pointer;
         }
 
         main {
@@ -84,6 +85,7 @@ export default function Columns(props) {
           place-self: center;
           padding-bottom: 2rem;
         }
+
       `}</style>
     </>
   );

@@ -61,6 +61,8 @@ export default function ProjetosDeLeitura() {
                 span={projeto.span}
                 subtitle={projeto.subtitle}
                 imageTop={projeto.link}
+                objectFit="cover"
+                objectPosition="50% 0%"
                 cardOnCLick={() => (
                   <>
                     {setOpen(true)}

@@ -18,7 +18,7 @@ export default function Center(props) {
           place-content: space-between;
           height: 100vh;
           margin: 0 auto;
-          padding: calc(2vh + 1rem) clamp(2rem,6vw,20rem);
+          padding: calc(2vh + 1rem) clamp(2rem, 6vw, 20rem);
           text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
             0 0.3rem 0.4rem hsl(195deg 75% 30%);
         }
@@ -41,6 +41,7 @@ export default function Center(props) {
           position: relative;
           width: 25rem;
           height: 12rem;
+          cursor: pointer;
         }
 
         main {
@@ -51,13 +52,13 @@ export default function Center(props) {
           text-align: center;
           gap: 2rem;
           margin-bottom: 2rem;
-
         }
 
         main header {
           display: flex;
           flex-direction: column;
           align-items: center;
+          width: 100%;
         }
 
         main header .title {

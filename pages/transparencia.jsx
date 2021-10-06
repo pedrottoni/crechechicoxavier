@@ -58,7 +58,7 @@ export default function Transparência() {
               <Card
                 title={docs.title}
                 span={docs.span}
-                imageTop="contato.svg"
+                imageTop={docs.link}
                 cardOnCLick={() => (
                   <>
                     {setOpen(true)}
