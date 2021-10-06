@@ -39,7 +39,11 @@ export default function ModalSlide(props) {
               <Link href={images.link}>
                 <a target="_blank">
                   <div className="images">
-                    <Image src={`/images/${images.image}`} layout="fill" />
+                    <Image
+                      src={`/images/${images.image}`}
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   {images.imagesSubtitle ? (
                     <p className="images__subtitle">{images.imagesSubtitle}</p>
@@ -52,7 +56,11 @@ export default function ModalSlide(props) {
           ) : (
             <SwiperSlide key={images.key}>
               <div className="images">
-                <Image src={`/images/${images.image}`} layout="fill" />
+                <Image
+                  src={`/images/${images.image}`}
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
               {images.imagesSubtitle ? (
                 <p className="images__subtitle">{images.imagesSubtitle}</p>

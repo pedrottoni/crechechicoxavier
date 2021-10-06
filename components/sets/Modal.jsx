@@ -97,7 +97,7 @@ export default function Modal(props) {
           color: #db3541 !important;
         }
 
-        .modal .modalCard header h1 span{
+        .modal .modalCard header h1 span {
           color: #148fb8 !important;
         }
 
@@ -109,6 +109,9 @@ export default function Modal(props) {
         .modal header button {
           position: absolute;
           right: 4rem;
+          color: #fff;
+          font-size: 2.5rem;
+          font-weight: bold;
         }
 
         .modalContent {
@@ -137,24 +140,25 @@ export default function Modal(props) {
           text-transform: uppercase;
           font-size: 2.3rem;
           color: #db3541;
+          letter-spacing: -0.1rem;
         }
 
         .modalContent h2 {
           font-size: 2.3rem;
           font-weight: bold;
+          letter-spacing: -0.1rem;
         }
 
         .modal .modalCard .modalContent .swiper {
           position: relative;
           margin: 0;
-          padding: 2rem 2rem 2rem;
+          padding: 0;
           width: -webkit-fill-available;
         }
 
         .modal .modalCard .modalContent .swiper-slide {
           background: #eee;
           border-radius: 2rem;
-          outline: 0.7rem solid #f5f5f5;
           padding: 2rem 0;
           text-transform: uppercase;
         }

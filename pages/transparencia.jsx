@@ -102,8 +102,8 @@ export default function Transparência() {
 
         .modalContent .images {
           position: relative;
-          width: 23rem !important;
-          height: 23rem !important;
+          width: 17rem !important;
+          height: 19rem !important;
           margin: 0 auto 2rem !important;
         }
 

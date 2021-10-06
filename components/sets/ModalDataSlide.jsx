@@ -67,7 +67,11 @@ export default function ModalDataSlide(props) {
                 <Link href={images.link}>
                   <a target="_blank">
                     <div className="images">
-                      <Image src={`/images/${images.image}`} layout="fill" />
+                      <Image
+                        src={`/images/${images.image}`}
+                        layout="fill"
+                        objectFit="cover"
+                      />
                     </div>
                     {images.imagesSubtitle ? (
                       <p className="images__subtitle">
@@ -82,7 +86,11 @@ export default function ModalDataSlide(props) {
             ) : (
               <SwiperSlide key={images.key}>
                 <div className="images">
-                  <Image src={`/images/${images.image}`} layout="fill" />
+                  <Image
+                    src={`/images/${images.image}`}
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
                 {images.imagesSubtitle ? (
                   <p className="images__subtitle">{images.imagesSubtitle}</p>
@@ -111,7 +119,7 @@ export default function ModalDataSlide(props) {
           font-weight: bold;
           font-size: 2.5rem;
           color: #148fb8;
-          padding: 0.6rem
+          padding: 0.6rem;
         }
 
         .modal .modalCard .modalContent .dados .arrow {
@@ -129,8 +137,6 @@ export default function ModalDataSlide(props) {
         .modal .modalCard .modalContent .dados .arrow--right {
           right: 35rem;
         }
-
-
       `}</style>
     </Modal>
   );

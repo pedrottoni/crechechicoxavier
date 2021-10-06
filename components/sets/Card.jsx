@@ -31,14 +31,24 @@ export default function Card(props) {
           <div className="cardTitle">
             {props.imageTop && (
               <div className="cardImage">
-                <Image src={`/images/${props.imageTop}`} layout="fill" />
+                <Image
+                  src={`/images/${props.imageTop}`}
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="50% 0%"
+                />
               </div>
             )}
             <h1>{props.title}</h1>
             {props.span && <h2>{props.span}</h2>}
             {props.imageBottom && (
               <div className="cardImage">
-                <Image src={`/images/${props.imageBottom}`} layout="fill" />
+                <Image
+                  src={`/images/${props.imageBottom}`}
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="50% 0%"
+                />
               </div>
             )}
           </div>

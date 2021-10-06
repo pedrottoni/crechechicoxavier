@@ -49,7 +49,7 @@ export default function Center(props) {
           place-items: center;
           place-content: space-between;
           text-align: center;
-          gap: 2.5rem;
+          gap: 2rem;
           margin-bottom: 2rem;
 
         }

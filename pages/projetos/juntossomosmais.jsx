@@ -49,11 +49,12 @@ export default function JuntosSomosMais() {
             ))}
           </div>
         </header>
-        <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
+        <Swiper spaceBetween={50} slidesPerView={3.8} navigation={true}>
           {vinteUm[projeto].eventos.map((jsm) => (
-            <SwiperSlide key={jsm.key}>
+            <SwiperSlide key={jsm.key} className="sliderCapa">
               <Card
                 title={jsm.title}
+                span={jsm.span}
                 subtitle={jsm.subtitle}
                 imageTop={jsm.link}
                 cardOnCLick={() => (
@@ -72,8 +73,9 @@ export default function JuntosSomosMais() {
               key={vinteUm[projeto].eventos[modal].key}
               onClick={() => setOpen(false)}
               title={vinteUm[projeto].eventos[modal].title}
+              span={vinteUm[projeto].eventos[modal].span}
               subtitle={vinteUm[projeto].eventos[modal].subtitle}
-              slidesPerView={2.3}
+              slidesPerView={1.5}
               images={vinteUm[projeto].eventos[modal].images}
             />
           )}
@@ -111,10 +113,6 @@ export default function JuntosSomosMais() {
       `}</style>
 
       <style jsx global>{`
-        main header .title {
-          color: #ffc420 !important;
-        }
-
         main .swiper {
           position: relative;
           width: 100vw;
@@ -122,7 +120,44 @@ export default function JuntosSomosMais() {
           padding: 3rem 5rem 5rem;
         }
 
-        main .swiper-slide {
+        .card {
+          padding: 2rem;
+        }
+
+        .card h1 {
+          font-size: 2.3rem !important;
+        }
+
+        .card h2 {
+          font-size: 2.3rem;
+        }
+
+        .card header .cardImage {
+          position: relative;
+          width: clamp(30rem, 25vw - 8vh, 40rem);
+          filter: none;
+          margin: 0 0 2rem;
+        }
+
+        .modal .modalContent .images {
+          position: relative;
+          width: 100%;
+          height: 50rem;
+          margin: 0 auto;
+        }
+
+        .modal .modalContent .images img {
+          border-radius: 2rem;
+        }
+
+        .modal .modalCard .modalContent .swiper-slide {
+          background: none !important;
+          outline: none !important;
+          padding: 0 !important;
+        }
+
+        .sliderCapa img {
+          border-radius: 2rem;
         }
       `}</style>
     </>
