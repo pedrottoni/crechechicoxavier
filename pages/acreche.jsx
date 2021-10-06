@@ -9,9 +9,8 @@ import CardSlideData from "../components/sets/CardSlideData";
 import { imagens } from "../data/aCreche-image";
 
 export default function Acreche() {
-  const [nossaCreche, setNossaCreche] = useState(true);
+  const [historia, sethistoria] = useState(true);
   const [missao, setMissao] = useState(false);
-  const [historia, sethistoria] = useState(false);
   const [equipe, setEquipe] = useState(false);
   const [equipeColaboradores, setEquipeColaboradores] = useState(false);
 
@@ -26,16 +25,11 @@ export default function Acreche() {
       title: "Nossa",
       span: "História",
       onClick: () => {
-        setNossaCreche(false);
         sethistoria(true);
         setMissao(false);
         setEquipe(false);
         setEquipeColaboradores(false);
-        if (historia) {
-          setNossaCreche(true);
-          sethistoria(false);
-        }
-      }
+      },
     },
     {
       key: 2,
@@ -43,16 +37,11 @@ export default function Acreche() {
       title: "Nossa",
       span: "Missão",
       onClick: () => {
-        setNossaCreche(false);
         sethistoria(false);
         setMissao(true);
         setEquipe(false);
         setEquipeColaboradores(false);
-        if (missao) {
-          setNossaCreche(true);
-          setMissao(false);
-        }
-      }
+      },
     },
     {
       key: 3,
@@ -60,17 +49,12 @@ export default function Acreche() {
       title: "Nossa",
       span: "Equipe",
       onClick: () => {
-        setNossaCreche(false);
         sethistoria(false);
         setMissao(false);
         setEquipe(true);
         setEquipeColaboradores(false);
-        if (equipe) {
-          setNossaCreche(true);
-          setEquipe(false);
-        }
-      }
-    }
+      },
+    },
   ];
 
   return (
@@ -97,9 +81,6 @@ export default function Acreche() {
           </Title>
         </div>
         <div className="right">
-          {nossaCreche ? (
-            <Image src={`/images/acreche.svg`} layout="fill" />
-          ) : null}
           {historia ? (
             <Card title="Nossa História" icon="história">
               <p>

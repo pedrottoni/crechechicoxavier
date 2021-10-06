@@ -69,7 +69,8 @@ export default function Card(props) {
           place-items: center;
           place-content: center;
           background: #fff;
-          width: calc(12vw + 11vh);
+          width: 100%;
+          min-width: calc(12vw + 11vh);
           ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
@@ -77,10 +78,6 @@ export default function Card(props) {
             0.1rem 0.2rem 0.5rem #5e2458;
           text-shadow: none;
           ${props.cardOnCLick && "cursor: pointer;"}
-        }
-
-        .swiper .card {
-          width: 100%;
         }
 
         .cardIcon {
@@ -110,7 +107,7 @@ export default function Card(props) {
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: 2.8rem;
+          font-size: 3rem;
           color: #db3541;
         }
 

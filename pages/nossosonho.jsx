@@ -1,6 +1,22 @@
+import { useState } from "react";
 import Head from "next/head";
 
+import Columns from "../components/layout/Columns";
+import Title from "../components/items/Title";
+import MenuButton from "../components/items/MenuButton";
+import Card from "../components/sets/Card";
+import CardSlideData from "../components/sets/CardSlideData";
+import { nossoSonho } from "../data/nosso-sonho";
+
 export default function NossoSonho() {
+  //Card
+  //Define qual modal deve aparecer
+  //Ativa ou desativa o modal
+  const [cardNumber, setCardNumber] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  const [projeto, setProjeto] = useState(0);
+
   return (
     <>
       <Head>
@@ -9,9 +25,85 @@ export default function NossoSonho() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>SITE</h1>
-      </main>
+      <Columns>
+        <div className="left">
+          <Title
+            title="Nosso Sonho"
+            subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
+          >
+            <nav>
+              {nossoSonho.map((menuItem) => (
+                <MenuButton
+                  key={menuItem.key}
+                  link={menuItem.link}
+                  title={menuItem.title}
+                  span={menuItem.span}
+                  image={true}
+                  vert={true}
+                  onCLick={() => setCardNumber(menuItem.key)}
+                />
+              ))}
+            </nav>
+          </Title>
+        </div>
+        <div className="right">
+          <Card
+            title={
+              nossoSonho[cardNumber].title + " " + nossoSonho[cardNumber].span
+            }
+            icon={nossoSonho[cardNumber].link}
+          >
+            {nossoSonho[cardNumber].documentos}
+          </Card>
+        </div>
+      </Columns>
+
+      <style jsx>{``}</style>
+
+      <style jsx global>{`
+        .left .subTitle,
+        .right .subtitle {
+          max-width: 70rem;
+        }
+
+        .left .title {
+          color: #ffc420;
+        }
+
+        .cardImage {
+          position: fixed;
+          width: 17%;
+          height: 21rem;
+          margin: 1rem auto 2rem;
+          outline: 1rem solid #fff;
+          border-radius: 2rem;
+          -webkit-transform: rotateZ(1deg);
+          -ms-transform: rotateZ(1deg);
+          transform: rotateZ(6deg);
+          box-shadow: 0.1rem 0.3rem 5rem -0.6rem hsl(356deg 70% 30% / 63%);
+          bottom: 27vh;
+          right: 8rem;
+        }
+
+        .cardImage img {
+          border-radius: 2rem;
+        }
+
+        .cardContent div {
+          margin-top: 3rem;
+          font-size: 2rem;
+          line-height: 3.3rem;
+        }
+
+        .cardContent .cardInfo h2 {
+          font-size: 2.4rem;
+          font-weight: bold;
+          color: hsl(356deg 70% 53%);
+        }
+
+        .cardContent .cardInfo hr {
+        }
+      `}</style>
     </>
   );
 }
