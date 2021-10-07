@@ -1,16 +1,17 @@
 import Links from "../sets/Links";
 import menu from "../../data/menu";
 import Logo from "../../public/images/Logo";
+import Social from "../sets/Social";
+import PageHeader from "../sets/PageHeader";
 
 export default function Columns(props) {
   return (
     <>
       <header>
-        <Logo />
-        <Links menu={menu} image={false} />
+        <PageHeader menu={menu} />
       </header>
       <main>{props.children}</main>
-      <footer>SOCIAL</footer>
+      <Social />
       <style jsx global>{`
         #__next {
           display: flex;
@@ -18,7 +19,7 @@ export default function Columns(props) {
           place-content: space-between;
           height: 100vh;
           margin: 0 auto;
-          padding: calc(2vh + 1rem) clamp(2rem,6vw,20rem);
+          padding: calc(2vh + 1rem) clamp(2rem, 6vw, 20rem);
           text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
             0 0.3rem 0.4rem hsl(195deg 75% 30%);
         }
@@ -80,12 +81,6 @@ export default function Columns(props) {
           height: max-content;
           max-height: 62vh;
         }
-
-        footer {
-          place-self: center;
-          padding-bottom: 2rem;
-        }
-
       `}</style>
     </>
   );

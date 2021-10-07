@@ -29,7 +29,7 @@ var meses = [
   "setembro",
   "outubro",
   "novembro",
-  "dezembro"
+  "dezembro",
 ];
 
 export default function ProjetosDeLeitura() {
@@ -50,7 +50,7 @@ export default function ProjetosDeLeitura() {
         <header>
           <Title
             title="Projetos de Leitura"
-            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+            subtitle=""
           />
         </header>
         <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
@@ -109,10 +109,10 @@ export default function ProjetosDeLeitura() {
       `}</style>
 
       <style jsx global>{`
-      main header .title {
+        main header .title {
           color: #ffc420 !important;
         }
-        
+
         main .swiper {
           position: relative;
           width: 100vw;
@@ -120,8 +120,10 @@ export default function ProjetosDeLeitura() {
           padding: 3rem 5rem 5rem;
         }
 
-        main .swiper-slide {
+        main .swiper .card {
+          height: inherit;
         }
+
       `}</style>
     </>
   );

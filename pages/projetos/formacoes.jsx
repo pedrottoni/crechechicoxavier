@@ -34,7 +34,7 @@ export default function Formacoes() {
         <header>
           <Title
             title="Formações"
-            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
+            subtitle=""
           />
         </header>
         <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>

@@ -1,16 +1,17 @@
 import Links from "../sets/Links";
+import Social from "../sets/Social";
 import menu from "../../data/menu";
 import Logo from "../../public/images/Logo";
+import PageHeader from "../sets/PageHeader";
 
 export default function Center(props) {
   return (
     <>
       <header>
-        <Logo />
-        <Links menu={menu} image={false} />
+        <PageHeader menu={menu} />
       </header>
       <main>{props.children}</main>
-      <footer>SOCIAL</footer>
+      <Social />
       <style jsx global>{`
         #__next {
           display: flex;
@@ -51,7 +52,7 @@ export default function Center(props) {
           place-content: space-between;
           text-align: center;
           gap: 4rem;
-          margin-bottom: 3rem;
+          margin-bottom: 4rem;
         }
 
         main header {
@@ -84,11 +85,6 @@ export default function Center(props) {
         main nav a .linkIcon {
           width: clamp(16rem, 25vh, 28rem) !important;
           height: clamp(16rem, 25vh, 28rem) !important;
-        }
-
-        footer {
-          place-self: center;
-          padding-bottom: 2rem;
         }
       `}</style>
     </>
