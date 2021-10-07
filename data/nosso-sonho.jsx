@@ -8,18 +8,19 @@ export const nossoSonho = [
     span: "nosso sonho",
     documentos: (
       <>
-        <div className="cardImage">
-          <Image
-            src="/images/nosso sonho/turma.jpg"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-        <p className="textCenter">
+        <p>
           Há quatro décadas acolhemos crianças e suas famílias, colaborando para
+          a construção de vidas mais felizes  há quatro décadas acolhemos crianças e suas famílias, colaborando para
           a construção de vidas mais felizes.
         </p>
         <div className="cardInfo">
+          <div className="cardImage">
+            <Image
+              src="/images/nosso sonho/turma.jpg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <h2>SANTANDER</h2>
           <b>CONTA:</b> 13.001644-7
           <br />

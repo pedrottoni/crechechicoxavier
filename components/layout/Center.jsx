@@ -50,8 +50,8 @@ export default function Center(props) {
           place-items: center;
           place-content: space-between;
           text-align: center;
-          gap: 2rem;
-          margin-bottom: 2rem;
+          gap: 4rem;
+          margin-bottom: 3rem;
         }
 
         main header {
@@ -62,7 +62,7 @@ export default function Center(props) {
         }
 
         main header .title {
-          margin: 0 0 2rem !important;
+          margin: 0 0 1.5rem !important;
           max-width: 90rem !important;
         }
 

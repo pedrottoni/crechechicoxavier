@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Center from "../components/layout/Center";
+import Title from "../components/items/Title";
 
 export default function Contato() {
   return (
@@ -9,9 +11,38 @@ export default function Contato() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>SITE</h1>
-      </main>
+      <Center>
+        <header>
+          <Title title="Entre" span="em contato" />
+        </header>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7355.264806335392!2d-45.186418!3d-22.816081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76c3860edfab14d!2sCasa%20da%20Crian%C3%A7a%20Creche%20Chico%20Xavier!5e0!3m2!1spt-BR!2sbr!4v1633563529290!5m2!1spt-BR!2sbr"
+          loading="lazy"
+        ></iframe>
+        <div className="endeço">
+          Rua Benjamin Constant, 140 - São Gonçalo,
+          <br /> Guaratinguetá - SP, 12502-160
+          <br />
+          (12)3122-3704
+        </div>
+      </Center>
+      <style jsx global>{`
+        iframe {
+          width: calc(35vw + 35vh);
+          height: calc(18vh + 8vw);
+          border-radius: 2rem;
+          outline: 1rem solid #fff;
+          outline-offset: -2px;
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
+        }
+
+        .endeço {
+          font-size: 2.5rem;
+          color: #fff;
+          margin-top: 1.5rem;
+        }
+      `}</style>
     </>
   );
 }

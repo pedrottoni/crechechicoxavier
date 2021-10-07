@@ -72,8 +72,8 @@ export default function NossoSonho() {
 
         .cardImage {
           position: fixed;
-          width: 17%;
-          height: 21rem;
+          width: 20vw;
+          height: 28rem;
           margin: 1rem auto 2rem;
           outline: 1rem solid #fff;
           border-radius: 2rem;
@@ -81,8 +81,7 @@ export default function NossoSonho() {
           -ms-transform: rotateZ(1deg);
           transform: rotateZ(6deg);
           box-shadow: 0.1rem 0.3rem 5rem -0.6rem hsl(356deg 70% 30% / 63%);
-          bottom: 27vh;
-          right: 8rem;
+          right: 11rem;
         }
 
         .cardImage img {
@@ -98,7 +97,7 @@ export default function NossoSonho() {
         .cardContent .cardInfo h2 {
           font-size: 2.4rem;
           font-weight: bold;
-          color: hsl(356deg 70% 53%);
+          color: #148fb8;
         }
 
         .cardContent .cardInfo hr {

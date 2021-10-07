@@ -16,7 +16,7 @@ Props:
 export default function Modal(props) {
   return (
     <>
-      <div className="modal">
+      <div className={"modal " + props.className}>
         <motion.div
           className="backDrop"
           onClick={props.onClick}
@@ -93,7 +93,7 @@ export default function Modal(props) {
           text-align: center;
         }
 
-        .modal .modalCard header h1 {
+        .modalCard header h1 {
           color: #db3541 !important;
         }
 

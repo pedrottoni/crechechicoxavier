@@ -68,10 +68,6 @@ button {
   outline: 0.3rem solid hsl(0deg 0% 100% / 55%);
 }
 
-.textCenter {
-  text-align: center;
-}
-
 ::-webkit-scrollbar {
   width: 16px;
   height: 16px;

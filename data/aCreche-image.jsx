@@ -5,37 +5,37 @@ export const imagens = [
     dados: [
       {
         key: 0,
-        src: "Scheilla Damasceno Del Monaco.jpg",
+        src: "colaboradores/Scheilla Damasceno Del Monaco.jpg",
         title: "Scheilla Del Monaco",
         span: "DIRETORA PRESIDENTE"
       },
       {
         key: 1,
-        src: "Luís Augusto Cavalca Moreira.jpg",
+        src: "colaboradores/Luís Augusto Cavalca Moreira.jpg",
         title: "Luís Augusto Cavalca",
         span: "DIRETOR VICE-PRESIDENTE"
       },
       {
         key: 2,
-        src: "Benedito Ernesto Galvão Carvalho Filho.jpg",
+        src: "colaboradores/Benedito Ernesto Galvão Carvalho Filho.jpg",
         title: "Benedito Ernesto Galvão",
         span: "DIRETOR ADMINISTRATIVO"
       },
       {
         key: 3,
-        src: "Susane Carneiro Barbosa Del Monaco Braga.jpg",
+        src: "colaboradores/Susane Carneiro Barbosa Del Monaco Braga.jpg",
         title: "Susane Carneiro Barbosa",
         span: "VICE-DIRETORA ADMINISTRATIVA"
       },
       {
         key: 4,
-        src: "Diogenes José Antunes Carvalho.jpg",
+        src: "colaboradores/Diogenes José Antunes Carvalho.jpg",
         title: "Diogenes José Antunes",
         span: "DIRETOR FINANCEIRO"
       },
       {
         key: 5,
-        src: "Regina Celia Del Monaco de Paula Santos Moreira.jpg",
+        src: "colaboradores/Regina Celia Del Monaco de Paula Santos Moreira.jpg",
         title: "Regina Celia Del Monaco",
         span: "VICE-DIRETORA FINANCEIRA"
       }

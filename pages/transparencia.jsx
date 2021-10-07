@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Center from "../components/layout/Center";
 import Title from "../components/items/Title";
+import Modal from "../components/sets/Modal";
 import ModalSlide from "../components/sets/ModalSlide";
 import ModalDataSlide from "../components/sets/ModalDataSlide";
 import Card from "../components/sets/Card";
@@ -44,8 +45,19 @@ export default function Transparência() {
         <header>
           <Title
             title="Transparência"
-            subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente e atender a legislação da Transparência Municipal."
+            subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente."
           />
+          <button
+            type="button"
+            onClick={() => (
+              <>
+                {setOpen(true)}
+                {setModal(3)}
+              </>
+            )}
+          >
+            Saiba mais
+          </button>
         </header>
         <motion.nav
           initial="initial"
@@ -93,11 +105,41 @@ export default function Transparência() {
               link={true}
             />
           )}
+          {open && modal === 3 && (
+            <Modal
+              title="Transparência"
+              className="modal-title"
+              onClick={() => setOpen(false)}
+            >
+              <hr />
+              <br />
+              <br />
+              <br />
+              <p>
+                "A Casa da Criança Creche Chico Xavier tem também como objetivo,
+                atuar de forma transparente e atender a legislação da
+                Transparência Municipal e atender o Termo de Colaboração Nº001.
+                Desta forma, a instituição vem através desta página,
+                disponibilizar publicamente o acesso as suas prestações de
+                contas."
+              </p>
+            </Modal>
+          )}
         </AnimatePresence>
       </Center>
       <style jsx global>{`
         main header .title {
           color: #ffc420 !important;
+        }
+
+        main header button {
+          margin-top: 1rem;
+          color: #fff;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 2rem;
+          background: transparent;
+          border: 0.2rem solid #fff;
         }
 
         .modalContent .images {
@@ -107,6 +149,24 @@ export default function Transparência() {
           margin: 0 auto 2rem !important;
         }
 
+        .modalContent p {
+          font-size: 2.5rem;
+          text-transform: initial;
+          text-align: left;
+        }
+
+        .modal-title .modalCard {
+          width: 90rem;
+        }
+
+        .modal-title .modalCard header h1{
+          color: #148fb8 !important;
+        }
+
+        .modal-title .modalCard button {
+          background-color: #db3541;
+          margin-top: 0;
+        }
       `}</style>
     </>
   );
