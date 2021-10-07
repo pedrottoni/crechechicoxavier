@@ -140,6 +140,13 @@ export default function Transparência() {
           font-size: 2rem;
           background: transparent;
           border: 0.2rem solid #fff;
+          transition: .1s
+        }
+
+        main header button:active,
+        main header button:focus,
+        main header button:hover {
+          outline-offset: .5rem;
         }
 
         .modalContent .images {
@@ -159,7 +166,7 @@ export default function Transparência() {
           width: 90rem;
         }
 
-        .modal-title .modalCard header h1{
+        .modal-title .modalCard header h1 {
           color: #148fb8 !important;
         }
 

@@ -5,10 +5,10 @@ export default function MenuLink(props) {
   return (
     <>
       <Link href={`/${props.link}`}>
-        <a>
+        <a className={props.className}>
           {props.image ? (
             <div className="linkIcon">
-              <Image src={`/images/${props.link}.svg`} layout="fill" />
+              <Image src={`/images${props.link}.svg`} layout="fill" />
             </div>
           ) : null}
           <div className="linkText">

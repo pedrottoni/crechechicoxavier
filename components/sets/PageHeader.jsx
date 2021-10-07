@@ -30,7 +30,6 @@ export default function PageHeader(props) {
     <>
       <Logo />
       <motion.nav
-        className="scale-up-center"
         initial={router.pathname === "/" && "initial"}
         animate="animate"
         exit={router.pathname === "/" && "exit"}
@@ -44,6 +43,7 @@ export default function PageHeader(props) {
               text={menuItem.text}
               spam={menuItem.spam}
               vert={props.vert}
+              className={router.pathname === menuItem.link && "active"}
             />
           </motion.div>
         ))}
@@ -59,26 +59,32 @@ export default function PageHeader(props) {
             filter: drop-shadow(2px 2px 2px black);
           }
 
-          .scale-up-center {
-            animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-              both;
+          a {
+            position: relative;
+            top: 0;
+            transition: 0.1s;
           }
 
-          @-webkit-keyframes scale-up-center {
-            0% {
-              transform: scale(0.5);
-            }
-            100% {
-              transform: scale(1);
-            }
+          a:after {
+            content: "";
           }
-          @keyframes scale-up-center {
-            0% {
-              transform: scale(0.5);
-            }
-            100% {
-              transform: scale(1);
-            }
+
+          a:hover {
+            top: -0.5rem;
+          }
+
+          a.active {
+            top: -0.5rem;
+          }
+
+          a.active:after {
+            content: "";
+            width: 100%;
+            height: 0.5rem;
+            background: #ffc420;
+            position: absolute;
+            top: 3rem;
+            border-radius: 2rem;
           }
         `}</style>
       </motion.nav>

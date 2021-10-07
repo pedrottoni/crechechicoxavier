@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 /*
 Props:
@@ -63,6 +64,7 @@ export default function Card(props) {
       <style jsx global>{`
         .card {
           position: relative;
+          top: 0;
           ${props.icon ? "top: 2rem;" : ""}
           display: flex;
           flex-direction: column;
@@ -77,7 +79,12 @@ export default function Card(props) {
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
           text-shadow: none;
-          ${props.cardOnCLick && "cursor: pointer;"}
+          transition: 0.2s;
+          ${props.cardOnCLick ? "cursor: pointer;" : ""}
+        }
+
+        .card:hover {
+          ${props.cardOnCLick ? "top: -1rem" : ""}
         }
 
         .cardIcon {
