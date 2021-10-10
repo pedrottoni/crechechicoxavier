@@ -40,7 +40,11 @@ export default function ModalSlide(props) {
                 <a target="_blank">
                   <div className="images">
                     <Image
-                      src={`/images/${images.image}`}
+                      src={
+                        images.image != ""
+                          ? `/images/${images.image}`
+                          : `/vercel.svg`
+                      }
                       layout="fill"
                       objectFit="cover"
                     />
@@ -57,7 +61,11 @@ export default function ModalSlide(props) {
             <SwiperSlide key={images.key}>
               <div className="images">
                 <Image
-                  src={`/images/${images.image}`}
+                  src={
+                    images.image != ""
+                      ? `/images/${images.image}`
+                      : `/vercel.svg`
+                  }
                   layout="fill"
                   objectFit="cover"
                 />

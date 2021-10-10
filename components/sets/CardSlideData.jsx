@@ -56,7 +56,9 @@ export default function CardSlideData(props) {
             <SwiperSlide key={images.key}>
               <div className="images">
                 <Image
-                  src={`/images/${images.src}`}
+                  src={
+                    images.src != "" ? `/images/${images.src}` : `/vercel.svg`
+                  }
                   layout="fill"
                   objectFit="cover"
                   objectPosition="50% 30%"

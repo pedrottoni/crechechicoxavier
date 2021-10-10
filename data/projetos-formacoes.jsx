@@ -1,234 +1,234 @@
 export const formacoes = [
   {
     key: 0,
-    link: "formacao01",
+    link: "!",
     title: "formacao01",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
     images: [
       {
-		key: 0,
-        image: "acreche",
+        key: 0,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 1,
-        image: "contato",
+        key: 1,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 2,
-        image: "contato",
+        key: 2,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 3,
-        image: "acreche",
+        key: 3,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 4,
-        image: "contato",
+        key: 4,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 5,
-        image: "contato",
+        key: 5,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
     ],
   },
   {
     key: 1,
-    link: "formacao02",
+    link: "!",
     title: "formacao02",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
-    images:  [
-		{
-		  key: 0,
-		  image: "acreche",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 1,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 2,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 3,
-		  image: "acreche",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 4,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 5,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-	  ],
+    images: [
+      {
+        key: 0,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 1,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 2,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 3,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 4,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 5,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+    ],
   },
   {
     key: 2,
-    link: "formacao03",
+    link: "!",
     title: "formacao03 ",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
-    images:  [
-		{
-		  key: 0,
-		  image: "acreche",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 1,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 2,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 3,
-		  image: "acreche",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 4,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-		{
-		  key: 5,
-		  image: "contato",
-		  imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
-		},
-	  ],
+    images: [
+      {
+        key: 0,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 1,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 2,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 3,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 4,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+      {
+        key: 5,
+        image: "",
+        imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
+      },
+    ],
   },
   {
     key: 3,
-    link: "formacao04",
+    link: "!",
     title: "formacao04",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
-    images:  [
+    images: [
       {
-		key: 0,
-        image: "acreche",
+        key: 0,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 1,
-        image: "contato",
+        key: 1,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 2,
-        image: "contato",
+        key: 2,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 3,
-        image: "acreche",
+        key: 3,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 4,
-        image: "contato",
+        key: 4,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 5,
-        image: "contato",
+        key: 5,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
     ],
   },
   {
     key: 4,
-    link: "formacao05",
+    link: "!",
     title: "formacao05",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes.",
-    images:  [
+    images: [
       {
-		key: 0,
-        image: "acreche",
+        key: 0,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 1,
-        image: "contato",
+        key: 1,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 2,
-        image: "contato",
+        key: 2,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 3,
-        image: "acreche",
+        key: 3,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 4,
-        image: "contato",
+        key: 4,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 5,
-        image: "contato",
+        key: 5,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
     ],
   },
   {
     key: 5,
-    link: "formacao06",
+    link: "!",
     title: "formacao06 ",
     subtitle:
       "Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes. ",
-    images:  [
+    images: [
       {
-		key: 0,
-        image: "acreche",
+        key: 0,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 1,
-        image: "contato",
+        key: 1,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 2,
-        image: "contato",
+        key: 2,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 3,
-        image: "acreche",
+        key: 3,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 4,
-        image: "contato",
+        key: 4,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
       {
-		key: 5,
-        image: "contato",
+        key: 5,
+        image: "",
         imagesSubtitle: "Há quatro décadas acolhemos crianças e suas famílias",
       },
     ],

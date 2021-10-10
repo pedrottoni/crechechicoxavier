@@ -43,7 +43,7 @@ export default function PageHeader(props) {
               text={menuItem.text}
               spam={menuItem.spam}
               vert={props.vert}
-              className={router.pathname === menuItem.link && "active"}
+              className={router.pathname.indexOf(menuItem.link) ? null : "active"}
             />
           </motion.div>
         ))}
@@ -57,6 +57,7 @@ export default function PageHeader(props) {
             place-content: center;
             width: 100%;
             filter: drop-shadow(2px 2px 2px black);
+            align-items: center;
           }
 
           a {
@@ -71,10 +72,12 @@ export default function PageHeader(props) {
 
           a:hover {
             top: -0.5rem;
+            line-height: 2;
           }
 
           a.active {
             top: -0.5rem;
+            line-height: 2;
           }
 
           a.active:after {
@@ -83,7 +86,7 @@ export default function PageHeader(props) {
             height: 0.5rem;
             background: #ffc420;
             position: absolute;
-            top: 3rem;
+            top: 4rem;
             border-radius: 2rem;
           }
         `}</style>

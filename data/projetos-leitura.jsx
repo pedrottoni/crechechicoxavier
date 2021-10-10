@@ -6,10 +6,6 @@ export const vinteUm = [
     span: "MULTISSERIADA",
     subtitle: "",
 
-    janeiro: {
-      span: "janeiro",
-      dados: [],
-    },
     fevereiro: {
       span: "fevereiro",
       dados: [
@@ -272,32 +268,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/b1b2/10/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -307,32 +303,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/b1b2/11/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -342,32 +338,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/b1b2/12/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -378,10 +374,6 @@ export const vinteUm = [
     link: "projetos/Projetos de leitura/m1/05/ATIVIDADE LIVRE 01.jpeg",
     title: "Maternal 1",
     subtitle: "  ",
-    janeiro: {
-      span: "janeiro",
-      dados: [],
-    },
     fevereiro: {
       span: "fevereiro",
       dados: [
@@ -614,32 +606,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m1/10/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -649,32 +641,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m1/11/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -684,32 +676,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m1/12/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -720,41 +712,6 @@ export const vinteUm = [
     link: "projetos/Projetos de leitura/m2/04/COORDENAÇÃO MOTORA.jpeg",
     title: "Maternal 2 ",
     subtitle: "",
-    janeiro: {
-      span: "janeiro",
-      dados: [
-        {
-          key: 0,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 1,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "projetos/Projetos de leitura/m2/01/",
-          imagesSubtitle: "",
-        },
-      ],
-    },
     fevereiro: {
       span: "fevereiro",
       dados: [
@@ -983,32 +940,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m2/10/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1018,32 +975,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m2/11/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1053,32 +1010,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/m2/12/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1086,76 +1043,41 @@ export const vinteUm = [
   },
   {
     key: 3,
-    link: "fase1",
+    link: "!",
     title: "Fase 1D",
     subtitle: "",
-    janeiro: {
-      span: "janeiro",
-      dados: [
-        {
-          key: 0,
-          image: "acreche",
-          imagesSubtitle: "",
-        },
-        {
-          key: 1,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "acreche",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-      ],
-    },
 
     fevereiro: {
       span: "fevereiro",
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1166,32 +1088,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1202,32 +1124,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1238,32 +1160,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1274,32 +1196,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1310,32 +1232,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1346,32 +1268,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1382,32 +1304,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1418,32 +1340,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1454,32 +1376,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1489,32 +1411,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1522,76 +1444,41 @@ export const vinteUm = [
   },
   {
     key: 4,
-    link: "fase1",
+    link: "!",
     title: "Fase 1E",
     subtitle: "",
-    janeiro: {
-      span: "janeiro",
-      dados: [
-        {
-          key: 0,
-          image: "acreche",
-          imagesSubtitle: "",
-        },
-        {
-          key: 1,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "acreche",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "contato",
-          imagesSubtitle: "",
-        },
-      ],
-    },
 
     fevereiro: {
       span: "fevereiro",
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1602,32 +1489,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1638,32 +1525,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1674,32 +1561,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1710,32 +1597,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1746,32 +1633,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1782,32 +1669,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1818,32 +1705,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1854,32 +1741,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1890,32 +1777,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1925,32 +1812,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "acreche",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "contato",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -1961,41 +1848,6 @@ export const vinteUm = [
     link: "projetos/Projetos de leitura/f2/07/IMITANDO O BONECO.jpeg",
     title: "Fase 2",
     subtitle: "",
-    janeiro: {
-      span: "janeiro",
-      dados: [
-        {
-          key: 0,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 1,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "projetos/Projetos de leitura/f2/01/",
-          imagesSubtitle: "",
-        },
-      ],
-    },
 
     fevereiro: {
       span: "fevereiro",
@@ -2332,32 +2184,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/f2/11/",
+          image: "",
           imagesSubtitle: "",
         },
       ],
@@ -2367,32 +2219,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 2,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 4,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
         {
           key: 5,
-          image: "projetos/Projetos de leitura/f2/12/",
+          image: "",
           imagesSubtitle: "",
         },
       ],

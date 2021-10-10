@@ -18,7 +18,6 @@ SwiperCore.use([Navigation]);
 var data = new Date();
 var mes = Number(data.getMonth());
 var meses = [
-  "janeiro",
   "fevereiro",
   "março",
   "abril",
@@ -48,10 +47,7 @@ export default function ProjetosDeLeitura() {
       </Head>
       <Center>
         <header>
-          <Title
-            title="Projetos de Leitura"
-            subtitle=""
-          />
+          <Title title="Projetos de Leitura" subtitle="" />
         </header>
         <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
           {vinteUm.map((projeto) => (
@@ -82,7 +78,7 @@ export default function ProjetosDeLeitura() {
               slidesPerView={2.3}
               images={vinteUm[modal]}
               dados={meses}
-              inicial={mes}
+              inicial={mes - 2}
             />
           )}
         </AnimatePresence>
@@ -123,7 +119,6 @@ export default function ProjetosDeLeitura() {
         main .swiper .card {
           height: inherit;
         }
-
       `}</style>
     </>
   );

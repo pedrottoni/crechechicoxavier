@@ -35,7 +35,11 @@ export default function Card(props) {
             {props.imageTop && (
               <div className="cardImage">
                 <Image
-                  src={`/images/${props.imageTop}`}
+                  src={
+                    props.imageTop != "!"
+                      ? `/images/${props.imageTop}`
+                      : `/vercel.svg`
+                  }
                   layout="fill"
                   objectFit={props.objectFit}
                   objectPosition={props.objectPosition}
@@ -47,7 +51,11 @@ export default function Card(props) {
             {props.imageBottom && (
               <div className="cardImage">
                 <Image
-                  src={`/images/${props.imageBottom}`}
+                  src={
+                    props.imagesBottom != ""
+                      ? `/images/${props.imageBottom}`
+                      : `/vercel.svg`
+                  }
                   layout="fill"
                   objectFit="cover"
                   objectPosition="50% 0%"
