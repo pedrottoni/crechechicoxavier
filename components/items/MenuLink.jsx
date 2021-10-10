@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MenuLink(props) {
   return (
     <>
-      <Link href={`/${props.link}`}>
+      <Link href={`${props.link}`}>
         <a className={props.className}>
           {props.image ? (
             <div className="linkIcon">
