@@ -77,9 +77,10 @@ export default function Columns(props) {
           display: flex;
           gap: 2rem;
           justify-content: center;
-          max-width: 40vw;
+          max-width: 37vw;
           height: max-content;
           max-height: 62vh;
+          margin-right: 4rem;
         }
       `}</style>
     </>

@@ -91,8 +91,8 @@ export default function CardSlideData(props) {
 
         .card .dados h2 {
           text-transform: uppercase;
-          font-weight: bold;
           font-size: 2.5rem;
+          font-weight: bold;
           color: #148fb8;
         }
 
@@ -137,25 +137,26 @@ export default function CardSlideData(props) {
 
         .card .swiper h1,
         .card .swiper h2 {
+          font-family: "Lilita One", cursive;
+          font-weight: normal;
           position: absolute;
           bottom: 5rem;
           width: 100%;
           text-align: center;
           text-transform: uppercase;
-          font-weight: bold;
           z-index: 3;
         }
 
         .card .swiper h1 {
           bottom: 5.2rem;
           color: #ffffff;
-          font-size: 3rem;
+          font-size: 4rem;
           filter: drop-shadow(2px 2px 2px black);
         }
 
         .card .swiper h2 {
           bottom: 1.8rem;
-          font-size: 2.5rem;
+          font-size: 3.5rem;
           color: hsl(44deg 100% 56%);
           filter: drop-shadow(2px 2px 2px black);
         }

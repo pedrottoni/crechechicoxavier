@@ -31,7 +31,6 @@ export default function Center(props) {
 
         header nav {
           place-content: end;
-          filter: none;
         }
 
         header nav a {

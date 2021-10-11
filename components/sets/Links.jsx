@@ -39,9 +39,12 @@ export default function Links(props) {
           flex-direction: row;
           flex-wrap: wrap;
           gap: 5rem;
+          place-items: center;
           place-content: center;
           width: 100%;
-          filter: drop-shadow(2px 2px 2px black);
+          height: 20rem;
+          text-shadow: none;
+          filter: drop-shadow(2px 3px 1px rgba(94, 36, 88, 0.55)) drop-shadow(1px 10px 12px rgba(94, 36, 88, 0.45));
         }
       `}</style>
     </motion.nav>

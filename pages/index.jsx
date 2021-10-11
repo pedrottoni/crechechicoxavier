@@ -20,15 +20,11 @@ export default function Index() {
           <Title
             title="Multiplicamos o amor"
             span="Através da educação"
-            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
           />
         </header>
         <Links menu={menu} image={true} />
       </Home>
       <style jsx global>{`
-        h1 {
-          font-size: 4.5rem;
-        }
       `}</style>
     </>
   );

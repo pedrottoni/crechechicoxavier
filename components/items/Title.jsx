@@ -13,7 +13,6 @@ export default function Title(props) {
 					color: #fff;
 					text-transform: uppercase;
 					margin: 4rem 0 2rem;
-					max-width: 65rem;
 				}
 
 				.span {

@@ -20,6 +20,8 @@ export default function MenuLink(props) {
       </Link>
       <style jsx>{`
         a {
+          position: relative;
+          top: 0;
           display: flex;
           flex-direction: column;
           place-items: center;
@@ -27,6 +29,7 @@ export default function MenuLink(props) {
           font-weight: 900;
           color: #fff;
           text-transform: uppercase;
+          transition: all .2s cubic-bezier(1.000, -0.7, 0.135, 1.280);
         }
 
         a span {
@@ -38,6 +41,19 @@ export default function MenuLink(props) {
           width: 16rem;
           height: 12rem;
           margin-bottom: 2rem;
+        }
+
+        a:after {
+          content: "";
+        }
+
+        a:hover {
+          top: -0.8rem;
+        }
+
+        a.active {
+          top: -0.5rem;
+          line-height: 2;
         }
       `}</style>
     </>

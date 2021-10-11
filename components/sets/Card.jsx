@@ -46,8 +46,10 @@ export default function Card(props) {
                 />
               </div>
             )}
-            <h1>{props.title}</h1>
-            {props.span && <h2>{props.span}</h2>}
+            <div className="cardText">
+              <h1>{props.title}</h1>
+              {props.span && <h2>{props.span}</h2>}
+            </div>
             {props.imageBottom && (
               <div className="cardImage">
                 <Image
@@ -113,8 +115,8 @@ export default function Card(props) {
         }
 
         .card header .cardTitle {
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          grid-template-rows: 1fr 0.3fr;
           align-items: center;
           text-align: center;
           width: 100%;
@@ -122,7 +124,7 @@ export default function Card(props) {
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: 3rem;
+          font-size: 4rem;
           color: #db3541;
         }
 
@@ -138,6 +140,10 @@ export default function Card(props) {
           height: clamp(10rem, 22vh, 24rem);
           margin: 0 0 3rem;
           filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));
+        }
+
+        .cardImage img {
+          border-radius: 2rem;
         }
 
         .card .cardContent {

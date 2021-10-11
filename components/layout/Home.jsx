@@ -14,8 +14,8 @@ export default function Home(props) {
           justify-content: center;
           text-align: center;
           height: 100vh;
-          text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
-            0 0.3rem 0.4rem hsl(195deg 75% 30%);
+          text-shadow: 0.2rem 0.3rem 0rem hsl(195deg 75% 30%),
+            0.1rem 0.2rem 0.3rem hsl(195deg 0% 0%);
         }
 
         header {
@@ -26,10 +26,21 @@ export default function Home(props) {
         }
 
         header svg {
-          width: 50rem;
+          position: relative;
+          top: -0.5rem;
+          width: 47rem;
           height: 24rem;
           filter: drop-shadow(0px 6px 5px hsl(306deg 45% 25% / 20%));
           display: flex;
+        }
+
+        nav {
+          gap: 8rem;
+        }
+
+        .linkIcon {
+          width: 17rem !important;
+          height: 14rem !important;
         }
 
         footer {

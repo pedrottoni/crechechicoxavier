@@ -69,7 +69,7 @@ export default function Acreche() {
           <Title
             title="A nossa creche"
             span="Chico Xavier"
-            subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
+            subtitle="Há quatro décadas acolhemos crianças e suas famílias, colaborando para a construção de vidas mais felizes."
           >
             <Buttons
               menu={stateBtn}
@@ -191,7 +191,6 @@ export default function Acreche() {
           -ms-transform: rotateZ(1deg);
           transform: rotateZ(6deg);
           box-shadow: 0.1rem 0.3rem 5rem -0.6rem hsl(356deg 70% 30% / 63%);
-
         }
 
         .cardImage img {

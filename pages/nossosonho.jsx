@@ -81,11 +81,7 @@ export default function NossoSonho() {
           -ms-transform: rotateZ(1deg);
           transform: rotateZ(6deg);
           box-shadow: 0.1rem 0.3rem 5rem -0.6rem hsl(356deg 70% 30% / 63%);
-          right: 5vw;
-        }
-
-        .cardImage img {
-          border-radius: 2rem;
+          right: 4vw;
         }
 
         .cardContent div {
