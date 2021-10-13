@@ -26,7 +26,7 @@ export default function MenuLink(props) {
           flex-direction: column;
           place-items: center;
           font-family: "Lilita One", cursive;
-          font-size: 3.6rem;
+          font-size: 3.5rem;
           color: #fff;
           text-transform: uppercase;
           transition: all 0.3s cubic-bezier(0.3, -0.5, 0.3, 2.5);
