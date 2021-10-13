@@ -16,7 +16,6 @@ import "swiper/css/navigation";
 SwiperCore.use([Navigation]);
 
 export default function Formacoes() {
-
   //Modal
   //Define qual modal deve aparecer
   //Ativa ou desativa o modal
@@ -32,12 +31,9 @@ export default function Formacoes() {
       </Head>
       <Center>
         <header>
-          <Title
-            title="Formações"
-            subtitle=""
-          />
+          <Title title="Cursos e" span="Formações" />
         </header>
-        <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
+        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
           {formacoes.map((formacao) => (
             <SwiperSlide key={formacao.key}>
               <Card
@@ -46,7 +42,7 @@ export default function Formacoes() {
                 imageTop={formacao.link}
                 objectFit="cover"
                 objectPosition="50% 0%"
-                cardOnCLick={() => (
+                cardonClick={() => (
                   <>
                     {setOpen(true)}
                     {setModalOpen(formacao.key)}
@@ -63,13 +59,13 @@ export default function Formacoes() {
               onClick={() => setOpen(false)}
               title={formacoes[modal].title}
               subtitle={formacoes[modal].subtitle}
+              slidesPerView={3.3}
               images={formacoes[modal].images}
             />
           )}
         </AnimatePresence>
       </Center>
       <style jsx>{`
-
         main nav .card {
           background: #ffc420;
         }
@@ -86,10 +82,10 @@ export default function Formacoes() {
       `}</style>
 
       <style jsx global>{`
-        main header .title {
-          color: #ffc420 !important;
+        main {
+          gap: 1rem;
         }
-        
+
         main .swiper {
           position: relative;
           width: 100vw;
@@ -97,7 +93,9 @@ export default function Formacoes() {
           padding: 3rem 5rem 5rem;
         }
 
-        main .swiper-slide {
+        main .swiper .card {
+          height: inherit;
+          min-width: 0;
         }
       `}</style>
     </>

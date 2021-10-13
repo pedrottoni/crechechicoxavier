@@ -30,7 +30,8 @@ export default function Home(props) {
           top: -0.5rem;
           width: 47rem;
           height: 24rem;
-          filter: drop-shadow(0px 6px 5px hsl(306deg 45% 25% / 20%));
+          filter: drop-shadow(2px 3px 1px rgba(94, 36, 88, 0.55))
+            drop-shadow(1px 2px 10px rgba(94, 36, 88, 0.25));
           display: flex;
         }
 

@@ -45,7 +45,7 @@ export default function Projetos() {
                 title={projeto.title}
                 span={projeto.span}
                 imageTop={projeto.image}
-                cardOnCLick={() => router.push(projeto.link)}
+                cardonClick={() => router.push(projeto.link)}
               />
             </motion.div>
           ))}

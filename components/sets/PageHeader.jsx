@@ -73,7 +73,7 @@ export default function PageHeader(props) {
             height: 0.5rem;
             background: #ffc420;
             position: absolute;
-            top: 4rem;
+            top: 5rem;
             border-radius: 2rem;
           }
         `}</style>

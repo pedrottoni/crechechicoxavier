@@ -47,9 +47,9 @@ export default function ProjetosDeLeitura() {
       </Head>
       <Center>
         <header>
-          <Title title="Projetos de Leitura" subtitle="" />
+          <Title title="Projetos" span="de Leitura" />
         </header>
-        <Swiper spaceBetween={50} slidesPerView={4.4} navigation={true}>
+        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
           {vinteUm.map((projeto) => (
             <SwiperSlide key={projeto.key}>
               <Card
@@ -59,7 +59,7 @@ export default function ProjetosDeLeitura() {
                 imageTop={projeto.link}
                 objectFit="cover"
                 objectPosition="50% 0%"
-                cardOnCLick={() => (
+                cardonClick={() => (
                   <>
                     {setOpen(true)}
                     {setModalOpen(projeto.key)}
@@ -75,7 +75,7 @@ export default function ProjetosDeLeitura() {
               onClick={() => setOpen(false)}
               title={vinteUm[modal].title}
               subtitle={vinteUm[modal].subtitle}
-              slidesPerView={2.3}
+              slidesPerView={3.3}
               images={vinteUm[modal]}
               dados={meses}
               inicial={mes - 2}
@@ -85,10 +85,6 @@ export default function ProjetosDeLeitura() {
       </Center>
 
       <style jsx>{`
-        main header .title {
-          color: #ffc420 !important;
-        }
-
         main .card {
           background: #ffc420;
         }
@@ -105,8 +101,8 @@ export default function ProjetosDeLeitura() {
       `}</style>
 
       <style jsx global>{`
-        main header .title {
-          color: #ffc420 !important;
+        main {
+          gap: 1rem;
         }
 
         main .swiper {
@@ -118,6 +114,7 @@ export default function ProjetosDeLeitura() {
 
         main .swiper .card {
           height: inherit;
+          min-width: 0;
         }
       `}</style>
     </>

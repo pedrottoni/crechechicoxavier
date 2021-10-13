@@ -144,11 +144,11 @@ export default function Acreche() {
             <Card
               title="Nossa Equipe"
               span="Colaboradores"
-              onCLickLeftA={() => {
+              onClickLeftA={() => {
                 setEquipeColaboradores(false);
                 setEquipe(true);
               }}
-              onCLickRightA={() => {
+              onClickRightA={() => {
                 setEquipeColaboradores(false);
                 setEquipe(true);
               }}

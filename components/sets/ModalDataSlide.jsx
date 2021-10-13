@@ -57,7 +57,7 @@ export default function ModalDataSlide(props) {
           />
         </div>
         <Swiper
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={props.slidesPerView}
           navigation={true}
         >
@@ -139,11 +139,11 @@ export default function ModalDataSlide(props) {
         }
 
         .modal .modalCard .modalContent .dados .arrow--left {
-          left: 35rem;
+          left: 60rem;
         }
 
         .modal .modalCard .modalContent .dados .arrow--right {
-          right: 35rem;
+          right: 60rem;
         }
       `}</style>
     </Modal>

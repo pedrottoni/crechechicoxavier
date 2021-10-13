@@ -29,7 +29,7 @@ export default function ModalSlide(props) {
       subtitle={props.subtitle}
     >
       <Swiper
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={props.slidesPerView}
         navigation={true}
       >

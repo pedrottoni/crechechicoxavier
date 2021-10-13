@@ -148,7 +148,7 @@ export default function CardSlideData(props) {
         }
 
         .card .swiper h1 {
-          bottom: 5.2rem;
+          bottom: 6rem;
           color: #ffffff;
           font-size: 4rem;
           filter: drop-shadow(2px 2px 2px black);

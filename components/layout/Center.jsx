@@ -34,7 +34,8 @@ export default function Center(props) {
         }
 
         header nav a {
-          font-size: 2rem !important;
+          font-size: 2.7rem !important;
+          letter-spacing: 0.03rem;
         }
 
         header svg {
@@ -42,6 +43,8 @@ export default function Center(props) {
           width: 25rem;
           height: 12rem;
           cursor: pointer;
+          filter: drop-shadow(2px 3px 1px rgba(94, 36, 88, 0.55))
+            drop-shadow(1px 2px 10px rgba(94, 36, 88, 0.25));
         }
 
         main {

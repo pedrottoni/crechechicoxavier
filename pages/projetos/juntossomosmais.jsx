@@ -44,12 +44,12 @@ export default function JuntosSomosMais() {
                 image={menuItem.image}
                 vert={menuItem.vert}
                 span={menuItem.span}
-                onCLick={() => setProjeto(menuItem.key)}
+                onClick={() => setProjeto(menuItem.key)}
               />
             ))}
           </div>
         </header>
-        <Swiper spaceBetween={50} slidesPerView={3.8} navigation={true}>
+        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
           {vinteUm[projeto].eventos.map((jsm) => (
             <SwiperSlide key={jsm.key} className="sliderCapa">
               <Card
@@ -59,7 +59,7 @@ export default function JuntosSomosMais() {
                 imageTop={jsm.link}
                 objectFit="cover"
                 objectPosition="50% 0%"
-                cardOnCLick={() => (
+                cardonClick={() => (
                   <>
                     {setOpen(true)}
                     {setModalOpen(jsm.key)}
@@ -77,7 +77,7 @@ export default function JuntosSomosMais() {
               title={vinteUm[projeto].eventos[modal].title}
               span={vinteUm[projeto].eventos[modal].span}
               subtitle={vinteUm[projeto].eventos[modal].subtitle}
-              slidesPerView={1.5}
+              slidesPerView={3.3}
               images={vinteUm[projeto].eventos[modal].images}
             />
           )}
@@ -111,15 +111,30 @@ export default function JuntosSomosMais() {
         .jsm-projetos {
           display: flex;
           gap: 2rem;
+          margin-top: 1rem;
         }
       `}</style>
 
       <style jsx global>{`
+        main {
+          gap: 2rem;
+        }
+
+        main header .btn {
+          font-size: 2rem !important;
+          transition: 0.1s;
+        }
+
         main .swiper {
           position: relative;
           width: 100vw;
           margin: 0;
           padding: 3rem 5rem 5rem;
+        }
+
+        main .swiper .card {
+          height: inherit;
+          min-width: 0;
         }
 
         .card {

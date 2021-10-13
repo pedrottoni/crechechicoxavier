@@ -20,8 +20,8 @@ Props:
 
 export default function Card(props) {
   return (
-    // Início do card definindo se ele possui onCLick
-    <div className={"card " + props.className} onClick={props.cardOnCLick}>
+    // Início do card definindo se ele possui onClick
+    <div className={"card " + props.className} onClick={props.cardonClick}>
       {/* Ícone do card */}
       {props.icon && (
         <div className="cardIcon">
@@ -89,12 +89,12 @@ export default function Card(props) {
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
           text-shadow: none;
-          transition: 0.2s;
-          ${props.cardOnCLick ? "cursor: pointer;" : ""}
+          transition: all .3s cubic-bezier(0.300, -0.500, 0.300, 2.500);
+          ${props.cardonClick ? "cursor: pointer;" : ""}
         }
 
         .card:hover {
-          ${props.cardOnCLick ? "top: -1rem" : ""}
+          ${props.cardonClick ? "top: -1rem" : ""}
         }
 
         .cardIcon {

@@ -25,11 +25,11 @@ export default function MenuLink(props) {
           display: flex;
           flex-direction: column;
           place-items: center;
-          font-size: 2.5rem;
-          font-weight: 900;
+          font-family: "Lilita One", cursive;
+          font-size: 3.6rem;
           color: #fff;
           text-transform: uppercase;
-          transition: all .2s cubic-bezier(1.000, -0.7, 0.135, 1.280);
+          transition: all 0.3s cubic-bezier(0.3, -0.5, 0.3, 2.5);
         }
 
         a span {
@@ -42,13 +42,9 @@ export default function MenuLink(props) {
           height: 12rem;
           margin-bottom: 2rem;
         }
-
-        a:after {
-          content: "";
-        }
-
+        
         a:hover {
-          top: -0.8rem;
+          top: -0.6rem;
         }
 
         a.active {

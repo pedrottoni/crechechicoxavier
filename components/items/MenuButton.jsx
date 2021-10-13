@@ -1,10 +1,20 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+/*
+Props:
+	Modal
+	  - onClick
+	  - variants
+	  - image
+    - link
+    - title
+ */
+
 export default function MenuButton(props) {
   return (
     <motion.button
-      onClick={props.onCLick}
+      onClick={props.onClick}
       variants={props.variants}
       className="btn"
     >

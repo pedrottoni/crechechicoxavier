@@ -10,6 +10,7 @@ import Card from "../components/sets/Card";
 import { transparencia } from "../data/transparencia-dados";
 
 import { motion, AnimatePresence } from "framer-motion";
+import MenuButton from "../components/items/MenuButton";
 
 export default function Transparência() {
   // Animações dos Cards
@@ -43,21 +44,16 @@ export default function Transparência() {
 
       <Center>
         <header>
-          <Title
-            title="Transparência"
-            subtitle="A Casa da Criança Creche Chico Xavier tem também como objetivo, atuar de forma transparente."
-          />
-          <button
-            type="button"
+          <Title title="Documentos e" span="Transparência" />
+          <MenuButton
+            title="Saiba Mais!"
             onClick={() => (
               <>
                 {setOpen(true)}
                 {setModal(3)}
               </>
             )}
-          >
-            Saiba mais
-          </button>
+          />
         </header>
         <motion.nav
           initial="initial"
@@ -71,7 +67,7 @@ export default function Transparência() {
                 title={docs.title}
                 span={docs.span}
                 imageTop={docs.link}
-                cardOnCLick={() => (
+                cardonClick={() => (
                   <>
                     {setOpen(true)}
                     {setModal(docs.key)}
@@ -88,7 +84,7 @@ export default function Transparência() {
               onClick={() => setOpen(false)}
               title={transparencia[modal].title}
               span={transparencia[modal].span}
-              slidesPerView={3.3}
+              slidesPerView={4.2}
               images={transparencia[modal].documentos}
               link={true}
             />
@@ -98,7 +94,7 @@ export default function Transparência() {
               onClick={() => setOpen(false)}
               title={transparencia[modal].title}
               span={transparencia[modal].span}
-              slidesPerView={3.3}
+              slidesPerView={4.2}
               images={transparencia[modal].documentos}
               dados={dados}
               inicial={0}
@@ -128,25 +124,12 @@ export default function Transparência() {
         </AnimatePresence>
       </Center>
       <style jsx global>{`
-        main header .title {
-          color: #ffc420 !important;
-        }
-
-        main header button {
-          margin-top: 1rem;
-          color: #fff;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-size: 2rem;
-          background: transparent;
-          border: 0.2rem solid #fff;
-          transition: .1s
-        }
-
-        main header button:active,
-        main header button:focus,
-        main header button:hover {
-          outline-offset: .5rem;
+        main header .btn {
+          margin-top: 1.4rem;
+          background: hsl(208deg 70% 48%);
+          border: none;
+          font-size: 2rem !important;
+          transition: 0.1s;
         }
 
         .modalContent .images {
@@ -170,7 +153,7 @@ export default function Transparência() {
           color: #148fb8 !important;
         }
 
-        .modal-title .modalCard button {
+        .modal .modalCard button {
           background-color: #db3541;
           margin-top: 0;
         }

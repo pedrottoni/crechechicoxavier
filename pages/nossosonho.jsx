@@ -28,7 +28,7 @@ export default function NossoSonho() {
       <Columns>
         <div className="left">
           <Title
-            title="Nosso Sonho"
+            title="Junte-se ao" span="Nosso Sonho"
             subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
           >
             <nav>
@@ -40,7 +40,7 @@ export default function NossoSonho() {
                   span={menuItem.span}
                   image={true}
                   vert={true}
-                  onCLick={() => setCardNumber(menuItem.key)}
+                  onClick={() => setCardNumber(menuItem.key)}
                 />
               ))}
             </nav>
@@ -64,10 +64,6 @@ export default function NossoSonho() {
         .left .subTitle,
         .right .subtitle {
           max-width: 70rem;
-        }
-
-        .left .title {
-          color: #ffc420;
         }
 
         .cardImage {

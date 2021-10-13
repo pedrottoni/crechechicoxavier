@@ -72,17 +72,35 @@ export default function Modal(props) {
         }
 
         .modalCard {
+          position: relative;
           display: flex;
           flex-direction: column;
           place-items: center;
-          width: 130rem;
+          width: 90vw;
           max-height: 95vh;
           padding: 4rem;
           border-radius: 2rem;
-          background: #fff;
+          background: #eee;
           text-align: center;
           text-shadow: none;
           text-transform: uppercase;
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
+        }
+
+        .modalCard:after {
+          content: "";
+          position: absolute;
+          width: 101%;
+          height: 104%;
+          background: #ffc420;
+          z-index: -1;
+          border-radius: 2rem;
+          transform: rotateZ(0.1deg);
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
+          left: -1rem;
+          top: -0.6rem;
         }
 
         .modal header {
@@ -115,7 +133,6 @@ export default function Modal(props) {
         }
 
         .modalContent {
-          max-height: 60vh;
           width: 100%;
           overflow-y: auto;
           text-align: center;
@@ -123,17 +140,22 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          width: 30rem;
-          height: 30rem;
+          height: 48vh;
           margin: 0 auto 3rem;
+        }
+
+        .modalContent .images img {
+          border-radius: 2rem;
         }
 
         .modalContent .images__subtitle {
           margin-top: 1.8rem;
           font-size: 2rem;
+          font-weight: bold;
           text-align: center;
           text-shadow: none;
           line-height: 2.8rem;
+          color: #5e2458
         }
 
         .modalContent h1 {
@@ -157,9 +179,8 @@ export default function Modal(props) {
         }
 
         .modal .modalCard .modalContent .swiper-slide {
-          background: #eee;
           border-radius: 2rem;
-          padding: 2rem 0;
+          padding: 2rem 0rem;
           text-transform: uppercase;
         }
       `}</style>

@@ -30,7 +30,7 @@ export default function Buttons(props) {
           vert={props.vert}
           span={menuItem.span}
           variants={animationMenu}
-          onCLick={menuItem.onClick ? menuItem.onClick : props.onClick}
+          onClick={menuItem.onClick ? menuItem.onClick : props.onClick}
         />
       ))}
 
