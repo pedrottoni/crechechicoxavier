@@ -5,10 +5,10 @@ export default function Background(props) {
     <div className="background">
       <div className="color" />
       <div className="sky">
-        <Image src="/images/sky.svg" layout="fill" objectFit="fill" />
+        <Image src="/images/sky.svg" layout="fill" objectFit="fill" alt=""/>
       </div>
       <div className="hills">
-        <Image src="/images/hills.svg" layout="fill" objectFit="fill" />
+        <Image src="/images/hills.svg" layout="fill" objectFit="fill" alt=""/>
       </div>
       <style jsx>{`
         .background {

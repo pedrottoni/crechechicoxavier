@@ -1,7 +1,5 @@
-import Links from "../sets/Links";
 import Social from "../sets/Social";
 import menu from "../../data/menu";
-import Logo from "../../public/images/Logo";
 import PageHeader from "../sets/PageHeader";
 
 export default function Center(props) {

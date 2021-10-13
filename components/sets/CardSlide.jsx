@@ -1,7 +1,4 @@
 import Card from "./Card";
-import { useState } from "react";
-import Image from "next/image";
-import { Arrows } from "../items/Arrows";
 
 /*
 Props:
@@ -25,18 +22,6 @@ export default function CardSlide(props) {
       title={props.title}
       span={props.span}
     >
-      {/*
-	  <div ref={sliderRef} className="keen-slider">
-        {props.slides.map((slide) => (
-          <div className="keen-slider__slide">
-            <div className="images">
-              <Image src={`/images/contato.svg`} layout="fill" />
-            </div>
-            <p className="images__subtitle">{slide.subtitle}</p>
-          </div>
-        ))}
-      </div>
-	  */}
       <style jsx global>{`
         .card .arrow {
           width: 6rem;

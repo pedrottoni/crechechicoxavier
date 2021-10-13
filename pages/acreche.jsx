@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
 import Buttons from "../components/sets/Buttons";

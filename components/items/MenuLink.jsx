@@ -8,7 +8,7 @@ export default function MenuLink(props) {
         <a className={props.className}>
           {props.image ? (
             <div className="linkIcon">
-              <Image src={`/images${props.link}.svg`} layout="fill" />
+              <Image src={`/images${props.link}.svg`} layout="fill" alt="" />
             </div>
           ) : null}
           <div className="linkText">
@@ -42,7 +42,7 @@ export default function MenuLink(props) {
           height: 12rem;
           margin-bottom: 2rem;
         }
-        
+
         a:hover {
           top: -0.6rem;
         }

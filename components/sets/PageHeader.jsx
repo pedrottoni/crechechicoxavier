@@ -8,7 +8,6 @@ Props:
 - class
 - place
 - menu
-- image
 - vert
 
 */

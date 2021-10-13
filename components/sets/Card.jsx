@@ -25,7 +25,7 @@ export default function Card(props) {
       {/* Ícone do card */}
       {props.icon && (
         <div className="cardIcon">
-          <Image src={`/images/${props.icon}.svg`} layout="fill" />
+          <Image src={`/images/${props.icon}.svg`} layout="fill" alt=""/>
         </div>
       )}
       {/* Header do card */}
@@ -43,6 +43,7 @@ export default function Card(props) {
                   layout="fill"
                   objectFit={props.objectFit}
                   objectPosition={props.objectPosition}
+                  alt={props.imageTop}
                 />
               </div>
             )}
@@ -61,6 +62,7 @@ export default function Card(props) {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="50% 0%"
+                  alt={props.imageBottom}
                 />
               </div>
             )}

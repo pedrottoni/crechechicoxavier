@@ -20,7 +20,7 @@ export default function MenuButton(props) {
     >
       {props.image ? (
         <div className="btnIcon">
-          <Image src={`/images/${props.link}.svg`} layout="fill" />
+          <Image src={`/images/${props.link}.svg`} layout="fill" alt=""/>
         </div>
       ) : null}
       <div className="btnText">

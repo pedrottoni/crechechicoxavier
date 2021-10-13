@@ -62,6 +62,7 @@ export default function CardSlideData(props) {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="50% 30%"
+                  alt={props.src}
                 />
               </div>
               {images.imagesSubtitle ? (

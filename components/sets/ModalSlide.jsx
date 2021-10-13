@@ -47,6 +47,7 @@ export default function ModalSlide(props) {
                       }
                       layout="fill"
                       objectFit="cover"
+                      alt={images.image}
                     />
                   </div>
                   {images.imagesSubtitle ? (
@@ -68,6 +69,7 @@ export default function ModalSlide(props) {
                   }
                   layout="fill"
                   objectFit="cover"
+                  alt={images.image}
                 />
               </div>
               {images.imagesSubtitle ? (

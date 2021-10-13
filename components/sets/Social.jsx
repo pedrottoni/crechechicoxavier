@@ -5,18 +5,18 @@ export default function () {
   return (
     <footer>
       <Link href="https://www.facebook.com/crechechicoxavier">
-        <a target="_blank">
-          <Image src="/images/facebook.svg" layout="fill" />
+        <a target="_blank" rel="noopener">
+          <Image src="/images/facebook.svg" layout="fill" alt="facebook" />
         </a>
       </Link>
       <Link href="https://www.instagram.com/crechechicoxavier/">
-        <a target="_blank">
-          <Image src="/images/instagram.svg" layout="fill" />
+        <a target="_blank" rel="noopener">
+          <Image src="/images/instagram.svg" layout="fill" alt="instagram" />
         </a>
       </Link>
       <Link href="https://www.youtube.com/channel/UCcrACwejggA74Gu1fGrAYkQ">
-        <a target="_blank">
-          <Image src="/images/youtube.svg" layout="fill" />
+        <a target="_blank" rel="noopener">
+          <Image src="/images/youtube.svg" layout="fill" alt="youtube" />
         </a>
       </Link>
 
