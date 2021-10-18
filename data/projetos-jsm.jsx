@@ -394,12 +394,6 @@ export const vinteUm = [
               "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 4.jpg",
             imagesSubtitle: "",
           },
-          {
-            key: 4,
-            image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 5.jpg",
-            imagesSubtitle: "",
-          },
         ],
       },
       {
@@ -426,11 +420,6 @@ export const vinteUm = [
           {
             key: 3,
             image: "projetos/JSM/comunidade/jantar paestum 4.jpg",
-            imagesSubtitle: "",
-          },
-          {
-            key: 4,
-            image: "projetos/JSM/comunidade/jantar paestum 5.jpg",
             imagesSubtitle: "",
           },
         ],
