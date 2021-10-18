@@ -5,13 +5,7 @@ import Links from "../components/sets/Links";
 import menu from "../data/menu";
 import Logo from "../public/images/Logo";
 
-function myFunction(x) {
-  if (x.matches) {
-    <Logo />;
-  }
-}
-
-var x = window.matchMedia("(max-width: 700px)");
+let x = window.matchMedia("(max-width: 700px)");
 
 export default function Index() {
   return (
@@ -28,7 +22,7 @@ export default function Index() {
         </header>
         <Links menu={menu} image={true} />
       </Home>
-      {myFunction(x)}
+      {x ? <Logo /> : null}
       <style jsx global>{``}</style>
     </>
   );
