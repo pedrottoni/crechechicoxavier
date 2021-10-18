@@ -5,7 +5,33 @@ import Links from "../components/sets/Links";
 import menu from "../data/menu";
 import Logo from "../public/images/Logo";
 
-let x = window.matchMedia("(max-width: 700px)");
+import { useState, useCallback, useEffect } from "react";
+
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addListener(updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeListener(updateTarget);
+  }, []);
+
+  return targetReached;
+};
 
 export default function Index() {
   return (
@@ -22,7 +48,8 @@ export default function Index() {
         </header>
         <Links menu={menu} image={true} />
       </Home>
-      {x ? <Logo /> : null}
+      <h1>TESTE</h1>
+      {isBreakpoint ? <Logo /> : null}
       <style jsx global>{``}</style>
     </>
   );
