@@ -334,103 +334,103 @@ export const vinteUm = [
     eventos: [
       {
         key: 0,
-        link: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-2.jpg",
+        link: "projetos/JSM/comunidade/festa julina corpo e cia 2.jpg",
         title: "festa julina",
         span: "corpo e cia",
         images: [
           {
             key: 0,
-            image: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-1.jpg",
+            image: "projetos/JSM/comunidade/festa julina corpo e cia 1.jpg",
             imagesSubtitle: "",
           },
           {
             key: 1,
-            image: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-2.jpg",
+            image: "projetos/JSM/comunidade/festa julina corpo e cia 2.jpg",
             imagesSubtitle: "",
           },
           {
             key: 2,
-            image: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-3.jpg",
+            image: "projetos/JSM/comunidade/festa julina corpo e cia 3.jpg",
             imagesSubtitle: "",
           },
           {
             key: 3,
-            image: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-4.jpg",
+            image: "projetos/JSM/comunidade/festa julina corpo e cia 4.jpg",
             imagesSubtitle: "",
           },
           {
             key: 4,
-            image: "projetos/JSM/comunidade/festa-julina-corpo-e-cia-5.jpg",
+            image: "projetos/JSM/comunidade/festa julina corpo e cia 5.jpg",
             imagesSubtitle: "",
           },
         ],
       },
       {
         key: 1,
-        link: "projetos/JSM/comunidade/festival-creche-chico-xavier-2.jpg",
+        link: "projetos/JSM/comunidade/festival 2.jpg",
         title: "festival creche",
         span: "chico xavier",
         images: [
           {
             key: 0,
-            image: "projetos/JSM/comunidade/festival-creche-chico-xavier-1.jpg",
+            image: "projetos/JSM/comunidade/festival 1.jpg",
             imagesSubtitle: "",
           },
           {
             key: 1,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival-creche-chico-xavier-2.jpg",
+              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 2.jpg",
             imagesSubtitle: "",
           },
           {
             key: 2,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival-creche-chico-xavier-3.jpg",
+              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 3.jpg",
             imagesSubtitle: "",
           },
           {
             key: 3,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival-creche-chico-xavier-4.jpg",
+              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 4.jpg",
             imagesSubtitle: "",
           },
           {
             key: 4,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival-creche-chico-xavier-5.jpg",
+              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 5.jpg",
             imagesSubtitle: "",
           },
         ],
       },
       {
         key: 2,
-        link: "projetos/JSM/comunidade/jantar-paestum-3.jpg",
+        link: "projetos/JSM/comunidade/jantar paestum 3.jpg",
         title: "jantar paestum",
         span: "paestum",
         images: [
           {
             key: 0,
-            image: "projetos/JSM/comunidade/jantar-paestum-1.jpg",
+            image: "projetos/JSM/comunidade/jantar paestum 1.jpg",
             imagesSubtitle: "",
           },
           {
             key: 1,
-            image: "projetos/JSM/comunidade/jantar-paestum-2.jpg",
+            image: "projetos/JSM/comunidade/jantar paestum 2.jpg",
             imagesSubtitle: "",
           },
           {
             key: 2,
-            image: "projetos/JSM/comunidade/jantar-paestum-3.jpg",
+            image: "projetos/JSM/comunidade/jantar paestum 3.jpg",
             imagesSubtitle: "",
           },
           {
             key: 3,
-            image: "projetos/JSM/comunidade/jantar-paestum-4.jpg",
+            image: "projetos/JSM/comunidade/jantar paestum 4.jpg",
             imagesSubtitle: "",
           },
           {
             key: 4,
-            image: "projetos/JSM/comunidade/jantar-paestum-5.jpg",
+            image: "projetos/JSM/comunidade/jantar paestum 5.jpg",
             imagesSubtitle: "",
           },
         ],
