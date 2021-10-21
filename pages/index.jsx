@@ -34,7 +34,7 @@ const useMediaQuery = (width) => {
 };
 
 export default function Index() {
-  const isBreakpoint = useMediaQuery(768);
+  const isBreakpoint = useMediaQuery(840);
 
   return (
     <>

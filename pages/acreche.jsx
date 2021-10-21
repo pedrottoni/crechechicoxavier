@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Head from "next/head";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
@@ -7,7 +7,36 @@ import Card from "../components/sets/Card";
 import CardSlideData from "../components/sets/CardSlideData";
 import { imagens } from "../data/aCreche-image";
 
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+      sethistoria(false);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addListener(updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeListener(updateTarget);
+  }, []);
+
+  return targetReached;
+};
+
 export default function Acreche() {
+  const isBreakpoint = useMediaQuery(840);
+
   const [historia, sethistoria] = useState(true);
   const [missao, setMissao] = useState(false);
   const [equipe, setEquipe] = useState(false);
@@ -211,7 +240,10 @@ export default function Acreche() {
           .right {
           }
 
-          ${(sethistoria = false)}
+          footer div {
+            width: 18vw;
+            height: 5.5rem;
+          }
         }
       `}</style>
     </>
