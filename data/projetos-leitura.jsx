@@ -581,8 +581,8 @@ export const vinteUm = [
         },
         {
           key: 3,
-          image: "projetos/Projetos de leitura/m1/08/EQUILIBRIO.jpeg",
-          imagesSubtitle: "EQUILIBRIO",
+          image: "projetos/Projetos de leitura/m1/08/EQUILÍBRIO.jpeg",
+          imagesSubtitle: "EQUILÍBRIO",
         },
         {
           key: 4,
