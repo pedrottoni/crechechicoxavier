@@ -58,7 +58,7 @@ export default function ProjetosDeLeitura() {
                 subtitle={projeto.subtitle}
                 imageTop={projeto.link}
                 objectFit="cover"
-                objectPosition="50% 0%"
+                objectPosition="50% 40%"
                 cardonClick={() => (
                   <>
                     {setOpen(true)}
