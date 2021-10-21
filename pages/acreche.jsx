@@ -195,6 +195,12 @@ export default function Acreche() {
         .cardImage img {
           border-radius: 2rem;
         }
+
+        @media (max-width: 840px) {
+          .right {
+            display: none;
+          }
+        }
       `}</style>
     </>
   );
