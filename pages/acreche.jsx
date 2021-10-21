@@ -190,10 +190,28 @@ export default function Acreche() {
         }
 
         @media (max-width: 840px) {
+          h1 {
+            font-size: 6.8rem;
+          }
+
+          header {
+            place-content: center;
+          }
+
+          .left {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+          }
+
+          .left nav.stateBtn {
+            place-content: center;
+          }
+
           .right {
           }
-          
-          ${sethistoria = false}
+
+          ${(sethistoria = false)}
         }
       `}</style>
     </>
