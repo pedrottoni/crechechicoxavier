@@ -13,7 +13,6 @@ const useMediaQuery = (width) => {
   const updateTarget = useCallback((e) => {
     if (e.matches) {
       setTargetReached(true);
-      sethistoria(false);
     } else {
       setTargetReached(false);
     }
@@ -41,6 +40,8 @@ export default function Acreche() {
   const [missao, setMissao] = useState(false);
   const [equipe, setEquipe] = useState(false);
   const [equipeColaboradores, setEquipeColaboradores] = useState(false);
+
+  isBreakpoint && sethistoria(false);
 
   var dados = [];
 
