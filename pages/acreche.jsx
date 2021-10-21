@@ -107,13 +107,6 @@ export default function Acreche() {
                 desenvolvimento sustentável tanto de seu núcleo familiar quanto
                 da própria instituição.
               </p>
-              {/* <div className="cardImage">
-                <Image
-                  src="/images/creche0.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div> */}
             </Card>
           ) : null}
           {missao ? (
@@ -198,8 +191,9 @@ export default function Acreche() {
 
         @media (max-width: 840px) {
           .right {
-            display: none;
           }
+          
+          ${sethistoria = false}
         }
       `}</style>
     </>
