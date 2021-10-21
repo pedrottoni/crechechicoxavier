@@ -45,7 +45,7 @@ export default function Acreche() {
 
   imagens.map((dado) => dados.push(dado.key));
 
-  isBreakpoint && sethistoria(false);
+  isBreakpoint ? sethistoria(false) : sethistoria(true);
 
   const stateBtn = [
     {
