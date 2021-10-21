@@ -108,7 +108,6 @@ export default function Acreche() {
           </Title>
         </div>
         <div className="right">
-          {sethistoria && sethistoria(false)}
           {historia ? (
             <Card title="Nossa História" icon="história">
               <p>
