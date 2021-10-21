@@ -176,8 +176,6 @@ export default function Acreche() {
             ></Card>
           ) : null}
         </div>
-        
-        {sethistoria(true)}
       </Columns>
 
       <style jsx>{``}</style>
