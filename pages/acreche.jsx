@@ -45,8 +45,6 @@ export default function Acreche() {
 
   imagens.map((dado) => dados.push(dado.key));
 
-  isBreakpoint ? sethistoria(false) : sethistoria(true);
-
   const stateBtn = [
     {
       key: 1,
@@ -220,6 +218,8 @@ export default function Acreche() {
         }
 
         @media (max-width: 840px) {
+          ${sethistoria && sethistoria(false)}
+
           h1 {
             font-size: 6rem;
           }
