@@ -36,7 +36,7 @@ const useMediaQuery = (width) => {
 export default function Acreche() {
   const isBreakpoint = useMediaQuery(840);
 
-  const [historia, sethistoria] = useState(isBreakpoint ? true : false);
+  const [historia, sethistoria] = useState(true);
   const [missao, setMissao] = useState(false);
   const [equipe, setEquipe] = useState(false);
   const [equipeColaboradores, setEquipeColaboradores] = useState(false);
@@ -44,6 +44,8 @@ export default function Acreche() {
   var dados = [];
 
   imagens.map((dado) => dados.push(dado.key));
+
+  isBreakpoint && sethistoria(false);
 
   const stateBtn = [
     {
