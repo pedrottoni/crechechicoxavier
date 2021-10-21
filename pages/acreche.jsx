@@ -36,7 +36,7 @@ const useMediaQuery = (width) => {
 export default function Acreche() {
   const isBreakpoint = useMediaQuery(840);
 
-  const [historia, sethistoria] = useState();
+  const [historia, sethistoria] = useState(false);
   const [missao, setMissao] = useState(false);
   const [equipe, setEquipe] = useState(false);
   const [equipeColaboradores, setEquipeColaboradores] = useState(false);
