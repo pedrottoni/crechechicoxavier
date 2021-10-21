@@ -49,7 +49,7 @@ export default function ProjetosDeLeitura() {
         <header>
           <Title title="Projetos" span="de Leitura" />
         </header>
-        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
+        <Swiper spaceBetween={30} slidesPerView={3.3} navigation={true}>
           {vinteUm.map((projeto) => (
             <SwiperSlide key={projeto.key}>
               <Card
