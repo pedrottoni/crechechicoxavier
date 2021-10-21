@@ -139,7 +139,7 @@ export default function Card(props) {
         .card header .cardImage {
           position: relative;
           width: 100%;
-          height: clamp(10rem, 22vh, 24rem);
+          height: clamp(10rem,26vh,25rem);
           margin: 0 0 3rem;
           filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));
         }

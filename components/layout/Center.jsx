@@ -52,7 +52,7 @@ export default function Center(props) {
           place-content: space-between;
           text-align: center;
           gap: 4rem;
-          margin-bottom: 4rem;
+          margin-bottom: 2rem;
         }
 
         main header {
