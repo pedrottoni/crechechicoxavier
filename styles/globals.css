@@ -132,5 +132,5 @@ button:focus {
 }
 
 .swiper-button-disabled {
-  display: none;
+  display: none !important;
 }
