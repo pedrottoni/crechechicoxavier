@@ -1124,7 +1124,7 @@ export const vinteUm = [
         },
         {
           key: 1,
-          image: "projetos/Projetos de leitura/f1d/03/.jpeg",
+          image: "projetos/Projetos de leitura/f1d/03/AULA REMOTA 02.jpeg",
           imagesSubtitle: "AULA REMOTA",
         },
         {

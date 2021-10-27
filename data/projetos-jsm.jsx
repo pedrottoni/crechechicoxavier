@@ -379,19 +379,19 @@ export const vinteUm = [
           {
             key: 1,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 2.jpg",
+              "projetos/JSM/comunidade/festival 2.jpg",
             imagesSubtitle: "",
           },
           {
             key: 2,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 3.jpg",
+              "projetos/JSM/comunidade/festival 3.jpg",
             imagesSubtitle: "",
           },
           {
             key: 3,
             image:
-              "projetos/JSM/comunidade/projetos/JSM/comunidade/festival 4.jpg",
+              "projetos/JSM/comunidade/festival 4.jpg",
             imagesSubtitle: "",
           },
         ],
