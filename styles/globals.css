@@ -123,4 +123,10 @@ button:focus {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-weight: bold;
+  background: hsl(0deg 0% 100% / 50%);
+  padding: 6rem;
+  border-radius: 100%;
+  box-shadow: 0rem 0.6rem 2rem -1rem #000;
+  backdrop-filter: blur(0.8rem);
 }
+
