@@ -131,3 +131,6 @@ button:focus {
   font-size: 6rem !important;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
