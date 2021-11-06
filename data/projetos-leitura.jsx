@@ -21,20 +21,17 @@ export const vinteUm = [
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA DO FAZ DE CONTA.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA DO FAZ DE CONTA.jpeg",
           imagesSubtitle: "BRINCADEIRA DO FAZ DE CONTA",
         },
         {
           key: 3,
-          image:
-            "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA LIVRE 01.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA LIVRE 01.jpeg",
           imagesSubtitle: "BRINCADEIRA LIVRE",
         },
         {
           key: 4,
-          image:
-            "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA LIVRE 02.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/02/BRINCADEIRA LIVRE 02.jpeg",
           imagesSubtitle: "BRINCADEIRA LIVRE",
         },
         {
@@ -84,20 +81,17 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMAE EM CASA 01.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMAE EM CASA 01.jpeg",
           imagesSubtitle: "AJUDAR A MAMAE EM CASA",
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMAE EM CASA 02.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMAE EM CASA 02.jpeg",
           imagesSubtitle: "AJUDAR A MAMAE EM CASA",
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMÃE EM CASA 03.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/04/AJUDAR A MAMÃE EM CASA 03.jpeg",
           imagesSubtitle: "AJUDAR A MAMÃE EM CASA",
         },
         {
@@ -157,8 +151,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/b1b2/06/BRINQUEDOS NÃO ESTRUTURADOS.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/06/BRINQUEDOS NÃO ESTRUTURADOS.jpeg",
           imagesSubtitle: "BRINQUEDOS NÃO ESTRUTURADOS",
         },
         {
@@ -278,8 +271,7 @@ export const vinteUm = [
         },
         {
           key: 3,
-          image:
-            "projetos/Projetos de leitura/b1b2/09/INSTRUMENTOS SONOROS.jpeg",
+          image: "projetos/Projetos de leitura/b1b2/09/INSTRUMENTOS SONOROS.jpeg",
           imagesSubtitle: "INSTRUMENTOS SONOROS",
         },
         {
@@ -430,8 +422,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/m1/03/BRINCADEIRA COM MASSINHA.jpeg",
+          image: "projetos/Projetos de leitura/m1/03/BRINCADEIRA COM MASSINHA.jpeg",
           imagesSubtitle: "BRINCADEIRA COM MASSINHA",
         },
         {
@@ -601,8 +592,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/m1/09/BRINCADEIRA NAO ESTRUTURADA.jpeg",
+          image: "projetos/Projetos de leitura/m1/09/BRINCADEIRA NAO ESTRUTURADA.jpeg",
           imagesSubtitle: "BRINCADEIRA NAO ESTRUTURADA",
         },
         {
@@ -778,14 +768,12 @@ export const vinteUm = [
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/m2/03/DESENHO DA HISTORIA 01.jpeg",
+          image: "projetos/Projetos de leitura/m2/03/DESENHO DA HISTORIA 01.jpeg",
           imagesSubtitle: "DESENHO DA HISTORIA",
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/m2/03/DESENHO DA HISTORIA 02.jpeg",
+          image: "projetos/Projetos de leitura/m2/03/DESENHO DA HISTORIA 02.jpeg",
           imagesSubtitle: "DESENHO DA HISTORIA",
         },
       ],
@@ -845,8 +833,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/m2/06/ATIVIDADE COM AS FOLHAS.jpeg",
+          image: "projetos/Projetos de leitura/m2/06/ATIVIDADE COM AS FOLHAS.jpeg",
           imagesSubtitle: "ATIVIDADE COM AS FOLHAS",
         },
         {
@@ -866,8 +853,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/m2/07/BRINCADEIRA NO PARQUE.jpeg",
+          image: "projetos/Projetos de leitura/m2/07/BRINCADEIRA NO PARQUE.jpeg",
           imagesSubtitle: "BRINCADEIRA NO PARQUE",
         },
         {
@@ -882,8 +868,7 @@ export const vinteUm = [
         },
         {
           key: 3,
-          image:
-            "projetos/Projetos de leitura/m2/07/HORA DA HISTORIA NO PARQUE.jpeg",
+          image: "projetos/Projetos de leitura/m2/07/HORA DA HISTORIA NO PARQUE.jpeg",
           imagesSubtitle: "HORA DA HISTORIA NO PARQUE",
         },
         {
@@ -903,8 +888,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/m2/08/CADA MACACO NO SEU GALHO.jpeg",
+          image: "projetos/Projetos de leitura/m2/08/CADA MACACO NO SEU GALHO.jpeg",
           imagesSubtitle: "CADA MACACO NO SEU GALHO",
         },
         {
@@ -929,8 +913,7 @@ export const vinteUm = [
         },
         {
           key: 5,
-          image:
-            "projetos/Projetos de leitura/m2/08/QUEBRA CABEÇA DO NOME.jpeg",
+          image: "projetos/Projetos de leitura/m2/08/QUEBRA CABEÇA DO NOME.jpeg",
           imagesSubtitle: "QUEBRA CABEÇA DO NOME",
         },
       ],
@@ -945,8 +928,7 @@ export const vinteUm = [
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/m2/09/FAZENDO ARTE COM ELEMENTOS DA NATUREZA.jpeg",
+          image: "projetos/Projetos de leitura/m2/09/FAZENDO ARTE COM ELEMENTOS DA NATUREZA.jpeg",
           imagesSubtitle: "FAZENDO ARTE COM ELEMENTOS DA NATUREZA",
         },
         {
@@ -1469,33 +1451,28 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/02/AULA REMOTA - BARQUINHO.jpeg",
+          imagesSubtitle: "BARQUINHO",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/02/AULA REMOTA - DIA DAS MULHERES.jpeg",
+          imagesSubtitle: "DIA DAS MULHERES",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/02/AULA REMOTA - PINTANDO.jpeg",
+          imagesSubtitle: "PINTANDO",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/02/AULA REMOTA - PRODUÇÕES ARTISTICAS.jpeg",
+          imagesSubtitle: "PRODUÇÕES ARTISTICAS",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/02/AULA REMOTA.jpeg",
+          imagesSubtitle: "AULA REMOTA.jpeg",
         },
       ],
     },
@@ -1505,33 +1482,28 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/03/AULA REMOTA - EXPLORANDO AS FLORES.jpeg",
+          imagesSubtitle: "EXPLORANDO AS FLORES",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/03/AULA REMOTA - REGANDO AS PLANTINHAS.jpeg",
+          imagesSubtitle: "REGANDO AS PLANTINHAS",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/03/AULA REMOTA 02.jpeg",
+          imagesSubtitle: "AULA REMOTA",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/03/BRINCADEIRA FAZ DE CONTA - MEDICO.jpeg",
+          imagesSubtitle: "FAZ DE CONTA",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/03/AULA REMOTA 01.jpg",
+          imagesSubtitle: "AULA REMOTA 01",
         },
       ],
     },
@@ -1541,33 +1513,13 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/04/AULA REMOTA - PRODUÇÃO ARTISTICA.jpeg",
+          imagesSubtitle: "PRODUÇÃO ARTISTICA",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "projetos/Projetos de leitura/f1e/04/AULA REMOTA.jpeg",
+          imagesSubtitle: "AULA REMOTA",
         },
       ],
     },
@@ -1577,33 +1529,8 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 1,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 2,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 3,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 4,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "prjetos/Projetos de leitura/f1e/05/AULA REMOTA - MEU NOME.jpeg",
+          imagesSubtitle: "MEU NOME",
         },
       ],
     },
@@ -1613,33 +1540,28 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/06/AULA REMOTA - CABANINHA.jpeg",
+          imagesSubtitle: "CABANINHA",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/06/AULA REMOTA - PINTURA.jpeg",
+          imagesSubtitle: "PINTURA",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/06/PINTURA LIVRE.jpeg",
+          imagesSubtitle: "PINTURA LIVRE",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 01.jpg",
+          imagesSubtitle: "PRODUÇÃO ARTISTICA",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
-        },
-        {
-          key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 02.jpg",
+          imagesSubtitle: "PRODUÇÃO ARTISTICA",
         },
       ],
     },
@@ -1649,33 +1571,33 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/AMARELINHA.jpeg",
+          imagesSubtitle: "AMARELINHA",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/AULA REMOTA - FESTA JULINA.jpeg",
+          imagesSubtitle: "FESTA JULINA",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/CONSTRUINDO CHOCALHO.jpeg",
+          imagesSubtitle: "CONSTRUINDO CHOCALHO",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/PESCARIA.jpeg",
+          imagesSubtitle: "PESCARIA",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/PETECA.jpeg",
+          imagesSubtitle: "PETECA",
         },
         {
           key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/07/RODA DE MÚSICA FOLCLORICA.jpeg",
+          imagesSubtitle: "RODA DE MÚSICA FOLCLORICA",
         },
       ],
     },
@@ -1685,33 +1607,33 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/CARTA PARA NATUREZA.jpeg",
+          imagesSubtitle: "CARTA PARA NATUREZA",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/DESENHO COLETIVO.jpeg",
+          imagesSubtitle: "DESENHO COLETIVO",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - PROFISSÕES.jpeg",
+          imagesSubtitle: "FAZ DE CONTA - PROFISSÕES",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - VENDEDORES AMBULANTES.jpeg",
+          imagesSubtitle: "FAZ DE CONTA - VENDEDORES AMBULANTES",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/RECORTE E COLE.jpeg",
+          imagesSubtitle: "RECORTE E COLE",
         },
         {
           key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/08/TENTATIVA DA ESCRITA - ALFABETO MOVEL.jpeg",
+          imagesSubtitle: "ALFABETO MOVEL",
         },
       ],
     },
@@ -1721,33 +1643,33 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/BRINCADEIRAS DAS CADEIRAS COM NOME.jpeg",
+          imagesSubtitle: "BRINCADEIRAS DAS CADEIRAS COM NOME",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/EXPLORANDO ELEMENTOS DA NATUREZA.jpeg",
+          imagesSubtitle: "EXPLORANDO ELEMENTOS DA NATUREZA",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/JOGO - NUMEROS E QUANTIDADES.jpeg",
+          imagesSubtitle: "NUMEROS E QUANTIDADES",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - DESENHO COM MASSINHA.jpeg",
+          imagesSubtitle: "DESENHO COM MASSINHA",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/RODA DE MÚSICA - FOLCLORE.jpeg",
+          imagesSubtitle: "FOLCLORE",
         },
         {
           key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - PINTANDO O MUNDO.jpg",
+          imagesSubtitle: "PINTANDO O MUNDO",
         },
       ],
     },
@@ -1757,33 +1679,33 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/BLOCOS DE ENCAIXE.jpeg",
+          imagesSubtitle: "BLOCOS DE ENCAIXE",
         },
         {
           key: 1,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/COORDENAÇÃO MOTORA FINA, FLORES MÁGICAS.jpeg",
+          imagesSubtitle: "FLORES MÁGICAS",
         },
         {
           key: 2,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/CULINÁRIA BRIGADEIRO DE LEITE EM PÓ.jpeg",
+          imagesSubtitle: "BRIGADEIRO DE LEITE EM PÓ",
         },
         {
           key: 3,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/ESQUEMA CORPORAL COM MASSINHA.jpeg",
+          imagesSubtitle: "ESQUEMA CORPORAL COM MASSINHA",
         },
         {
           key: 4,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/MOVIMENTO DE PINÇA, PEGUE A TAMPINHA.jpeg",
+          imagesSubtitle: "PEGUE A TAMPINHA",
         },
         {
           key: 5,
-          image: "",
-          imagesSubtitle: "",
+          image: "rjetos/Projetos de leitura/f1e/10/PRODUÇÃO ARTÍSTICA - DESENHO LIVRE.jpeg",
+          imagesSubtitle: "DESENHO LIVRE",
         },
       ],
     },
@@ -1875,8 +1797,7 @@ export const vinteUm = [
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/f2/02/APRENDENDO OS NUMEROS.jpeg",
+          image: "projetos/Projetos de leitura/f2/02/APRENDENDO OS NUMEROS.jpeg",
           imagesSubtitle: "APRENDENDO OS NUMEROS",
         },
         {
@@ -1886,20 +1807,17 @@ export const vinteUm = [
         },
         {
           key: 3,
-          image:
-            "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA - NOME.jpeg",
+          image: "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA - NOME.jpeg",
           imagesSubtitle: "TENTATIVA DE ESCRITA - NOME",
         },
         {
           key: 4,
-          image:
-            "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA 01.jpeg",
+          image: "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA 01.jpeg",
           imagesSubtitle: "TENTATIVA DE ESCRITA",
         },
         {
           key: 5,
-          image:
-            "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA 02.jpeg",
+          image: "projetos/Projetos de leitura/f2/02/TENTATIVA DE ESCRITA 02.jpeg",
           imagesSubtitle: "TENTATIVA DE ESCRITA",
         },
       ],
@@ -1920,8 +1838,7 @@ export const vinteUm = [
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/f2/03/DESENHO COM ALIMENTOS.jpeg",
+          image: "projetos/Projetos de leitura/f2/03/DESENHO COM ALIMENTOS.jpeg",
           imagesSubtitle: "DESENHO COM ALIMENTOS",
         },
         {
@@ -1947,8 +1864,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/f2/04/BRINQUEDO COM O QUE TEM EM CASA.jpeg",
+          image: "projetos/Projetos de leitura/f2/04/BRINQUEDO COM O QUE TEM EM CASA.jpeg",
           imagesSubtitle: "BRINQUEDO COM O QUE TEM EM CASA",
         },
         {
@@ -1999,8 +1915,7 @@ export const vinteUm = [
         },
         {
           key: 3,
-          image:
-            "projetos/Projetos de leitura/f2/05/CARTINHA PARA OS PROFISSIONAIS DA SAUDE.jpeg",
+          image: "projetos/Projetos de leitura/f2/05/CARTINHA PARA OS PROFISSIONAIS DA SAUDE.jpeg",
           imagesSubtitle: "CARTINHA PARA OS PROFISSIONAIS DA SAUDE",
         },
         {
@@ -2010,8 +1925,7 @@ export const vinteUm = [
         },
         {
           key: 5,
-          image:
-            "projetos/Projetos de leitura/f2/05/OBJETOS COM AS LETRAS DO NOME.jpeg",
+          image: "projetos/Projetos de leitura/f2/05/OBJETOS COM AS LETRAS DO NOME.jpeg",
           imagesSubtitle: "OBJETOS COM AS LETRAS DO NOME",
         },
       ],
@@ -2022,8 +1936,7 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/f2/06/APRENDENDO OS NUMEROS.jpeg",
+          image: "projetos/Projetos de leitura/f2/06/APRENDENDO OS NUMEROS.jpeg",
           imagesSubtitle: "APRENDENDO OS NUMEROS",
         },
         {
@@ -2064,14 +1977,12 @@ export const vinteUm = [
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/f2/07/CRIANDO COM ELEMENTOS DA NATUREZA.jpeg",
+          image: "projetos/Projetos de leitura/f2/07/CRIANDO COM ELEMENTOS DA NATUREZA.jpeg",
           imagesSubtitle: "CRIANDO COM ELEMENTOS DA NATUREZA",
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/f2/07/ELEMENTOS DA NATUREZA.jpeg",
+          image: "projetos/Projetos de leitura/f2/07/ELEMENTOS DA NATUREZA.jpeg",
           imagesSubtitle: "ELEMENTOS DA NATUREZA",
         },
         {
@@ -2107,8 +2018,7 @@ export const vinteUm = [
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/f2/08/BRINCADEIRA COM ELEMENTOS DA NATUREZA.jpeg",
+          image: "projetos/Projetos de leitura/f2/08/BRINCADEIRA COM ELEMENTOS DA NATUREZA.jpeg",
           imagesSubtitle: "BRINCADEIRA COM ELEMENTOS DA NATUREZA",
         },
         {
@@ -2123,8 +2033,7 @@ export const vinteUm = [
         },
         {
           key: 5,
-          image:
-            "projetos/Projetos de leitura/f2/08/TENTATIVA DE ESCRITA COM MASSINHA.jpeg",
+          image: "projetos/Projetos de leitura/f2/08/TENTATIVA DE ESCRITA COM MASSINHA.jpeg",
           imagesSubtitle: "TENTATIVA DE ESCRITA COM MASSINHA",
         },
       ],
@@ -2135,20 +2044,17 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image:
-            "projetos/Projetos de leitura/f2/09/ATIVIDADE BINÓCULO 01.jpeg",
+          image: "projetos/Projetos de leitura/f2/09/ATIVIDADE BINÓCULO 01.jpeg",
           imagesSubtitle: "ATIVIDADE BINÓCULO",
         },
         {
           key: 1,
-          image:
-            "projetos/Projetos de leitura/f2/09/ATIVIDADE BINÓCULO 02.jpeg",
+          image: "projetos/Projetos de leitura/f2/09/ATIVIDADE BINÓCULO 02.jpeg",
           imagesSubtitle: "ATIVIDADE BINÓCULO",
         },
         {
           key: 2,
-          image:
-            "projetos/Projetos de leitura/f2/09/FESTA DE ANIVERSÁRIO IMAGINAÇÃO.jpeg",
+          image: "projetos/Projetos de leitura/f2/09/FESTA DE ANIVERSÁRIO IMAGINAÇÃO.jpeg",
           imagesSubtitle: "FESTA DE ANIVERSÁRIO IMAGINAÇÃO",
         },
         {

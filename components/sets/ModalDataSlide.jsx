@@ -32,57 +32,22 @@ export default function ModalDataSlide(props) {
   var dados = props.dados;
 
   return (
-    <Modal
-      onClick={props.onClick}
-      title={props.title}
-      subtitle={props.subtitle}
-      images={props.images}
-    >
+    <Modal onClick={props.onClick} title={props.title} subtitle={props.subtitle} images={props.images}>
       <>
         <div className="dados">
           <h2>{props.images[dados[dataNumber]].span}</h2>
-          <Arrows
-            left={true}
-            right={true}
-            onClickLeft={() =>
-              dataNumber > 0
-                ? setdataNumber(dataNumber - 1)
-                : setdataNumber(props.dados.length - 1)
-            }
-            onClickRight={() =>
-              dataNumber < props.dados.length - 1
-                ? setdataNumber(dataNumber + 1)
-                : setdataNumber(0)
-            }
-          />
+          <Arrows left={true} right={true} onClickLeft={() => (dataNumber > 0 ? setdataNumber(dataNumber - 1) : setdataNumber(props.dados.length - 1))} onClickRight={() => (dataNumber < props.dados.length - 1 ? setdataNumber(dataNumber + 1) : setdataNumber(0))} />
         </div>
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={props.slidesPerView}
-          navigation={true}
-        >
+        <Swiper spaceBetween={30} slidesPerView={props.slidesPerView} navigation={true}>
           {props.images[dados[dataNumber]].dados.map((images) =>
             props.link ? (
               <SwiperSlide key={images.key}>
                 <Link href={images.link}>
                   <a target="_blank">
                     <div className="images">
-                      <Image
-                        src={
-                          images.image != ""
-                            ? `/images/${images.image}`
-                            : `/vercel.svg`
-                        }
-                        layout="fill"
-                        objectFit="cover"
-                        alt={images.image}
-                      />
+                      <Image src={images.image != "" ? `/images/${images.image}` : `/vercel.svg`} layout="fill" objectFit="cover" alt={images.image} />
                     </div>
-                    {images.imagesSubtitle ? (
-                      <p className="images__subtitle">
-                        {images.imagesSubtitle}
-                      </p>
-                    ) : null}
+                    {images.imagesSubtitle ? <p className="images__subtitle">{images.imagesSubtitle}</p> : null}
                     <h1>{images.title}</h1>
                     <h2>{images.span}</h2>
                   </a>
@@ -91,20 +56,9 @@ export default function ModalDataSlide(props) {
             ) : (
               <SwiperSlide key={images.key}>
                 <div className="images">
-                  <Image
-                    src={
-                      images.image != ""
-                        ? `/images/${images.image}`
-                        : `/vercel.svg`
-                    }
-                    layout="fill"
-                    objectFit="cover"
-                    alt={images.image}
-                  />
+                  <Image src={images.image != "" ? `/images/${images.image}` : `/vercel.svg`} layout="fill" objectFit="cover" alt={images.image} />
                 </div>
-                {images.imagesSubtitle ? (
-                  <p className="images__subtitle">{images.imagesSubtitle}</p>
-                ) : null}
+                {images.imagesSubtitle ? <p className="images__subtitle">{images.imagesSubtitle}</p> : null}
                 <h1>{images.title}</h1>
                 <h2>{images.span}</h2>
               </SwiperSlide>
@@ -119,17 +73,22 @@ export default function ModalDataSlide(props) {
 
         .modal .modalCard .modalContent .dados {
           position: relative;
-          display: flex;
-          justify-content: space-evenly;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-template-areas: "prev dados next";
           margin-bottom: 2rem;
+          align-items: stretch;
+          padding: 0.6rem;
         }
 
         .modal .modalCard .modalContent .dados h2 {
+          grid-area: dados;
           text-transform: uppercase;
           font-weight: bold;
           font-size: 2.5rem;
           color: #148fb8;
-          padding: 0.6rem;
         }
 
         .modal .modalCard .modalContent .dados .arrow {
@@ -138,14 +97,6 @@ export default function ModalDataSlide(props) {
           fill: #db3541;
           cursor: pointer;
           filter: none;
-        }
-
-        .modal .modalCard .modalContent .dados .arrow--left {
-          left: 60rem;
-        }
-
-        .modal .modalCard .modalContent .dados .arrow--right {
-          right: 60rem;
         }
       `}</style>
     </Modal>

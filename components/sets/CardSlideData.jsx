@@ -85,16 +85,23 @@ export default function CardSlideData(props) {
 
         .card .dados {
           position: relative;
-          display: flex;
-          justify-content: space-evenly;
+          display: grid;
+          grid-template-columns: .1fr 1fr .1fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-template-areas: "prev dados next";
           margin-bottom: 2rem;
+          align-items: stretch;
+          padding: 0.6rem;
         }
 
         .card .dados h2 {
+          grid-area: dados;
           text-transform: uppercase;
           font-size: 2.5rem;
           font-weight: bold;
           color: #148fb8;
+          text-align: center;
         }
 
         .card .dados .arrow {
@@ -103,14 +110,6 @@ export default function CardSlideData(props) {
           fill: #db3541;
           cursor: pointer;
           filter: none;
-        }
-
-        .card .dados .arrow--left {
-          left: 8rem;
-        }
-
-        .card .dados .arrow--right {
-          right: 8rem;
         }
 
         .card .swiper {
