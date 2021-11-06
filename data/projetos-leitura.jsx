@@ -1540,27 +1540,27 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "rjetos/Projetos de leitura/f1e/06/AULA REMOTA - CABANINHA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/06/AULA REMOTA - CABANINHA.jpeg",
           imagesSubtitle: "CABANINHA",
         },
         {
           key: 1,
-          image: "rjetos/Projetos de leitura/f1e/06/AULA REMOTA - PINTURA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/06/AULA REMOTA - PINTURA.jpeg",
           imagesSubtitle: "PINTURA",
         },
         {
           key: 2,
-          image: "rjetos/Projetos de leitura/f1e/06/PINTURA LIVRE.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/06/PINTURA LIVRE.jpeg",
           imagesSubtitle: "PINTURA LIVRE",
         },
         {
           key: 3,
-          image: "rjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 01.jpg",
+          image: "prjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 01.jpg",
           imagesSubtitle: "PRODUÇÃO ARTISTICA",
         },
         {
           key: 4,
-          image: "rjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 02.jpg",
+          image: "prjetos/Projetos de leitura/f1e/06/PRODUÇÃO ARTISTICA 02.jpg",
           imagesSubtitle: "PRODUÇÃO ARTISTICA",
         },
       ],
@@ -1571,32 +1571,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "rjetos/Projetos de leitura/f1e/07/AMARELINHA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/AMARELINHA.jpeg",
           imagesSubtitle: "AMARELINHA",
         },
         {
           key: 1,
-          image: "rjetos/Projetos de leitura/f1e/07/AULA REMOTA - FESTA JULINA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/AULA REMOTA - FESTA JULINA.jpeg",
           imagesSubtitle: "FESTA JULINA",
         },
         {
           key: 2,
-          image: "rjetos/Projetos de leitura/f1e/07/CONSTRUINDO CHOCALHO.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/CONSTRUINDO CHOCALHO.jpeg",
           imagesSubtitle: "CONSTRUINDO CHOCALHO",
         },
         {
           key: 3,
-          image: "rjetos/Projetos de leitura/f1e/07/PESCARIA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/PESCARIA.jpeg",
           imagesSubtitle: "PESCARIA",
         },
         {
           key: 4,
-          image: "rjetos/Projetos de leitura/f1e/07/PETECA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/PETECA.jpeg",
           imagesSubtitle: "PETECA",
         },
         {
           key: 5,
-          image: "rjetos/Projetos de leitura/f1e/07/RODA DE MÚSICA FOLCLORICA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/07/RODA DE MÚSICA FOLCLORICA.jpeg",
           imagesSubtitle: "RODA DE MÚSICA FOLCLORICA",
         },
       ],
@@ -1607,32 +1607,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "rjetos/Projetos de leitura/f1e/08/CARTA PARA NATUREZA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/CARTA PARA NATUREZA.jpeg",
           imagesSubtitle: "CARTA PARA NATUREZA",
         },
         {
           key: 1,
-          image: "rjetos/Projetos de leitura/f1e/08/DESENHO COLETIVO.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/DESENHO COLETIVO.jpeg",
           imagesSubtitle: "DESENHO COLETIVO",
         },
         {
           key: 2,
-          image: "rjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - PROFISSÕES.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - PROFISSÕES.jpeg",
           imagesSubtitle: "FAZ DE CONTA - PROFISSÕES",
         },
         {
           key: 3,
-          image: "rjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - VENDEDORES AMBULANTES.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/FAZ DE CONTA - VENDEDORES AMBULANTES.jpeg",
           imagesSubtitle: "FAZ DE CONTA - VENDEDORES AMBULANTES",
         },
         {
           key: 4,
-          image: "rjetos/Projetos de leitura/f1e/08/RECORTE E COLE.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/RECORTE E COLE.jpeg",
           imagesSubtitle: "RECORTE E COLE",
         },
         {
           key: 5,
-          image: "rjetos/Projetos de leitura/f1e/08/TENTATIVA DA ESCRITA - ALFABETO MOVEL.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/08/TENTATIVA DA ESCRITA - ALFABETO MOVEL.jpeg",
           imagesSubtitle: "ALFABETO MOVEL",
         },
       ],
@@ -1643,32 +1643,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "rjetos/Projetos de leitura/f1e/09/BRINCADEIRAS DAS CADEIRAS COM NOME.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/09/BRINCADEIRAS DAS CADEIRAS COM NOME.jpeg",
           imagesSubtitle: "BRINCADEIRAS DAS CADEIRAS COM NOME",
         },
         {
           key: 1,
-          image: "rjetos/Projetos de leitura/f1e/09/EXPLORANDO ELEMENTOS DA NATUREZA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/09/EXPLORANDO ELEMENTOS DA NATUREZA.jpeg",
           imagesSubtitle: "EXPLORANDO ELEMENTOS DA NATUREZA",
         },
         {
           key: 2,
-          image: "rjetos/Projetos de leitura/f1e/09/JOGO - NUMEROS E QUANTIDADES.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/09/JOGO - NUMEROS E QUANTIDADES.jpeg",
           imagesSubtitle: "NUMEROS E QUANTIDADES",
         },
         {
           key: 3,
-          image: "rjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - DESENHO COM MASSINHA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - DESENHO COM MASSINHA.jpeg",
           imagesSubtitle: "DESENHO COM MASSINHA",
         },
         {
           key: 4,
-          image: "rjetos/Projetos de leitura/f1e/09/RODA DE MÚSICA - FOLCLORE.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/09/RODA DE MÚSICA - FOLCLORE.jpeg",
           imagesSubtitle: "FOLCLORE",
         },
         {
           key: 5,
-          image: "rjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - PINTANDO O MUNDO.jpg",
+          image: "prjetos/Projetos de leitura/f1e/09/PRODUÇÃO ARTISTICA - PINTANDO O MUNDO.jpg",
           imagesSubtitle: "PINTANDO O MUNDO",
         },
       ],
@@ -1679,32 +1679,32 @@ export const vinteUm = [
       dados: [
         {
           key: 0,
-          image: "rjetos/Projetos de leitura/f1e/10/BLOCOS DE ENCAIXE.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/BLOCOS DE ENCAIXE.jpeg",
           imagesSubtitle: "BLOCOS DE ENCAIXE",
         },
         {
           key: 1,
-          image: "rjetos/Projetos de leitura/f1e/10/COORDENAÇÃO MOTORA FINA, FLORES MÁGICAS.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/COORDENAÇÃO MOTORA FINA, FLORES MÁGICAS.jpeg",
           imagesSubtitle: "FLORES MÁGICAS",
         },
         {
           key: 2,
-          image: "rjetos/Projetos de leitura/f1e/10/CULINÁRIA BRIGADEIRO DE LEITE EM PÓ.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/CULINÁRIA BRIGADEIRO DE LEITE EM PÓ.jpeg",
           imagesSubtitle: "BRIGADEIRO DE LEITE EM PÓ",
         },
         {
           key: 3,
-          image: "rjetos/Projetos de leitura/f1e/10/ESQUEMA CORPORAL COM MASSINHA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/ESQUEMA CORPORAL COM MASSINHA.jpeg",
           imagesSubtitle: "ESQUEMA CORPORAL COM MASSINHA",
         },
         {
           key: 4,
-          image: "rjetos/Projetos de leitura/f1e/10/MOVIMENTO DE PINÇA, PEGUE A TAMPINHA.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/MOVIMENTO DE PINÇA, PEGUE A TAMPINHA.jpeg",
           imagesSubtitle: "PEGUE A TAMPINHA",
         },
         {
           key: 5,
-          image: "rjetos/Projetos de leitura/f1e/10/PRODUÇÃO ARTÍSTICA - DESENHO LIVRE.jpeg",
+          image: "prjetos/Projetos de leitura/f1e/10/PRODUÇÃO ARTÍSTICA - DESENHO LIVRE.jpeg",
           imagesSubtitle: "DESENHO LIVRE",
         },
       ],
