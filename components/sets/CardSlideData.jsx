@@ -57,7 +57,7 @@ export default function CardSlideData(props) {
               <div className="images">
                 <Image
                   src={
-                    images.src != "" ? `/images/${images.src}` : `/vercel.svg`
+                    images.image != "" ? `/images/${images.image}` : `/vercel.svg`
                   }
                   layout="fill"
                   objectFit="cover"
@@ -86,7 +86,7 @@ export default function CardSlideData(props) {
         .card .dados {
           position: relative;
           display: grid;
-          grid-template-columns: .1fr 1fr .1fr;
+          grid-template-columns: 0.1fr 1fr 0.1fr;
           grid-template-rows: 1fr;
           gap: 0px 0px;
           grid-template-areas: "prev dados next";

@@ -32,22 +32,57 @@ export default function ModalDataSlide(props) {
   var dados = props.dados;
 
   return (
-    <Modal onClick={props.onClick} title={props.title} subtitle={props.subtitle} images={props.images}>
+    <Modal
+      onClick={props.onClick}
+      title={props.title}
+      subtitle={props.subtitle}
+      images={props.images}
+    >
       <>
         <div className="dados">
           <h2>{props.images[dados[dataNumber]].span}</h2>
-          <Arrows left={true} right={true} onClickLeft={() => (dataNumber > 0 ? setdataNumber(dataNumber - 1) : setdataNumber(props.dados.length - 1))} onClickRight={() => (dataNumber < props.dados.length - 1 ? setdataNumber(dataNumber + 1) : setdataNumber(0))} />
+          <Arrows
+            left={true}
+            right={true}
+            onClickLeft={() =>
+              dataNumber > 0
+                ? setdataNumber(dataNumber - 1)
+                : setdataNumber(props.dados.length - 1)
+            }
+            onClickRight={() =>
+              dataNumber < props.dados.length - 1
+                ? setdataNumber(dataNumber + 1)
+                : setdataNumber(0)
+            }
+          />
         </div>
-        <Swiper spaceBetween={30} slidesPerView={props.slidesPerView} navigation={true}>
+        <Swiper
+          spaceBetween={15}
+          slidesPerView={props.slidesPerView}
+          navigation={true}
+        >
           {props.images[dados[dataNumber]].dados.map((images) =>
             props.link ? (
               <SwiperSlide key={images.key}>
                 <Link href={images.link}>
                   <a target="_blank">
                     <div className="images">
-                      <Image src={images.image != "" ? `/images/${images.image}` : `/vercel.svg`} layout="fill" objectFit="cover" alt={images.image} />
+                      <Image
+                        src={
+                          images.image != ""
+                            ? `/images/${images.image}`
+                            : `/vercel.svg`
+                        }
+                        layout="fill"
+                        objectFit="cover"
+                        alt={images.image}
+                      />
                     </div>
-                    {images.imagesSubtitle ? <p className="images__subtitle">{images.imagesSubtitle}</p> : null}
+                    {images.imagesSubtitle ? (
+                      <p className="images__subtitle">
+                        {images.imagesSubtitle}
+                      </p>
+                    ) : null}
                     <h1>{images.title}</h1>
                     <h2>{images.span}</h2>
                   </a>
@@ -56,9 +91,20 @@ export default function ModalDataSlide(props) {
             ) : (
               <SwiperSlide key={images.key}>
                 <div className="images">
-                  <Image src={images.image != "" ? `/images/${images.image}` : `/vercel.svg`} layout="fill" objectFit="cover" alt={images.image} />
+                  <Image
+                    src={
+                      images.image != ""
+                        ? `/images/${images.image}`
+                        : `/vercel.svg`
+                    }
+                    layout="fill"
+                    objectFit="cover"
+                    alt={images.image}
+                  />
                 </div>
-                {images.imagesSubtitle ? <p className="images__subtitle">{images.imagesSubtitle}</p> : null}
+                {images.imagesSubtitle ? (
+                  <p className="images__subtitle">{images.imagesSubtitle}</p>
+                ) : null}
                 <h1>{images.title}</h1>
                 <h2>{images.span}</h2>
               </SwiperSlide>

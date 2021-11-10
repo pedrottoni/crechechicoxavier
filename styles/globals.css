@@ -123,6 +123,7 @@ button:focus {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-weight: bold;
+  text-shadow: 0rem 0.7rem 1rem hsl(211deg 100% 10%);
 }
 
 .swiper-button-prev,
