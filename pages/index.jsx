@@ -5,37 +5,7 @@ import Links from "../components/sets/Links";
 import menu from "../data/menu";
 import Logo from "../public/images/Logo";
 
-import { useState, useCallback, useEffect } from "react";
-
-const useMediaQuery = (width) => {
-  const [targetReached, setTargetReached] = useState(false);
-
-  const updateTarget = useCallback((e) => {
-    if (e.matches) {
-      setTargetReached(true);
-    } else {
-      setTargetReached(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addListener(updateTarget);
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true);
-    }
-
-    return () => media.removeListener(updateTarget);
-  }, []);
-
-  return targetReached;
-};
-
 export default function Index() {
-  const isBreakpoint = useMediaQuery(840);
-
   return (
     <>
       <Head>
@@ -50,7 +20,6 @@ export default function Index() {
         </header>
         <Links menu={menu} image={true} />
       </Home>
-      {isBreakpoint ? <Logo /> : null}
       <style jsx global>{``}</style>
     </>
   );

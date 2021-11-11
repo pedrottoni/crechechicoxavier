@@ -2,6 +2,8 @@ import Social from "../sets/Social";
 import menu from "../../data/menu";
 import PageHeader from "../sets/PageHeader";
 
+import Media from "react-media";
+
 export default function Center(props) {
   return (
     <>
@@ -9,7 +11,13 @@ export default function Center(props) {
         <PageHeader menu={menu} />
       </header>
       <main>{props.children}</main>
-      <Social />
+      <Media query="(min-width: 875px)">
+        {(matches) => {
+          {
+            return matches && <Social />;
+          }
+        }}
+      </Media>
       <style jsx global>{`
         #__next {
           display: flex;
@@ -85,6 +93,15 @@ export default function Center(props) {
         main nav a .linkIcon {
           width: clamp(16rem, 25vh, 28rem) !important;
           height: clamp(16rem, 25vh, 28rem) !important;
+        }
+
+        @media (max-width: 875px) {
+          main {
+            gap: 0 !important;
+            flex-wrap: wrap;
+            margin: auto;
+    padding-bottom: 20vh;
+          }
         }
       `}</style>
     </>

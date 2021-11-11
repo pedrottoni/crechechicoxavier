@@ -50,7 +50,7 @@ export default function Modal(props) {
           position: fixed;
           top: 0;
           left: 0;
-          z-index: 1;
+          z-index: 100;
           display: flex;
           justify-content: center;
           align-items: center;

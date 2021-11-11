@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState } from "react";
 import Head from "next/head";
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
@@ -6,9 +6,10 @@ import Buttons from "../components/sets/Buttons";
 import Card from "../components/sets/Card";
 import CardSlideData from "../components/sets/CardSlideData";
 import { imagens } from "../data/aCreche-image";
-import Media from "react-media";
 import Modal from "../components/sets/Modal";
 import ModalDataSlide from "../components/sets/ModalDataSlide";
+
+import Media from "react-media";
 
 export default function Acreche() {
   const [historia, sethistoria] = useState(true);
@@ -354,7 +355,7 @@ export default function Acreche() {
           }
 
           .modal .modalCard .modalContent .dados {
-            grid-template-columns: 1fr clamp(100px, 100vw, 208px) 1fr !important;
+            grid-template-columns: 1fr clamp(100px, 100vw, 250px) 1fr !important;
           }
 
           .modal .modalCard .modalContent .dados h2 {
@@ -417,7 +418,7 @@ export default function Acreche() {
           }
 
           .modalContent .images {
-            margin: 0 !important
+            margin: 0 !important;
           }
 
           footer div {

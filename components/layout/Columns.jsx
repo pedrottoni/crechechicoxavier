@@ -2,6 +2,8 @@ import menu from "../../data/menu";
 import Social from "../sets/Social";
 import PageHeader from "../sets/PageHeader";
 
+import Media from "react-media";
+
 export default function Columns(props) {
   return (
     <>
@@ -9,7 +11,13 @@ export default function Columns(props) {
         <PageHeader menu={menu} />
       </header>
       <main>{props.children}</main>
-      <Social />
+      <Media query="(min-width: 875px)">
+        {(matches) => {
+          {
+            return matches && <Social />;
+          }
+        }}
+      </Media>
       <style jsx global>{`
         #__next {
           display: flex;
@@ -81,6 +89,15 @@ export default function Columns(props) {
           height: max-content;
           max-height: 62vh;
           margin-right: 4rem;
+        }
+
+        @media (max-width: 875px) {
+          main {
+            gap: 0 !important;
+            flex-wrap: wrap;
+            margin: auto;
+            padding-bottom: 20vh;
+          }
         }
       `}</style>
     </>
