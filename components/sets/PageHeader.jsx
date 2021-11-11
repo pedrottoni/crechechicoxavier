@@ -189,10 +189,20 @@ export default function PageHeader(props) {
           z-index: -1;
         }
 
-        @media (max-height: 460px) {
+        @media (max-height: 520px) {
           .buttonMenu {
             top: 4rem;
             right: 4rem;
+          }
+
+          .left {
+            top: 25vh;
+          }
+        }
+
+        @media (max-height: 610px) {
+          .left {
+            top: calc(25vh - 6rem);
           }
         }
       `}</style>

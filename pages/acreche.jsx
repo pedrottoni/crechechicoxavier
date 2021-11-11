@@ -348,6 +348,9 @@ export default function Acreche() {
             width: 100%;
             text-align: center;
             align-items: center;
+            position: fixed;
+            left: 0;
+            top: 25vh;
           }
 
           .left nav.stateBtn {
