@@ -133,7 +133,7 @@ export default function ModalDataSlide(props) {
           grid-area: dados;
           text-transform: uppercase;
           font-weight: bold;
-          font-size: 2.5rem;
+          font-size: 2.4rem;
           color: #148fb8;
         }
 

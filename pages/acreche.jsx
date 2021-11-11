@@ -355,7 +355,7 @@ export default function Acreche() {
           }
 
           .modal .modalCard .modalContent .dados {
-            grid-template-columns: 1fr clamp(100px, 100vw, 250px) 1fr !important;
+            grid-template-columns: 1fr clamp(170px, 60vw, 212px) 1fr !important;
           }
 
           .modal .modalCard .modalContent .dados h2 {

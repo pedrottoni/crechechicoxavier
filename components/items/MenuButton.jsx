@@ -20,7 +20,7 @@ export default function MenuButton(props) {
     >
       {props.image ? (
         <div className="btnIcon">
-          <Image src={`/images/${props.link}.svg`} layout="fill" alt=""/>
+          <Image src={`/images/${props.link}.svg`} layout="fill" alt="" />
         </div>
       ) : null}
       <div className="btnText">
@@ -48,6 +48,13 @@ export default function MenuButton(props) {
           height: 4.5rem;
           margin-bottom: 0.5rem;
           filter: drop-shadow(0.1rem 0.1rem 0.2rem hsl(356deg 70% 30%));
+        }
+
+        @media (max-width: 875px) {
+          .btn {
+            flex-direction: column;
+            width: clamp(14rem, 20vw, 20rem)
+          }
         }
       `}</style>
     </motion.button>

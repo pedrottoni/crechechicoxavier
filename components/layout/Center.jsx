@@ -100,7 +100,7 @@ export default function Center(props) {
             gap: 0 !important;
             flex-wrap: wrap;
             margin: auto;
-    padding-bottom: 20vh;
+            padding-bottom: 20vh;
           }
         }
       `}</style>

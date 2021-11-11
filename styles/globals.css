@@ -5,10 +5,13 @@
 }
 html,
 body {
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "Spartan", serif;
   font-size: clamp(0.35rem, 0.37vw + 0.22vh, 2rem);
+  overflow: hidden;
 }
 
 a {
@@ -136,12 +139,20 @@ button:focus {
 }
 
 .swiper-button-prev {
-  background: linear-gradient(90deg, hsl(195deg 25% 15% / 30%), hsl(0deg 0% 100% / 0%));
+  background: linear-gradient(
+    90deg,
+    hsl(195deg 25% 15% / 30%),
+    hsl(0deg 0% 100% / 0%)
+  );
   left: 0px !important;
 }
 
 .swiper-button-next {
-  background: linear-gradient(270deg, hsl(195deg 25% 15% / 30%), hsl(0deg 0% 100% / 0%));
+  background: linear-gradient(
+    270deg,
+    hsl(195deg 25% 15% / 30%),
+    hsl(0deg 0% 100% / 0%)
+  );
   right: 0px !important;
 }
 
