@@ -196,13 +196,13 @@ export default function PageHeader(props) {
           }
 
           .left {
-            top: 25vh;
+            top: 25vh !important;
           }
         }
 
-        @media (max-height: 610px) {
+        @media (min-height: 520px) and (max-height: 620px) {
           .left {
-            top: calc(25vh - 6rem);
+            top: calc(25vh - 6rem) !important;
           }
         }
       `}</style>
