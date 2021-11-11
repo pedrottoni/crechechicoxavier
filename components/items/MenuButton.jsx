@@ -50,10 +50,10 @@ export default function MenuButton(props) {
           filter: drop-shadow(0.1rem 0.1rem 0.2rem hsl(356deg 70% 30%));
         }
 
-        @media (max-width: 875px) {
+        @media (max-width: 875px) and (min-height: 420px) {
           .btn {
             flex-direction: column;
-            width: clamp(14rem, 20vw, 20rem)
+            width: clamp(14rem, 25vw, 20rem)
           }
         }
       `}</style>

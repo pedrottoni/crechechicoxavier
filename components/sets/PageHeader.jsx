@@ -149,8 +149,8 @@ export default function PageHeader(props) {
         .buttonMenu {
           position: fixed;
           bottom: 10rem;
-          width: 10rem;
-          height: 10rem;
+          width: 10.5rem;
+          height: 10.5rem;
           padding: 2rem;
           border-radius: 100%;
           background: hsl(44deg 100% 56%);
@@ -200,7 +200,7 @@ export default function PageHeader(props) {
           }
         }
 
-        @media (min-height: 520px) and (max-height: 620px) {
+        @media (min-height: 520px) and (max-height: 640px) {
           .left {
             top: calc(25vh - 6rem) !important;
           }
