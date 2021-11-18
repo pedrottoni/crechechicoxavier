@@ -202,7 +202,7 @@ export default function PageHeader(props) {
 
         @media (min-height: 520px) and (max-height: 640px) {
           .left {
-            top: calc(25vh - 6rem) !important;
+            bottom: calc(25vh + 12rem) !important;
           }
         }
       `}</style>
