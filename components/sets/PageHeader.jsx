@@ -107,7 +107,33 @@ export default function PageHeader(props) {
                         >
                           X
                         </button>
+                        <Logo />
                       </header>
+                      <motion.nav
+                        initial={router.pathname === "/" && "initial"}
+                        animate="animate"
+                        exit={router.pathname === "/" && "exit"}
+                        variants={list}
+                        place={props.place}
+                      >
+                        {props.menu.map((menuItem) => (
+                          <motion.div
+                            key={menuItem.link}
+                            variants={animationMenu}
+                          >
+                            <MenuLink
+                              link={menuItem.link}
+                              text={menuItem.text}
+                              spam={menuItem.spam}
+                              className={
+                                router.pathname.indexOf(menuItem.link)
+                                  ? null
+                                  : "active"
+                              }
+                            />
+                          </motion.div>
+                        ))}
+                      </motion.nav>
 
                       <div className="modalContent"></div>
                     </motion.div>
@@ -184,9 +210,43 @@ export default function PageHeader(props) {
           place-content: center;
           width: 100vw;
           height: 100vh;
-          background: rgba(0, 0, 0, 0.5);
+          background: hsl(356deg 70% 53% / 80%);
           backdrop-filter: blur(15px);
           z-index: -1;
+        }
+
+        .menuMobile .modalCard {
+          height: 90vh;
+        }
+
+        .menuMobile header {
+          position: relative;
+          width: 92vw;
+        }
+
+        .menuMobile header svg {
+          width: clamp(40rem, 40vw, 80rem);
+          height: clamp(35rem, 20vw, 80rem);
+        }
+
+        .menuMobile nav {
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+
+        .menuMobile nav a {
+          font-size: clamp(16pt, 3vw + 2vh, 42pt) !important;
+        }
+
+        .menuMobile nav a.active:after {
+          content: "";
+          width: 100%;
+          height: 0.8rem;
+          background: #ffc420;
+          position: absolute;
+          top: clamp(7rem, 5vw + 4vh, 11rem);
+          border-radius: 2rem;
         }
 
         @media (max-height: 520px) {
@@ -197,6 +257,30 @@ export default function PageHeader(props) {
 
           .left {
             top: 25vh !important;
+          }
+
+          .menuMobile .modalCard {
+            height: 85vh;
+          }
+
+          .menuMobile header {
+            position: relative;
+            width: 100vw;
+          }
+
+          .menuMobile header svg {
+            width: 28rem;
+            height: 25rem;
+          }
+
+          .menuMobile nav {
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 8vh;
+          }
+
+          .menuMobile nav a {
+            font-size: clamp(12pt, 2.2vw + 1.1vh, 14pt) !important;
           }
         }
 

@@ -77,7 +77,7 @@ export default function Modal(props) {
           flex-direction: column;
           place-items: center;
           width: 90vw;
-          max-height: 95vh;
+          max-height: 80vh;
           padding: 4rem;
           border-radius: 2rem;
           background: #eee;
