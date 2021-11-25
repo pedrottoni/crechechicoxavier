@@ -146,11 +146,6 @@ export default function PageHeader(props) {
       </Media>
 
       <style jsx global>{`
-        header svg {
-          position: fixed !important;
-          bottom: 87vh;
-        }
-
         nav {
           display: flex;
           flex-direction: row;
@@ -189,8 +184,7 @@ export default function PageHeader(props) {
           z-index: 100;
         }
 
-        header .buttonMenu svg {
-          position: initial !important;
+        .buttonMenu svg {
           width: 100%;
           height: 100%;
           padding: 0.8rem 0.7rem;
@@ -230,6 +224,10 @@ export default function PageHeader(props) {
           width: 92vw;
         }
 
+        .menuMobile header svg {
+          width: clamp(40rem, 40vw, 80rem);
+          height: clamp(35rem, 20vw, 80rem);
+        }
 
         .menuMobile nav {
           flex-direction: column;
