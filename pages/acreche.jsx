@@ -350,7 +350,7 @@ export default function Acreche() {
             align-items: center;
             position: fixed;
             left: 0;
-            top: clamp(10rem, 25vh, 25rem);
+            bottom: clamp(20rem, 40vh, 50% - 18rem);
           }
 
           .left nav.stateBtn {

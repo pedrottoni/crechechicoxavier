@@ -288,12 +288,6 @@ export default function PageHeader(props) {
             font-size: clamp(12pt, 2.2vw + 1.1vh, 14pt) !important;
           }
         }
-
-        @media (min-height: 520px) and (max-height: 640px) {
-          .left {
-            bottom: calc(25vh + 12rem) !important;
-          }
-        }
       `}</style>
     </>
   );
