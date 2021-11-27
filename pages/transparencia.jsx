@@ -154,7 +154,7 @@ export default function Transparência() {
         }
 
         .modal .modalCard button {
-          background-color: #db3541;
+          background-color: hsl(345deg 70% 50%);
           margin-top: 0;
         }
       `}</style>

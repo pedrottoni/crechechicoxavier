@@ -83,13 +83,16 @@ hr {
 
 button {
   cursor: pointer;
-  background: hsl(356, 70%, 53%);
+  background: linear-gradient(0deg, hsl(345deg 70% 50%), hsl(30deg 100% 60%));
   border-radius: 2rem;
   font-family: unset;
   text-align: unset;
   padding: 1rem 1.5rem 0.6rem;
   border: 0.2rem solid hsl(356deg 70% 40%);
   outline: 0.3rem solid hsl(0deg 0% 100% / 55%);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 button:active,

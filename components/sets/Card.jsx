@@ -104,7 +104,7 @@ export default function Card(props) {
           width: 11rem;
           height: 11rem;
           top: -5.5rem;
-          background: #db3541;
+          background: hsl(345deg 70% 50%);
           border-radius: 100%;
           border: 1.5rem solid transparent;
           outline: 0.6rem solid #fff;
@@ -127,7 +127,7 @@ export default function Card(props) {
         .card header .cardTitle h1 {
           text-transform: uppercase;
           font-size: 4rem;
-          color: #db3541;
+          color: hsl(345deg 70% 50%);
         }
 
         .card header .cardTitle h2 {

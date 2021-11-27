@@ -112,7 +112,7 @@ export default function Modal(props) {
         }
 
         .modalCard header h1 {
-          color: #db3541 !important;
+          color: hsl(345deg 70% 50%) !important;
         }
 
         .modal .modalCard header h1 span {
@@ -127,9 +127,6 @@ export default function Modal(props) {
         .modal header button {
           position: absolute;
           right: 4rem;
-          color: #fff;
-          font-size: 2.5rem;
-          font-weight: bold;
         }
 
         .modalContent {
@@ -161,7 +158,7 @@ export default function Modal(props) {
         .modalContent h1 {
           text-transform: uppercase;
           font-size: 2.3rem;
-          color: #db3541;
+          color: hsl(345deg 70% 50%);
           letter-spacing: -0.1rem;
         }
 

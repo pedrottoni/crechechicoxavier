@@ -3,6 +3,7 @@ import MenuLink from "../items/MenuLink";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Logo from "../../public/images/Logo";
+import Social from "./Social";
 
 import Media from "react-media";
 
@@ -109,6 +110,7 @@ export default function PageHeader(props) {
                         </button>
                         <Logo />
                       </header>
+
                       <motion.nav
                         initial={router.pathname === "/" && "initial"}
                         animate="animate"
@@ -135,7 +137,7 @@ export default function PageHeader(props) {
                         ))}
                       </motion.nav>
 
-                      <div className="modalContent"></div>
+                      <Social />
                     </motion.div>
                   </div>
                 )}
@@ -216,27 +218,30 @@ export default function PageHeader(props) {
         }
 
         .menuMobile .modalCard {
-          height: 90vh;
+          height: 93vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
 
         .menuMobile header {
           position: relative;
-          width: 92vw;
         }
 
         .menuMobile header svg {
-          width: clamp(40rem, 40vw, 80rem);
-          height: clamp(35rem, 20vw, 80rem);
+          width: clamp(35rem, 40vw, 80rem);
+          height: clamp(16rem, 20vw, 16rem);
         }
 
         .menuMobile nav {
           flex-direction: column;
           align-items: center;
           flex-wrap: nowrap;
+          margin-top: -5vh;
         }
 
         .menuMobile nav a {
-          font-size: clamp(16pt, 3vw + 2vh, 42pt) !important;
+          font-size: clamp(16pt, 3vw + 2vh, 20pt) !important;
         }
 
         .menuMobile nav a.active:after {
@@ -245,7 +250,7 @@ export default function PageHeader(props) {
           height: 0.8rem;
           background: #ffc420;
           position: absolute;
-          top: clamp(7rem, 5vw + 4vh, 11rem);
+          top: 8rem;
           border-radius: 2rem;
         }
 
@@ -276,7 +281,7 @@ export default function PageHeader(props) {
           .menuMobile nav {
             flex-direction: row;
             justify-content: center;
-            padding-top: 8vh;
+            margin-top: -10vh;
           }
 
           .menuMobile nav a {

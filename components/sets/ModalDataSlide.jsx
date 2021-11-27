@@ -140,7 +140,7 @@ export default function ModalDataSlide(props) {
         .modal .modalCard .modalContent .dados .arrow {
           width: 2.5rem;
           height: 2.5rem;
-          fill: #db3541;
+          fill: hsl(345deg 70% 50%);
           cursor: pointer;
           filter: none;
         }
