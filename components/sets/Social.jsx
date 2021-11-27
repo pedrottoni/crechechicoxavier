@@ -33,7 +33,7 @@ export default function () {
         footer div {
           position: relative !important;
           width: clamp(12rem, 5vw, 20rem);
-          height: clamp(6rem, 4vw, 8rem);
+          height: 6rem;
         }
 
         footer a {
