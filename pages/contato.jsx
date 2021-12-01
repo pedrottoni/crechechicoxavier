@@ -20,7 +20,7 @@ export default function Contato() {
           loading="lazy"
         ></iframe>
         <div className="endeço">
-          Rua Benjamin Constant, 140 - São Gonçalo,
+          Rua Benjamin Constant, 1400 - São Gonçalo,
           <br /> Guaratinguetá - SP, 12502-160
           <br />
           (12)3122-3704
