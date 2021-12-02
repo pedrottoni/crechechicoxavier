@@ -6,6 +6,8 @@ import Card from "../../components/sets/Card";
 import { projetos } from "../../data/projetos-links";
 import { motion } from "framer-motion";
 
+import Media from "react-media";
+
 export default function Projetos() {
   //Router dos cards para as páginas: Formações / Projetos de Leitura / Juntos somos mais
   const router = useRouter();
@@ -51,7 +53,14 @@ export default function Projetos() {
           ))}
         </motion.nav>
       </Center>
-      <style jsx global>{``}</style>
+      <style jsx global>{`
+        
+      @media (max-width: 875px) {
+        main nav {
+          gap: 2rem;
+        }
+
+      }`}</style>
     </>
   );
 }

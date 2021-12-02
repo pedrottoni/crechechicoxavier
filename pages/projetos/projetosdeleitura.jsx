@@ -13,6 +13,8 @@ import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import Media from "react-media";
+
 SwiperCore.use([Navigation]);
 
 var data = new Date();
@@ -115,6 +117,12 @@ export default function ProjetosDeLeitura() {
         main .swiper .card {
           height: inherit;
           min-width: 0;
+        }
+
+        @media (max-width: 875px) {          
+          main .swiper {
+            padding: 2rem 2rem 5rem;
+          }
         }
       `}</style>
     </>

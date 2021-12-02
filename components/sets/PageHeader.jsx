@@ -184,6 +184,9 @@ export default function PageHeader(props) {
           background: hsl(44deg 100% 56%);
           border: none;
           z-index: 100;
+          box-shadow: inset 0.5px 0.5px 0px #BB78E4;
+          filter: drop-shadow(0px 1px 2px #5E2458)
+          drop-shadow(0px 6px 15px rgba(98, 0, 0, 0.3));
         }
 
         .buttonMenu svg {

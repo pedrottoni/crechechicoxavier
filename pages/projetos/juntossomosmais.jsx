@@ -14,6 +14,8 @@ import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import Media from "react-media";
+
 SwiperCore.use([Navigation]);
 
 export default function JuntosSomosMais() {
@@ -49,39 +51,82 @@ export default function JuntosSomosMais() {
             ))}
           </div>
         </header>
-        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
-          {vinteUm[projeto].eventos.map((jsm) => (
-            <SwiperSlide key={jsm.key} className="sliderCapa">
-              <Card
-                title={jsm.title}
-                span={jsm.span}
-                subtitle={jsm.subtitle}
-                imageTop={jsm.link}
-                objectFit="cover"
-                objectPosition="50% 0%"
-                cardonClick={() => (
-                  <>
-                    {setOpen(true)}
-                    {setModalOpen(jsm.key)}
-                  </>
-                )}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <AnimatePresence initial={false}>
-          {open && (
-            <ModalSlide
-              key={vinteUm[projeto].eventos[modal].key}
-              onClick={() => setOpen(false)}
-              title={vinteUm[projeto].eventos[modal].title}
-              span={vinteUm[projeto].eventos[modal].span}
-              subtitle={vinteUm[projeto].eventos[modal].subtitle}
-              slidesPerView={3.3}
-              images={vinteUm[projeto].eventos[modal].images}
-            />
-          )}
-        </AnimatePresence>
+        <Media query="(min-width: 875px)">
+          {(matches) => {
+            return matches ? (
+              <>
+                <Swiper spaceBetween={30} slidesPerView={3.2} navigation={true}>
+                  {vinteUm[projeto].eventos.map((jsm) => (
+                    <SwiperSlide key={jsm.key} className="sliderCapa">
+                      <Card
+                        title={jsm.title}
+                        span={jsm.span}
+                        subtitle={jsm.subtitle}
+                        imageTop={jsm.link}
+                        objectFit="cover"
+                        objectPosition="50% 0%"
+                        cardonClick={() => (
+                          <>
+                            {setOpen(true)}
+                            {setModalOpen(jsm.key)}
+                          </>
+                        )}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <ModalSlide
+                      key={vinteUm[projeto].eventos[modal].key}
+                      onClick={() => setOpen(false)}
+                      title={vinteUm[projeto].eventos[modal].title}
+                      span={vinteUm[projeto].eventos[modal].span}
+                      subtitle={vinteUm[projeto].eventos[modal].subtitle}
+                      slidesPerView={2.3}
+                      images={vinteUm[projeto].eventos[modal].images}
+                    />
+                  )}
+                </AnimatePresence>
+              </>) : (
+              <>
+                <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
+                  {vinteUm[projeto].eventos.map((jsm) => (
+                    <SwiperSlide key={jsm.key} className="sliderCapa">
+                      <Card
+                        title={jsm.title}
+                        span={jsm.span}
+                        subtitle={jsm.subtitle}
+                        imageTop={jsm.link}
+                        objectFit="cover"
+                        objectPosition="50% 0%"
+                        cardonClick={() => (
+                          <>
+                            {setOpen(true)}
+                            {setModalOpen(jsm.key)}
+                          </>
+                        )}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <ModalSlide
+                      key={vinteUm[projeto].eventos[modal].key}
+                      onClick={() => setOpen(false)}
+                      title={vinteUm[projeto].eventos[modal].title}
+                      span={vinteUm[projeto].eventos[modal].span}
+                      subtitle={vinteUm[projeto].eventos[modal].subtitle}
+                      slidesPerView={1}
+                      images={vinteUm[projeto].eventos[modal].images}
+                    />
+                  )}
+                </AnimatePresence>
+              </>)
+          }}
+        </Media>
+
       </Center>
 
       <style jsx>{`
@@ -138,16 +183,8 @@ export default function JuntosSomosMais() {
         }
 
         .card {
-          padding: 2rem;
-        }
-
-        .card h1 {
-          font-size: 2.3rem !important;
-        }
-
-        .card h2 {
-          font-size: 2.3rem;
-        }
+          padding: 2rem !important;
+        }    
 
         .card header .cardImage {
           filter: none;
@@ -172,6 +209,12 @@ export default function JuntosSomosMais() {
 
         .sliderCapa img {
           border-radius: 2rem;
+        }
+
+        @media (max-width: 875px) {          
+          main .swiper {
+            padding: 2rem 2rem 5rem;
+          }
         }
       `}</style>
     </>

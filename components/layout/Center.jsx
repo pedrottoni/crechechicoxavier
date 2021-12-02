@@ -71,14 +71,13 @@ export default function Center(props) {
         }
 
         main header .title {
-          margin: 0 0 1.5rem !important;
+          margin: 0 !important;
           max-width: 90rem !important;
         }
 
         main nav {
           flex-wrap: nowrap;
           filter: none;
-          width: 110rem;
         }
 
         main nav a {
@@ -96,11 +95,37 @@ export default function Center(props) {
         }
 
         @media (max-width: 875px) {
+          #__next {
+           padding: calc(2vh + 1rem) 0;
+          }
+
+          h1 {
+            font-size: 6rem;
+          }
+
           main {
-            gap: 0 !important;
-            flex-wrap: wrap;
             margin: auto;
             padding-bottom: 20vh;
+          }
+
+          header {
+            place-content: center;
+          }
+
+          .modalCard header button {
+            position: absolute;
+            top: -2rem;
+            right: 2vw !important;
+          }
+
+          main nav .card{
+            min-width: 0;
+            padding: .8rem;
+          }
+
+          footer div {
+            width: 18vw;
+            height: 5.5rem;
           }
         }
       `}</style>

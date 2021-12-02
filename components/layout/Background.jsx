@@ -5,10 +5,10 @@ export default function Background(props) {
     <div className="background">
       <div className="color" />
       <div className="sky">
-        <Image src="/images/sky.svg" layout="fill" objectFit="fill" alt=""/>
+        <Image src="/images/sky.svg" layout="fill" objectFit="fill" alt="" />
       </div>
       <div className="hills">
-        <Image src="/images/hills.svg" layout="fill" objectFit="fill" alt=""/>
+        <Image src="/images/hills.svg" layout="fill" objectFit="fill" alt="" />
       </div>
       <style jsx>{`
         .background {
@@ -24,11 +24,7 @@ export default function Background(props) {
           left: 0;
           width: 100vw;
           height: 100vh;
-          background: radial-gradient(
-            90% 100% at 50% 30%,
-            hsl(205deg 75% 50%) 0%,
-            hsl(215deg 80% 45%) 100%
-          );
+          background: radial-gradient( 90% 100% at 50% 30%, #15b1d3 0%, #1499d2 100% );
           transition: 1s;
         }
 

@@ -3,14 +3,14 @@ import Title from "../items/Title";
 
 /*
 Props:
-	Modal
-		- onClick
-	Header
-		- title
-		- span
-		- subTitle
-	Content
-	 - children
+  Modal
+    - onClick
+  Header
+    - title
+    - span
+    - subTitle
+  Content
+   - children
  */
 
 export default function Modal(props) {
@@ -77,7 +77,7 @@ export default function Modal(props) {
           flex-direction: column;
           place-items: center;
           width: 90vw;
-          max-height: 80vh;
+          max-height: 90vh;
           padding: 4rem;
           border-radius: 2rem;
           background: #eee;
@@ -120,8 +120,10 @@ export default function Modal(props) {
         }
 
         .modal .subTitle {
+          margin-top: 1rem ;
           color: #000;
           text-shadow: none;
+          max-width: 80vw;
         }
 
         .modal header button {
@@ -130,6 +132,7 @@ export default function Modal(props) {
         }
 
         .modalContent {
+          margin-top: 3rem;
           width: 100%;
           overflow-y: auto;
           text-align: center;
@@ -137,7 +140,7 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          height: 48vh;
+          height: 40vh;
           margin: 0 auto 3rem;
         }
 
@@ -146,7 +149,7 @@ export default function Modal(props) {
         }
 
         .modalContent .images__subtitle {
-          margin-top: 1.8rem;
+          margin-top: 1rem;
           font-size: 2rem;
           font-weight: bold;
           text-align: center;
@@ -166,6 +169,7 @@ export default function Modal(props) {
           font-size: 2.3rem;
           font-weight: bold;
           letter-spacing: -0.1rem;
+     
         }
 
         .modal .modalCard .modalContent .swiper {
@@ -179,6 +183,16 @@ export default function Modal(props) {
           border-radius: 2rem;
           padding: 2rem 0rem;
           text-transform: uppercase;
+        }
+
+        @media (max-width: 875px) {          
+          .modal .modalCard h2 {
+            font-size: clamp(9pt, 5vw / 2, 12pt);
+          }
+
+          .modalCard header h1 {
+            font-size: 4rem !important
+          }
         }
       `}</style>
     </>

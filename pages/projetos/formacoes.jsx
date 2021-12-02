@@ -13,6 +13,8 @@ import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import Media from "react-media";
+
 SwiperCore.use([Navigation]);
 
 export default function Formacoes() {
@@ -33,37 +35,78 @@ export default function Formacoes() {
         <header>
           <Title title="Cursos e" span="Formações" />
         </header>
-        <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
-          {formacoes.map((formacao) => (
-            <SwiperSlide key={formacao.key}>
-              <Card
-                title={formacao.title}
-                subtitle={formacao.subtitle}
-                imageTop={formacao.link}
-                objectFit="cover"
-                objectPosition="50% 0%"
-                cardonClick={() => (
-                  <>
-                    {setOpen(true)}
-                    {setModalOpen(formacao.key)}
-                  </>
+        <Media query="(min-width: 875px)">
+          {(matches) => {
+            return matches ? (
+              <>
+                <Swiper spaceBetween={30} slidesPerView={3.2} navigation={true}>
+                  {formacoes.map((formacao) => (
+                    <SwiperSlide key={formacao.key}>
+                      <Card
+                        title={formacao.title}
+                        subtitle={formacao.subtitle}
+                        imageTop={formacao.link}
+                        objectFit="cover"
+                        objectPosition="50% 0%"
+                        cardonClick={() => (
+                          <>
+                            {setOpen(true)}
+                            {setModalOpen(formacao.key)}
+                          </>
+                        )}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <ModalSlide
+                      key={formacoes[modal].key}
+                      onClick={() => setOpen(false)}
+                      title={formacoes[modal].title}
+                      subtitle={formacoes[modal].subtitle}
+                      slidesPerView={3.3}
+                      images={formacoes[modal].images}
+                    />
+                  )}
+                </AnimatePresence>
+              </>
+            ) : (<>
+
+              <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
+                {formacoes.map((formacao) => (
+                  <SwiperSlide key={formacao.key}>
+                    <Card
+                      title={formacao.title}
+                      subtitle={formacao.subtitle}
+                      imageTop={formacao.link}
+                      objectFit="cover"
+                      objectPosition="50% 0%"
+                      cardonClick={() => (
+                        <>
+                          {setOpen(true)}
+                          {setModalOpen(formacao.key)}
+                        </>
+                      )}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <AnimatePresence initial={false}>
+                {open && (
+                  <ModalSlide
+                    key={formacoes[modal].key}
+                    onClick={() => setOpen(false)}
+                    title={formacoes[modal].title}
+                    subtitle={formacoes[modal].subtitle}
+                    slidesPerView={1}
+                    images={formacoes[modal].images}
+                  />
                 )}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <AnimatePresence initial={false}>
-          {open && (
-            <ModalSlide
-              key={formacoes[modal].key}
-              onClick={() => setOpen(false)}
-              title={formacoes[modal].title}
-              subtitle={formacoes[modal].subtitle}
-              slidesPerView={3.3}
-              images={formacoes[modal].images}
-            />
-          )}
-        </AnimatePresence>
+              </AnimatePresence>
+            </>)
+          }}
+        </Media>
       </Center>
       <style jsx>{`
         main nav .card {
@@ -82,9 +125,6 @@ export default function Formacoes() {
       `}</style>
 
       <style jsx global>{`
-        main {
-          gap: 1rem;
-        }
 
         main .swiper {
           position: relative;
@@ -96,6 +136,12 @@ export default function Formacoes() {
         main .swiper .card {
           height: inherit;
           min-width: 0;
+        }
+
+        @media (max-width: 875px) {          
+          main .swiper {
+            padding: 2rem 2rem 5rem;
+          }
         }
       `}</style>
     </>

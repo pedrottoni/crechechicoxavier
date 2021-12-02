@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 
 /*
 Props:
-	Card
-		- className
-		- onClick
-		- icon
-	Header
-		- imageTop
-		- title
-		- span
-		- imageBottom
+  Card
+    - className
+    - onClick
+    - icon
+  Header
+    - imageTop
+    - title
+    - span
+    - imageBottom
     - objectFit
     - objectPosition
-	Content
-	 - children
+  Content
+   - children
  */
 
 export default function Card(props) {
@@ -25,7 +25,7 @@ export default function Card(props) {
       {/* Ícone do card */}
       {props.icon && (
         <div className="cardIcon">
-          <Image src={`/images/${props.icon}.svg`} layout="fill" alt=""/>
+          <Image src={`/images/${props.icon}.svg`} layout="fill" alt="" />
         </div>
       )}
       {/* Header do card */}
@@ -175,6 +175,23 @@ export default function Card(props) {
           transform: rotateZ(0.8deg);
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
+        }
+
+        @media (max-width: 875px) {
+          .card header .cardImage {
+           height: clamp(20rem,22vh,32rem);
+          }
+
+          .card header .cardTitle {
+          }
+
+          .card header .cardTitle h1 {
+            font-size: clamp(11pt, 2.8vw, 24pt);
+          }
+
+          .card header .cardTitle h2 {
+            font-size: clamp(8pt, 5vw / 2, 20pt);
+          }
         }
       `}</style>
     </div>
