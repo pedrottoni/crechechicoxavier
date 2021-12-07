@@ -71,40 +71,41 @@ export default function Formacoes() {
                   )}
                 </AnimatePresence>
               </>
-            ) : (<>
-
-              <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
-                {formacoes.map((formacao) => (
-                  <SwiperSlide key={formacao.key}>
-                    <Card
-                      title={formacao.title}
-                      subtitle={formacao.subtitle}
-                      imageTop={formacao.link}
-                      objectFit="cover"
-                      objectPosition="50% 0%"
-                      cardonClick={() => (
-                        <>
-                          {setOpen(true)}
-                          {setModalOpen(formacao.key)}
-                        </>
-                      )}
+            ) : (
+              <>
+                <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
+                  {formacoes.map((formacao) => (
+                    <SwiperSlide key={formacao.key}>
+                      <Card
+                        title={formacao.title}
+                        subtitle={formacao.subtitle}
+                        imageTop={formacao.link}
+                        objectFit="cover"
+                        objectPosition="50% 0%"
+                        cardonClick={() => (
+                          <>
+                            {setOpen(true)}
+                            {setModalOpen(formacao.key)}
+                          </>
+                        )}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <ModalSlide
+                      key={formacoes[modal].key}
+                      onClick={() => setOpen(false)}
+                      title={formacoes[modal].title}
+                      subtitle={formacoes[modal].subtitle}
+                      slidesPerView={1}
+                      images={formacoes[modal].images}
                     />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <AnimatePresence initial={false}>
-                {open && (
-                  <ModalSlide
-                    key={formacoes[modal].key}
-                    onClick={() => setOpen(false)}
-                    title={formacoes[modal].title}
-                    subtitle={formacoes[modal].subtitle}
-                    slidesPerView={1}
-                    images={formacoes[modal].images}
-                  />
-                )}
-              </AnimatePresence>
-            </>)
+                  )}
+                </AnimatePresence>
+              </>
+            );
           }}
         </Media>
       </Center>
@@ -125,7 +126,6 @@ export default function Formacoes() {
       `}</style>
 
       <style jsx global>{`
-
         main .swiper {
           position: relative;
           width: 100vw;
@@ -138,7 +138,7 @@ export default function Formacoes() {
           min-width: 0;
         }
 
-        @media (max-width: 875px) {          
+        @media (max-width: 875px) {
           main .swiper {
             padding: 2rem 2rem 5rem;
           }

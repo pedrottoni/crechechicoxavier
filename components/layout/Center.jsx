@@ -96,7 +96,7 @@ export default function Center(props) {
 
         @media (max-width: 875px) {
           #__next {
-           padding: calc(2vh + 1rem) 0;
+            padding: calc(2vh + 1rem) 0;
           }
 
           h1 {
@@ -116,11 +116,6 @@ export default function Center(props) {
             position: absolute;
             top: -2rem;
             right: 2vw !important;
-          }
-
-          main nav .card{
-            min-width: 0;
-            padding: .8rem;
           }
 
           footer div {

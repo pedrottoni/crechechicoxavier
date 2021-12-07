@@ -115,6 +115,7 @@ export default function ModalDataSlide(props) {
       <style jsx global>{`
         .modal .modalCard .modalContent {
           border-radius: 2rem;
+          margin-top: 0;
         }
 
         .modal .modalCard .modalContent .dados {

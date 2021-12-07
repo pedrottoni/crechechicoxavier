@@ -55,7 +55,7 @@ export default function JuntosSomosMais() {
           {(matches) => {
             return matches ? (
               <>
-                <Swiper spaceBetween={30} slidesPerView={3.2} navigation={true}>
+                <Swiper spaceBetween={30} slidesPerView={4.2} navigation={true}>
                   {vinteUm[projeto].eventos.map((jsm) => (
                     <SwiperSlide key={jsm.key} className="sliderCapa">
                       <Card
@@ -88,7 +88,8 @@ export default function JuntosSomosMais() {
                     />
                   )}
                 </AnimatePresence>
-              </>) : (
+              </>
+            ) : (
               <>
                 <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
                   {vinteUm[projeto].eventos.map((jsm) => (
@@ -123,10 +124,10 @@ export default function JuntosSomosMais() {
                     />
                   )}
                 </AnimatePresence>
-              </>)
+              </>
+            );
           }}
         </Media>
-
       </Center>
 
       <style jsx>{`
@@ -182,10 +183,6 @@ export default function JuntosSomosMais() {
           min-width: 0;
         }
 
-        .card {
-          padding: 2rem !important;
-        }    
-
         .card header .cardImage {
           filter: none;
         }
@@ -211,7 +208,7 @@ export default function JuntosSomosMais() {
           border-radius: 2rem;
         }
 
-        @media (max-width: 875px) {          
+        @media (max-width: 875px) {
           main .swiper {
             padding: 2rem 2rem 5rem;
           }

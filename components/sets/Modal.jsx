@@ -113,6 +113,7 @@ export default function Modal(props) {
 
         .modalCard header h1 {
           color: hsl(345deg 70% 50%) !important;
+          margin: 0 !important;
         }
 
         .modal .modalCard header h1 span {
@@ -120,7 +121,7 @@ export default function Modal(props) {
         }
 
         .modal .subTitle {
-          margin-top: 1rem ;
+          margin-top: 1rem;
           color: #000;
           text-shadow: none;
           max-width: 80vw;
@@ -140,7 +141,7 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          height: 40vh;
+          height: 58vh;
           margin: 0 auto 3rem;
         }
 
@@ -155,7 +156,7 @@ export default function Modal(props) {
           text-align: center;
           text-shadow: none;
           line-height: 2.8rem;
-          color: #5e2458
+          color: #5e2458;
         }
 
         .modalContent h1 {
@@ -169,7 +170,6 @@ export default function Modal(props) {
           font-size: 2.3rem;
           font-weight: bold;
           letter-spacing: -0.1rem;
-     
         }
 
         .modal .modalCard .modalContent .swiper {
@@ -185,13 +185,13 @@ export default function Modal(props) {
           text-transform: uppercase;
         }
 
-        @media (max-width: 875px) {          
+        @media (max-width: 875px) {
           .modal .modalCard h2 {
-            font-size: clamp(9pt, 5vw / 2, 12pt);
+            font-size: clamp(9pt, 10vw / 2, 12pt);
           }
 
           .modalCard header h1 {
-            font-size: 4rem !important
+            font-size: 4rem !important;
           }
         }
       `}</style>

@@ -83,15 +83,14 @@ export default function Card(props) {
           place-items: center;
           place-content: center;
           background: #fff;
-          width: 100%;
-          min-width: calc(12vw + 11vh);
-          ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: 3rem;"}
+          min-width: calc(100vw / 5);
+          ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: .3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
           text-shadow: none;
-          transition: all .3s cubic-bezier(0.300, -0.500, 0.300, 2.500);
+          transition: all 0.3s cubic-bezier(0.3, -0.5, 0.3, 2.5);
           ${props.cardonClick ? "cursor: pointer;" : ""}
         }
 
@@ -126,11 +125,13 @@ export default function Card(props) {
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: 4rem;
+          font-size: clamp(10pt, 4vw / 2, 44pt);
           color: hsl(345deg 70% 50%);
         }
 
         .card header .cardTitle h2 {
+          font-size: clamp(8pt, 3vw / 2, 31pt);
+          margin-top: 0.5rem;
           text-transform: uppercase;
           font-weight: 900;
           color: #148fb8;
@@ -138,9 +139,8 @@ export default function Card(props) {
 
         .card header .cardImage {
           position: relative;
-          width: 100%;
-          height: clamp(10rem,26vh,32rem);
-          margin: 0 0 3rem;
+          height: clamp(10rem,100vh / 4,32rem);
+          margin: 0 0 2rem;
           filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));
         }
 
@@ -178,19 +178,14 @@ export default function Card(props) {
         }
 
         @media (max-width: 875px) {
-          .card header .cardImage {
-           height: clamp(20rem,22vh,32rem);
+          main nav .card {
+            width: clamp(16rem, 100vw / 3.3, 22rem);
+            min-width: 0;
+            padding: 2rem .3rem;
           }
 
-          .card header .cardTitle {
-          }
-
-          .card header .cardTitle h1 {
-            font-size: clamp(11pt, 2.8vw, 24pt);
-          }
-
-          .card header .cardTitle h2 {
-            font-size: clamp(8pt, 5vw / 2, 20pt);
+          main nav .card header .cardImage {
+            height: clamp(12rem,100vw / 5, 20rem);
           }
         }
       `}</style>

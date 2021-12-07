@@ -329,7 +329,6 @@ export default function Acreche() {
         .cardImage img {
           border-radius: 2rem;
         }
-        
       `}</style>
     </>
   );

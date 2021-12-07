@@ -28,7 +28,8 @@ export default function NossoSonho() {
       <Columns>
         <div className="left">
           <Title
-            title="Junte-se ao" span="Nosso Sonho"
+            title="Junte-se ao"
+            span="Nosso Sonho"
             subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
           >
             <nav>

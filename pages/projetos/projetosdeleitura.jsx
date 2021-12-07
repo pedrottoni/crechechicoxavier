@@ -119,7 +119,7 @@ export default function ProjetosDeLeitura() {
           min-width: 0;
         }
 
-        @media (max-width: 875px) {          
+        @media (max-width: 875px) {
           main .swiper {
             padding: 2rem 2rem 5rem;
           }

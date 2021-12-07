@@ -13,13 +13,36 @@ export default function Projetos() {
   const router = useRouter();
   // Animações dos Cards
   const list = {
-    animate: { transition: { staggerChildren: 0.05 } },
-    exit: { transition: { staggerChildren: 0.05 } },
+    animate: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+    exit: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
   };
   const animationMenu = {
-    initial: { y: 100, opacity: 0 },
-    animate: { y: 0, opacity: 1, transition: { staggerChildren: 1 } },
-    exit: { opacity: 0, y: 30, transition: { staggerChildren: 1 } },
+    initial: {
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: 30,
+      transition: {
+        staggerChildren: 1,
+      },
+    },
   };
 
   return (
@@ -54,13 +77,12 @@ export default function Projetos() {
         </motion.nav>
       </Center>
       <style jsx global>{`
-        
-      @media (max-width: 875px) {
-        main nav {
-          gap: 2rem;
+        @media (max-width: 875px) {
+          main nav {
+            gap: 2rem;
+          }
         }
-
-      }`}</style>
+      `}</style>
     </>
   );
 }
