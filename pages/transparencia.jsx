@@ -157,6 +157,7 @@ export default function Transparência() {
           background-color: hsl(345deg 70% 50%);
           margin-top: 0;
         }
+
       `}</style>
     </>
   );

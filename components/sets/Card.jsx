@@ -84,7 +84,7 @@ export default function Card(props) {
           place-content: center;
           background: #fff;
           min-width: calc(100vw / 5);
-          ${props.icon ? "padding: 8rem 4rem 3rem;" : "padding: .3rem;"}
+          ${props.icon ? "padding: 8rem 3rem 2rem;" : "padding: 3rem;"}
           letter-spacing: -0.1rem;
           border-radius: 2rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
@@ -116,36 +116,106 @@ export default function Card(props) {
         }
 
         .card header .cardTitle {
-          display: grid;
-          grid-template-rows: 1fr 0.3fr;
-          align-items: center;
-          text-align: center;
           width: 100%;
+        }
+
+        .card header .cardText {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          bottom: 2rem;
+          width: 100%;
+          z-index: 2;
         }
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: clamp(10pt, 4vw / 2, 44pt);
+          font-size: clamp(11pt, 3.5vw / 1.5, 44pt);
           color: hsl(345deg 70% 50%);
+          filter: none;
         }
 
         .card header .cardTitle h2 {
-          font-size: clamp(8pt, 3vw / 2, 31pt);
-          margin-top: 0.5rem;
+          font-size: clamp(11pt, 3.5vw / 1.5, 44pt);
+          margin-top: -0.5rem;
           text-transform: uppercase;
-          font-weight: 900;
           color: #148fb8;
+          font-family: "Lilita One", cursive;
         }
 
         .card header .cardImage {
           position: relative;
-          height: clamp(10rem,100vh / 4,32rem);
-          margin: 0 0 2rem;
-          filter: drop-shadow(0.2rem 0.2rem 0.4rem hsl(306deg 45% 15% / 40%));
+          height: clamp(10rem, 100vh / 5, 40rem);
+          border-radius: 2rem;
+          margin: 0rem 0 3rem;
+        }
+
+        .swiper-wrapper .card {
+          padding: 0;
+        }
+        
+        .swiper-wrapper .card::after {
+          content: none;
+        }
+
+        .swiper-wrapper .card header .cardText {
+          position: absolute;
+          padding: 0;
+          filter: drop-shadow(black 2px 2px 2px);
+        }
+
+        .swiper-wrapper .card header .cardImage {
+          outline: 0.5rem solid hsl(0deg 0% 100% / 40%);
+          border-radius: 2rem;
+          margin: 0;
+        }
+
+        .swiper-wrapper .card header .cardImage:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: clamp(10rem, 100vh / 5, 60%);
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+          z-index: 1;
+          border-radius: 2rem;
+        }
+
+        .swiper-wrapper .card header .cardTitle h1 {
+          font-size: clamp(11pt, 3.5vw / 2.2, 44pt);
+          color: #fff;
+        }
+        
+        .swiper-wrapper .card header .cardTitle h2 {
+          font-size: clamp(11pt, 3.5vw / 2.2, 44pt);
+          color: hsl(44deg 100% 56%);
+        }
+
+        .swiper-wrapper .card header .cardImage {
+          position: relative;
+          height: clamp(10rem, 100vh / 3, 40rem);
+          border-radius: 2rem;
+        }
+
+        .card::after {
+          content: "";
+          position: absolute;
+          width: 101%;
+          height: 102%;
+          background: hsl(44deg 100% 56%);
+          z-index: -1;
+          border-radius: 2rem;
+          top: 0rem;
+          left: 0.5rem;
+          transform: rotateZ(0.8deg);
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
         }
 
         .cardImage img {
-          border-radius: 2rem;
+          border-radius: 1.8rem;
         }
 
         .card .cardContent {
@@ -162,30 +232,15 @@ export default function Card(props) {
           padding-right: 1rem;
         }
 
-        .card::after {
-          content: "";
-          position: absolute;
-          width: 101%;
-          height: 102%;
-          background: #ffc420;
-          z-index: -1;
-          border-radius: 2rem;
-          top: 0rem;
-          left: 0.5rem;
-          transform: rotateZ(0.8deg);
-          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
-            0.1rem 0.2rem 0.5rem #5e2458;
-        }
-
         @media (max-width: 875px) {
           main nav .card {
             width: clamp(16rem, 100vw / 3.3, 22rem);
             min-width: 0;
-            padding: 2rem .3rem;
+            padding: 2rem 0.3rem;
           }
 
           main nav .card header .cardImage {
-            height: clamp(12rem,100vw / 5, 20rem);
+            height: clamp(12rem, 100vw / 5, 20rem);
           }
         }
       `}</style>

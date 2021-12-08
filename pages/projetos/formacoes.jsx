@@ -111,7 +111,7 @@ export default function Formacoes() {
       </Center>
       <style jsx>{`
         main nav .card {
-          background: #ffc420;
+          background: hsl(44deg 100% 56%);
         }
 
         .card::after {

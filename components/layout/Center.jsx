@@ -86,7 +86,7 @@ export default function Center(props) {
 
         main nav a span {
           font-size: 3rem;
-          color: #ffc420;
+          color: hsl(44deg 100% 56%);
         }
 
         main nav a .linkIcon {

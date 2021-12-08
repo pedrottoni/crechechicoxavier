@@ -168,7 +168,7 @@ export default function PageHeader(props) {
           content: "";
           width: 100%;
           height: 0.5rem;
-          background: #ffc420;
+          background: hsl(44deg 100% 56%);
           position: absolute;
           top: 5rem;
           border-radius: 2rem;
@@ -251,7 +251,7 @@ export default function PageHeader(props) {
           content: "";
           width: 100%;
           height: 0.8rem;
-          background: #ffc420;
+          background: hsl(44deg 100% 56%);
           position: absolute;
           top: 8rem;
           border-radius: 2rem;

@@ -93,7 +93,7 @@ export default function Modal(props) {
           position: absolute;
           width: 101%;
           height: 104%;
-          background: #ffc420;
+          background: hsl(44deg 100% 56%);
           z-index: -1;
           border-radius: 2rem;
           transform: rotateZ(0.1deg);

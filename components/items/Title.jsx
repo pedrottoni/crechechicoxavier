@@ -16,7 +16,7 @@ export default function Title(props) {
         }
 
         .span {
-          color: #ffc420;
+          color: hsl(44deg 100% 56%);
         }
 
         .subTitle {

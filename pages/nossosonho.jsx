@@ -95,6 +95,7 @@ export default function NossoSonho() {
 
         .cardContent .cardInfo hr {
         }
+
       `}</style>
     </>
   );

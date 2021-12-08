@@ -33,7 +33,7 @@ export default function MenuLink(props) {
         }
 
         a span {
-          color: #ffc420;
+          color: hsl(44deg 100% 56%);
         }
 
         a .linkIcon {

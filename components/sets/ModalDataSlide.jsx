@@ -125,7 +125,7 @@ export default function ModalDataSlide(props) {
           grid-template-rows: 1fr;
           gap: 0px 0px;
           grid-template-areas: "prev dados next";
-          margin-bottom: 2rem;
+          margin: 2rem 0;
           align-items: stretch;
           padding: 0.6rem;
         }
