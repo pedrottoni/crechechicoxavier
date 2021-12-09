@@ -19,7 +19,6 @@ export default function Center(props) {
         }}
       </Media>
       <style jsx global>{`
-
         header {
           display: flex;
           align-items: center;
@@ -49,8 +48,8 @@ export default function Center(props) {
           place-items: center;
           place-content: space-between;
           text-align: center;
-          gap: 4rem;
-          margin-bottom: 2rem;
+          gap: 2rem;
+          margin-bottom: 1rem;
         }
 
         main header {
@@ -68,6 +67,7 @@ export default function Center(props) {
         main nav {
           flex-wrap: nowrap;
           filter: none;
+          padding: 2rem;
         }
 
         main nav a {
@@ -86,6 +86,14 @@ export default function Center(props) {
 
         @media (max-width: 875px) {
           #__next {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+              "header"
+              "main"
+              "footer";
             padding: calc(2vh + 1rem) 0;
           }
 
@@ -93,9 +101,13 @@ export default function Center(props) {
             font-size: 6rem;
           }
 
+          header {
+            grid-area: header;
+          }
+
           main {
-            margin: auto;
-            padding-bottom: 20vh;
+            text-align: center;
+            grid-area: main;
           }
 
           header {

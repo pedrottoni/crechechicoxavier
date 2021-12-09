@@ -179,8 +179,9 @@ export default function Modal(props) {
         .modal .modalCard .modalContent .swiper {
           position: relative;
           margin: 0;
-          padding: 0;
+          padding: 0 0 3.5rem;
           width: -webkit-fill-available;
+          overflow: hidden !important;
         }
 
         .modal .modalCard .modalContent .swiper-slide {
@@ -189,7 +190,6 @@ export default function Modal(props) {
           text-transform: uppercase;
         }
 
-
         @media (max-width: 875px) {
           .modal .modalCard h2 {
             font-size: clamp(9pt, 10vw / 2, 12pt);
@@ -197,6 +197,32 @@ export default function Modal(props) {
 
           .modalCard header h1 {
             font-size: 4rem !important;
+          }
+
+          .modal .modalCard .modalContent {
+            box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+              0.1rem 0.2rem 0.5rem #5e2458;
+          }
+
+          .modal .modalCard .modalContent .swiper {
+            padding: 0;
+          }
+
+          .modal .modalCard .modalContent .swiper-slide,
+          .modal .modalCard .modalContent .swiper-wrapper {
+            padding-right: 0;
+          }
+
+          .modal .modalCard .modalContent .swiper-slide {
+            padding: 0;
+          }
+
+          .modalContent .images {
+            box-shadow: none;
+          }
+
+          .modalCard {
+            padding: 2.5rem;
           }
         }
       `}</style>

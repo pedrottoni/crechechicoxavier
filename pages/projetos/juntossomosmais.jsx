@@ -38,7 +38,7 @@ export default function JuntosSomosMais() {
             return (
               matches && (
                 <>
-                  {(slidesView = 1.2)} {(slidesViewInside = 1)}
+                  {(slidesView = 1.3)} {(slidesViewInside = 1)}
                 </>
               )
             );
@@ -49,7 +49,7 @@ export default function JuntosSomosMais() {
             return (
               matches && (
                 <>
-                  {(slidesView = 2.1)} {(slidesViewInside = 1)}
+                  {(slidesView = 1.7)} {(slidesViewInside = 1)}
                 </>
               )
             );
@@ -186,10 +186,6 @@ export default function JuntosSomosMais() {
           display: none;
         }
 
-        main {
-          gap: 2rem;
-        }
-
         main header .btn {
           font-size: 2rem !important;
           transition: 0.1s;
@@ -200,7 +196,6 @@ export default function JuntosSomosMais() {
           position: relative;
           width: 100vw;
           margin: 0;
-          padding: 3rem 5rem 5rem;
         }
 
         main .swiper .card {

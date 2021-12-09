@@ -46,7 +46,7 @@ export default function Columns(props) {
         main {
           display: flex;
           gap: 2.5rem;
-          margin-bottom: 6rem;
+          margin-bottom: 5rem;
         }
 
         main nav {
@@ -82,20 +82,9 @@ export default function Columns(props) {
         }
 
         @media (max-width: 875px) {
-          main {
-            gap: 0 !important;
-            flex-wrap: wrap;
-            margin: auto;
-            padding-bottom: 20vh;
-          }
 
           header {
             place-content: center;
-          }
-
-          main {
-            gap: 0 !important;
-            flex-wrap: wrap;
           }
 
           h1 {

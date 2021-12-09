@@ -131,13 +131,13 @@ export default function Card(props) {
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: clamp(11pt, 3.5vw / 1.5, 64pt);
+          font-size: clamp(11pt, 3.5vw / 1.8, 64pt);
           color: hsl(345deg 70% 50%);
           filter: none;
         }
 
         .card header .cardTitle h2 {
-          font-size: clamp(11pt, 3.5vw / 1.5, 64pt);
+          font-size: clamp(11pt, 3.5vw / 1.8, 64pt);
           margin-top: -0.5rem;
           text-transform: uppercase;
           color: hsl(195deg 80% 40%);
@@ -182,7 +182,7 @@ export default function Card(props) {
           position: absolute;
           width: 100%;
           height: clamp(8rem, 12vh, 10rem);
-          background: hsl(208deg 100% 97%);
+          background: hsl(198deg 100% 95%);
           padding-top: 0.5rem;
           bottom: 0;
           border-radius: 0 0 2rem 2rem;
@@ -191,12 +191,17 @@ export default function Card(props) {
 
         .swiper-wrapper .card header .cardTitle h1 {
           font-size: clamp(10.3pt, 3.5vw / 2, 44pt);
-          color: hsl(345deg 70% 50%);
+          color: vmw;
         }
 
         .swiper-wrapper .card header .cardTitle h2 {
           font-size: clamp(10.3pt, 3.5vw / 2, 44pt);
           color: hsl(195deg 80% 40%);
+        }
+
+        .swiper {
+          padding: 0 0 3.5rem;
+          overflow: hidden !important;
         }
 
         .card::after {
@@ -241,6 +246,14 @@ export default function Card(props) {
 
           main nav .card header .cardImage {
             height: clamp(12rem, 100vw / 5, 20rem);
+          }
+
+          .swiper-wrapper .card header .cardTitle h1 {
+            font-size: 12.5pt;
+          }
+
+          .swiper-wrapper .card header .cardTitle h2 {
+            font-size: 12.5pt;
           }
         }
       `}</style>

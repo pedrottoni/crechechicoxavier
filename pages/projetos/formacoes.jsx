@@ -130,7 +130,6 @@ export default function Formacoes() {
           position: relative;
           width: 100vw;
           margin: 0;
-          padding: 3rem 5rem 5rem;
         }
 
         main .swiper .card {

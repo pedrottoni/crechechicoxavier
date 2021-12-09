@@ -137,6 +137,14 @@ button:focus {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
+.swiper {
+  overflow: inherit !important;
+}
+
+main .swiper {
+  padding: 2rem 5rem 2rem
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-weight: bold;
