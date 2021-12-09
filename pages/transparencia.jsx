@@ -132,11 +132,21 @@ export default function Transparência() {
           transition: 0.1s;
         }
 
+        .modalCard {
+          width: clamp(320px, 90vw, 150rem) !important;
+        }
+
         .modalContent .images {
           position: relative;
           width: 17rem !important;
           height: 19rem !important;
-          margin: 0 auto 2rem !important;
+        }
+
+        .modalContent .images div {
+          width: 15rem;
+          height: 16rem;
+          top: 9% !important;
+          left: 9% !important;
         }
 
         .modalContent p {
@@ -146,11 +156,11 @@ export default function Transparência() {
         }
 
         .modal-title .modalCard {
-          width: 90rem;
+          width: 90rem !important;
         }
 
         .modal-title .modalCard header h1 {
-          color: #148fb8 !important;
+          color: hsl(195deg 80% 40%) !important;
         }
 
         .modal .modalCard button {
@@ -158,6 +168,9 @@ export default function Transparência() {
           margin-top: 0;
         }
 
+        .modal .modalCard .modalContent .swiper-slide {
+          padding: 2rem 0 0 !important;
+        }
       `}</style>
     </>
   );

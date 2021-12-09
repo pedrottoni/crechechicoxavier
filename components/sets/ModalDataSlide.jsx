@@ -57,7 +57,7 @@ export default function ModalDataSlide(props) {
           />
         </div>
         <Swiper
-          spaceBetween={15}
+          spaceBetween={0}
           slidesPerView={props.slidesPerView}
           navigation={true}
         >
@@ -125,7 +125,7 @@ export default function ModalDataSlide(props) {
           grid-template-rows: 1fr;
           gap: 0px 0px;
           grid-template-areas: "prev dados next";
-          margin: 2rem 0;
+          margin: 1rem 0;
           align-items: stretch;
           padding: 0.6rem;
         }
@@ -135,7 +135,7 @@ export default function ModalDataSlide(props) {
           text-transform: uppercase;
           font-weight: bold;
           font-size: 2.4rem;
-          color: #148fb8;
+          color: hsl(195deg 80% 40%);
         }
 
         .modal .modalCard .modalContent .dados .arrow {
@@ -145,6 +145,7 @@ export default function ModalDataSlide(props) {
           cursor: pointer;
           filter: none;
         }
+
       `}</style>
     </Modal>
   );

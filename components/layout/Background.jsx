@@ -24,7 +24,11 @@ export default function Background(props) {
           left: 0;
           width: 100vw;
           height: 100vh;
-          background: radial-gradient( 90% 100% at 50% 30%, #15b1d3 0%, #1499d2 100% );
+          background: radial-gradient(
+            90% 100% at 50% 25%,
+            hsl(200deg 55% 55%) 0%,
+            hsl(210deg 60% 55%) 100%
+          );
           transition: 1s;
         }
 

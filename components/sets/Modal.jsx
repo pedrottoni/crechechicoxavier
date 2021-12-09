@@ -117,7 +117,7 @@ export default function Modal(props) {
         }
 
         .modal .modalCard header h1 span {
-          color: #148fb8 !important;
+          color: hsl(195deg 80% 40%) !important;
         }
 
         .modal .subTitle {
@@ -141,8 +141,12 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          height: 58vh;
+          height: clamp(10rem, 80vh / 2, 40rem);
           margin: 0 auto 3rem;
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
+          border-radius: 2rem;
+          outline: 0.3rem solid hsl(0deg 0% 100% / 41%);
         }
 
         .modalContent .images img {
@@ -181,9 +185,10 @@ export default function Modal(props) {
 
         .modal .modalCard .modalContent .swiper-slide {
           border-radius: 2rem;
-          padding: 2rem 0rem;
+          padding: ${props.imageSubtitle ? "2rem 3rem 4rem;" : "2rem 3rem 0;"};
           text-transform: uppercase;
         }
+
 
         @media (max-width: 875px) {
           .modal .modalCard h2 {

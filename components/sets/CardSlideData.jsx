@@ -100,7 +100,7 @@ export default function CardSlideData(props) {
           text-transform: uppercase;
           font-size: 2.5rem;
           font-weight: bold;
-          color: #148fb8;
+          color: hsl(195deg 80% 40%);
           text-align: center;
         }
 

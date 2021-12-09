@@ -90,7 +90,7 @@ export default function NossoSonho() {
         .cardContent .cardInfo h2 {
           font-size: 2.4rem;
           font-weight: bold;
-          color: #148fb8;
+          color: hsl(195deg 80% 40%);
         }
 
         .cardContent .cardInfo hr {

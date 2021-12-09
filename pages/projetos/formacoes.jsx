@@ -39,7 +39,7 @@ export default function Formacoes() {
           {(matches) => {
             return matches ? (
               <>
-                <Swiper spaceBetween={30} slidesPerView={3.2} navigation={true}>
+                <Swiper spaceBetween={0} slidesPerView={3.2} navigation={true}>
                   {formacoes.map((formacao) => (
                     <SwiperSlide key={formacao.key}>
                       <Card
@@ -73,7 +73,7 @@ export default function Formacoes() {
               </>
             ) : (
               <>
-                <Swiper spaceBetween={10} slidesPerView={2.2} navigation={true}>
+                <Swiper spaceBetween={0} slidesPerView={2.2} navigation={true}>
                   {formacoes.map((formacao) => (
                     <SwiperSlide key={formacao.key}>
                       <Card

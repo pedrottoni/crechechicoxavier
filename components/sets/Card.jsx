@@ -61,7 +61,7 @@ export default function Card(props) {
                   }
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="50% 0%"
+                  objectPosition="50% 100%"
                   alt={props.imageBottom}
                 />
               </div>
@@ -131,16 +131,16 @@ export default function Card(props) {
 
         .card header .cardTitle h1 {
           text-transform: uppercase;
-          font-size: clamp(11pt, 3.5vw / 1.5, 44pt);
+          font-size: clamp(11pt, 3.5vw / 1.5, 64pt);
           color: hsl(345deg 70% 50%);
           filter: none;
         }
 
         .card header .cardTitle h2 {
-          font-size: clamp(11pt, 3.5vw / 1.5, 44pt);
+          font-size: clamp(11pt, 3.5vw / 1.5, 64pt);
           margin-top: -0.5rem;
           text-transform: uppercase;
-          color: #148fb8;
+          color: hsl(195deg 80% 40%);
           font-family: "Lilita One", cursive;
         }
 
@@ -154,21 +154,12 @@ export default function Card(props) {
         .swiper-wrapper .card {
           padding: 0;
         }
-        
-        .swiper-wrapper .card::after {
-          content: none;
-        }
-
-        .swiper-wrapper .card header .cardText {
-          position: absolute;
-          padding: 0;
-          filter: drop-shadow(black 2px 2px 2px);
-        }
 
         .swiper-wrapper .card header .cardImage {
-          outline: 0.5rem solid hsl(0deg 0% 100% / 40%);
+          height: clamp(10rem, 100vh / 2, 40vh);
           border-radius: 2rem;
           margin: 0;
+          filter: saturate(1.2) brightness(1.1) contrast(1.1);
         }
 
         .swiper-wrapper .card header .cardImage:before {
@@ -177,26 +168,35 @@ export default function Card(props) {
           bottom: 0;
           left: 0;
           width: 100%;
-          height: clamp(10rem, 100vh / 5, 60%);
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+          height: clamp(10rem, 100vh / 2, 60%);
+          background: linear-gradient(
+            1deg,
+            hsl(21deg 100% 20% / 36%),
+            transparent
+          );
           z-index: 1;
           border-radius: 2rem;
         }
 
-        .swiper-wrapper .card header .cardTitle h1 {
-          font-size: clamp(11pt, 3.5vw / 2.2, 44pt);
-          color: #fff;
-        }
-        
-        .swiper-wrapper .card header .cardTitle h2 {
-          font-size: clamp(11pt, 3.5vw / 2.2, 44pt);
-          color: hsl(44deg 100% 56%);
+        .swiper-wrapper .card header .cardText {
+          position: absolute;
+          width: 100%;
+          height: clamp(8rem, 12vh, 10rem);
+          background: hsl(208deg 100% 97%);
+          padding-top: 0.5rem;
+          bottom: 0;
+          border-radius: 0 0 2rem 2rem;
+          backdrop-filter: blur(20px);
         }
 
-        .swiper-wrapper .card header .cardImage {
-          position: relative;
-          height: clamp(10rem, 100vh / 3, 40rem);
-          border-radius: 2rem;
+        .swiper-wrapper .card header .cardTitle h1 {
+          font-size: clamp(10.3pt, 3.5vw / 2, 44pt);
+          color: hsl(345deg 70% 50%);
+        }
+
+        .swiper-wrapper .card header .cardTitle h2 {
+          font-size: clamp(10.3pt, 3.5vw / 2, 44pt);
+          color: hsl(195deg 80% 40%);
         }
 
         .card::after {

@@ -19,16 +19,6 @@ export default function Columns(props) {
         }}
       </Media>
       <style jsx global>{`
-        #__next {
-          display: flex;
-          flex-direction: column;
-          place-content: space-between;
-          height: 100vh;
-          margin: 0 auto;
-          padding: calc(2vh + 1rem) clamp(2rem, 6vw, 20rem);
-          text-shadow: 0 0.2rem 0 hsl(195deg 75% 30%),
-            0 0.3rem 0.4rem hsl(195deg 75% 30%);
-        }
 
         header {
           display: flex;
@@ -55,7 +45,6 @@ export default function Columns(props) {
 
         main {
           display: flex;
-          place-content: space-between;
           gap: 2.5rem;
           margin-bottom: 6rem;
         }
@@ -69,6 +58,8 @@ export default function Columns(props) {
           flex-direction: column;
           justify-content: center;
           gap: 1rem;
+          min-width: clamp(66rem, 34vw, 70rem);
+
         }
 
         .left nav {
@@ -84,11 +75,10 @@ export default function Columns(props) {
           position: relative;
           display: flex;
           gap: 2rem;
-          justify-content: center;
-          max-width: 37vw;
+          max-width: clamp(60rem, 62vh, 36vw);
           height: max-content;
           max-height: 62vh;
-          margin-right: 4rem;
+          margin: 0 auto;
         }
 
         @media (max-width: 875px) {
@@ -114,6 +104,7 @@ export default function Columns(props) {
 
           .left {
             width: 100%;
+            min-width: 0;
             text-align: center;
             align-items: center;
             position: fixed;

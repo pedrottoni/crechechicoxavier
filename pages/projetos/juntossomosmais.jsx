@@ -28,28 +28,53 @@ export default function JuntosSomosMais() {
   const [projeto, setProjeto] = useState(0);
 
   let slidesView = 1;
+  let slidesViewInside = 1;
 
   return (
     <>
       <div className="media">
         <Media query="(min-width: 320px)">
           {(matches) => {
-            return matches && (slidesView = 1.2);
+            return (
+              matches && (
+                <>
+                  {(slidesView = 1.2)} {(slidesViewInside = 1)}
+                </>
+              )
+            );
           }}
         </Media>
         <Media query="(min-width: 425px)">
           {(matches) => {
-            return matches && (slidesView = 2.2);
+            return (
+              matches && (
+                <>
+                  {(slidesView = 2.1)} {(slidesViewInside = 1)}
+                </>
+              )
+            );
           }}
         </Media>
         <Media query="(min-width: 768px)">
           {(matches) => {
-            return matches && (slidesView = 3.2);
+            return (
+              matches && (
+                <>
+                  {(slidesView = 3.2)} {(slidesViewInside = 2.2)}
+                </>
+              )
+            );
           }}
         </Media>
         <Media query="(min-width: 875px)">
           {(matches) => {
-            return matches && (slidesView = 4.2);
+            return (
+              matches && (
+                <>
+                  {(slidesView = 3.6)} {(slidesViewInside = 2.8)}
+                </>
+              )
+            );
           }}
         </Media>
       </div>
@@ -94,7 +119,7 @@ export default function JuntosSomosMais() {
                           subtitle={jsm.subtitle}
                           imageTop={jsm.link}
                           objectFit="cover"
-                          objectPosition="50% 0%"
+                          objectPosition="50% 150%"
                           cardonClick={() => (
                             <>
                               {setOpen(true)}
@@ -113,7 +138,7 @@ export default function JuntosSomosMais() {
                         title={vinteUm[projeto].eventos[modal].title}
                         span={vinteUm[projeto].eventos[modal].span}
                         subtitle={vinteUm[projeto].eventos[modal].subtitle}
-                        slidesPerView={2.3}
+                        slidesPerView={slidesViewInside}
                         images={vinteUm[projeto].eventos[modal].images}
                       />
                     )}
@@ -168,6 +193,7 @@ export default function JuntosSomosMais() {
         main header .btn {
           font-size: 2rem !important;
           transition: 0.1s;
+          margin-top: 2rem;
         }
 
         main .swiper {
@@ -200,11 +226,6 @@ export default function JuntosSomosMais() {
         .modal .modalCard .modalContent .swiper-slide {
           background: none !important;
           outline: none !important;
-          padding: 0 !important;
-        }
-
-        .sliderCapa img {
-          border-radius: 2rem;
         }
 
         .swiper-slide,
@@ -215,6 +236,11 @@ export default function JuntosSomosMais() {
         @media (max-width: 875px) {
           main .swiper {
             padding: 2rem 2rem 5rem;
+          }
+
+          main header .btn {
+            font-size: 1.7rem !important;
+            width: 100%;
           }
         }
       `}</style>
