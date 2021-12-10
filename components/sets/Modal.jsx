@@ -48,7 +48,7 @@ export default function Modal(props) {
       <style jsx global>{`
         .modal {
           position: fixed;
-          top: 0;
+          bottom: 0;
           left: 0;
           z-index: 100;
           display: flex;
@@ -197,11 +197,6 @@ export default function Modal(props) {
 
           .modalCard header h1 {
             font-size: 4rem !important;
-          }
-
-          .modal .modalCard .modalContent {
-            box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
-              0.1rem 0.2rem 0.5rem #5e2458;
           }
 
           .modal .modalCard .modalContent .swiper {

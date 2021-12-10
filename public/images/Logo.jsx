@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link href="/">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 250 95">
-        <g id="logo volume">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 250 95">
+        <g id="volume">
           <g id="xavier">
             <path
               fill="#BED62C"

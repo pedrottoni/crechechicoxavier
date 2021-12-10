@@ -7,9 +7,8 @@ import Media from "react-media";
 export default function Center(props) {
   return (
     <>
-      <header>
-        <PageHeader menu={menu} />
-      </header>
+      <PageHeader menu={menu} />
+
       <main>{props.children}</main>
       <Media query="(min-width: 875px)">
         {(matches) => {
@@ -33,7 +32,7 @@ export default function Center(props) {
           letter-spacing: 0.03rem;
         }
 
-        header svg {
+        #logo {
           position: relative;
           width: 25rem;
           height: 12rem;
@@ -88,12 +87,13 @@ export default function Center(props) {
           #__next {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 0px 0px;
+            grid-template-rows: 1fr 3fr 1fr;
             grid-template-areas:
               "header"
               "main"
               "footer";
+            place-content: center;
+            place-items: center;
             padding: calc(2vh + 1rem) 0;
           }
 
@@ -101,17 +101,19 @@ export default function Center(props) {
             font-size: 6rem;
           }
 
-          header {
+          #logo {
             grid-area: header;
           }
 
           main {
-            text-align: center;
             grid-area: main;
+            text-align: center;
           }
 
-          header {
-            place-content: center;
+          .buttonMenu {
+            grid-area: footer;
+            position: relative !important;
+            bottom: 0 !important;
           }
 
           .modalCard header button {
