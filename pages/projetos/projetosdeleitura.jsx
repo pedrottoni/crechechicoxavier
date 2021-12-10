@@ -168,10 +168,6 @@ export default function ProjetosDeLeitura() {
           display: none;
         }
 
-        main {
-          gap: 1rem;
-        }
-
         main .swiper {
           position: relative;
           width: 100vw;

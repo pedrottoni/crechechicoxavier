@@ -7,13 +7,23 @@ import Media from "react-media";
 export default function Center(props) {
   return (
     <>
-      <PageHeader menu={menu} />
-
-      <main>{props.children}</main>
       <Media query="(min-width: 875px)">
         {(matches) => {
           {
-            return matches && <Social />;
+            return matches ? (
+              <>
+                <header>
+                  <PageHeader menu={menu} />
+                </header>
+                <main>{props.children}</main>
+                <Social />
+              </>
+            ) : (
+              <>
+                <PageHeader menu={menu} />
+                <main>{props.children}</main>
+              </>
+            );
           }
         }}
       </Media>
@@ -86,7 +96,7 @@ export default function Center(props) {
         @media (max-width: 875px) {
           #__next {
             position: fixed;
-            top: 0;
+            bottom: 0;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 3fr 1fr;
