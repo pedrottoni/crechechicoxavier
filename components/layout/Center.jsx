@@ -85,6 +85,8 @@ export default function Center(props) {
 
         @media (max-width: 875px) {
           #__next {
+            position: fixed;
+            top: 0;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 3fr 1fr;
