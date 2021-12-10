@@ -73,6 +73,8 @@ export default function Modal(props) {
 
         .modalCard {
           position: relative;
+          top: 0;
+          bottom: 0;
           display: flex;
           flex-direction: column;
           place-items: center;
@@ -127,11 +129,6 @@ export default function Modal(props) {
           max-width: 80vw;
         }
 
-        .modal header button {
-          position: absolute;
-          right: 4rem;
-        }
-
         .modalContent {
           margin-top: 3rem;
           width: 100%;
@@ -141,7 +138,7 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          height: clamp(10rem, 80vh / 2, 40rem);
+          height: clamp(10rem,90vh - 20vw ,50rem);
           margin: 0 auto 3rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
@@ -174,6 +171,29 @@ export default function Modal(props) {
           font-size: 2.3rem;
           font-weight: bold;
           letter-spacing: -0.1rem;
+        }
+
+        .modal .modalCard header button {
+          position: absolute;
+          top: -4rem;
+          right: 0;
+          cursor: pointer;
+          background: linear-gradient(
+            0deg,
+            hsl(345deg 70% 50%),
+            hsl(30deg 100% 60%)
+          );
+          border-radius: 100%;
+          font-family: unset;
+          text-align: unset;
+          padding: 1.3rem 1.8rem 0.9rem;
+          border: 0;
+          outline: 1rem solid hsl(0deg 0% 100% / 100%);
+          color: #fff;
+          font-size: 3.5rem;
+          font-weight: bold;
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
         }
 
         .modal .modalCard .modalContent .swiper {

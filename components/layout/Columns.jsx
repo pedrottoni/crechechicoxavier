@@ -7,19 +7,27 @@ import Media from "react-media";
 export default function Columns(props) {
   return (
     <>
-      <header>
-        <PageHeader menu={menu} />
-      </header>
-      <main>{props.children}</main>
       <Media query="(min-width: 875px)">
         {(matches) => {
           {
-            return matches && <Social />;
+            return matches ? (
+              <>
+                <header>
+                  <PageHeader menu={menu} />
+                </header>
+                <main>{props.children}</main>
+                <Social />
+              </>
+            ) : (
+              <>
+                <PageHeader menu={menu} />
+                <main>{props.children}</main>
+              </>
+            );
           }
         }}
       </Media>
       <style jsx global>{`
-
         header {
           display: flex;
           align-items: center;
@@ -34,7 +42,7 @@ export default function Columns(props) {
           letter-spacing: 0.03rem;
         }
 
-        header svg {
+        #logo {
           position: relative;
           width: 25rem;
           height: 12rem;
@@ -59,7 +67,6 @@ export default function Columns(props) {
           justify-content: center;
           gap: 1rem;
           min-width: clamp(66rem, 34vw, 70rem);
-
         }
 
         .left nav {
@@ -82,13 +89,42 @@ export default function Columns(props) {
         }
 
         @media (max-width: 875px) {
-
-          header {
+          #__next {
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            width: 100vw;
+            height: 90vh;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+              "header"
+              "main"
+              "footer";
             place-content: center;
+            place-items: center;
+            padding: calc(2vh + 1rem) 0;
           }
 
           h1 {
             font-size: 6rem;
+          }
+
+          #logo {
+            grid-area: header;
+          }
+
+          main {
+            grid-area: main;
+            text-align: center;
+          }
+
+          .buttonMenu {
+            grid-area: footer;
+            position: relative !important;
+            bottom: 0 !important;
           }
 
           .left {
@@ -96,9 +132,6 @@ export default function Columns(props) {
             min-width: 0;
             text-align: center;
             align-items: center;
-            position: fixed;
-            left: 0;
-            bottom: clamp(20rem, 40vh, 50% - 18rem);
           }
 
           .left nav.stateBtn {
@@ -115,12 +148,6 @@ export default function Columns(props) {
 
           .modalCard header {
             justify-content: center !important;
-          }
-
-          .modalCard header button {
-            position: absolute;
-            top: -2rem;
-            right: 2vw !important;
           }
 
           .modal-title .modalCard header h1 {

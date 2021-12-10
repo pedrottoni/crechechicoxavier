@@ -83,13 +83,13 @@ hr {
 
 button {
   cursor: pointer;
-  background: linear-gradient(0deg, hsl(345deg 70% 50%), hsl(30deg 100% 60%));
+  background: hsl(345deg 70% 50%);
   border-radius: 2rem;
   font-family: unset;
   text-align: unset;
-  padding: 1rem 1.5rem 0.6rem;
-  border: 0.2rem solid hsl(356deg 70% 40%);
-  outline: 0.3rem solid hsl(0deg 0% 100% / 55%);
+  padding: 2rem 1.8rem 1.5rem;
+  border: none;
+  outline: .7rem solid hsl(0deg 0% 100% / 85%);
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
@@ -142,40 +142,44 @@ button:focus {
 }
 
 main .swiper {
-  padding: 2rem 5rem 2rem
+  padding: 2rem 5rem 2rem;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-weight: bold;
-  text-shadow: 0rem 0.7rem 1rem hsl(211deg 100% 10%);
+  font-size: clamp(3rem, 6vw, 4rem) !important;
+  color: #fff;
+  -webkit-text-stroke: 0.5rem;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 0 !important;
-  margin-top: 0 !important;
-  height: 100% !important;
-  padding: 4rem;
-  border-radius: 2rem;
+  position: absolute !important;
+  background: rgba(21, 143, 183, 0.85);
+  padding: clamp(4rem, 6vw, 4rem) 6rem;
+  border-radius: 10rem;
+  outline: 1rem solid hsl(0deg 0% 100% / 100%);
+  color: #fff;
+  box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%), 0.1rem 0.2rem 0.5rem #5e2458;
 }
 
 .swiper-button-prev {
-  background: linear-gradient(
-    90deg,
-    hsl(195deg 25% 15% / 30%),
-    hsl(0deg 0% 100% / 0%)
-  );
-  left: 0px !important;
+  left: -6rem !important;
+}
+
+.swiper-button-prev:after {
+  right: -2rem !important;
+  position: relative;
 }
 
 .swiper-button-next {
-  background: linear-gradient(
-    270deg,
-    hsl(195deg 25% 15% / 30%),
-    hsl(0deg 0% 100% / 0%)
-  );
-  right: 0px !important;
+  right: -6rem !important;
+}
+
+.swiper-button-next:after {
+  left: -2rem !important;
+  position: relative;
 }
 
 .swiper-button-disabled {

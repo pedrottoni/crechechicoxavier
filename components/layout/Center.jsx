@@ -98,6 +98,7 @@ export default function Center(props) {
             position: fixed;
             bottom: 0;
             top: 0;
+            width: 100vw;
             height: 90vh;
             margin: auto;
             display: grid;
@@ -129,12 +130,6 @@ export default function Center(props) {
             grid-area: footer;
             position: relative !important;
             bottom: 0 !important;
-          }
-
-          .modalCard header button {
-            position: absolute;
-            top: -2rem;
-            right: 2vw !important;
           }
 
           footer div {

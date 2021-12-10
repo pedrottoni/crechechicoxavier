@@ -182,9 +182,7 @@ export default function PageHeader(props) {
           padding: 2rem;
           border-radius: 100%;
           background: hsl(44deg 100% 56%);
-          border: none;
           z-index: 100;
-          box-shadow: inset 0.5px 0.5px 0px #BB78E4;
           filter: drop-shadow(0px 1px 2px #5E2458)
           drop-shadow(0px 6px 15px rgba(98, 0, 0, 0.3));
         }
@@ -234,6 +232,29 @@ export default function PageHeader(props) {
         .menuMobile header svg {
           width: clamp(35rem, 40vw, 80rem);
           height: clamp(16rem, 20vw, 16rem);
+        }
+
+        .menuMobile header button {
+          position: absolute;
+          top: 0rem;
+          right: 4rem;
+          cursor: pointer;
+          background: linear-gradient(
+            0deg,
+            hsl(345deg 70% 50%),
+            hsl(30deg 100% 60%)
+          );
+          border-radius: 100%;
+          font-family: unset;
+          text-align: unset;
+          padding: 1.3rem 1.8rem 0.9rem;
+          border: 0;
+          outline: 1rem solid hsl(0deg 0% 100% / 100%);
+          color: #fff;
+          font-size: 3.5rem;
+          font-weight: bold;
+          box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
+            0.1rem 0.2rem 0.5rem #5e2458;
         }
 
         .menuMobile nav {

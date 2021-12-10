@@ -100,15 +100,17 @@ export default function Card(props) {
 
         .cardIcon {
           position: absolute;
-          width: 11rem;
-          height: 11rem;
+          width: clamp(4rem, 5vw, 10rem);
+          height: clamp(4rem, 5vw, 10rem);
           top: -5.5rem;
           background: hsl(345deg 70% 50%);
           border-radius: 100%;
           border: 1.5rem solid transparent;
-          outline: 0.6rem solid #fff;
+          outline: 1rem solid #fff;
           transform: rotateZ(-4deg);
           box-shadow: 0.3rem 1rem 2rem -1rem hsl(356deg 70% 25%);
+          filter: drop-shadow(2px 3px 1px rgba(94, 36, 88, 0.55))
+            drop-shadow(1px 10px 12px rgba(94, 36, 88, 0.45));
         }
 
         .cardIcon div {
@@ -249,7 +251,7 @@ export default function Card(props) {
           }
 
           .swiper-wrapper .card header .cardImage {
-            height: clamp(12rem, 100vh , 40rem);
+            height: clamp(12rem, 100vh, 40rem);
           }
 
           .swiper-wrapper .card header .cardTitle h1 {

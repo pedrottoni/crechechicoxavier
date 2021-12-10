@@ -186,6 +186,11 @@ export default function JuntosSomosMais() {
           display: none;
         }
 
+        .jsm-projetos button {
+          padding: 1.2rem 1.4rem 1rem;
+          outline: 0.5rem solid hsl(0deg 0% 100% / 85%) !important;
+        }
+
         main header .btn {
           font-size: 2rem !important;
           transition: 0.1s;
