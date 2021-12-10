@@ -99,7 +99,7 @@ export default function Center(props) {
             bottom: 0;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-template-areas:
               "header"
               "main"
@@ -114,8 +114,6 @@ export default function Center(props) {
           }
 
           #logo {
-            position: fixed;
-            top: 0;
             grid-area: header;
           }
 

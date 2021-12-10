@@ -248,6 +248,10 @@ export default function Card(props) {
             height: clamp(12rem, 100vw / 5, 20rem);
           }
 
+          .swiper-wrapper .card header .cardImage {
+            height: clamp(12rem, 100vh , 40rem);
+          }
+
           .swiper-wrapper .card header .cardTitle h1 {
             font-size: 12.5pt;
           }
