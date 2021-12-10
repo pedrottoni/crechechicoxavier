@@ -114,6 +114,8 @@ export default function Center(props) {
           }
 
           #logo {
+            position: fixed;
+            top: 0;
             grid-area: header;
           }
 
