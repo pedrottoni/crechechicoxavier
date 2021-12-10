@@ -97,6 +97,7 @@ export default function Center(props) {
           #__next {
             position: fixed;
             bottom: 0;
+            top: 0;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
