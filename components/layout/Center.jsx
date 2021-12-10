@@ -98,6 +98,8 @@ export default function Center(props) {
             position: fixed;
             bottom: 0;
             top: 0;
+            height: 90vh;
+            margin: auto;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
