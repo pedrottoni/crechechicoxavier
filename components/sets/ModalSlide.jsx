@@ -24,6 +24,7 @@ export default function ModalSlide(props) {
   return (
     <Modal
       onClick={props.onClick}
+      className={props.className ? props.className : ""} 
       title={props.title}
       span={props.span}
       subtitle={props.subtitle}
@@ -82,8 +83,18 @@ export default function ModalSlide(props) {
         )}
       </Swiper>
       <style jsx global>{`
+        .modal .modalCard {
+          padding: 3rem 0 0 !important;
+        }
+
         .modal .modalCard .modalContent {
           border-radius: 2rem;
+        }
+
+        @media (max-width: 875px) {
+          .modal .modalCard {
+            padding: 3rem 3rem 0 !important;
+          }
         }
       `}</style>
     </Modal>

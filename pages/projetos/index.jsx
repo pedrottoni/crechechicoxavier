@@ -77,12 +77,6 @@ export default function Projetos() {
         </motion.nav>
       </Center>
       <style jsx global>{`
-
-        @media (max-width: 875px) {
-          main nav {
-            gap: 2rem;
-          }
-        }
       `}</style>
     </>
   );

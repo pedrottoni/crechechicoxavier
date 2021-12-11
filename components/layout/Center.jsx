@@ -127,6 +127,7 @@ export default function Center(props) {
           }
 
           main nav {
+            gap: 2rem;
             place-content: center;
           }
 

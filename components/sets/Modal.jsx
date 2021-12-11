@@ -26,7 +26,7 @@ export default function Modal(props) {
           transition={{ duration: 0.2 }}
         />
         <motion.div
-          className="modalCard"
+          className={"modalCard" + (props.className ? " " + props.className : "")}
           initial={{ opacity: 0, scale: 0.2 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.2 }}
@@ -80,10 +80,9 @@ export default function Modal(props) {
           flex-direction: column;
           place-items: center;
           width: 90vw;
-          padding: 4rem 0 0;
+          padding: 3rem !important;
           border-radius: 2rem;
           background: #eee;
-          text-align: left;
           text-shadow: none;
           text-transform: uppercase;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
@@ -209,16 +208,16 @@ export default function Modal(props) {
         }
 
         @media (max-width: 875px) {
-
-          .modal .modalCard {
-            padding: 3rem 2rem 0;
-          }
           .modal .modalCard h2 {
             font-size: clamp(9pt, 10vw / 2, 12pt);
           }
 
           .modalCard header h1 {
             font-size: 4rem !important;
+          }
+
+          .modal .modalCard .modalContent {
+            max-height: 80rem;
           }
 
           .modal .modalCard .modalContent .swiper-slide,

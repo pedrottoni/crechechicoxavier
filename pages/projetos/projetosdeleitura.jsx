@@ -164,9 +164,6 @@ export default function ProjetosDeLeitura() {
       `}</style>
 
       <style jsx global>{`
-        .media {
-          display: none;
-        }
 
         main .swiper {
           position: relative;

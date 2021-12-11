@@ -137,6 +137,10 @@ export default function NossoSonho() {
             display: none;
           }
 
+          .modalCard .modalContent p {
+            text-align: center;
+          }
+
         }
       `}</style>
     </>
