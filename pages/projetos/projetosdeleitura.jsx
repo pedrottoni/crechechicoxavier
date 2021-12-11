@@ -51,7 +51,7 @@ export default function ProjetosDeLeitura() {
             return (
               matches && (
                 <>
-                  {(slidesView = 1.2)} {(slidesViewInside = 1)}
+                  {(slidesView = 1.8)} {(slidesViewInside = 1)}
                 </>
               )
             );

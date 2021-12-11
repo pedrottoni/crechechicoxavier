@@ -126,6 +126,10 @@ export default function Center(props) {
             text-align: center;
           }
 
+          main nav {
+            place-content: center;
+          }
+
           .buttonMenu {
             grid-area: footer;
             position: relative !important;

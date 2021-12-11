@@ -23,6 +23,7 @@ export default function Modal(props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1] }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
         />
         <motion.div
           className="modalCard"
@@ -82,7 +83,7 @@ export default function Modal(props) {
           padding: 4rem 0 0;
           border-radius: 2rem;
           background: #eee;
-          text-align: center;
+          text-align: left;
           text-shadow: none;
           text-transform: uppercase;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
@@ -132,7 +133,6 @@ export default function Modal(props) {
           margin-top: 3rem;
           width: 100%;
           overflow-y: auto;
-          text-align: center;
         }
 
         .modalContent .images {

@@ -188,7 +188,6 @@ export default function Card(props) {
           padding-top: 0.5rem;
           bottom: 0;
           border-radius: 0 0 2rem 2rem;
-          backdrop-filter: blur(20px);
         }
 
         .swiper-wrapper .card header .cardTitle h1 {
@@ -251,7 +250,7 @@ export default function Card(props) {
           }
 
           .swiper-wrapper .card header .cardImage {
-            height: clamp(12rem, 100vh, 40rem);
+            height: clamp(32rem,30vh,40rem);
           }
 
           .swiper-wrapper .card header .cardTitle h1 {

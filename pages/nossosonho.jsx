@@ -5,17 +5,19 @@ import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
 import MenuButton from "../components/items/MenuButton";
 import Card from "../components/sets/Card";
-import CardSlideData from "../components/sets/CardSlideData";
 import { nossoSonho } from "../data/nosso-sonho";
+import Modal from "../components/sets/Modal";
+
+import Media from "react-media";
 
 export default function NossoSonho() {
   //Card
   //Define qual modal deve aparecer
   //Ativa ou desativa o modal
   const [cardNumber, setCardNumber] = useState(0);
-  const [open, setOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
-  const [projeto, setProjeto] = useState(0);
+  const [projeto, setModal] = useState(0);
 
   return (
     <>
@@ -41,22 +43,52 @@ export default function NossoSonho() {
                   span={menuItem.span}
                   image={true}
                   vert={true}
-                  onClick={() => setCardNumber(menuItem.key)}
+                  onClick={() => (
+                    <>
+                      {setCardNumber(menuItem.key)}
+                      {setModalOpen(true)}
+                    </>
+                  )}
                 />
               ))}
             </nav>
           </Title>
         </div>
-        <div className="right">
-          <Card
-            title={
-              nossoSonho[cardNumber].title + " " + nossoSonho[cardNumber].span
-            }
-            icon={nossoSonho[cardNumber].link}
-          >
-            {nossoSonho[cardNumber].documentos}
-          </Card>
-        </div>
+        <Media query="(min-width: 875px)">
+          {(matches) => {
+            return matches ? (
+              <div className="right">
+                <Card
+                  title={
+                    nossoSonho[cardNumber].title +
+                    " " +
+                    nossoSonho[cardNumber].span
+                  }
+                  icon={nossoSonho[cardNumber].link}
+                >
+                  {nossoSonho[cardNumber].documentos}
+                </Card>
+              </div>
+            ) : (
+              <>
+                {" "}
+                {modalOpen && (
+                  <Modal
+                    title={
+                      nossoSonho[cardNumber].title +
+                      " " +
+                      nossoSonho[cardNumber].span
+                    }
+                    className="modal-title"
+                    onClick={() => <>{setModalOpen(false)}</>}
+                  >
+                    {nossoSonho[cardNumber].documentos}
+                  </Modal>
+                )}
+              </>
+            );
+          }}
+        </Media>
       </Columns>
 
       <style jsx>{``}</style>
@@ -93,9 +125,19 @@ export default function NossoSonho() {
           color: hsl(195deg 80% 40%);
         }
 
-        .cardContent .cardInfo hr {
-        }
+        @media (max-width: 875px) {
+          .cardInfo {
+            margin: 3rem 0;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-align: center;
+          }
 
+          .cardImage {
+            display: none;
+          }
+
+        }
       `}</style>
     </>
   );

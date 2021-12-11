@@ -91,6 +91,7 @@ export default function PageHeader(props) {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: [0, 1] }}
                       exit={{ opacity: 0 }}
+                      transition={{ duration: 0.2 }}
                     />
                     <motion.div
                       className="modalCard"
@@ -213,7 +214,7 @@ export default function PageHeader(props) {
           place-content: center;
           width: 100vw;
           height: 100vh;
-          background: hsl(356deg 70% 53% / 80%);
+          background: hsl(356deg 70% 53% / 90%);
           backdrop-filter: blur(15px);
           z-index: -1;
         }

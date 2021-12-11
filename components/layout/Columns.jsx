@@ -54,7 +54,7 @@ export default function Columns(props) {
         main {
           display: flex;
           gap: 2.5rem;
-          margin-bottom: 5rem;
+          margin-bottom: 9rem;
         }
 
         main nav {
@@ -119,6 +119,10 @@ export default function Columns(props) {
           main {
             grid-area: main;
             text-align: center;
+          }
+
+          main nav {
+            place-content: center;
           }
 
           .buttonMenu {
