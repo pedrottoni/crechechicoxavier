@@ -137,10 +137,6 @@ button:focus {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
-.swiper {
-  overflow: inherit !important;
-}
-
 main .swiper {
   padding: 2rem 5rem 2rem;
 }
@@ -156,6 +152,7 @@ main .swiper {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute !important;
+  top: 45% !important;
   background: rgba(21, 143, 183, 0.85);
   padding: clamp(4rem, 6vw, 4rem) 6rem;
   border-radius: 10rem;

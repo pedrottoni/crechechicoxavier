@@ -187,7 +187,7 @@ export default function JuntosSomosMais() {
         }
 
         .jsm-projetos button {
-          padding: 1.2rem 1.4rem 1rem;
+          padding: 1.2rem 1.4rem .8rem;
           outline: 0.5rem solid hsl(0deg 0% 100% / 85%) !important;
         }
 
@@ -215,7 +215,6 @@ export default function JuntosSomosMais() {
         .modal .modalContent .images {
           position: relative;
           width: 100%;
-          height: 50rem;
           margin: 0 auto;
         }
 

@@ -210,11 +210,11 @@ export default function Card(props) {
           content: "";
           position: absolute;
           width: 101%;
-          height: 102%;
+          height: 101%;
           background: hsl(44deg 100% 56%);
           z-index: -1;
           border-radius: 2rem;
-          top: 0rem;
+          top: 0.7rem;
           left: 0.5rem;
           transform: rotateZ(0.8deg);
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
