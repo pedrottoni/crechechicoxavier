@@ -79,7 +79,7 @@ export default function Modal(props) {
           flex-direction: column;
           place-items: center;
           width: 90vw;
-          padding: 4rem 0;
+          padding: 4rem 0 0;
           border-radius: 2rem;
           background: #eee;
           text-align: center;
@@ -197,7 +197,7 @@ export default function Modal(props) {
 
         .modal .modalCard .modalContent .swiper {
           position: relative;
-          padding: ${props.subtitle ? "0rem 0rem 0rem;" : "0rem 0rem 3.5rem;"};
+          padding: 0rem 0rem 3.5rem;
           width: -webkit-fill-available;
           overflow: hidden !important;
         }
@@ -211,7 +211,7 @@ export default function Modal(props) {
         @media (max-width: 875px) {
 
           .modal .modalCard {
-            padding: 3rem 0 0;
+            padding: 3rem 2rem 0;
           }
           .modal .modalCard h2 {
             font-size: clamp(9pt, 10vw / 2, 12pt);
@@ -227,7 +227,7 @@ export default function Modal(props) {
           }
 
           .modal .modalCard .modalContent .swiper-slide {
-            padding: 0;
+            padding: 1rem 0rem 0;
           }
 
           .modalContent .images {
@@ -235,7 +235,6 @@ export default function Modal(props) {
           }
 
           .modalContent .images img {
-            border-radius: 0;
           }
         }
       `}</style>
