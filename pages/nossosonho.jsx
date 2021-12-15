@@ -99,29 +99,35 @@ export default function NossoSonho() {
           max-width: 70rem;
         }
 
-        .cardImage {
-          position: fixed;
-          width: 22vw;
-          height: 32rem;
-          margin: 1rem auto 2rem;
-          outline: 1rem solid #fff;
-          border-radius: 2rem;
-          -webkit-transform: rotateZ(1deg);
-          -ms-transform: rotateZ(1deg);
-          transform: rotateZ(6deg);
-          box-shadow: 0.1rem 0.3rem 5rem -0.6rem hsl(356deg 70% 30% / 63%);
-          right: 4vw;
+        .right {
+          width: -webkit-fill-available;
         }
 
-        .cardContent div {
-          margin-top: 3rem;
+        .card {
+          width: -webkit-fill-available;
+        }
+
+        .cardContent .cardInfo .cardImage {
+          position: relative;
+          width: 49rem;
+          height: 28rem;
+          margin: 0 auto 3rem;
+          outline: 1rem solid #fff;
+          border-radius: 2rem;
+          box-shadow: 0.5rem 1.3rem 3rem -0.6rem hsl(356deg 70% 30% / 63%);
+        }
+
+        .cardContent .cardInfo {
+          margin-top: 1rem;
           font-size: 2rem;
           line-height: 3.3rem;
+          text-align: center;
         }
 
         .cardContent .cardInfo h2 {
           font-size: 2.4rem;
           font-weight: bold;
+          line-height: 2;
           color: hsl(195deg 80% 40%);
         }
 
@@ -129,18 +135,13 @@ export default function NossoSonho() {
           .cardInfo {
             margin: 3rem 0;
             font-size: 2rem;
-            line-height: 3rem;
+            line-height: 2;
+            text-al
+            ign: center;
+          }
+          .modalCard .modalContent {
             text-align: center;
           }
-
-          .cardImage {
-            display: none;
-          }
-
-          .modalCard .modalContent p {
-            text-align: center;
-          }
-
         }
       `}</style>
     </>

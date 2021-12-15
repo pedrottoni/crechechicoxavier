@@ -238,7 +238,8 @@ export default function Transparência() {
           padding: 2rem 0 0 !important;
         }
 
-        header button {
+        header .btn {
+          width: 20rem !important;
           padding: 1.2rem 1.4rem .8rem;
           outline: 0.5rem solid hsl(0deg 0% 100% / 85%) !important;
         }

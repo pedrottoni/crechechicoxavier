@@ -114,6 +114,13 @@ export default function Center(props) {
           main .swiper {
             padding: 2rem 2rem 5rem;
           }
+
+          .modalCard header {
+            -webkit-box-pack: center !important;
+            -webkit-justify-content: center !important;
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+        }
         }
 
         @media (max-width: 875px) {

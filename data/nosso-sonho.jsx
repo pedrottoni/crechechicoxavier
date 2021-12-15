@@ -4,15 +4,10 @@ export const nossoSonho = [
   {
     key: 0,
     link: "nosso sonho/junte-se ao nosso sonho",
-    title: "Junte-se ao",
-    span: "nosso sonho",
+    title: "Colabore",
+    span: "Com a creche",
     documentos: (
       <>
-        <p>
-          Há quatro décadas acolhemos crianças e suas famílias, colaborando para
-          a construção de vidas mais felizes  há quatro décadas acolhemos crianças e suas famílias, colaborando para
-          a construção de vidas mais felizes.
-        </p>
         <div className="cardInfo">
           <div className="cardImage">
             <Image
@@ -29,7 +24,6 @@ export const nossoSonho = [
           <b>CNPJ:</b> 48.554.190/0001-15
           <br />
           <b>PIX:</b> 48.554.190/0001-15
-          <br />
           <br />
           <h2>CAIXA</h2>
           <b>PIX</b>: 12 9 8137-7272

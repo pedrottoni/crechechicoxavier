@@ -4,6 +4,7 @@ import Title from "../components/items/Title";
 import Links from "../components/sets/Links";
 import menu from "../data/menu";
 import Logo from "../public/images/Logo";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -20,7 +21,264 @@ export default function Index() {
         </header>
         <Links menu={menu} image={true} />
       </Home>
-      <style jsx global>{``}</style>
+      {/*       <nav className="menu">
+        <input
+          type="checkbox"
+          href="#"
+          className="menu-open"
+          name="menu-open"
+          id="menu-open"
+        />
+        <label className="menu-open-button" for="menu-open">
+          <span className="lines line-1"></span>
+          <span className="lines line-2"></span>
+          <span className="lines line-3"></span>
+        </label>
+
+        <a href="#" className="menu-item blue">
+          <Image src="/images/acreche.svg" layout="fill" alt="" />
+          <p>A Creche</p>
+        </a>
+        <a href="#" className="menu-item green">
+          <p>Projetos</p>
+        </a>
+        <a href="#" className="menu-item red">
+          <p>Nosso Sonho</p>
+        </a>
+        <a href="#" className="menu-item purple">
+          <p>Transparencia</p>
+        </a>
+        <a href="#" className="menu-item orange">
+          <p>Contato</p>
+        </a>
+      </nav> */}
+      <style jsx global>{`
+        .menu {
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 80px;
+          height: 80px;
+          text-align: center;
+          box-sizing: border-box;
+          font-size: 26px;
+        }
+
+        .menu-item,
+        .menu-open-button {
+          background: #eeeeee;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          color: #ffffff;
+          text-align: center;
+          line-height: 80px;
+          transform: translate3d(0, 0, 0);
+          transition: transform ease-out 200ms;
+          transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+          display: flex;
+          justify-content: center;
+        }
+
+        .menu-open {
+          display: none;
+        }
+
+        .lines {
+          width: 25px;
+          height: 3px;
+          background: #596778;
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -12.5px;
+          margin-top: -1.5px;
+          transition: transform 200ms;
+        }
+
+        .line-1 {
+          transform: translate3d(0, -8px, 0);
+        }
+
+        .line-2 {
+          transform: translate3d(0, 0, 0);
+        }
+
+        .line-3 {
+          transform: translate3d(0, 8px, 0);
+        }
+
+        .menu-open:checked + .menu-open-button .line-1 {
+          transform: translate3d(0, 0, 0) rotate(45deg);
+        }
+
+        .menu-open:checked + .menu-open-button .line-2 {
+          transform: translate3d(0, 0, 0) scale(0);
+        }
+
+        .menu-open:checked + .menu-open-button .line-3 {
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+        }
+
+        .menu-item:hover {
+          background: #eeeeee;
+          color: #3290b1;
+        }
+
+        .menu-item:nth-child(3) {
+          transition-duration: 180ms;
+        }
+
+        .menu-item:nth-child(4) {
+          transition-duration: 180ms;
+        }
+
+        .menu-item:nth-child(5) {
+          transition-duration: 180ms;
+        }
+
+        .menu-item:nth-child(6) {
+          transition-duration: 180ms;
+        }
+
+        .menu-item:nth-child(7) {
+          transition-duration: 180ms;
+        }
+
+        .menu-item:nth-child(8) {
+          transition-duration: 180ms;
+        }
+
+        .menu-open-button {
+          z-index: 2;
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-duration: 400ms;
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          cursor: pointer;
+        }
+
+        .menu-open-button:hover {
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+        }
+
+        .menu-open:checked + .menu-open-button {
+          transition-timing-function: linear;
+          transition-duration: 200ms;
+          transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+        }
+
+        .menu-open:checked ~ .menu-item {
+          transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+        }
+
+        .menu-open:checked ~ .menu-item:nth-child(3) {
+          transition-duration: 180ms;
+          transform: translate3d(0%, -130%, 0);
+        }
+
+        .menu-open:checked ~ .menu-item:nth-child(4) {
+          transition-duration: 280ms;
+          transform: translate3d(120%, -40%, 0);
+        }
+
+        .menu-open:checked ~ .menu-item:nth-child(5) {
+          transition-duration: 380ms;
+          transform: translate3d(80%, 100%, 0);
+        }
+
+        .menu-open:checked ~ .menu-item:nth-child(6) {
+          transition-duration: 480ms;
+          transform: translate3d(-80%, 100%, 0);
+        }
+
+        .menu-open:checked ~ .menu-item:nth-child(7) {
+          transition-duration: 580ms;
+          transform: translate3d(-120%, -40%, 0);
+        }
+
+        .blue {
+          background-color: #669ae1;
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .blue:hover {
+          color: #669ae1;
+          text-shadow: none;
+        }
+
+        .green {
+          background-color: #70cc72;
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .green:hover {
+          color: #70cc72;
+          text-shadow: none;
+        }
+
+        .red {
+          background-color: #fe4365;
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .red:hover {
+          color: #fe4365;
+          text-shadow: none;
+        }
+
+        .purple {
+          background-color: #c49cde;
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .purple:hover {
+          color: #c49cde;
+          text-shadow: none;
+        }
+
+        .orange {
+          background-color: #fc913a;
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .orange:hover {
+          color: #fc913a;
+          text-shadow: none;
+        }
+
+        .credit {
+          margin: 24px 20px 120px 0;
+          text-align: right;
+          color: #eeeeee;
+        }
+
+        .credit a {
+          padding: 8px 0;
+          color: #c49cde;
+          text-decoration: none;
+          transition: all 0.3s ease 0s;
+        }
+
+        .credit a:hover {
+          text-decoration: underline;
+        }
+
+        @media (max-width: 875px) {
+          .menu-open:checked ~ .menu-item p {
+            font-family: "Lilita One", cursive;
+            font-size: 3rem;
+            line-height: 1.4;
+            bottom: -15rem;
+            position: relative;
+            text-transform: uppercase;
+          }
+        }
+      `}</style>
     </>
   );
 }
