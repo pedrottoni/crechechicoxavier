@@ -136,7 +136,7 @@ export default function Modal(props) {
 
         .modalContent .images {
           position: relative;
-          height: clamp(10rem, 90vh - 20vw, 38vh);
+          height: clamp(10rem, 90vh - 20vw, 60vh);
           margin: 0 auto 3rem;
           box-shadow: 0.2rem 1rem 3rem rgb(94 36 88 / 45%),
             0.1rem 0.2rem 0.5rem #5e2458;
@@ -218,6 +218,10 @@ export default function Modal(props) {
 
           .modal .modalCard .modalContent {
             max-height: 80rem;
+          }
+          .modalContent .images {
+            height: clamp(10rem, 90vh - 20vw, 38vh);
+
           }
 
           .modal .modalCard .modalContent .swiper-slide,

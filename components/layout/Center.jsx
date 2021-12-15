@@ -93,6 +93,29 @@ export default function Center(props) {
           height: clamp(16rem, 25vh, 28rem) !important;
         }
 
+        main .swiper {
+          position: relative;
+          width: 100vw;
+          margin: 0;
+          padding: 3rem 5rem 5rem;
+        }
+
+        main .swiper .card {
+          height: inherit;
+          min-width: 0;
+        }
+
+        .swiper-slide,
+        .swiper-wrapper {
+          padding-right: clamp(3rem, 2vw, 5rem);
+        }
+
+        @media (max-width: 875px) {
+          main .swiper {
+            padding: 2rem 2rem 5rem;
+          }
+        }
+
         @media (max-width: 875px) {
           #__next {
             position: fixed;

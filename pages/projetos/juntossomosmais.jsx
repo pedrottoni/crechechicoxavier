@@ -197,17 +197,6 @@ export default function JuntosSomosMais() {
           margin-top: 2rem;
         }
 
-        main .swiper {
-          position: relative;
-          width: 100vw;
-          margin: 0;
-        }
-
-        main .swiper .card {
-          height: inherit;
-          min-width: 0;
-        }
-
         .card header .cardImage {
           filter: none;
         }
