@@ -217,7 +217,7 @@ export default function Modal(props) {
           }
 
           .modal .modalCard .modalContent {
-            max-height: 60vh;
+            max-height: 50vh;
           }
           .modalContent .images {
             height: clamp(10rem, 90vh - 20vw, 38vh);

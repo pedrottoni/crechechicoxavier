@@ -42,6 +42,11 @@ export default function Center(props) {
           letter-spacing: 0.03rem;
         }
 
+        header nav div:nth-child(5) a{
+          padding-left: 2rem !important;
+          color: hsl(70deg 90% 60%);
+        }
+
         #logo {
           position: relative;
           width: 25rem;

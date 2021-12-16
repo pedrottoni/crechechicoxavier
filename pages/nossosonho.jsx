@@ -32,7 +32,7 @@ export default function NossoSonho() {
           <Title
             title="Junte-se ao"
             span="Nosso Sonho"
-            subtitle="A Creche Chico Xavier atende 106 crianças e aproximadamente 100 famílias em período integral."
+            subtitle="Faça parte do nosso sonho e ajude crianças e famílias a serem mais felizes."
           >
             <nav>
               {nossoSonho.map((menuItem) => (
@@ -115,6 +115,7 @@ export default function NossoSonho() {
           outline: 1rem solid #fff;
           border-radius: 2rem;
           box-shadow: 0.5rem 1.3rem 3rem -0.6rem hsl(356deg 70% 30% / 63%);
+          transform: rotate(2deg);
         }
 
         .cardContent .cardInfo {
@@ -136,11 +137,22 @@ export default function NossoSonho() {
             margin: 3rem 0;
             font-size: 2rem;
             line-height: 2;
-            text-al
-            ign: center;
+            text-align: center;
           }
+
           .modalCard .modalContent {
             text-align: center;
+          }
+
+          .modalCard .modalContent .cardImage {
+            position: relative;
+            width: 49rem;
+            height: 28rem;
+            margin: 0 auto 3rem;
+            outline: 1rem solid #fff;
+            border-radius: 2rem;
+            box-shadow: 0.5rem 1.3rem 3rem -0.6rem hsl(356deg 70% 30% / 63%);
+            transform: rotate(2deg);
           }
         }
       `}</style>

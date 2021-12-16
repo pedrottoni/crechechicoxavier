@@ -157,7 +157,7 @@ export default function ModalDataSlide(props) {
           }
 
           .modal .modalCard .modalContent .dados {
-            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-columns: 1fr 8fr 1fr;
           }
         }
       `}</style>

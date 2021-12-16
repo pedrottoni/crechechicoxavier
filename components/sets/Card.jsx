@@ -100,9 +100,9 @@ export default function Card(props) {
 
         .cardIcon {
           position: absolute;
-          width: clamp(4rem, 5vw, 10rem);
-          height: clamp(4rem, 5vw, 10rem);
-          top: -5.5rem;
+          width: clamp(4rem, 5vw, 9rem);
+          height: clamp(4rem, 5vw, 9rem);
+          top: -5rem;
           background: hsl(345deg 70% 50%);
           border-radius: 100%;
           border: 1.5rem solid transparent;

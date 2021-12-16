@@ -42,6 +42,11 @@ export default function Columns(props) {
           letter-spacing: 0.03rem;
         }
 
+        header nav div:nth-child(5) a{
+          padding-left: 2rem !important;
+          color: hsl(70deg 90% 60%);
+        }
+
         #logo {
           position: relative;
           width: 25rem;
@@ -140,10 +145,6 @@ export default function Columns(props) {
 
           .left nav.stateBtn {
             place-content: center;
-          }
-
-          .modal .modalCard .modalContent .dados {
-            grid-template-columns: 1fr clamp(170px, 60vw, 212px) 1fr !important;
           }
 
           .modal .modalCard .modalContent .dados h2 {

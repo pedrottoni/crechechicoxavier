@@ -4,8 +4,8 @@ export const nossoSonho = [
   {
     key: 0,
     link: "nosso sonho/junte-se ao nosso sonho",
-    title: "Colabore",
-    span: "Com a creche",
+    title: "Faça sua",
+    span: "Doação",
     documentos: (
       <>
         <div className="cardInfo">
