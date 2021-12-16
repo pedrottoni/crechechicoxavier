@@ -10,6 +10,8 @@ import Modal from "../components/sets/Modal";
 
 import Media from "react-media";
 
+import Image from "next/image";
+
 export default function NossoSonho() {
   //Card
   //Define qual modal deve aparecer
@@ -29,66 +31,29 @@ export default function NossoSonho() {
 
       <Columns>
         <div className="left">
-          <Title
-            title="Junte-se ao"
-            span="Nosso Sonho"
-            subtitle="Faça parte do nosso sonho e ajude crianças e famílias a serem mais felizes."
-          >
-            <nav>
-              {nossoSonho.map((menuItem) => (
-                <MenuButton
-                  key={menuItem.key}
-                  link={menuItem.link}
-                  title={menuItem.title}
-                  span={menuItem.span}
-                  image={true}
-                  vert={true}
-                  onClick={() => (
-                    <>
-                      {setCardNumber(menuItem.key)}
-                      {setModalOpen(true)}
-                    </>
-                  )}
-                />
-              ))}
-            </nav>
-          </Title>
+          <Title title="Junte-se ao" span="Nosso Sonho"></Title>
+          <h2>SANTANDER</h2>
+          <b>CONTA:</b> 13.001644-7
+          <br />
+          <b>AGÊNCIA:</b> 0053
+          <br />
+          <b>CNPJ:</b> 48.554.190/0001-15
+          <br />
+          <b>PIX:</b> 48.554.190/0001-15
+          <br />
+          <h2>CAIXA</h2>
+          <b>PIX</b>: 12 9 8137-7272
+          <br />
         </div>
-        <Media query="(min-width: 875px)">
-          {(matches) => {
-            return matches ? (
-              <div className="right">
-                <Card
-                  title={
-                    nossoSonho[cardNumber].title +
-                    " " +
-                    nossoSonho[cardNumber].span
-                  }
-                  icon={nossoSonho[cardNumber].link}
-                >
-                  {nossoSonho[cardNumber].documentos}
-                </Card>
-              </div>
-            ) : (
-              <>
-                {" "}
-                {modalOpen && (
-                  <Modal
-                    title={
-                      nossoSonho[cardNumber].title +
-                      " " +
-                      nossoSonho[cardNumber].span
-                    }
-                    className="modal-title"
-                    onClick={() => <>{setModalOpen(false)}</>}
-                  >
-                    {nossoSonho[cardNumber].documentos}
-                  </Modal>
-                )}
-              </>
-            );
-          }}
-        </Media>
+        <div className="right">
+          <div className="cardImage">
+            <Image
+              src="/images/nosso sonho/turma.jpg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
       </Columns>
 
       <style jsx>{``}</style>
@@ -101,16 +66,17 @@ export default function NossoSonho() {
 
         .right {
           width: -webkit-fill-available;
+          height: auto;
         }
 
         .card {
           width: -webkit-fill-available;
         }
 
-        .cardContent .cardInfo .cardImage {
+        .cardImage {
           position: relative;
           width: 49rem;
-          height: 28rem;
+          height: auto;
           margin: 0 auto 3rem;
           outline: 1rem solid #fff;
           border-radius: 2rem;
@@ -118,41 +84,9 @@ export default function NossoSonho() {
           transform: rotate(2deg);
         }
 
-        .cardContent .cardInfo {
-          margin-top: 1rem;
-          font-size: 2rem;
-          line-height: 3.3rem;
-          text-align: center;
-        }
-
-        .cardContent .cardInfo h2 {
-          font-size: 2.4rem;
-          font-weight: bold;
-          line-height: 2;
-          color: hsl(195deg 80% 40%);
-        }
-
         @media (max-width: 875px) {
-          .cardInfo {
-            margin: 3rem 0;
-            font-size: 2rem;
-            line-height: 2;
-            text-align: center;
-          }
-
-          .modalCard .modalContent {
-            text-align: center;
-          }
-
-          .modalCard .modalContent .cardImage {
-            position: relative;
-            width: 49rem;
-            height: 28rem;
-            margin: 0 auto 3rem;
-            outline: 1rem solid #fff;
-            border-radius: 2rem;
-            box-shadow: 0.5rem 1.3rem 3rem -0.6rem hsl(356deg 70% 30% / 63%);
-            transform: rotate(2deg);
+          .right {
+            display: none;
           }
         }
       `}</style>
