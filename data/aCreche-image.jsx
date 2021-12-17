@@ -197,7 +197,7 @@ export const imagens = [
       },
       {
         key: keynumber,
-        keynumber =+ 0,
+        keynumber = 0,
         image: "colaboradores/Marcela Dani dos Santos Oliveira.jpg",
         title: "Marcela Dani",
         span: "Professora"
