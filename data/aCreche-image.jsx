@@ -1,42 +1,49 @@
+var keynumber = 0
+
 export const imagens = [
   {
     key: 0,
     span: "Diretoria Executiva",
     dados: [
       {
-        key: 0,
+        key: keynumber,
         image: "colaboradores/Scheilla Damasceno Del Monaco.jpg",
-        title: "Scheilla Del Monaco",
+        title: "Scheilla",
         span: "DIRETORA PRESIDENTE"
       },
+      keynumber =+ 1,
       {
-        key: 1,
+        key: keynumber,
         image: "colaboradores/Luís Augusto Cavalca Moreira.jpg",
-        title: "Luís Augusto Cavalca",
+        title: "Luís Augusto",
         span: "DIRETOR VICE-PRESIDENTE"
       },
+      keynumber =+ 1,
       {
-        key: 2,
+        key: keynumber,
         image: "colaboradores/Benedito Ernesto Galvão Carvalho Filho.jpg",
-        title: "Benedito Ernesto Galvão",
+        title: "Benedito Ernesto",
         span: "DIRETOR ADMINISTRATIVO"
       },
+      keynumber =+ 1,
       {
-        key: 3,
+        key: keynumber,
         image: "colaboradores/Susane Carneiro Barbosa Del Monaco Braga.jpg",
-        title: "Susane Carneiro Barbosa",
+        title: "Susane",
         span: "VICE-DIRETORA ADMINISTRATIVA"
       },
+      keynumber =+ 1,
       {
-        key: 4,
+        key: keynumber,
         image: "colaboradores/Diogenes José Antunes Carvalho.jpg",
-        title: "Diogenes José Antunes",
+        title: "Diógenes José",
         span: "DIRETOR FINANCEIRO"
       },
+      keynumber =+ 1,
       {
-        key: 5,
+        key: keynumber,
         image: "colaboradores/Regina Celia Del Monaco de Paula Santos Moreira.jpg",
-        title: "Regina Celia Del Monaco",
+        title: "Regina Celi",
         span: "VICE-DIRETORA FINANCEIRA"
       }
     ]
