@@ -1,16 +1,16 @@
 import { useState } from "react";
 import Head from "next/head";
 
-import Center from "../components/layout/Center";
-import Title from "../components/items/Title";
-import Modal from "../components/sets/Modal";
-import ModalSlide from "../components/sets/ModalSlide";
-import ModalDataSlide from "../components/sets/ModalDataSlide";
-import Card from "../components/sets/Card";
-import { transparencia } from "../data/transparencia-dados";
+import Center from "../../components/layout/Center";
+import Title from "../../components/items/Title";
+import Modal from "../../components/sets/Modal";
+import ModalSlide from "../../components/sets/ModalSlide";
+import ModalDataSlide from "../../components/sets/ModalDataSlide";
+import Card from "../../components/sets/Card";
+import { transparencia } from "../../data/transparencia-dados";
 
 import { motion, AnimatePresence } from "framer-motion";
-import MenuButton from "../components/items/MenuButton";
+import MenuButton from "../../components/items/MenuButton";
 
 import Media from "react-media";
 import router from "next/router";
