@@ -1,10 +1,10 @@
 export const projetos = [
-  {
+  /* {
     link: "/projetos/formacoes",
     title: "Projetos",
     span: "de Formação",
     image: "projetos/formações.svg",
-  },
+  }, */
   {
     link: "/projetos/projetosdeleitura",
     title: "Projetos",

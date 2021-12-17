@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import Center from "../components/layout/Center";
 import Title from "../components/items/Title";
@@ -13,9 +14,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import MenuButton from "../components/items/MenuButton";
 
 import Media from "react-media";
-import router from "next/router";
 
-export default function Transparência() {
+export default function AnosAnteriores() {
   // Animações dos Cards
   const list = {
     animate: { transition: { staggerChildren: 0.05 } },
@@ -35,11 +35,10 @@ export default function Transparência() {
 
   var dados = [];
 
-  transparencia[1].documentos.map((dado) => dados.push(dado.key));
+  transparencia[modal].documentos.map((dado) => dados.push(dado.key));
 
   let slidesView = 1;
   let slidesViewInside = 1;
-  open && modal === 2 && router.push("/anosanteriores");
 
   return (
     <>
@@ -97,16 +96,7 @@ export default function Transparência() {
 
       <Center>
         <header>
-          <Title title="Documentos e" span="Transparência" />
-          <MenuButton
-            title="Saiba Mais!"
-            onClick={() => (
-              <>
-                {setOpen(true)}
-                {setModal(3)}
-              </>
-            )}
-          />
+          <Title title="Arquivo" span="Transparência" />
         </header>
         <motion.nav
           initial="initial"
@@ -114,7 +104,7 @@ export default function Transparência() {
           exit="exit"
           variants={list}
         >
-          {transparencia.map((docs) => (
+          {transparencia[2].documentos.map((docs) => (
             <motion.div key={docs.key} variants={animationMenu}>
               <Card
                 title={docs.title}
@@ -138,47 +128,28 @@ export default function Transparência() {
                 <>
                   <AnimatePresence initial={false}>
                     {open && modal === 0 && (
-                      <ModalSlide
+                      <ModalDataSlide
                         onClick={() => setOpen(false)}
-                        title={transparencia[modal].title}
-                        span={transparencia[modal].span}
+                        title={transparencia[2].documentos[modal].title}
+                        span={transparencia[2].documentos[modal].span}
                         slidesPerView={slidesViewInside}
-                        images={transparencia[modal].documentos}
+                        images={transparencia[2].documentos[modal].documentos}
+                        dados={dados}
+                        inicial={0}
                         link={true}
                       />
                     )}
                     {open && modal === 1 && (
                       <ModalDataSlide
                         onClick={() => setOpen(false)}
-                        title={transparencia[modal].title}
-                        span={transparencia[modal].span}
+                        title={transparencia[2].documentos[modal].title}
+                        span={transparencia[2].documentos[modal].span}
                         slidesPerView={slidesViewInside}
-                        images={transparencia[modal].documentos}
+                        images={transparencia[2].documentos[modal].documentos}
                         dados={dados}
                         inicial={0}
                         link={true}
                       />
-                    )}
-
-                    {open && modal === 3 && (
-                      <Modal
-                        title="Transparência"
-                        className="modal-title"
-                        onClick={() => setOpen(false)}
-                      >
-                        <hr />
-                        <br />
-                        <br />
-                        <br />
-                        <p>
-                          "A Casa da Criança Creche Chico Xavier tem também como
-                          objetivo, atuar de forma transparente e atender a
-                          legislação da Transparência Municipal e atender o
-                          Termo de Colaboração Nº001. Desta forma, a instituição
-                          vem através desta página, disponibilizar publicamente
-                          o acesso as suas prestações de contas."
-                        </p>
-                      </Modal>
                     )}
                   </AnimatePresence>
                 </>

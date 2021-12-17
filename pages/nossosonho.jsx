@@ -3,12 +3,6 @@ import Head from "next/head";
 
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
-import MenuButton from "../components/items/MenuButton";
-import Card from "../components/sets/Card";
-import { nossoSonho } from "../data/nosso-sonho";
-import Modal from "../components/sets/Modal";
-
-import Media from "react-media";
 
 import Image from "next/image";
 
@@ -33,17 +27,19 @@ export default function NossoSonho() {
         <div className="left">
           <Title title="Junte-se ao" span="Nosso Sonho"></Title>
           <h2>SANTANDER</h2>
-          <b>CONTA:</b> 13.001644-7
-          <br />
-          <b>AGÊNCIA:</b> 0053
-          <br />
-          <b>CNPJ:</b> 48.554.190/0001-15
-          <br />
-          <b>PIX:</b> 48.554.190/0001-15
-          <br />
-          <h2>CAIXA</h2>
-          <b>PIX</b>: 12 9 8137-7272
-          <br />
+          <div>
+            <b>CONTA:</b> 13.001644-7
+            <br />
+            <b>AGÊNCIA:</b> 0053
+            <br />
+            <b>CNPJ:</b> 48.554.190/0001-15
+            <br />
+            <b>PIX:</b> 48.554.190/0001-15
+            <br />
+            <h2>CAIXA</h2>
+            <b>PIX</b>: 12 98137 7272
+            <br />
+          </div>
         </div>
         <div className="right">
           <div className="cardImage">
@@ -59,12 +55,36 @@ export default function NossoSonho() {
       <style jsx>{``}</style>
 
       <style jsx global>{`
-        .left .subTitle,
-        .right .subtitle {
+        main {
+          flex-direction: row-reverse;
+        }
+
+        main .left .subTitle,
+        main .right .subtitle {
           max-width: 70rem;
         }
 
-        .right {
+        main .left {
+          font-size: 3rem;
+          line-height: 4.2rem;
+          color: #fff;
+        }
+
+        main .left h2 {
+          font-family: "Lilita One", cursive;
+          font-size: 5rem;
+          font-weight: normal;
+          letter-spacing: 0.1rem;
+          color: #fff;
+        }
+
+        main .left b {
+          letter-spacing: 0.1rem;
+          color: hsl(44deg 100% 56%);
+        }
+
+        main .right {
+          top: 4rem;
           width: -webkit-fill-available;
           height: auto;
         }
@@ -75,13 +95,17 @@ export default function NossoSonho() {
 
         .cardImage {
           position: relative;
-          width: 49rem;
+          width: -webkit-fill-available;
           height: auto;
           margin: 0 auto 3rem;
           outline: 1rem solid #fff;
           border-radius: 2rem;
           box-shadow: 0.5rem 1.3rem 3rem -0.6rem hsl(356deg 70% 30% / 63%);
           transform: rotate(2deg);
+        }
+
+        .cardImage div {
+          border-radius: 2rem;
         }
 
         @media (max-width: 875px) {
