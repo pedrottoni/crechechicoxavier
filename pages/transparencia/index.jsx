@@ -39,7 +39,7 @@ export default function Transparência() {
 
   let slidesView = 1;
   let slidesViewInside = 1;
-  open && modal === 2 && router.push("/anosanteriores");
+  open && modal === 2 && router.push("/transparencia/anosanteriores");
 
   return (
     <>
