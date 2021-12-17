@@ -60,7 +60,7 @@ export const imagens = [
       },
       {
         key: 2,
-        image: "colaboradores/Filomena da Conceição Reis.jpg",
+        image: "",
         title: "Telma",
         span: "Orientação Educacional"
       },
