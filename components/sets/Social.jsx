@@ -28,7 +28,7 @@ export default function () {
           display: flex;
           place-self: center;
           place-content: center;
-          bottom: 4rem;
+          bottom: 6rem;
         }
 
         footer div {
