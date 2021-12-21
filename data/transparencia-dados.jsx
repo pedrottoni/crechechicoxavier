@@ -365,7 +365,8 @@ export const transparencia = [
       {
         key: 0,
         link: "transparência/anos anteriores.svg",
-        title: "2019",
+        title: "Documentos de",
+        span: "2019",
         documentos: [
           {
             key: 0,
@@ -626,7 +627,8 @@ export const transparencia = [
       {
         key: 1,
         link: "transparência/anos anteriores.svg",
-        title: "2020",
+        title: "Documentos de",
+        span: "2020",
         documentos: [
           {
             key: 0,

@@ -137,7 +137,6 @@ export default function PageHeader(props) {
                           </motion.div>
                         ))}
                       </motion.nav>
-
                       <Social />
                     </motion.div>
                   </div>
