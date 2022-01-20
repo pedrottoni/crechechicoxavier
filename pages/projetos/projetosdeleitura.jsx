@@ -136,7 +136,7 @@ export default function ProjetosDeLeitura() {
                         slidesPerView={slidesViewInside}
                         images={vinteUm[modal]}
                         dados={meses}
-                        inicial={mes - 2 != 0 ? mes - 2 : 11}
+                        inicial={mes - 2 <= 0 ? 11 : mes - 2}
                       />
                     )}
                   </AnimatePresence>
