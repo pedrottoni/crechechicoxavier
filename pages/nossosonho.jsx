@@ -34,10 +34,10 @@ export default function NossoSonho() {
             <br />
             <b>CNPJ:</b> 48.554.190/0001-15
             <br />
-            <b>PIX:</b> 48.554.190/0001-15
+            <b>PIX</b>: 12 98137 7272
             <br />
             <h2>CAIXA</h2>
-            <b>PIX</b>: 12 98137 7272
+            <b>PIX:</b> 48.554.190/0001-15
             <br />
           </div>
         </div>

@@ -6,37 +6,38 @@ export const imagens = [
       {
         key: 0,
         image: "colaboradores/Scheilla Damasceno Del Monaco.jpg",
-        title: "Scheilla Del Monaco",
+        title: "Scheilla",
         span: "DIRETORA PRESIDENTE"
       },
+      ,
       {
         key: 1,
         image: "colaboradores/Luís Augusto Cavalca Moreira.jpg",
-        title: "Luís Augusto Cavalca",
+        title: "Luís Augusto",
         span: "DIRETOR VICE-PRESIDENTE"
       },
       {
         key: 2,
         image: "colaboradores/Benedito Ernesto Galvão Carvalho Filho.jpg",
-        title: "Benedito Ernesto Galvão",
+        title: "Benedito Ernesto",
         span: "DIRETOR ADMINISTRATIVO"
       },
       {
         key: 3,
         image: "colaboradores/Susane Carneiro Barbosa Del Monaco Braga.jpg",
-        title: "Susane Carneiro Barbosa",
+        title: "Susane",
         span: "VICE-DIRETORA ADMINISTRATIVA"
       },
       {
         key: 4,
         image: "colaboradores/Diogenes José Antunes Carvalho.jpg",
-        title: "Diogenes José Antunes",
+        title: "Diógenes José",
         span: "DIRETOR FINANCEIRO"
       },
       {
         key: 5,
         image: "colaboradores/Regina Celia Del Monaco de Paula Santos Moreira.jpg",
-        title: "Regina Celia Del Monaco",
+        title: "Regina Celi",
         span: "VICE-DIRETORA FINANCEIRA"
       }
     ]
@@ -48,123 +49,128 @@ export const imagens = [
       {
         key: 0,
         image: "colaboradores/Márcia Helena Antunes Del Monaco.jpg",
-        title: "Márcia Del Monaco",
+        title: "Márcia Helena",
         span: "Coord. Administrativo"
       },
       {
         key: 1,
         image: "colaboradores/Filomena da Conceição Reis.jpg",
-        title: "Filomena da Conceição",
+        title: "Filomena",
         span: "Coord. Pedagógica"
       },
       {
         key: 2,
-        image: "colaboradores/Mariana de Jesus.jpg",
-        title: "Mariana de Jesus",
-        span: "Auxiliar de Escritório"
+        image: "",
+        title: "Telma",
+        span: "Orientação Educacional"
       },
       {
         key: 3,
-        image: "colaboradores/Juliana Framil da Silva.jpg",
-        title: "Juliana Framil da Silva",
-        span: "Auxiliar Administrativo"
+        image: "colaboradores/Mariana de Jesus.jpg",
+        title: "Mariana",
+        span: "Auxiliar de Escritório"
       },
       {
         key: 4,
-        image:
-          "colaboradores/Henrique Nicolas Vasconcellos Martins de Castro.jpg",
-        title: "Henrique Vasconcellos",
-        span: "Office Boy"
+        image: "colaboradores/Juliana Framil da Silva.jpg",
+        title: "Juliana",
+        span: "Auxiliar Administrativo"
       },
       {
         key: 5,
-        image: "colaboradores/João José Ribeiro.jpg",
-        title: "João José Ribeiro",
-        span: "Auxiliar de Manutenção"
+        image:
+          "colaboradores/Henrique Nicolas Vasconcellos Martins de Castro.jpg",
+        title: "Henrique Nicolas",
+        span: "Office Boy"
       },
       {
         key: 6,
-        image: "colaboradores/Dulcinéa Mendes.jpg",
-        title: "Dulcinéa Mendes",
-        span: "Faxineira"
+        image: "colaboradores/João José Ribeiro.jpg",
+        title: "João José",
+        span: "Auxiliar de Manutenção"
       },
       {
         key: 7,
-        image: "colaboradores/Lucia Helena Antunes.jpg",
-        title: "Lucia Helena Antunes",
+        image: "colaboradores/Dulcinéa Mendes.jpg",
+        title: "Dulcinéa",
         span: "Faxineira"
       },
       {
         key: 8,
-        image: "colaboradores/Clarice Gregorio de Padua Martins.jpg",
-        title: "Clarice Gregorio",
-        span: "Cozinheira"
+        image: "colaboradores/Lucia Helena Antunes.jpg",
+        title: "Lucia Helena",
+        span: "Faxineira"
       },
       {
         key: 9,
-        image: "colaboradores/Izabel Cristina de Castro.jpg",
-        title: "Izabel Cristina de Castro",
-        span: "Serviços Gerais"
+        image: "colaboradores/Clarice Gregorio de Padua Martins.jpg",
+        title: "Clarice",
+        span: "Cozinheira"
       },
       {
         key: 10,
-        image: "colaboradores/Andréia Aparecida Palma Pires dos Santos.jpg",
-        image: "colaboradores/Andréia Aparecida Palma Pires dos Santos.jpg",
-        title: "Andréia dos Santos",
-        span: "Professora"
+        image: "colaboradores/Izabel Cristina de Castro.jpg",
+        title: "Izabel Cristina",
+        span: "Serviços Gerais"
       },
       {
         key: 11,
-        image: "colaboradores/Joice Amaral Carvalho.jpg",
-        title: "Joice Amaral Carvalho",
+        image: "colaboradores/Andréia Aparecida Palma Pires dos Santos.jpg",
+        title: "Andréia",
         span: "Professora"
       },
       {
         key: 12,
+        image: "colaboradores/Joice Amaral Carvalho.jpg",
+        title: "Joice",
+        span: "Professora"
+      },
+      {
+        key: 13,
         image: "colaboradores/Ana Fernanda Felipe Eloy Felix Machado.jpg",
         title: "Ana Fernanda",
         span: "Professora"
       },
       {
-        key: 13,
+        key: 14,
         image: "colaboradores/Anna Laura Correa Cardoso.jpg",
         title: "Anna Laura",
         span: "Professora"
       },
       {
-        key: 14,
+        key: 15,
         image: "colaboradores/Magna Maria Ribeiro.jpg",
-        title: "Magna Maria Ribeiro",
+        title: "Magna Maria",
         span: "Professora"
       },
       {
-        key: 15,
+        key: 16,
         image: "colaboradores/Sandra Regina dos Santos Oliveira.jpg",
         title: "Sandra Regina",
         span: "Professora"
       },
       {
-        key: 16,
+        key: 17,
         image: "colaboradores/Jucilene Aparecida dos Santos Oliveira.jpg",
         title: "Jucilene Aparecida",
         span: "Professora"
       },
       {
-        key: 17,
-        image: "colaboradores/Jucimara Darc de Paula.jpg",
-        title: "Jucimara Darc de Paula",
-        span: "Professora"
-      },
-      {
         key: 18,
-        image: "colaboradores/Flavia Araujo Silva.jpg",
-        title: "Flavia Araujo Silva",
+        image: "colaboradores/Jucimara Darc de Paula.jpg",
+        title: "Jucimara",
         span: "Professora"
       },
       {
         key: 19,
+        image: "colaboradores/Flavia Araujo Silva.jpg",
+        title: "Flavia",
+        span: "Professora"
+      },
+      {
+        key: 20,
         image: "colaboradores/Marcela Dani dos Santos Oliveira.jpg",
-        title: "Marcela Dani dos Santos",
+        title: "Marcela Dani",
         span: "Professora"
       }
     ]

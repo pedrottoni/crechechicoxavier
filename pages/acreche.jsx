@@ -165,10 +165,12 @@ export default function Acreche() {
                     onClickLeftA={() => {
                       setEquipeColaboradores(false);
                       setEquipe(true);
+                      swiper.navigation.init();
                     }}
                     onClickRightA={() => {
                       setEquipeColaboradores(false);
                       setEquipe(true);
+                      swiper.navigation.init();
                     }}
                     icon="equipe"
                   ></Card>
