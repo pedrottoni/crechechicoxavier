@@ -30,7 +30,7 @@ var meses = [
   "setembro",
   "outubro",
   "novembro",
-  "dezembro",
+  // "dezembro", << ATIVAR EM DEZEMBRO DE 2022
 ];
 
 export default function ProjetosDeLeitura() {
@@ -136,7 +136,7 @@ export default function ProjetosDeLeitura() {
                         slidesPerView={slidesViewInside}
                         images={vinteUm[modal]}
                         dados={meses}
-                        inicial={mes - 2}
+                        inicial={9}
                       />
                     )}
                   </AnimatePresence>
