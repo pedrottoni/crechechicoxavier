@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Columns from "../components/layout/Columns";
 import Title from "../components/items/Title";
+import MenuButton from "../components/items/MenuButton";
 
 import Image from "next/image";
 
@@ -26,20 +27,10 @@ export default function NossoSonho() {
       <Columns>
         <div className="left">
           <Title title="Junte-se ao" span="Nosso Sonho"></Title>
-          <h2>SANTANDER</h2>
-          <div>
-            <b>CONTA:</b> 13.001644-7
-            <br />
-            <b>AGÊNCIA:</b> 0053
-            <br />
-            <b>CNPJ:</b> 48.554.190/0001-15
-            <br />
-            <b>PIX:</b> 48.554.190/0001-15
-            <br />
-            <h2>CAIXA</h2>
-            <b>PIX</b>: 12 98137 7272
-            <br />
-          </div>
+          <MenuButton
+          a="https://paybox.doare.org/br/paybox?lang=br&currency=BRL&orgId=bb139c7e-aa35-11ec-96b8-06534163e0b3&campaignId=0a8dc4fc-aa37-11ec-96b8-06534163e0b3&values=&amount=&subscribe=0&newsletter=0&subscriptionAmount=&showSubscription=1&referer=https://www.crechechicoxavier.com.br/nossosonho"
+          title="FAÇA SUA DOAÇÃO AGORA"
+        />
         </div>
         <div className="right">
           <div className="cardImage">
@@ -57,6 +48,7 @@ export default function NossoSonho() {
       <style jsx global>{`
         main {
           flex-direction: row-reverse;
+          min-height: 45vh;
         }
 
         main .left .subTitle,
@@ -106,6 +98,10 @@ export default function NossoSonho() {
 
         .cardImage div {
           border-radius: 2rem;
+        }
+
+        .btn {
+          width: 50rem;
         }
 
         @media (max-width: 875px) {

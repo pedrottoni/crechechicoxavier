@@ -23,11 +23,23 @@ export default function MenuButton(props) {
           <Image src={`/images/${props.link}.svg`} layout="fill" alt="" />
         </div>
       ) : null}
-      <div className="btnText">
-        {props.title}
-        <br />
-        <b>{props.span ? props.span : null}</b>
-      </div>
+      {props.a ? (
+        <a
+          className="btnText"
+          href={props.a}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {props.title}
+          <b>{props.span ? props.span : null}</b>
+        </a>
+      ) : (
+        <div className="btnText">
+          {props.title}
+          <br />
+          <b>{props.span ? props.span : null}</b>
+        </div>
+      )}
 
       <style jsx global>{`
         .btn {
@@ -53,7 +65,7 @@ export default function MenuButton(props) {
         @media (max-width: 875px) and (min-height: 420px) {
           .btn {
             flex-direction: column;
-            width: clamp(14rem, 25vw, 20rem)
+            width: clamp(14rem, 25vw, 20rem);
           }
         }
       `}</style>
