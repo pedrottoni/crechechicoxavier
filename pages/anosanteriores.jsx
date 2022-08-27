@@ -151,6 +151,18 @@ export default function AnosAnteriores() {
                         link={true}
                       />
                     )}
+                    {open && modal === 2 && (
+                      <ModalDataSlide
+                        onClick={() => setOpen(false)}
+                        title={transparencia[2].documentos[modal].title}
+                        span={transparencia[2].documentos[modal].span}
+                        slidesPerView={slidesViewInside}
+                        images={transparencia[2].documentos[modal].documentos}
+                        dados={dados}
+                        inicial={0}
+                        link={true}
+                      />
+                    )}
                   </AnimatePresence>
                 </>
               )

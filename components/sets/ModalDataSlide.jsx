@@ -34,7 +34,7 @@ export default function ModalDataSlide(props) {
   return (
     <Modal
       onClick={props.onClick}
-      className={props.className ? props.className : ""} 
+      className={props.className ? props.className : ""}
       title={props.title}
       subtitle={props.subtitle}
       images={props.images}
